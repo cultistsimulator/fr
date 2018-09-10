@@ -1,247 +1,151 @@
-{
-  "elements": [
-    {
-      id: "articleedgec",
-      label: "Lisière: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        edge: 6
-      }
-    },
-    {
-      id: "articleforgec",
-      label: "Forge: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        forge: 6
-      }
-    },
-    {
-      id: "articlegrailc",
-      label: "Graal: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        grail: 6
-      }
-    },
-    {
-      id: "articleheartc",
-      label: "Coeur: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        heart: 6
-      }
-    },
-    {
-      id: "articleknockc",
-      label: "Choc: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        knock: 6
-      }
-    },
-    {
-      id: "articlelanternc",
-      label: "Lanterne: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        lantern: 6
-      }
-    },
-    {
-      id: "articlemothc",
-      label: "Phalène: Une Étude Très Considérable",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        moth: 6
-      }
-    },
-    {
-      id: "articlesecrethistoriesc",
-      label: "'On The Histories: A Very Substantial Discussion'",
-      description: "A Very Substantial work on the unwritten events which shaped the waking and the dreaming world. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        secrethistories: 6
-      }
-    },
-    {
-      id: "articlewinterc",
-      label: "The White: Une Étude Très Considérable",
-      description: "Le plus approfondi et le plus succinct. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        winter: 6
-      }
-    },
-    {
-      id: "articleedgeb",
-      label: "Lisière: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        edge: 4
-      }
-    },
-    {
-      id: "articleforgeb",
-      label: "Forge: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        forge: 4
-      }
-    },
-    {
-      id: "articlegrailb",
-      label: "Graal: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        grail: 4
-      }
-    },
-    {
-      id: "articleheartb",
-      label: "Coeur: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        heart: 4
-      }
-    },
-    {
-      id: "articleknockb",
-      label: "Choc: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        knock: 4
-      }
-    },
-    {
-      id: "articlelanternb",
-      label: "Lanterne: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        lantern: 4
-      }
-    },
-    {
-      id: "articlemothb",
-      label: "Phalène: Une Considérable Étude",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        moth: 4
-      }
-    },
-    {
-      id: "articlesecrethistoriesb",
-      label: "'On The Histories: A Substantial Investigation'",
-      description: "Sombres informations sur les vérités réprimées de nombreux passés. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        secrethistories: 4
-      }
-    },
-    {
-      id: "articlewinterb",
-      label: "The White: Une Considérable Étude",
-      description: "Vous avez dit tout ce qui est nécessaire. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        winter: 4
-      }
-    },
-    {
-      id: "articleedgea",
-      label: "Lisière: Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        edge: 2
-      }
-    },
-    {
-      id: "articleforgea",
-      label: "Forge: Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        forge: 2
-      }
-    },
-    {
-      id: "articlegraila",
-      label: "Graal: Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        grail: 2
-      }
-    },
-    {
-      id: "articlehearta",
-      label: "Coeur: Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        heart: 2
-      }
-    },
-    {
-      id: "articleknocka",
-      label: "Choc:  Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        knock: 2
-      }
-    },
-    {
-      id: "articlelanterna",
-      label: "Lanterne: Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        lantern: 2
-      }
-    },
-    {
-      id: "articlemotha",
-      label: "Phalène: Une Brève Discussion",
-      description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        moth: 2
-      }
-    },
-    {
-      id: "articlesecrethistoriesa",
-      label: "Histoires Secrètes: Une Brève Discussion",
-      description: "Des informations alléchantes sur des histoires qui sont généralement réprimées.  [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        secrethistories: 2
-      }
-    },
-    {
-      id: "articlewintera",
-      label: "The White: Une Brève Discussion",
-      description: "Une étude concise sur l'Hiver. [Parlez à votre Patron pour être rémunéré pour cela.]",
-      aspects: {
-        article: 1,
-        winter: 2
-      }
-    }
-  ]
+{"elements":
+    [
+	{id: "articleedgec",
+	label: "Lisière: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,edge:6},	
+	},
+	{id: "articleforgec",
+	label: "Forge: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,forge:6},	
+	},
+			{id: "articlegrailc",
+	label: "Graal: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,grail:6},	
+	},
+		
+			{id: "articleheartc",
+	label: "Coeur: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,heart:6},	
+	},
+				{id: "articleknockc",
+	label: "Choc: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,knock:6},	
+	},
+		
+			{id: "articlelanternc",
+	label: "Lanterne: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,lantern:6},	
+	},
+		
+			{id: "articlemothc",
+	label: "Phalène: Une Étude Très Considérable",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,moth:6},	
+	},
+	
+	{id: "articlesecrethistoriesc",
+	label: "'On The Histories: A Very Substantial Discussion'",
+	description: "A Very Substantial work on the unwritten events which shaped the waking and the dreaming world. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,secrethistories:6},	
+	},
+			{id: "articlewinterc",
+	label: "The White: Une Étude Très Considérable",
+	description: "Le plus approfondi et le plus succinct. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,winter:6},	
+	},
+	{id: "articleedgeb",
+	label: "Lisière: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,edge:4},	
+	},
+	{id: "articleforgeb",
+	label: "Forge: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,forge:4},	
+	},
+			{id: "articlegrailb",
+	label: "Graal: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,grail:4},	
+	},
+		
+			{id: "articleheartb",
+	label: "Coeur: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,heart:4},	
+	},
+				{id: "articleknockb",
+	label: "Choc: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,knock:4},	
+	},
+		
+			{id: "articlelanternb",
+	label: "Lanterne: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,lantern:4},	
+	},
+		
+			{id: "articlemothb",
+	label: "Phalène: Une Considérable Étude",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,moth:4},	
+	},
+	
+	{id: "articlesecrethistoriesb",
+	label: "'On The Histories: A Substantial Investigation'",
+	description: "Sombres informations sur les vérités réprimées de nombreux passés. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,secrethistories:4},	
+	},
+			{id: "articlewinterb",
+	label: "The White: Une Considérable Étude",
+	description: "Vous avez dit tout ce qui est nécessaire. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,winter:4},	
+	},
+		{id: "articleedgea",
+	label: "Lisière: Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,edge:2},	
+	},
+	{id: "articleforgea",
+	label: "Forge: Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,forge:2},	
+	},
+			{id: "articlegraila",
+	label: "Graal: Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,grail:2},	
+	},
+		
+			{id: "articlehearta",
+	label: "Coeur: Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,heart:2},	
+	},
+				{id: "articleknocka",
+	label: "Choc:  Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,knock:2},	
+	},
+		
+			{id: "articlelanterna",
+	label: "Lanterne: Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,lantern:2},	
+	},
+		
+			{id: "articlemotha",
+	label: "Phalène: Une Brève Discussion",
+	description: "Votre propre oeuvre, sous forme de manuscrite. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,moth:2},	
+	},
+	
+	{id: "articlesecrethistoriesa",
+	label: "Histoires Secrètes: Une Brève Discussion",
+	description: "Des informations alléchantes sur des histoires qui sont généralement réprimées.  [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,secrethistories:2},	
+	},
+			{id: "articlewintera",
+	label: "The White: Une Brève Discussion",
+	description: "Une étude concise sur l'Hiver. [Parlez à votre Patron pour être rémunéré pour cela.]",
+	aspects: {article:1,winter:2},	
+	}
+]
 };

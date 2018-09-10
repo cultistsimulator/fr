@@ -1,116 +1,124 @@
-{
-  "elements": [
-    {
-      id: "project_upgrade_edge",
-      label: "Étendre ma connaissance du lore de la Lisière",
-      description: "J'espère améliorer mon lore de la Lisière.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_edgetowinter",
-      label: "Subverting Lisière to Hiver",
-      description: "I am acknowledging the victory of patience over strength, subverting my Lisière lore to Hiver lore.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_forge",
-      label: "Étendre ma connaissance du lore de la Forge",
-      description: "J'espère améliorer mon lore de la Forge.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_forgetoedge",
-      label: "Subverting Forge to Lisière",
-      description: "I am subverting my Forge lore to Lisière lore.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_grail",
-      label: "Étendre ma connaissance du lore du Graal",
-      description: "J'espère améliorer mon lore du Graal.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_grailtomoth",
-      label: "Subverting Grail lore to Moth",
-      description: "I am subverting my Grail lore to Moth lore.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_heart",
-      label: "Étendre ma connaissance du lore du Coeur",
-      description: "J'espère améliorer mon lore du Coeur.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_hearttograil",
-      label: "Subverting Heart lore to Grail",
-      description: "I am subverting my Heart lore to Grail lore.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_subvert_knock",
-      label: "Étendre ma connaissance du lore du Choc",
-      description: "J'espère améliorer mon lore du Choc.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_lantern",
-      label: "Étendre ma connaissance du lore de la Lanterne",
-      description: "J'espère améliorer mon lore de la Lanterne.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_lanterntoforge",
-      label: "Subverting Lantern lore to Forge",
-      description: "I am subverting my Lantern lore to Forge lore.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_moth",
-      label: "Étendre ma connaissance du lore du Phalène",
-      description: "J'espère améliorer mon lore du Phalène.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_mothtolantern",
-      label: "Subverting Moth lore to Lantern",
-      description: "I am subverting my Moth lore to Lantern lore",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_secrethistories",
-      label: "Étendre ma connaissance du lore des Histoires Secrètes",
-      description: "J'espère améliorer mon lore des Histoires Secrètes.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_upgrade_winter",
-      label: "Étendre ma connaissance du lore de l'Hiver",
-      description: "J'espère améliorer mon lore de l'Hiver.",
-      aspects: {},
-      lifetime: 1
-    },
-    {
-      id: "project_subvert_wintertoheart",
-      label: "Subverting Winter lore to Heart",
-      description: "I am subverting my Winter lore to Heart lore",
-      aspects: {},
-      lifetime: 1
-    }
-  ]
+{"elements":
+    [
+	{id: "project_upgrade_edge",
+	label: "Étendre ma connaissance du lore de la Lisière",
+	description: "J'espère améliorer mon lore de la Lisière.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_edgetowinter",
+	label: "Subverting Lisière to Hiver",
+	description: "I am acknowledging the victory of patience over strength, subverting my Lisière lore to Hiver lore.",
+	aspects: {},
+	lifetime:1
+	},
+	
+	
+		{id: "project_upgrade_forge",
+	label: "Étendre ma connaissance du lore de la Forge",
+	description: "J'espère améliorer mon lore de la Forge.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_forgetoedge",
+	label: "Subverting Forge to Lisière",
+	description: "I am subverting my Forge lore to Lisière lore.",
+	aspects: {},
+	lifetime:1
+	},
+	
+	
+	
+			{id: "project_upgrade_grail",
+	label: "Étendre ma connaissance du lore du Graal",
+	description: "J'espère améliorer mon lore du Graal.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_grailtomoth",
+	label: "Subverting Grail lore to Moth",
+	description: "I am subverting my Grail lore to Moth lore.",
+	aspects: {},
+	lifetime:1
+	},
+	
+	
+	
+			{id: "project_upgrade_heart",
+	label: "Étendre ma connaissance du lore du Coeur",
+	description: "J'espère améliorer mon lore du Coeur.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_hearttograil",
+		label: "Subverting Heart lore to Grail",
+	description: "I am subverting my Heart lore to Grail lore.",
+	aspects: {},
+	lifetime:1
+	},
+	
+	
+			{id: "project_upgrade_subvert_knock",
+	label: "Étendre ma connaissance du lore du Choc",
+	description: "J'espère améliorer mon lore du Choc.",
+	aspects: {},
+	lifetime:1
+	},	
+	
+	
+	
+			{id: "project_upgrade_lantern",
+	label: "Étendre ma connaissance du lore de la Lanterne",
+	description: "J'espère améliorer mon lore de la Lanterne.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_lanterntoforge",
+		label: "Subverting Lantern lore to Forge",
+	description: "I am subverting my Lantern lore to Forge lore.",
+	aspects: {},
+	lifetime:1
+	},
+	
+	
+	
+	
+			{id: "project_upgrade_moth",
+	label: "Étendre ma connaissance du lore du Phalène",
+	description: "J'espère améliorer mon lore du Phalène.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_mothtolantern",
+	label: "Subverting Moth lore to Lantern",
+	description: "I am subverting my Moth lore to Lantern lore",
+	aspects: {},
+	lifetime:1	
+	},
+	
+	
+	
+	
+				{id: "project_upgrade_secrethistories",
+	label: "Étendre ma connaissance du lore des Histoires Secrètes",
+	description: "J'espère améliorer mon lore des Histoires Secrètes.",
+	aspects: {},
+	lifetime:1
+	},	
+	
+	
+	
+				{id: "project_upgrade_winter",
+	label: "Étendre ma connaissance du lore de l'Hiver",
+	description: "J'espère améliorer mon lore de l'Hiver.",
+	aspects: {},
+	lifetime:1
+	},	
+		{id: "project_subvert_wintertoheart",
+	label: "Subverting Winter lore to Heart",
+	description: "I am subverting my Winter lore to Heart lore",
+	aspects: {},
+	lifetime:1
+	},
+]
 };

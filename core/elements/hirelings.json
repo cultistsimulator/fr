@@ -1,133 +1,67 @@
-{
-  "elements": [
-    {
-      id: "thugedgeminor",
-      label: "A Hulking Fellow",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        edge: 3
-      },
-      description: "'Je fais le travail.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
-      xtriggers: {
-        hiring: thugedgeminor,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    },
-    {
-      id: "thugmothminor",
-      label: "Une Femme Sournoise",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        moth: 3
-      },
-      description: "'Je fais le travail.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
-      xtriggers: {
-        hiring: thugmothminor,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    },
-    {
-      id: "thugedge",
-      label: "Professional Muscle",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        edge: 5
-      },
-      description: "'Je les briserai en deux.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
-      xtriggers: {
-        hiring: thugedge,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    },
-    {
-      id: "thugforgeedge",
-      label: "A Bomb-Maker",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        forge: 5,
-        edge: 3
-      },
-      description: "'Peut-être ne devrions-nous pas discuter poilitique..' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
-      xtriggers: {
-        hiring: thugforgeedge,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    },
-    {
-      id: "thugknock",
-      label: "An Entry Consultant",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        knock: 5
-      },
-      description: "'I'm good with doors. [Ce Larbin peut être utile pour certaines Expéditions.]'",
-      xtriggers: {
-        hiring: thugknock,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    },
-    {
-      id: "thuglanternmoth",
-      label: "Une Diseuse de Bonne Aventure",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        lantern: 5,
-        moth: 3
-      },
-      description: "'Je vois des choses Je vois que tu es différent.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
-      xtriggers: {
-        hiring: thuglanternmoth,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    },
-    {
-      id: "thugmoth",
-      label: "Un Escroc Expérimenté",
-      aspects: {
-        mortal: 1,
-        hireling: 1,
-        follower: 1,
-        moth: 5,
-        grail: 1
-      },
-      description: "'Quel ravissement de travailler avec vous !' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
-      xtriggers: {
-        hiring: thugmoth,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p
-      },
-      lifetime: 120
-    }
-  ]
+{"elements":
+    [
+				 {
+        id: "thugedgeminor",
+            label: "A Hulking Fellow",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,edge:3},
+              description: "'Je fais le travail.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
+			xtriggers: {hiring: thugedgeminor,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+			 {
+        id: "thugmothminor",
+            label: "Une Femme Sournoise",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,moth:3},
+              description: "'Je fais le travail.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
+			xtriggers: {hiring: thugmothminor,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+						 {
+        id: "thugedge",
+            label: "Professional Muscle",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,edge:5},
+              description: "'Je les briserai en deux.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
+			xtriggers: {hiring: thugedge,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+		 {
+        id: "thugforgeedge",
+            label: "A Bomb-Maker",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,forge:5,edge:3},
+            description: "'Peut-être ne devrions-nous pas discuter poilitique..' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
+			xtriggers: {hiring:thugforgeedge,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+				 {
+        id: "thugknock",
+            label: "An Entry Consultant",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,knock:5},
+            description: "'I'm good with doors. [Ce Larbin peut être utile pour certaines Expéditions.]'",
+			xtriggers: {hiring:thugknock,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+				 {
+        id: "thuglanternmoth",
+            label: "Une Diseuse de Bonne Aventure",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,lantern:5,moth:3},
+            description: "'Je vois des choses Je vois que tu es différent.' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
+			xtriggers: {hiring:thuglanternmoth,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+						 {
+        id: "thugmoth",
+            label: "Un Escroc Expérimenté",
+            aspects:
+            {mortal: 1,hireling:1,follower:1,moth:5,grail:1},
+            description: "'Quel ravissement de travailler avec vous !' [Ce Larbin peut être utile pour certaines Expéditions, et peut aider avec les Enquêteurs et les Agacements.]",
+			xtriggers: {hiring:thugmoth,killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p},
+			lifetime:120
+        },
+		]
 };

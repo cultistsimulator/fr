@@ -1,51 +1,40 @@
-{
-  "elements": [
-    {
-      id: "mystique",
-      label: "Mystique",
-      aspects: {
-        reputation: 1
-      },
-      description: "Ils se souviennent de qui je suis. [Mystique peut attirer l'attention des Enquêteurs. Ils ne peuvent pas l'utiliser pour monter un dossier contre vous, mais cela les encouragera à chercher activement.]",
-      lifetime: 300
-    },
-    {
-      id: "notoriety",
-      label: "Notoriété",
-      aspects: {
-        reputation: 2
-      },
-      description: "Ils se souviennent de ce que j'ai fait. [La Notoriété peut permettre aux Enquêteurs de monter un dossier contre vous.]",
-      lifetime: 300,
-      xtriggers: {
-        scandalous: notoriety
-      }
-    },
-    {
-      id: "evidence",
-      aspects: {
-        evidencelevel: 1
-      },
-      label: "Preuves Provisoires",
-      description: "Un Enquêteur a trouvé des Preuves - réelles ou imaginaires - de mes péchés. [Les Enquêteurs avec des Preuves deviennent plus dangereux. Les Preuves peuvent survivre à la mort de l'Enquêteur qui les a créées.]",
-      xtriggers: {
-        investigatingsuccess: evidenceb,
-        investigatingsetback: notoriety
-      },
-      lifetime: 600
-    },
-    {
-      id: "evidenceb",
-      aspects: {
-        evidencelevel: 2
-      },
-      label: "Preuves Accablantes",
-      description: "'Earth, gape!  O, no, it will not harbour me!' [Avec des Preuves Accablantes, le Bureau de la Répression pourra vous condamner. Les Preuves peuvent survivre à la mort de l'Enquêteur qui les a créées.]",
-      xtriggers: {
-        investigatingsetback: evidence
-      },
-      lifetime: 600,
-      decayTo: "evidence"
-    }
-  ]
+{"elements":
+    [
+
+	 {
+            id: "mystique",
+            label: "Mystique",
+            aspects: {reputation: 1},
+            description: "Ils se souviennent de qui je suis. [Mystique peut attirer l'attention des Enquêteurs. Ils ne peuvent pas l'utiliser pour monter un dossier contre vous, mais cela les encouragera à chercher activement.]",
+		lifetime: 300
+        },
+							 {
+            id: "notoriety",
+            label: "Notoriété",
+            aspects:
+            {reputation: 2},
+            description: "Ils se souviennent de ce que j'ai fait. [La Notoriété peut permettre aux Enquêteurs de monter un dossier contre vous.]",
+	lifetime: 300,
+	xtriggers:{scandalous:notoriety}
+        },
+									 {
+            id: "evidence",
+			aspects:{evidencelevel:1},
+            label: "Preuves Provisoires",
+            description: "Un Enquêteur a trouvé des Preuves - réelles ou imaginaires - de mes péchés. [Les Enquêteurs avec des Preuves deviennent plus dangereux. Les Preuves peuvent survivre à la mort de l'Enquêteur qui les a créées.]",
+						xtriggers:{investigatingsuccess:evidenceb,investigatingsetback:notoriety},
+						lifetime: 600,
+			
+        },
+											 {
+            id: "evidenceb",
+			aspects:{evidencelevel:2},
+            label: "Preuves Accablantes",
+            description: "'Earth, gape!  O, no, it will not harbour me!' [Avec des Preuves Accablantes, le Bureau de la Répression pourra vous condamner. Les Preuves peuvent survivre à la mort de l'Enquêteur qui les a créées.]",
+			xtriggers:{investigatingsetback:evidence},
+			lifetime: 600,
+			decayTo: "evidence"
+        },
+
+]
 };

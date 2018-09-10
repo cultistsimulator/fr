@@ -1,802 +1,137 @@
-{
-  "elements": [
-    {
-      id: "skillhealtha",
-      label: "Aptitude: un Physique Renforcé",
-      aspects: {
-        healthskill: 1,
-        ability: 1
-      },
-      description: "Ces exercices m'ont été bénéfiques. [Utilisez ceci avec quatre Vitalités pour obtenir plus de Santé.]",
-      slots: [
-        {
-          id: "Health",
-          actionId: "work",
-          description: "Je dois consacrer mon énergie à ceci..",
-          required: {
-            health: 1
-          }
-        },
-        {
-          id: "V1",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à devenir plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V2",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à devenir plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V3",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à devenir plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V4",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à devenir plus fort ?",
-          actionId: "study"
-        }
-      ],
-      xtriggers: {
-        careeradvancement: skillhealthb
-      }
-    },
-    {
-      id: "skillhealthb",
-      label: "Aptitude: un Physique Endurci",
-      description: "Je suis devenu fort comme un forgeron ou un soldat.",
-      xtriggers: {
-        careeradvancement: skillhealthc
-      },
-      aspects: {
-        healthskill: 2,
-        ability: 1
-      },
-      slots: [
-        {
-          id: "Health",
-          actionId: "work",
-          description: "Je dois consacrer mon énergie à ceci.",
-          required: {
-            health: 1
-          }
-        },
-        {
-          id: "V1",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Dois-je devenir encore plus fort ? [Utilisez ceci avec six Vitalités pour obtenir plus de Santé.]",
-          actionId: "study"
-        },
-        {
-          id: "V2",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Dois-je devenir encore plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V3",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Dois-je devenir encore plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V4",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Dois-je devenir encore plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V5",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Dois-je devenir encore plus fort ?",
-          actionId: "study"
-        },
-        {
-          id: "V6",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Dois-je devenir encore plus fort ?",
-          actionId: "study"
-        }
-      ]
-    },
-    {
-      id: "skillhealthc",
-      label: "Aptitude: Un Physique d'Acier",
-      description: "Je pourrais broyer à présent bien des choses.",
-      aspects: {
-        healthskill: 3,
-        ability: 1
-      },
-      slots: [
-        {
-          id: "Health",
-          actionId: "work",
-          description: "Je dois consacrer mon énergie à ceci..",
-          required: {
-            health: 1
-          }
-        },
-        {
-          id: "V1",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still? [Utilisez ceci avec huit Vitalités pour obtenir plus de Santé.]",
-          actionId: "study"
-        },
-        {
-          id: "V2",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        },
-        {
-          id: "V3",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        },
-        {
-          id: "V4",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        },
-        {
-          id: "V5",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        },
-        {
-          id: "V6",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        },
-        {
-          id: "V7",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        },
-        {
-          id: "V8",
-          actionId: "study",
-          label: "Vitality",
-          required: {
-            vitality: 1
-          },
-          consumes: true,
-          description: "Could I grow healthier still?",
-          actionId: "study"
-        }
-      ]
-    },
-    {
-      id: "skillreasona",
-      label: "Aptitude: Scholarship",
-      aspects: {
-        reasonskill: 1,
-        ability: 1
-      },
-      description: "Je déborde de citations savantes. [Utilisez ceci avec quatre Éruditions pour obtenir plus de Raison.]",
-      slots: [
-        {
-          id: "e1",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Dois-je emmagasiner plus de connaissances à mon intellect ?",
-          actionId: "study"
-        },
-        {
-          id: "e2",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Dois-je emmagasiner plus de connaissances à mon intellect ?",
-          actionId: "study"
-        },
-        {
-          id: "e3",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Dois-je emmagasiner plus de connaissances à mon intellect ?",
-          actionId: "study"
-        },
-        {
-          id: "e4",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Dois-je emmagasiner plus de connaissances à mon intellect ?",
-          actionId: "study"
-        }
-      ],
-      xtriggers: {
-        careeradvancement: skillreasonb
-      }
-    },
-    {
-      id: "skillreasonb",
-      label: "Aptitude: Notable Scholarship",
-      description: "J'en ai suffisamment appris pour savoir que j'en sais si peu. [Utilisez ceci avec six Éruditions pour obtenir plus de Raison.]",
-      xtriggers: {
-        careeradvancement: skillreasonc
-      },
-      aspects: {
-        reasonskill: 2,
-        ability: 1
-      },
-      slots: [
-        {
-          id: "e1",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Pourrais-je apprendre encore plus ?",
-          actionId: "study"
-        },
-        {
-          id: "e2",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Pourrais-je apprendre encore plus ?",
-          actionId: "study"
-        },
-        {
-          id: "e3",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Pourrais-je apprendre encore plus ?",
-          actionId: "study"
-        },
-        {
-          id: "e4",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Pourrais-je apprendre encore plus ?",
-          actionId: "study"
-        },
-        {
-          id: "e5",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Pourrais-je apprendre encore plus ?",
-          actionId: "study"
-        },
-        {
-          id: "e6",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Pourrais-je apprendre encore plus ?",
-          actionId: "study"
-        }
-      ]
-    },
-    {
-      id: "skillreasonc",
-      label: "Aptitude: Profound Scholarship",
-      description: "Mon crâne grince à chaque recoin de connaissances accumulées. [Utilisez ceci avec huit Éruditions pour obtenir plus de Raison.]",
-      aspects: {
-        reasonskill: 3,
-        ability: 1
-      },
-      slots: [
-        {
-          id: "e1",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e2",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e3",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e4",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e5",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e6",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e7",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        },
-        {
-          id: "e8",
-          label: "Erudition",
-          required: {
-            erudition: 1
-          },
-          consumes: true,
-          description: "Puis-je davantage affûter ma raison?",
-          actionId: "study"
-        }
-      ]
-    },
-    {
-      id: "skillpassiona",
-      label: "Aptitude: une Vive Imagination",
-      aspects: {
-        passionskill: 1,
-        ability: 1
-      },
-      description: "Mes rêverie surpassent parfois mes songes. [Utilisez la pour Peindre, ou pour l'Étude avec quatre Émerveillements pour obtenir plus de Passion.]",
-      slots: [
-        {
-          id: "G1",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à alimenter davantage mes passions?",
-          actionId: "study"
-        },
-        {
-          id: "G2",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à alimenter davantage mes passions?",
-          actionId: "study"
-        },
-        {
-          id: "G3",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à alimenter davantage mes passions?",
-          actionId: "study"
-        },
-        {
-          id: "G4",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Suis-je disposé à alimenter davantage mes passions?",
-          actionId: "study"
-        },
-        {
-          id: "painting1",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        },
-        {
-          id: "painting2",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        }
-      ],
-      xtriggers: {
-        careeradvancement: skillpassionb
-      }
-    },
-    {
-      id: "skillpassionb",
-      label: "Aptitude: une Imagination Débordante",
-      description: "Je suis connu pour casser six crayons par jour. [Utilisez la pour Peindre, ou pour l'Étude avec six Émerveillements pour obtenir plus de Passion.]",
-      xtriggers: {
-        careeradvancement: skillpassionc
-      },
-      aspects: {
-        passionskill: 2,
-        ability: 1
-      },
-      slots: [
-        {
-          id: "G1",
-          label: "Glimmering",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "What could I see, what could I be? [Utilisez ceci avec six Glimmering pour obtenir plus de Passion.]",
-          actionId: "study"
-        },
-        {
-          id: "G2",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "What could I see, what could I be?",
-          actionId: "study"
-        },
-        {
-          id: "G3",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "What could I see, what could I be?",
-          actionId: "study"
-        },
-        {
-          id: "G4",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "What could I see, what could I be?",
-          actionId: "study"
-        },
-        {
-          id: "G5",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "What could I see, what could I be?",
-          actionId: "study"
-        },
-        {
-          id: "G6",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "What could I see, what could I be?",
-          actionId: "study"
-        },
-        {
-          id: "painting1",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        },
-        {
-          id: "painting2",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        },
-        {
-          id: "painting3",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        }
-      ]
-    },
-    {
-      id: "skillpassionc",
-      label: "Aptitude: une Imagination Enfiévré",
-      description: "Les fantômes chevauchent mon esprit éveillé. [Utilisez la avec huit Émerveillements pour obtenir plus de Passion.]",
-      aspects: {
-        passionskill: 3,
-        ability: 1
-      },
-      slots: [
-        {
-          id: "G1",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent? [Utilisez la pour Peindre, ou pour l'Étude avec huit Glimmering pour obtenir plus de Passion.]",
-          actionId: "study"
-        },
-        {
-          id: "G2",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "G3",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "G4",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "G5",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "G6",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "G7",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "G8",
-          label: "Émerveillement",
-          required: {
-            glimmering: 1
-          },
-          consumes: true,
-          description: "Quelles furieuses visions subsistent?",
-          actionId: "study"
-        },
-        {
-          id: "painting1",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        },
-        {
-          id: "painting2",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        },
-        {
-          id: "painting3",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        },
-        {
-          id: "painting4",
-          label: "Art or Bread",
-          required: {
-            passion: 1,
-            mystique: 1,
-            notoriety: 1
-          },
-          description: "Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",
-          actionId: "work"
-        }
-      ]
-    }
-  ]
+{"elements":
+    [
+	{id: "skillhealtha",
+	label: "Aptitude: un Physique Renforcé",
+	aspects: {healthskill:1,ability:1},
+	description: "Ces exercices m'ont été bénéfiques. [Utilisez ceci avec quatre Vitalités pour obtenir plus de Santé.]",
+	slots:[{id:"Health",actionId:"work",description:"Je dois consacrer mon énergie à ceci..",required:{health:1}},
+	{id:"V1",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Suis-je disposé à devenir plus fort ?",actionId:"study"},
+	{id:"V2",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Suis-je disposé à devenir plus fort ?",actionId:"study"},
+	{id:"V3",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Suis-je disposé à devenir plus fort ?",actionId:"study"},
+	{id:"V4",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Suis-je disposé à devenir plus fort ?",actionId:"study"}
+	],
+	xtriggers:{careeradvancement:skillhealthb}
+	},
+		{id: "skillhealthb",
+	label: "Aptitude: un Physique Endurci",
+	description: "Je suis devenu fort comme un forgeron ou un soldat.",
+	xtriggers:{careeradvancement:skillhealthc},
+	aspects: {healthskill:2,ability:1},
+	slots:[
+		{id:"Health",actionId:"work",description:"Je dois consacrer mon énergie à ceci.",required:{health:1}},
+	{id:"V1",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Dois-je devenir encore plus fort ? [Utilisez ceci avec six Vitalités pour obtenir plus de Santé.]",actionId:"study"},
+	{id:"V2",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Dois-je devenir encore plus fort ?",actionId:"study"},
+	{id:"V3",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Dois-je devenir encore plus fort ?",actionId:"study"},
+	{id:"V4",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Dois-je devenir encore plus fort ?",actionId:"study"},
+	{id:"V5",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Dois-je devenir encore plus fort ?",actionId:"study"},
+	{id:"V6",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Dois-je devenir encore plus fort ?",actionId:"study"}
+	],
+	},	
+			{id: "skillhealthc",
+	label: "Aptitude: Un Physique d'Acier",
+	description: "Je pourrais broyer à présent bien des choses.",
+	aspects: {healthskill:3,ability:1},
+	slots:[
+	{id:"Health",actionId:"work",description:"Je dois consacrer mon énergie à ceci..",required:{health:1}},
+	{id:"V1",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still? [Utilisez ceci avec huit Vitalités pour obtenir plus de Santé.]",actionId:"study"},
+	{id:"V2",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	{id:"V3",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	{id:"V4",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	{id:"V5",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	{id:"V6",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	{id:"V7",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	{id:"V8",actionId:"study",label:"Vitality",required:{vitality:1},consumes:true,description:"Could I grow healthier still?",actionId:"study"},
+	],
+	},	
+	
+	
+		{id: "skillreasona",
+	label: "Aptitude: Scholarship",
+	aspects: {reasonskill:1,ability:1},
+	description: "Je déborde de citations savantes. [Utilisez ceci avec quatre Éruditions pour obtenir plus de Raison.]",
+	slots:[{id:"e1",label:"Erudition",required:{erudition:1},consumes:true,description:"Dois-je emmagasiner plus de connaissances à mon intellect ?",actionId:"study"},
+	{id:"e2",label:"Erudition",required:{erudition:1},consumes:true,description:"Dois-je emmagasiner plus de connaissances à mon intellect ?",actionId:"study"},
+	{id:"e3",label:"Erudition",required:{erudition:1},consumes:true,description:"Dois-je emmagasiner plus de connaissances à mon intellect ?",actionId:"study"},
+	{id:"e4",label:"Erudition",required:{erudition:1},consumes:true,description:"Dois-je emmagasiner plus de connaissances à mon intellect ?",actionId:"study"}
+	],
+	xtriggers:{careeradvancement:skillreasonb}
+	},
+		{id: "skillreasonb",
+	label: "Aptitude: Notable Scholarship",
+	description: "J'en ai suffisamment appris pour savoir que j'en sais si peu. [Utilisez ceci avec six Éruditions pour obtenir plus de Raison.]",
+	xtriggers:{careeradvancement:skillreasonc},
+	aspects: {reasonskill:2,ability:1},
+	slots:[{id:"e1",label:"Erudition",required:{erudition:1},consumes:true,description:"Pourrais-je apprendre encore plus ?",actionId:"study"},
+	{id:"e2",label:"Erudition",required:{erudition:1},consumes:true,description:"Pourrais-je apprendre encore plus ?",actionId:"study"},
+	{id:"e3",label:"Erudition",required:{erudition:1},consumes:true,description:"Pourrais-je apprendre encore plus ?",actionId:"study"},
+	{id:"e4",label:"Erudition",required:{erudition:1},consumes:true,description:"Pourrais-je apprendre encore plus ?",actionId:"study"},
+	{id:"e5",label:"Erudition",required:{erudition:1},consumes:true,description:"Pourrais-je apprendre encore plus ?",actionId:"study"},
+	{id:"e6",label:"Erudition",required:{erudition:1},consumes:true,description:"Pourrais-je apprendre encore plus ?",actionId:"study"}
+	],
+	},	
+			{id: "skillreasonc",
+	label: "Aptitude: Profound Scholarship",
+	description: "Mon crâne grince à chaque recoin de connaissances accumulées. [Utilisez ceci avec huit Éruditions pour obtenir plus de Raison.]",
+	aspects: {reasonskill:3,ability:1},
+	slots:[{id:"e1",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e2",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e3",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e4",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e5",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e6",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e7",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	{id:"e8",label:"Erudition",required:{erudition:1},consumes:true,description:"Puis-je davantage affûter ma raison?",actionId:"study"},
+	],
+	},	
+	
+	
+
+		{id: "skillpassiona",
+	label: "Aptitude: une Vive Imagination",
+	aspects: {passionskill:1,ability:1},
+	description: "Mes rêverie surpassent parfois mes songes. [Utilisez la pour Peindre, ou pour l'Étude avec quatre Émerveillements pour obtenir plus de Passion.]",
+	slots:[{id:"G1",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Suis-je disposé à alimenter davantage mes passions?",actionId:"study"},
+	{id:"G2",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Suis-je disposé à alimenter davantage mes passions?",actionId:"study"},
+	{id:"G3",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Suis-je disposé à alimenter davantage mes passions?",actionId:"study"},
+	{id:"G4",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Suis-je disposé à alimenter davantage mes passions?",actionId:"study"},
+{id:"painting1",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"},
+	{id:"painting2",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"}
+	],
+	xtriggers:{careeradvancement:skillpassionb}
+	},
+		{id: "skillpassionb",
+	label: "Aptitude: une Imagination Débordante",
+	description: "Je suis connu pour casser six crayons par jour. [Utilisez la pour Peindre, ou pour l'Étude avec six Émerveillements pour obtenir plus de Passion.]",
+	xtriggers:{careeradvancement:skillpassionc},
+	aspects: {passionskill:2,ability:1},
+	slots:[{id:"G1",label:"Glimmering",required:{glimmering:1},consumes:true,description:"What could I see, what could I be? [Utilisez ceci avec six Glimmering pour obtenir plus de Passion.]",actionId:"study"},
+	{id:"G2",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"What could I see, what could I be?",actionId:"study"},
+	{id:"G3",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"What could I see, what could I be?",actionId:"study"},
+	{id:"G4",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"What could I see, what could I be?",actionId:"study"},
+	{id:"G5",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"What could I see, what could I be?",actionId:"study"},
+	{id:"G6",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"What could I see, what could I be?",actionId:"study"},
+	{id:"painting1",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"},
+	{id:"painting2",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"},
+{id:"painting3",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"}	
+	],
+	},	
+			{id: "skillpassionc",
+	label: "Aptitude: une Imagination Enfiévré",
+	description: "Les fantômes chevauchent mon esprit éveillé. [Utilisez la avec huit Émerveillements pour obtenir plus de Passion.]",
+	aspects: {passionskill:3,ability:1},
+	slots:[{id:"G1",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent? [Utilisez la pour Peindre, ou pour l'Étude avec huit Glimmering pour obtenir plus de Passion.]",actionId:"study"},
+	{id:"G2",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"G3",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"G4",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"G5",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"G6",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"G7",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"G8",label:"Émerveillement",required:{glimmering:1},consumes:true,description:"Quelles furieuses visions subsistent?",actionId:"study"},
+	{id:"painting1",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"},
+	{id:"painting2",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"},
+	{id:"painting3",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"},
+{id:"painting4",label:"Art or Bread",required:{passion:1,mystique:1,notoriety:1},description:"Je peux user de Passion pour faire du meilleur travail ; ou si je dispose d'une réputation, je peux peindre quelque chose afin d'attirer l'attention..",actionId:"work"}	
+	],
+	},	
+]
 };

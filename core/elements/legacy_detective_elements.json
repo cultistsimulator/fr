@@ -1,134 +1,68 @@
-{
-  "elements": [
-    {
-      id: "legacydetectivejob",
-      label: "Poste d'Inspecteur",
-      description: "Je dispose d'un poste de senior dans la force de police de la capitale.",
-      aspects: {
-        job: 1
-      },
-      xtriggers: {
-        careeradvancement: legacydetectivejob_matured
-      }
-    },
-    {
-      id: "legacydetectivejob_matured",
-      label: "Poste d'Inspecteur",
-      description: "Je dispose d'un poste de senior dans la force de police de la capitale, quoique j'ai été détaché auprès du Bureau de la Répression.",
-      aspects: {
-        job: 1
-      },
-      slots: [
-        {
-          id: "target",
-          label: "Subject",
-          required: {
-            suspicious: 1
-          },
-          description: "Jusqu'à disposer de preuves, je dois commencer par observer directement ma proie",
-          actionId: "work"
+{"elements":
+    [
+			  
+	{id: "legacydetectivejob",
+	label: "Poste d'Inspecteur",
+	description: "Je dispose d'un poste de senior dans la force de police de la capitale.",
+	aspects: {job:1},
+	xtriggers: {careeradvancement:legacydetectivejob_matured}
+},
+{id: "legacydetectivejob_matured",
+	label: "Poste d'Inspecteur",
+	description: "Je dispose d'un poste de senior dans la force de police de la capitale, quoique j'ai été détaché auprès du Bureau de la Répression.",
+	aspects: {job:1},
+	slots:[{id:"target",label:"Subject",required:{suspicious:1},description:"Jusqu'à disposer de preuves, je dois commencer par observer directement ma proie",actionId:"work"},
+	{id:"meticulous",label:"Méticuleux",description:"Plus de Raison donnera à mon enquête une meilleure chance de succès.",required:{reason:1},actionId:"work"},
+	{id:"vigilant",label:"Vigilant",description:"Plus de Raison donnera à mon enquête une meilleure chance de succès.",required:{reason:1},actionId:"work"},
+	{id:"singleminded",label:"Déterminé", description:"Plus de Raison donnera à mon enquête une meilleure chance de succès..",required:{reason:1},actionId:"work"},],
+	xtriggers:{employment:legacydetectivejob_matured},
+	lifetime:90,
+	decayTo:"legacydetectivejob_suspended",
+	icon:"legacydetectivejob"
+	
+},
+
+{id: "legacydetectivejob_suspended",
+	label: "Inspecteur de Police [Suspendu]",
+	description: "Mon absence a été remarquée. J'ai été suspendu. [Plaidez rapidement votre cause, ou perdez votre poste à jamais.]",
+	slots:[{id:"passion",label:"Passion",required:{passion:1},actionId:"work"}],
+	aspects: {job:1},
+	xtriggers:{plead:legacydetectivejob_matured},
+	lifetime:90,
+	decayTo:"legacydetectivejob_disgraced"
+	},
+	
+	{id: "legacydetectivejob_disgraced",
+	label: "Inspecteur de Police [Disgraced]",
+	description: "J'ai perdu mon poste. J'ai peu de chance de le retrouver. je dois trouver ma propre voie dans le monde civil.",
+	lifetime:120,
+	decayTo:"mystique"
+	},
+{id: "legacydetective_plotitem",
+label: "Dossier Scellé du Bureau",
+aspects: {desire:1,text:1},
+description: "Un dossier sur l'énigmatique #PREVIOUSCHARACTERNAME#. Je l'ai scellé moi-même. Je connais trop bien son contenu. Si je devais les réexaminer, les rêves pourraient recommencer."},
+											 {
+            id: "myevidence",
+            label: "Preuves Provisoires",
+            description: "J'ai des preuves sur les activités de ma proie.",
+			lifetime:300,
+			aspects:{suspicious:1},
+			xtriggers:{investigatingsuccess:myevidenceb}
         },
-        {
-          id: "meticulous",
-          label: "Méticuleux",
-          description: "Plus de Raison donnera à mon enquête une meilleure chance de succès.",
-          required: {
-            reason: 1
-          },
-          actionId: "work"
+											 {
+            id: "myevidenceb",
+            label: "Preuves Accablantes",
+            description: "J'ai des preuves convaincantes sur les activités de ma proie.",
+			lifetime:300,
+			aspects:{suspicious:1}
         },
-        {
-          id: "vigilant",
-          label: "Vigilant",
-          description: "Plus de Raison donnera à mon enquête une meilleure chance de succès.",
-          required: {
-            reason: 1
-          },
-          actionId: "work"
-        },
-        {
-          id: "singleminded",
-          label: "Déterminé",
-          description: "Plus de Raison donnera à mon enquête une meilleure chance de succès..",
-          required: {
-            reason: 1
-          },
-          actionId: "work"
-        }
-      ],
-      xtriggers: {
-        employment: legacydetectivejob_matured
-      },
-      lifetime: 90,
-      decayTo: "legacydetectivejob_suspended",
-      icon: "legacydetectivejob"
-    },
-    {
-      id: "legacydetectivejob_suspended",
-      label: "Inspecteur de Police [Suspendu]",
-      description: "Mon absence a été remarquée. J'ai été suspendu. [Plaidez rapidement votre cause, ou perdez votre poste à jamais.]",
-      slots: [
-        {
-          id: "passion",
-          label: "Passion",
-          required: {
-            passion: 1
-          },
-          actionId: "work"
-        }
-      ],
-      aspects: {
-        job: 1
-      },
-      xtriggers: {
-        plead: legacydetectivejob_matured
-      },
-      lifetime: 90,
-      decayTo: "legacydetectivejob_disgraced"
-    },
-    {
-      id: "legacydetectivejob_disgraced",
-      label: "Inspecteur de Police [Disgraced]",
-      description: "J'ai perdu mon poste. J'ai peu de chance de le retrouver. je dois trouver ma propre voie dans le monde civil.",
-      lifetime: 120,
-      decayTo: "mystique"
-    },
-    {
-      id: "legacydetective_plotitem",
-      label: "Dossier Scellé du Bureau",
-      aspects: {
-        desire: 1,
-        text: 1
-      },
-      description: "Un dossier sur l'énigmatique #PREVIOUSCHARACTERNAME#. Je l'ai scellé moi-même. Je connais trop bien son contenu. Si je devais les réexaminer, les rêves pourraient recommencer."
-    },
-    {
-      id: "myevidence",
-      label: "Preuves Provisoires",
-      description: "J'ai des preuves sur les activités de ma proie.",
-      lifetime: 300,
-      aspects: {
-        suspicious: 1
-      },
-      xtriggers: {
-        investigatingsuccess: myevidenceb
-      }
-    },
-    {
-      id: "myevidenceb",
-      label: "Preuves Accablantes",
-      description: "J'ai des preuves convaincantes sur les activités de ma proie.",
-      lifetime: 300,
-      aspects: {
-        suspicious: 1
-      }
-    },
-    {
-      id: "legacydetective_plotitem_burning",
-      label: "Brûlant Dossier du Bureau",
-      description: "It's almost gone.",
-      lifetime: 10,
-      noartneeded: true
-    }
-  ]
+		
+{id: "legacydetective_plotitem_burning",
+label: "Brûlant Dossier du Bureau",
+description: "It's almost gone.",
+lifetime: 10,
+noartneeded:true
+}
+] 
 };

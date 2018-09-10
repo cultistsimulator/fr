@@ -1,1080 +1,1015 @@
-{
-  "elements": [
-    {
-      id: "acquaintance",
-      label: "Connaissance",
-      description: "Pas vraiment un(e) ami(e), mais pas non plus un(e) ennemi(e).",
-      isAspect: true
-    },
-    {
-      id: "independent",
-      label: "Franc-Tireur",
-      description: "Un étudiant des arts invisibles, avec son propre programme.",
-      isAspect: true
-    },
-    {
-      id: "follower",
-      label: "Acolyte",
-      description: "Étudiant, assistant, défenseur, champion, dupe, compagnon sacrifiable...",
-      isAspect: true
-    },
-    {
-      id: "hireling",
-      label: "Larbin",
-      description: "J'ai négocié ses services, pour un petit moment.",
-      isAspect: true
-    },
-    {
-      id: "disciple",
-      label: "Disciple",
-      description: "Un véritable initié aux mystères.",
-      isAspect: true
-    },
-    {
-      id: "exalted",
-      label: "Exalté",
-      description: "Celui-ci ne peut plus s'élever... du moins tant que je serais aux commandes.",
-      isAspect: true
-    },
-    {
-      id: "prisoner",
-      label: "Prisonnier",
-      description: "Une personne à ma merci.",
-      isAspect: true
-    },
-    {
-      id: "hunter",
-      label: "Enquêteur",
-      description: "Les lois de la civilisation sont bien juvéniles face aux Lois de the Hours, mais elles exigent parfois un sacrifice. Il s'agit d'un représentant de la loi.",
-      isAspect: true
-    },
-    {
-      id: "patron",
-      label: "Patron",
-      description: "Une figure notable des cercles dans lesquels je navigue.",
-      isAspect: true
-    },
-    {
-      id: "tutor",
-      label: "Tuteur",
-      description: "Dispose de connaissances de valeur.",
-      isAspect: true
-    },
-    {
-      id: "annoyance",
-      label: "Agacement",
-      description: "Une épine dans le pied. Je peux encore trouver un moyen de la retirer..",
-      isAspect: true
-    },
-    {
-      id: "edge",
-      label: "Lisière",
-      description: "Toute conquête survient à la Lisière. Celui qui y réside est aveugle et ne peut être blessé. Un autre est fort et devient plus fort. [La Lisière représente le principe de bataille et de lutte.]",
-      isAspect: true,
-      noartneeded: true
-    },
-    {
-      id: "forge",
-      label: "Forge",
-      description: "'Le Feu', ai-je déjà lu, 'est l'hiver qui réchauffe et la source qui consume.' [Le principe de la Forge transforme et détruit.]",
-      isAspect: true
-    },
-    {
-      id: "grail",
-      label: "Graal",
-      description: "La faim, la luxure, the drowning waters. [Le principe du Graal honore à la fois la naissance et le festin.]",
-      isAspect: true,
-      induces: [
+{"elements":
+    [
+   {
+            id: "acquaintance",
+            label: "Connaissance",
+			description: "Pas vraiment un(e) ami(e), mais pas non plus un(e) ennemi(e).",
+            isAspect: true
+        },
+		        {
+            id: "independent",
+            label: "Franc-Tireur",
+			description: "Un étudiant des arts invisibles, avec son propre programme.",
+            isAspect: true
+        }, 		
         {
-          id: "grailinduction",
-          chance: 5
-        }
-      ]
-    },
-    {
-      id: "heart",
-      label: "Cœur",
-      description: "Le Cœur bat Sans Relâche pour protéger la peau du monde que nous concevons. [Le Coeur représente le principe de la continuité et de la préservation.]",
-      isAspect: true,
-      induces: [
+            id: "follower",
+            label: "Acolyte",
+			description: "Étudiant, assistant, défenseur, champion, dupe, compagnon sacrifiable...",
+            isAspect: true
+        },       {
+            id: "hireling",
+            label: "Larbin",
+			description: "J'ai négocié ses services, pour un petit moment.",
+            isAspect: true
+        },
+		     {
+            id: "disciple",
+            label: "Disciple",
+			description: "Un véritable initié aux mystères.",
+            isAspect: true
+        },
+				     {
+            id: "exalted",
+            label: "Exalté",
+			description: "Celui-ci ne peut plus s'élever... du moins tant que je serais aux commandes.",
+            isAspect: true
+        },
+		        {
+            id: "prisoner",
+            label: "Prisonnier",
+			description: "Une personne à ma merci.",
+            isAspect: true
+        },
+		        {
+            id: "hunter",
+            label: "Enquêteur",
+			description: "Les lois de la civilisation sont bien juvéniles face aux Lois de the Hours, mais elles exigent parfois un sacrifice. Il s'agit d'un représentant de la loi.",
+            isAspect: true
+        },
+				        {
+            id: "patron",
+            label: "Patron",
+			description: "Une figure notable des cercles dans lesquels je navigue.",
+            isAspect: true
+        },
+						        {
+            id: "tutor",
+            label: "Tuteur",
+			description: "Dispose de connaissances de valeur.",
+            isAspect: true
+        },
+				        {
+            id: "annoyance",
+            label: "Agacement",
+			description: "Une épine dans le pied. Je peux encore trouver un moyen de la retirer..",
+            isAspect: true
+        },
         {
-          id: "heartinduction",
-          chance: 5
-        }
-      ]
-    },
-    {
-      id: "knock",
-      label: "Choc",
-      description: "Le Choc ne permet ni scellement ni isolement. Il nous pousse joyeusement en dehors de la sécurité de notre ignorance. [Le Choc représente le principe qui ouvre les portes et fracasse les obstacles.]",
-      isAspect: true
-    },
-    {
-      id: "lantern",
-      label: "Lanterne",
-      description: "'La Vie est une flamme pure, et nous vivons par un invisible Soleil en nous.' - Thomas Browne. [La Lanterne représente le principe du lieu secret parfois appelé la Maison du Soleil, et de la Lumière par-delà.]",
-      isAspect: true,
-      induces: [
+            id: "edge",
+            label: "Lisière",
+			description: "Toute conquête survient à la Lisière. Celui qui y réside est aveugle et ne peut être blessé. Un autre est fort et devient plus fort. [La Lisière représente le principe de bataille et de lutte.]",
+            isAspect: true,
+			noartneeded:true
+			},
         {
-          id: "lanterninduction",
-          chance: 5
-        }
-      ]
-    },
-    {
-      id: "moth",
-      label: "Phalène",
-      isAspect: true,
-      description: "J'ai connu un homme qui capturait des phalènes dans une cloche en verre. Les nuits comme celle-ci, il les relâchait une à une pour les faire mourir contre une bougie. [Le Phalène représente le sauvage et périlleux principe du chaos et du désir.]",
-      induces: [
+            id: "forge",
+            label: "Forge",
+			description: "'Le Feu', ai-je déjà lu, 'est l'hiver qui réchauffe et la source qui consume.' [Le principe de la Forge transforme et détruit.]",
+            isAspect: true
+        },
+		     
         {
-          id: "mothinduction",
-          chance: 5
-        }
-      ]
-    },
-    {
-      id: "secrethistories",
-      label: "Histoires Secrètes",
-      description: "L'Histoire est une cicatrice à la surface du monde. [Les Histoires Secrètes décrivent les complexités inconnues du monde et de ses nombreux passés.]",
-      isAspect: true
-    },
-    {
-      id: "winter",
-      label: "Hiver",
-      description: "... [L'Hiver représente le principe du silence, des fins, ainsi que des choses pas totalement mortes.]",
-      isAspect: true
-    },
-    {
-      id: "ability",
-      label: "Faculté",
-      isAspect: true,
-      description: "Un cerveau, un coeur, une main, ou un oeil. La plupart d'entre nous en sommes dotés à la naissance."
-    },
-    {
-      id: "advancement",
-      label: "Avancement",
-      isAspect: true,
-      description: "Un avant-goût de ce qui pourrait être. [Avec suffisamment de ces cartes, vous pouvez développer une Faculté.]"
-    },
-    {
-      id: "potential",
-      label: "Potentiel",
-      isAspect: true,
-      description: "La marque de la grandeur ? [Dans les bonnes circonstances, cet acolyte pourrait devenir bien plus puissant.]"
-    },
-    {
-      id: "job",
-      label: "Travail",
-      isAspect: true,
-      description: "Un arrangement pour échanger sa vie contre de l'argent."
-    },
-    {
-      id: "demotion",
-      label: "Rétrogradation",
-      isAspect: true,
-      description: "Je suis resté eloigné trop longtemps de mon emploi.."
-    },
-    {
-      id: "ritual",
-      label: "Rite",
-      isAspect: true,
-      description: "'Les bons éléments, de manière appropriée, dans le bon ordre. Et que Dieu nous protège. - attribué à Hersault. [Un Rite vous permet de combiner des aspects afin d'effectuer une invocation.]"
-    },
-    {
-      id: "society",
-      label: "Société",
-      isAspect: true,
-      description: "Pour recruter des croyants, il me faut construire quelque chose en quoi ils peuvent croire."
-    },
-    {
-      id: "ingredient",
-      label: "Ingrédient",
-      isAspect: true,
-      description: "Carburant, onguent, pigment, patience : tout se consomme en son temps."
-    },
-    {
-      id: "pigment",
-      label: "Pigment",
-      isAspect: true,
-      description: "Il est possible de l'appliquer à la toile."
-    },
-    {
-      id: "poison",
-      label: "Poison Mortel",
-      isAspect: true,
-      description: "Ne surtout pas le soumettre à une personne que vous souhaitez conserver."
-    },
-    {
-      id: "influence",
-      label: "Influence",
-      isAspect: true,
-      description: "Un écho, une résonance, un alignement. Quelque chose qui va bientôt s'estomper."
-    },
-    {
-      id: "tool",
-      label: "Outil",
-      isAspect: true,
-      description: "'Une épée qui ne tue pas, reste un instrument dans la main d'un tueur.' - Sénèque le Jeune"
-    },
-    {
-      id: "mirror",
-      label: "Un Miroir",
-      isAspect: true,
-      description: "Craqueler la peau de la lumière, et la lumière saignera."
-    },
-    {
-      id: "riddle",
-      label: "Énigme",
-      isAspect: true,
-      description: "Certaines questions n'ont qu'une seule réponse. D'autres en n'ont aucune."
-    },
-    {
-      id: "reputation",
-      label: "Réputation",
-      isAspect: true,
-      description: "'Beaucoup craignent leur réputation, peu en ont conscience.' - Pline"
-    },
-    {
-      id: "evidencelevel",
-      label: "Niveau de Preuve",
-      isAspect: true,
-      description: "Certaines formes de preuve sont plus fortes que d'autres."
-    },
-    {
-      id: "suspicious",
-      label: "Soupçonneux",
-      isAspect: true,
-      description: "Un détective peut vouloir enquêter sur ceci."
-    },
-    {
-      id: "healthskill",
-      label: "Force",
-      isAspect: true,
-      description: "Je suis fort de jour comme de nuit. [Cela peut permettre une meilleure performance dans un travail manuel.]"
-    },
-    {
-      id: "passionskill",
-      label: "Imagination",
-      isAspect: true,
-      description: "Mon crâne est submergé de visions. [Cela peut vous permettre de créer de plus ambitieuses peintures.]"
-    },
-    {
-      id: "reasonskill",
-      label: "Savoir",
-      isAspect: true,
-      description: "Je suis un pilier de sagesses. [Cela vous permet actuellement d'accroitre davantage votre Raison.]"
-    },
-    {
-      id: "way",
-      label: "Voie",
-      isAspect: true,
-      description: "I've learnt a way through the Bounds, to the Wood and the House that rises above it."
-    },
-    {
-      id: "desire",
-      label: "Désir",
-      isAspect: true,
-      description: "Mon objectif ultime. Il y aura un prix."
-    },
-    {
-      id: "powermarks",
-      label: "Les Marques du Façonnement",
-      isAspect: true,
-      description: "Je peux chercher l'immortalité et le pouvoir dans the Hour appelée la Forge des Temps. Son contact apporte des appétits particuliers, ainsi que des Marques."
-    },
-    {
-      id: "sensationmarks",
-      label: "Les Marques du Délice",
-      isAspect: true,
-      description: "Je peux chercher l'immortalité et me délecter de the Hour appelée le Graal Rouge. Son contact apporte des appétits particuliers, ainsi que des Marques."
-    },
-    {
-      id: "enlightenmentmarks",
-      label: "Les Marques de Lumière",
-      isAspect: true,
-      description: "Je peux chercher l'immortalité et l'illumination dans the Hour appelée le Veilleur. Son contact apporte des appétits particuliers, ainsi que des Marques."
-    },
-    {
-      id: "ascend",
-      label: "Ascendant",
-      isAspect: true,
-      description: "Vers la prochaine Marque.",
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "descend",
-      label: "Descendant",
-      isAspect: true,
-      description: "Si je n'alimente pas mes nouveaux appétits, mes Marques s'estomperont..",
-      noartneeded: true,
-      comments: "Recette d'aspect"
-    },
-    {
-      id: "article",
-      label: "Article",
-      isAspect: true,
-      description: "Un travail original sur un sujet particulier."
-    },
-    {
-      id: "text",
-      label: "Texte",
-      isAspect: true,
-      description: "Les Livres sont la mémoire qui ne peut mourir."
-    },
-    {
-      id: "autographed",
-      label: "Dédicacé",
-      isAspect: true,
-      description: "Marqué par son créateur."
-    },
-    {
-      id: "lore",
-      label: "Lore",
-      isAspect: true,
-      description: "Un Savoir des arts invisibles. Je peux l'utiliser pour attirer des acolytes, effectuer des rites, ouvrir la voie du Mansus, chercher mon ascension ... [Les fragments de Lore peuvent parfois être améliorés avec l'Étude, et à l'aide de fragments concordants.]"
-    },
-    {
-      id: "language",
-      label: "Une Langue",
-      isAspect: true,
-      description: "Fort utile pour traduire des textes."
-    },
-    {
-      id: "tutorlatin",
-      label: "Érudit en Latin",
-      isAspect: true,
-      description: "Un érudit qui pourrait m'accompagner dans mon étude du Latin."
-    },
-    {
-      id: "tutorgreek",
-      label: "Érudit en Grec ancien",
-      isAspect: true,
-      description: "Un érudit qui pourrait m'accompagner dans mon étude du Grec ancien."
-    },
-    {
-      id: "tutoraramaic",
-      label: "Érudit en Araméen",
-      isAspect: true,
-      description: "Un érudit qui pourrait m'accompagner dans mon étude de l'Araméen."
-    },
-    {
-      id: "spirittutorfucine",
-      label: "Interlocuteur Fucin",
-      isAspect: true,
-      description: "Cet esprit peut vous enseigner le Fucin, du moins si vous connaissez une langue apparentée."
-    },
-    {
-      id: "spirittutorphrygian",
-      label: "Interlocuteur Phrygien",
-      isAspect: true,
-      description: "Cet esprit peut vous enseigner le Phrygien, du moins si vous connaissez une langue apparentée."
-    },
-    {
-      id: "spirittutormandaic",
-      label: "Interlocuteur Mandéen",
-      isAspect: true,
-      description: "Cet esprit peut vous enseigner le Mandéen profond, du moins si vous connaissez une langue apparentée."
-    },
-    {
-      id: "auctionable",
-      label: "Enchère Possible",
-      description: "Je pourrais le mettre aux ench_res, même si la valeur d'une enchère est toujours incertaine.",
-      isAspect: true
-    },
-    {
-      id: "compensationvalue",
-      label: "Spintria de Valeur",
-      description: "Les Spintriae sont la monnaie du monde caché. Certaines spintriae valent plus que d'autres. Mais n'espérez pas trouver un bureau de change ni l'intérêt de votre épicier.",
-      isAspect: true
-    },
-    {
-      id: "hq",
-      label: "Quartier Général",
-      description: "Pour converser et se réunir.",
-      isAspect: true
-    },
-    {
-      id: "location",
-      label: "Lieu",
-      description: "Des emplacements! Tout doit bien se trouver quelque part, et cela commence ici.",
-      isAspect: true
-    },
-    {
-      id: "vaultcapital",
-      label: "Dans la Capitale",
-      description: "Un lieu secret dans le centre grouillant de la capitale où je réside.",
-      isAspect: true
-    },
-    {
-      id: "vaultshires",
-      label: "A la Campagne",
-      description: "Champs verdoyants et grises collines.",
-      isAspect: true
-    },
-    {
-      id: "vaultcontinent",
-      label: "Sur le Continent",
-      description: "De l'autre côté de la Manche, dans les coins insoupçonnés des nations rivales.",
-      isAspect: true
-    },
-    {
-      id: "vaultlandbeyondforest",
-      label: "Dans les Terres au-delà de la Forêt",
-      description: "Un col embrumé et des villages isolés, où la peau du monde est fine.",
-      isAspect: true
-    },
-    {
-      id: "vaultrendingmountains",
-      label: "Dans les Montagnes Tranchantes",
-      description: "Des flancs d'ocre, des pics enneigés, loin de toute aide.",
-      isAspect: true
-    },
-    {
-      id: "vaultloneandlevelsands",
-      label: "Les Sables Isolés et Nivelés",
-      description: "Dans un lieu aride et lointain, et des dunes à perte de vue.",
-      isAspect: true
-    },
-    {
-      id: "vaulteveningisles",
-      label: "Parmi les Evening Isles",
-      description: "Wave-washed chains of rocky islands vibrant with green life.",
-      isAspect: true
-    },
-    {
-      id: "peril",
-      label: "Péril",
-      description: "Un obstacle, un danger ou une conclusion prématurée.",
-      isAspect: true
-    },
-    {
-      id: "curse",
-      label: "Malédiction",
-      description: "Une influence maligne doit être vaincue.",
-      isAspect: true
-    },
-    {
-      id: "guardian",
-      label: "Guardien",
-      description: "Une entitée qui a été chargée d'en interdire l'accès.",
-      isAspect: true
-    },
-    {
-      id: "seal",
-      label: "Sceau",
-      description: "Votre progression est entravée.",
-      isAspect: true
-    },
-    {
-      id: "vault",
-      label: "Caveau",
-      description: "Quelque chose de précieux se trouve ici",
-      isAspect: true
-    },
-    {
-      id: "summoned",
-      label: "Invoqué",
-      description: "N'est pas d'ici.",
-      isAspect: true
-    },
-    {
-      id: "illhealth",
-      label: "Mauvaise Santé",
-      description: "Peut-être que je peux me reposer, et récupérer.",
-      isAspect: true
-    },
-    {
-      id: "inducesdespair",
-      label: "Induit le Désespoir",
-      description: "Peut provoquer mon désespoir.",
-      isAspect: true
-    },
-    {
-      id: "inducesvisions",
-      label: "Induit des Visions",
-      description: "Je peux voir des choses.",
-      isAspect: true
-    },
-    {
-      id: "commissiongiven",
-      label: "Commission Donnée",
-      description: "Une tâche attend votre attention.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "commissionfulfilled",
-      label: "Commission Effectuée",
-      description: "Vous avez terminé une tâche.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "recruiting",
-      label: "Recrutement",
-      description: "Pour voir la lumière, on ne peut être aveugle.. mais, parfois, c'est la lumière qui nous aveugle.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "hiring",
-      label: "Embauche",
-      description: "Prolonger les services d'un larbin.",
-      isAspect: true,
-      comments: "Recette d'aspect. Utilisé pour réembaucher des larbins.",
-      noartneeded: true
-    },
-    {
-      id: "promotiontodisciple",
-      label: "Promotion",
-      description: "Il est temps de prêter les plus profonds serments.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_edge",
-      label: "Exaltation : Lisière",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_forge",
-      label: "Exaltation : Forge",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_grail",
-      label: "Exaltation : Graal",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_heart",
-      label: "Exaltation : Coeur",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recipe aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_knock",
-      label: "Exaltation : Choc",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_lantern",
-      label: "Exaltation : Lanterne",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_moth",
-      label: "Exaltation : Phalène",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "promotionto_d_winter",
-      label: "Exaltation : Hiver",
-      description: "Les véritables mystères de notre vénération.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "fatiguing",
-      label: "Un engagement a été pris",
-      description: "Il s'est produit quelque chose.",
-      isAspect: true,
-      comments: "Recette d'aspect ; runs to fatigue stats, or to convert situation-invested elements into a form that won't keep triggering a recipe that wants more of them (eg reason in Research, funds in bidding).",
-      noartneeded: true
-    },
-    {
-      id: "exhaustlocation",
-      label: "Emplacement Épuisé",
-      description: "Un emplacement a été épuisé et ne sera pas réouvert, à moins d'être explicitement renouvelé.",
-      isAspect: true,
-      noartneeded: true
-    },
-    {
-      id: "restore",
-      label: "Rien ne s'est produit",
-      description: "Tout est resté tel quel.",
-      isAspect: true,
-      comments: "Recette d'aspect ; runs when an situation fails to convert situation control elements back to their originals.",
-      noartneeded: true
-    },
-    {
-      id: "decline",
-      label: "Déclin",
-      description: "Something is Ending",
-      isAspect: true,
-      comments: "Recette d'aspect ; runs when we want to decay something like an investment.",
-      noartneeded: true
-    },
-    {
-      id: "restorehealth",
-      label: "Restaurer la Santé",
-      description: "Health will return.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "damagehealth",
-      label: "Nocif pour la Santé",
-      description: "La santé sera blessée.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "fallsick",
-      label: "Tomber Malade",
-      description: "Transforme la santé en maladie ; cela peut potentiellement affecter les personnes.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "destroyhealth",
-      label: "Détruit la Santé",
-      description: "La santé sera détruite.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "damagereason",
-      label: "Nocif pour la Raison",
-      description: "Transforme la Raison en Terreur.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "toreason",
-      label: "En Raison",
-      description: "...deviendra de la Raison.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "topassion",
-      label: "En Passion",
-      description: "...deviendra de la Passion.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "tohealth",
-      label: "En Santé",
-      description: "...deviendra de la Santé.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "dreadful",
-      label: "Épouvantable",
-      description: "Risque de susciter de la Terreur.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true,
-      induces: [
+            id: "grail",
+            label: "Graal",
+			description: "La faim, la luxure, the drowning waters. [Le principe du Graal honore à la fois la naissance et le festin.]",
+        isAspect: true,
+			induces:[{id:"grailinduction",chance:5}]
+        },
         {
-          id: "dreadinduction",
-          chance: 30
-        }
-      ]
+            id: "heart",
+            label: "Cœur",
+			description: "Le Cœur bat Sans Relâche pour protéger la peau du monde que nous concevons. [Le Coeur représente le principe de la continuité et de la préservation.]",
+            isAspect: true,
+			induces:[{id:"heartinduction",chance:5}]
+        },
+		        {
+            id: "knock",
+            label: "Choc",
+			description: "Le Choc ne permet ni scellement ni isolement. Il nous pousse joyeusement en dehors de la sécurité de notre ignorance. [Le Choc représente le principe qui ouvre les portes et fracasse les obstacles.]",
+            isAspect: true
+        },
+			 {
+            id: "lantern",
+            label: "Lanterne",
+			description: "'La Vie est une flamme pure, et nous vivons par un invisible Soleil en nous.' - Thomas Browne. [La Lanterne représente le principe du lieu secret parfois appelé la Maison du Soleil, et de la Lumière par-delà.]",
+            isAspect: true,
+			induces:[{id:"lanterninduction",chance:5}]
+        },
+		        {
+        id: "moth",
+        label: "Phalène",
+        isAspect: true,
+		description: "J'ai connu un homme qui capturait des phalènes dans une cloche en verre. Les nuits comme celle-ci, il les relâchait une à une pour les faire mourir contre une bougie. [Le Phalène représente le sauvage et périlleux principe du chaos et du désir.]",
+			induces:[{id:"mothinduction",chance:5}]
     },
-    {
-      id: "fascinating",
-      label: "Fascinant",
-      description: "Risque de susciter de la Fascination.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true,
-      induces: [
+	        {
+            id: "secrethistories",
+            label: "Histoires Secrètes",
+			        description: "L'Histoire est une cicatrice à la surface du monde. [Les Histoires Secrètes décrivent les complexités inconnues du monde et de ses nombreux passés.]",
+            isAspect: true
+        },
+
+		        {
+            id: "winter",
+            label: "Hiver",
+			description: "... [L'Hiver représente le principe du silence, des fins, ainsi que des choses pas totalement mortes.]",
+            isAspect: true
+        },
+								{
+            id: "ability",
+            label: "Faculté",
+            isAspect: true,
+			description: "Un cerveau, un coeur, une main, ou un oeil. La plupart d'entre nous en sommes dotés à la naissance."
+        },
+										{
+            id: "advancement",
+            label: "Avancement",
+            isAspect: true,
+			description: "Un avant-goût de ce qui pourrait être. [Avec suffisamment de ces cartes, vous pouvez développer une Faculté.]"
+        },
+												{
+            id: "potential",
+            label: "Potentiel",
+            isAspect: true,
+			description: "La marque de la grandeur ? [Dans les bonnes circonstances, cet acolyte pourrait devenir bien plus puissant.]"
+        },
+						{
+            id: "job",
+            label: "Travail",
+            isAspect: true,
+			description: "Un arrangement pour échanger sa vie contre de l'argent."
+        },
+								{
+            id: "demotion",
+            label: "Rétrogradation",
+            isAspect: true,
+			description: "Je suis resté eloigné trop longtemps de mon emploi.."
+        },
+		{
+            id: "ritual",
+            label: "Rite",
+            isAspect: true,
+			description: "'Les bons éléments, de manière appropriée, dans le bon ordre. Et que Dieu nous protège. - attribué à Hersault. [Un Rite vous permet de combiner des aspects afin d'effectuer une invocation.]"
+        },
+				{
+            id: "society",
+            label: "Société",
+            isAspect: true,
+			description: "Pour recruter des croyants, il me faut construire quelque chose en quoi ils peuvent croire."
+        },
+		        {
+            id: "ingredient",
+            label: "Ingrédient",
+            isAspect: true,
+			description: "Carburant, onguent, pigment, patience : tout se consomme en son temps."
+        },
+				        {
+            id: "pigment",
+            label: "Pigment",
+            isAspect: true,
+			description: "Il est possible de l'appliquer à la toile."
+        },
+				        {
+            id: "poison",
+            label: "Poison Mortel",
+            isAspect: true,
+			description: "Ne surtout pas le soumettre à une personne que vous souhaitez conserver."
+        },
+				        {
+            id: "influence",
+            label: "Influence",
+            isAspect: true,
+			description: "Un écho, une résonance, un alignement. Quelque chose qui va bientôt s'estomper."
+        },
         {
-          id: "fascinationinduction",
-          chance: 30
-        }
-      ]
-    },
-    {
-      id: "damagepassion",
-      label: "Nocif pour la Passion",
-      description: "Transforme la Passion en Fascination.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "killmortal",
-      label: "Kill Mortal",
-      description: "Les mortels seront remplacés par des cadavres",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "rebellion",
-      label: "Rébellion",
-      description: "Acolytes devenant des Rivaux",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "endannoyance",
-      label: "Fin des Ennuis",
-      description: "Les ennuis tels que les patrons difficiles seront solutionnés.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "careeradvancement",
-      label: "Évolution",
-      description: "Une promotion ou une amélioration de compétences",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "derangemortal",
-      label: "Mortel Aliéné",
-      description: "Mortals will be replaced by Lunatics",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "capturehunter",
-      label: "Capture Hunter",
-      description: "Hunters will be imprisoned.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "killhunter",
-      label: "Kill Hunter",
-      description: "Hunters will become corpses.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "capturefollower",
-      label: "Capture Follower",
-      description: "Followers will be imprisoned.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "restorepassion",
-      label: "Restore Passion",
-      description: "Passion will be clarified.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "plead",
-      label: "Plaider",
-      description: "Mercy may be shown.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "employment",
-      label: "Emploi",
-      description: "J'ai fait une journée de travail.",
-      isAspect: true,
-      comments: "Recette d'aspect. Refreshes job timers and fatigues stats",
-      noartneeded: true
-    },
-    {
-      id: "scandalous",
-      label: "Scandalous",
-      description: "I won't be easily forgotten.",
-      isAspect: true,
-      comments: "Recette d'aspect. Refreshes reputation timers.",
-      noartneeded: true
-    },
-    {
-      id: "epiphany",
-      label: "Epiphany",
-      description: "Ma compréhension s'accroît.",
-      isAspect: true,
-      comments: "Recette d'aspect. Upgrades lore.",
-      noartneeded: true
-    },
-    {
-      id: "depiphany",
-      label: "Depiphany",
-      description: "Je comprends les choses plus simplement dorénavant.",
-      isAspect: true,
-      comments: "Recette d'aspect. Downgrades and splits lore.",
-      noartneeded: true
-    },
-    {
-      id: "investigatingsuccess",
-      label: "Succès de l'enquête",
-      description: "Upgrades des Preuves.",
-      isAspect: true,
-      comments: "Recette d'aspect.",
-      noartneeded: true
-    },
-    {
-      id: "investigatingsetback",
-      label: "Investigation Setback",
-      description: "Downgrades des Preuves.",
-      isAspect: true,
-      comments: Recette
-      d
-      'aspect.",
-      noartneeded: true
-    },
-    {
-      id: "crackmirror",
-      label: "Crack MirrorS",
-      description: "Mirrors will enter their cracked state.",
-      isAspect: true,
-      comments: "Recette d'aspect",
-      noartneeded: true
-    },
-    {
-      id: "mortal",
-      label: "Mortel",
-      description: "'La longue habitude de vivre ne nous prédispose pas à mourir.' - Thomas Browne",
-      isAspect: true
-    },
-    {
-      id: "commission",
-      label: "Commission",
-      description: "An opportunity for profit. I should complete this and return it to a patron.",
-      isAspect: true
-    },
-    {
-      id: "benign",
-      label: "Bonne Fortune Absolue",
-      description: "How lucky I have been.",
-      isAspect: true
-    },
-    {
-      id: "malign",
-      label: "Une Laideur",
-      description: "Something unwelcome.",
-      isAspect: true
-    },
-    {
-      id: "season",
-      label: "Saison",
-      description: "Quelque chose d'actualité se produira, bientôt",
-      isAspect: true,
-      comments: "identifies card draws for Time seasonal events"
-    },
-    {
-      id: "devourer",
-      label: "Dévoreur",
-      description: "S'il se libère, il pourrait vous attaquer, ou dévorer vos acolytes.",
-      isAspect: true
-    },
-    {
-      id: "deceiver",
-      label: "Deceiver",
-      description: "S'il se libère, il pourrait vous conduire, vous et vos acolytes, à la folie.",
-      isAspect: true
-    },
-    {
-      id: "mystic",
-      label: "Mystique",
-      description: "Cet Enquêteur survit généralement aux attaques de créatures du Mansus, même lors d'une attaque imparable.",
-      isAspect: true
-    },
-    {
-      id: "brilliant",
-      label: "Brillant",
-      description: "Ces Enquêteurs trouvent un sens aux moindres détails. Ils peuvent convertir directement de la Notoriété en Preuves Accablantes.",
-      noartneeded: true,
-      isAspect: true
-    },
-    {
-      id: "erratic",
-      label: "Erratique",
-      description: "Cet Enquêteur échoue régulièrement à regrouper des Preuves depuis une Notoriété. Inversement, ils leur arrivent de créer des Preuves même sans avoir trouvé de Notoriété.",
-      isAspect: true
-    },
-    {
-      id: "meticulous",
-      label: "Méticuleux",
-      description: "Cet Enquêteur réussit toujours à regrouper des Preuves depuis une Notoriété.",
-      isAspect: true
-    },
-    {
-      id: "tenacious",
-      label: "Tenace",
-      description: "Cet Enquêteur peut survivre à une agression physique une fois sur trois, même lors d'une attaque imparable.",
-      isAspect: true
-    },
-    {
-      id: "grim",
-      label: "Grim",
-      description: "Les Lugubres Enquêteurs ne peuvent pas être influencés par les attraits de la Gloire... mais leur propre désespoir peut les détruire.",
-      isAspect: true
-    },
-    {
-      id: "idealist",
-      label: "Idéaliste",
-      description: "Les Idéalistes ne peuvent pas être démoralisés - même si parfois leurs idéaux peuvent se retourner contre eux.",
-      isAspect: true
-    },
-    {
-      id: "venerationedge",
-      label: "Vénération: Lisière",
-      description: "This organisation venerates the principle called Lisière, which we call upon in the name of the Colonel and the Lionsmith... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationforge",
-      label: "Vénération: Forge",
-      description: "This organisation venerates the principle called Forge, which we call upon in the name of the Forge of Days herself and the Madrugad... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationgrail",
-      label: "Vénération: Graal",
-      description: "This organisation venerates the principle called Grail, which we call upon in the name of the Red Grail herself and the Sister-and-Witch... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationheart",
-      label: "Vénération: Coeur",
-      description: "This organisation venerates the principle called Heart, which we call upon in the name of the Thunderskin and the Velvet... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationknock",
-      label: "Vénération: Choc",
-      description: "This organisation venerates the principle called Knock, which we call upon in the name of the Mother of Ants and the Meniscate... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationlantern",
-      label: "Vénération: Lanterne",
-      description: "This organisation venerates the principle called Lantern, which we call upon in the name of the Door-in-the-Eye and the Flowermaker... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationmoth",
-      label: "Vénération: Phalène",
-      description: "This organisation venerates the principle called Moth, which we call upon in the name of the Moth himself and the Witch-and-Sister... among others.",
-      isAspect: true
-    },
-    {
-      id: "venerationwinter",
-      label: "Vénération: Hiver",
-      description: "This organisation venerates the principle called Winter, which we call upon in the name of the Sun-in-Rags and the Horned Axe... among others.",
-      isAspect: true
-    },
-    {
-      id: "textlatin",
-      label: "Écrit en Latin",
-      aspects: {
-        language: 1
-      },
-      description: "Une langue morte : morte comme les diamants. [Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    },
-    {
-      id: "textfucine",
-      label: "Écrit en Fucin",
-      aspects: {
-        language: 1
-      },
-      description: "Un peuple qui vivait à l'est du lac disparu Fucino. Horace mettait en garde qu'ils étaient le pays des sorcières. C'était leur langue, appelée par certains 'la langue sèche' et par d'autres 'la langue des sorcières'.[Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    },
-    {
-      id: "textgreek",
-      label: "Écrit en Grec ancien",
-      aspects: {
-        language: 1
-      },
-      description: "Une langue pour philosophes, théologiens et héros. [Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    },
-    {
-      id: "textphrygian",
-      label: "Écrit en Phrygien",
-      aspects: {
-        language: 1
-      },
-      description: "Les Phrygiens vénéraient la Great Mother, que nous appelons le Graal. C'est dans leur pays qu'est née la Sororité du Noeud, et c'est dans leur langue que the Thunderskin pleaded, at his ascension. [Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    },
-    {
-      id: "textaramaic",
-      label: "Écrit en Araméen",
-      aspects: {
-        language: 1
-      },
-      description: "La langue d'Aram, et de tous ses innombrables enfants de ces trois mille dernières années et plus. [Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    },
-    {
-      id: "textmandaic",
-      label: "Écrit en Deep Mandaic",
-      aspects: {
-        language: 1
-      },
-      description: "The most secret script of the innermost rites of the deep sects of the deep desert. The birth-tongue, it is claimed, of the Mother of Ants herself. [Some books must be translated before they can be read.]",
-      isAspect: true
-    },
-    {
-      id: "textsanskrit",
-      label: "Écrit en Sanskrit",
-      aspects: {
-        language: 1
-      },
-      description: "La sainte langue du Sous-continent Indien. Quatre mille ans de poésies, de cérémonies et de mystères s'ouvrent à vous dorénavant, du moins si vous pouvez vous débattre au travers des circonvolutions de lotus qui forment son vocabulaire. [Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    },
-    {
-      id: "textvak",
-      label: "Écrit en Vak",
-      aspects: {
-        language: 1
-      },
-      description: "Before gods arose from blood, before ever ape stood upright, this was the language heard in the House of the Sun. [Certains livres doivent être traduits avant de pouvoir être lus.]",
-      isAspect: true
-    }
-  ]
+            id: "tool",
+            label: "Outil",
+            isAspect: true,
+			description: "'Une épée qui ne tue pas, reste un instrument dans la main d'un tueur.' - Sénèque le Jeune"
+        },
+		        {
+            id: "mirror",
+            label: "Un Miroir",
+            isAspect: true,
+			description: "Craqueler la peau de la lumière, et la lumière saignera."
+        },
+		{
+		id: "riddle",
+		label: "Énigme",
+		isAspect: true,
+		description: "Certaines questions n'ont qu'une seule réponse. D'autres en n'ont aucune."
+		},
+		
+		 {
+            id: "reputation",
+            label: "Réputation",
+            isAspect: true,
+			description: "'Beaucoup craignent leur réputation, peu en ont conscience.' - Pline"
+        },
+				 {
+            id: "evidencelevel",
+            label: "Niveau de Preuve",
+            isAspect: true,
+			description: "Certaines formes de preuve sont plus fortes que d'autres."
+        },
+						 {
+            id: "suspicious",
+            label: "Soupçonneux",
+            isAspect: true,
+			description: "Un détective peut vouloir enquêter sur ceci."
+        },
+						 {
+            id: "healthskill",
+            label: "Force",
+            isAspect: true,
+			description: "Je suis fort de jour comme de nuit. [Cela peut permettre une meilleure performance dans un travail manuel.]"
+        },
+								 {
+            id: "passionskill",
+            label: "Imagination",
+            isAspect: true,
+			description: "Mon crâne est submergé de visions. [Cela peut vous permettre de créer de plus ambitieuses peintures.]"
+        },
+										 {
+            id: "reasonskill",
+            label: "Savoir",
+            isAspect: true,
+			description: "Je suis un pilier de sagesses. [Cela vous permet actuellement d'accroitre davantage votre Raison.]"
+        },
+		{id: "way",
+		label: "Voie",
+		isAspect: true,
+		description: "I've learnt a way through the Bounds, to the Wood and the House that rises above it."
+		},
+			{id: "desire",
+		label: "Désir",
+		isAspect: true,
+		description: "Mon objectif ultime. Il y aura un prix."
+		},
+				{id: "powermarks",
+		label: "Les Marques du Façonnement",
+		isAspect: true,
+		description: "Je peux chercher l'immortalité et le pouvoir dans the Hour appelée la Forge des Temps. Son contact apporte des appétits particuliers, ainsi que des Marques."
+		},
+						{id: "sensationmarks",
+		label: "Les Marques du Délice",
+		isAspect: true,
+		description: "Je peux chercher l'immortalité et me délecter de the Hour appelée le Graal Rouge. Son contact apporte des appétits particuliers, ainsi que des Marques."
+		},
+						{id: "enlightenmentmarks",
+		label: "Les Marques de Lumière",
+		isAspect: true,
+		description: "Je peux chercher l'immortalité et l'illumination dans the Hour appelée le Veilleur. Son contact apporte des appétits particuliers, ainsi que des Marques."
+		},
+		{id:"ascend",
+		label: "Ascendant",
+		isAspect:true,
+		description: "Vers la prochaine Marque.",
+		comments: "Recette d'aspect",
+			noartneeded: true
+		},
+		{id:"descend",
+		label: "Descendant",
+		isAspect:true,
+		description: "Si je n'alimente pas mes nouveaux appétits, mes Marques s'estomperont..",
+			noartneeded: true,
+		comments: "Recette d'aspect"},
+		
+				{
+            id: "article",
+            label: "Article",
+            isAspect: true,
+			description: "Un travail original sur un sujet particulier."
+        },
+		{
+            id: "text",
+            label: "Texte",
+            isAspect: true,
+			description: "Les Livres sont la mémoire qui ne peut mourir."
+        },
+				{
+            id: "autographed",
+            label: "Dédicacé",
+            isAspect: true,
+			description: "Marqué par son créateur."
+        },
+		{
+            id: "lore",
+            label: "Lore",
+            isAspect: true,
+			description: "Un Savoir des arts invisibles. Je peux l'utiliser pour attirer des acolytes, effectuer des rites, ouvrir la voie du Mansus, chercher mon ascension ... [Les fragments de Lore peuvent parfois être améliorés avec l'Étude, et à l'aide de fragments concordants.]"
+        },
+				{
+            id: "language",
+            label: "Une Langue",
+            isAspect: true,
+			description: "Fort utile pour traduire des textes."
+        },
+						{
+            id: "tutorlatin",
+            label: "Érudit en Latin",
+            isAspect: true,
+		description: "Un érudit qui pourrait m'accompagner dans mon étude du Latin."
+        },
+						{
+            id: "tutorgreek",
+            label: "Érudit en Grec ancien",
+            isAspect: true,
+		description: "Un érudit qui pourrait m'accompagner dans mon étude du Grec ancien."
+        },
+								{
+            id: "tutoraramaic",
+            label: "Érudit en Araméen",
+            isAspect: true,
+			description: "Un érudit qui pourrait m'accompagner dans mon étude de l'Araméen."
+        },
+										{
+            id: "spirittutorfucine",
+            label: "Interlocuteur Fucin",
+            isAspect: true,
+			description: "Cet esprit peut vous enseigner le Fucin, du moins si vous connaissez une langue apparentée."
+        },
+		
+		{
+            id: "spirittutorphrygian",
+            label: "Interlocuteur Phrygien",
+            isAspect: true,
+			description: "Cet esprit peut vous enseigner le Phrygien, du moins si vous connaissez une langue apparentée."
+        },
+		
+		{
+            id: "spirittutormandaic",
+            label: "Interlocuteur Mandéen",
+            isAspect: true,
+			description: "Cet esprit peut vous enseigner le Mandéen profond, du moins si vous connaissez une langue apparentée."
+        },
+								        {
+            id: "auctionable",
+            label: "Enchère Possible",
+			description: "Je pourrais le mettre aux ench_res, même si la valeur d'une enchère est toujours incertaine.",
+            isAspect: true
+        },
+						        {
+            id: "compensationvalue",
+            label: "Spintria de Valeur",
+			description: "Les Spintriae sont la monnaie du monde caché. Certaines spintriae valent plus que d'autres. Mais n'espérez pas trouver un bureau de change ni l'intérêt de votre épicier.",
+            isAspect: true
+        },
+		        {
+            id: "hq",
+            label: "Quartier Général",
+			description: "Pour converser et se réunir.",
+        isAspect: true
+},
+        {
+            id: "location",
+            label: "Lieu",
+			description: "Des emplacements! Tout doit bien se trouver quelque part, et cela commence ici.",
+        isAspect: true
+},
+       {
+            id: "vaultcapital",
+            label: "Dans la Capitale",
+			description: "Un lieu secret dans le centre grouillant de la capitale où je réside.",
+        isAspect: true
+},
+      {
+            id: "vaultshires",
+            label: "A la Campagne",
+			description: "Champs verdoyants et grises collines.",
+        isAspect: true
+},
+      {
+	     id: "vaultcontinent",
+   label: "Sur le Continent",
+			description: "De l'autre côté de la Manche, dans les coins insoupçonnés des nations rivales.",
+        isAspect: true
+},
+      {
+            id: "vaultlandbeyondforest",
+            label: "Dans les Terres au-delà de la Forêt",
+			description: "Un col embrumé et des villages isolés, où la peau du monde est fine.",
+        isAspect: true
+},
+
+     {
+            id: "vaultrendingmountains",
+            label: "Dans les Montagnes Tranchantes",
+			description: "Des flancs d'ocre, des pics enneigés, loin de toute aide.",
+        isAspect: true
+},
+
+     {
+            id: "vaultloneandlevelsands",
+            label: "Les Sables Isolés et Nivelés",
+			description: "Dans un lieu aride et lointain, et des dunes à perte de vue.",
+        isAspect: true
+},
+
+     {
+            id: "vaulteveningisles",
+            label: "Parmi les Evening Isles",
+			description: "Wave-washed chains of rocky islands vibrant with green life.",
+        isAspect: true
+},
+       {
+            id: "peril",
+            label: "Péril",
+			description: "Un obstacle, un danger ou une conclusion prématurée.",
+        isAspect: true
+},
+      {
+            id: "curse",
+            label: "Malédiction",
+			description: "Une influence maligne doit être vaincue.",
+        isAspect: true
+},
+      {
+            id: "guardian",
+            label: "Guardien",
+			description: "Une entitée qui a été chargée d'en interdire l'accès.",
+        isAspect: true
+},
+      {
+            id: "seal",
+            label: "Sceau",
+			description: "Votre progression est entravée.",
+        isAspect: true
+},
+      {
+            id: "vault",
+            label: "Caveau",
+			description: "Quelque chose de précieux se trouve ici",
+        isAspect: true
+},
+
+
+        {
+            id: "summoned",
+            label: "Invoqué",
+			description: "N'est pas d'ici.",
+            isAspect: true
+        },
+		    {
+            id: "illhealth",
+            label: "Mauvaise Santé",
+			description: "Peut-être que je peux me reposer, et récupérer.",
+            isAspect: true
+        },
+		
+		 {
+            id: "inducesdespair",
+            label: "Induit le Désespoir",
+			description: "Peut provoquer mon désespoir.",
+            isAspect: true
+        },
+						 {
+            id: "inducesvisions",
+            label: "Induit des Visions",
+			description: "Je peux voir des choses.",
+            isAspect: true
+        },
+				 {
+            id: "commissiongiven",
+            label: "Commission Donnée",
+			description: "Une tâche attend votre attention.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+						 {
+            id: "commissionfulfilled",
+            label: "Commission Effectuée",
+			description: "Vous avez terminé une tâche.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+		 {
+            id: "recruiting",
+            label: "Recrutement",
+			description: "Pour voir la lumière, on ne peut être aveugle.. mais, parfois, c'est la lumière qui nous aveugle.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+		{
+            id: "hiring",
+            label: "Embauche",
+			description: "Prolonger les services d'un larbin.",
+            isAspect: true,
+			comments: "Recette d'aspect. Utilisé pour réembaucher des larbins.",
+			noartneeded: true
+        },
+		{
+            id: "promotiontodisciple",
+            label: "Promotion",
+			description: "Il est temps de prêter les plus profonds serments.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_edge",
+            label: "Exaltation : Lisière",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+			 {
+            id: "promotionto_d_forge",
+            label: "Exaltation : Forge",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_grail",
+            label: "Exaltation : Graal",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_heart",
+            label: "Exaltation : Coeur",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recipe aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_knock",
+            label: "Exaltation : Choc",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_lantern",
+            label: "Exaltation : Lanterne",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_moth",
+            label: "Exaltation : Phalène",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "promotionto_d_winter",
+            label: "Exaltation : Hiver",
+			description: "Les véritables mystères de notre vénération.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "fatiguing",
+            label: "Un engagement a été pris",
+			description: "Il s'est produit quelque chose.",
+            isAspect: true,
+			comments: "Recette d'aspect ; runs to fatigue stats, or to convert situation-invested elements into a form that won't keep triggering a recipe that wants more of them (eg reason in Research, funds in bidding).",
+			noartneeded: true
+        },
+							 {
+            id: "exhaustlocation",
+            label: "Emplacement Épuisé",
+			description: "Un emplacement a été épuisé et ne sera pas réouvert, à moins d'être explicitement renouvelé.",
+            isAspect: true,
+			noartneeded: true
+        },
+			 {
+            id: "restore",
+            label: "Rien ne s'est produit",
+			description: "Tout est resté tel quel.",
+            isAspect: true,
+			comments: "Recette d'aspect ; runs when an situation fails to convert situation control elements back to their originals.",
+			noartneeded: true
+        },
+					 {
+            id: "decline",
+            label: "Déclin",
+			description: "Something is Ending",
+            isAspect: true,
+			comments: "Recette d'aspect ; runs when we want to decay something like an investment.",
+			noartneeded: true
+        },
+				 {
+            id: "restorehealth",
+            label: "Restaurer la Santé",
+			description: "Health will return.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+		
+						 {
+            id: "damagehealth",
+            label: "Nocif pour la Santé",
+			description: "La santé sera blessée.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+							 {
+            id: "fallsick",
+            label: "Tomber Malade",
+			description: "Transforme la santé en maladie ; cela peut potentiellement affecter les personnes.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+								 {
+            id: "destroyhealth",
+            label: "Détruit la Santé",
+			description: "La santé sera détruite.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+								 {
+            id: "damagereason",
+            label: "Nocif pour la Raison",
+			description: "Transforme la Raison en Terreur.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+										 {
+            id: "toreason",
+            label: "En Raison",
+			description: "...deviendra de la Raison.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+					 {
+            id: "topassion",
+            label: "En Passion",
+			description: "...deviendra de la Passion.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+							 {
+            id: "tohealth",
+            label: "En Santé",
+			description: "...deviendra de la Santé.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+										 {
+            id: "dreadful",
+            label: "Épouvantable",
+			description: "Risque de susciter de la Terreur.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true,			
+			induces:[{id:"dreadinduction",chance:30}]
+        },
+												 {
+            id: "fascinating",
+            label: "Fascinant",
+			description: "Risque de susciter de la Fascination.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true,			
+			induces:[{id:"fascinationinduction",chance:30}]
+        },
+										 {
+            id: "damagepassion",
+            label: "Nocif pour la Passion",
+			description: "Transforme la Passion en Fascination.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+		
+						 {
+            id: "killmortal",
+            label: "Kill Mortal",
+			description: "Les mortels seront remplacés par des cadavres",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+								 {
+            id: "rebellion",
+            label: "Rébellion",
+			description: "Acolytes devenant des Rivaux",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+								 {
+            id: "endannoyance",
+            label: "Fin des Ennuis",
+			description: "Les ennuis tels que les patrons difficiles seront solutionnés.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+										 {
+            id: "careeradvancement",
+            label: "Évolution",
+			description: "Une promotion ou une amélioration de compétences",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+								 {
+            id: "derangemortal",
+            label: "Mortel Aliéné",
+			description: "Mortals will be replaced by Lunatics",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },								 {
+            id: "capturehunter",
+            label: "Capture Hunter",
+			description: "Hunters will be imprisoned.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+				 {
+            id: "killhunter",
+            label: "Kill Hunter",
+			description: "Hunters will become corpses.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+									 {
+            id: "capturefollower",
+            label: "Capture Follower",
+			description: "Followers will be imprisoned.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded: true
+        },
+		
+				 {
+            id: "restorepassion",
+            label: "Restore Passion",
+			description: "Passion will be clarified.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded:true
+        },
+						 {
+            id: "plead",
+            label: "Plaider",
+			description: "Mercy may be shown.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded:true
+        },
+								 {
+            id: "employment",
+            label: "Emploi",
+			description: "J'ai fait une journée de travail.",
+            isAspect: true,
+			comments: "Recette d'aspect. Refreshes job timers and fatigues stats",
+			noartneeded:true
+        },
+										 {
+            id: "scandalous",
+            label: "Scandalous",
+			description: "I won't be easily forgotten.",
+            isAspect: true,
+			comments: "Recette d'aspect. Refreshes reputation timers.",
+			noartneeded:true
+        },
+										 {
+            id: "epiphany",
+            label: "Epiphany",
+			description: "Ma compréhension s'accroît.",
+            isAspect: true,
+			comments: "Recette d'aspect. Upgrades lore.",
+			noartneeded:true
+        },
+												 {
+            id: "depiphany",
+            label: "Depiphany",
+			description: "Je comprends les choses plus simplement dorénavant.",
+            isAspect: true,
+			comments: "Recette d'aspect. Downgrades and splits lore.",
+			noartneeded:true
+        },
+										 {
+            id: "investigatingsuccess",
+            label: "Succès de l'enquête",
+			description: "Upgrades des Preuves.",
+            isAspect: true,
+			comments: "Recette d'aspect.",
+			noartneeded:true
+        },
+												 {
+            id: "investigatingsetback",
+            label: "Investigation Setback",
+			description: "Downgrades des Preuves.",
+            isAspect: true,
+			comments: Recette d'aspect.",
+			noartneeded:true
+        },
+						 {
+            id: "crackmirror",
+            label: "Crack MirrorS",
+			description: "Mirrors will enter their cracked state.",
+            isAspect: true,
+			comments: "Recette d'aspect",
+			noartneeded:true
+        },
+		{
+            id: "mortal",
+            label: "Mortel",
+			description: "'La longue habitude de vivre ne nous prédispose pas à mourir.' - Thomas Browne",
+            isAspect: true
+        },
+		{
+            id: "commission",
+            label: "Commission",
+			description: "An opportunity for profit. I should complete this and return it to a patron.",
+            isAspect: true
+        },
+		{id: "benign",
+		label: "Bonne Fortune Absolue",
+		description: "How lucky I have been.",
+		isAspect: true
+		},
+				{id: "malign",
+		label: "Une Laideur",
+		description: "Something unwelcome.",
+		isAspect: true
+		},
+		{id:"season",
+		label:"Saison",
+		description: "Quelque chose d'actualité se produira, bientôt",
+		isAspect: true,
+		comments:"identifies card draws for Time seasonal events" 
+		},
+		{id: "devourer",
+		label: "Dévoreur",
+		description: "S'il se libère, il pourrait vous attaquer, ou dévorer vos acolytes.",
+		isAspect: true
+		},
+	{id: "deceiver",
+		label: "Deceiver",
+		description: "S'il se libère, il pourrait vous conduire, vous et vos acolytes, à la folie.",
+		isAspect: true
+		},
+		{id:"mystic",
+		label:"Mystique",
+		description:"Cet Enquêteur survit généralement aux attaques de créatures du Mansus, même lors d'une attaque imparable.",
+		isAspect:true},
+		{id:"brilliant",
+		label:"Brillant",
+		description:"Ces Enquêteurs trouvent un sens aux moindres détails. Ils peuvent convertir directement de la Notoriété en Preuves Accablantes.",
+		noartneeded:true,
+		isAspect:true},
+		
+		{id:"erratic",
+		label:"Erratique",
+		description:"Cet Enquêteur échoue régulièrement à regrouper des Preuves depuis une Notoriété. Inversement, ils leur arrivent de créer des Preuves même sans avoir trouvé de Notoriété.",
+		isAspect:true},
+		
+		{id:"meticulous",
+		label:"Méticuleux",
+		description:"Cet Enquêteur réussit toujours à regrouper des Preuves depuis une Notoriété.",
+		isAspect:true},
+		
+		{id:"tenacious",
+		label:"Tenace",
+		description:"Cet Enquêteur peut survivre à une agression physique une fois sur trois, même lors d'une attaque imparable.",
+		isAspect:true},
+				{id:"grim",
+		label:"Grim",
+		description:"Les Lugubres Enquêteurs ne peuvent pas être influencés par les attraits de la Gloire... mais leur propre désespoir peut les détruire.",
+		isAspect:true},
+						{id:"idealist",
+		label:"Idéaliste",
+		description:"Les Idéalistes ne peuvent pas être démoralisés - même si parfois leurs idéaux peuvent se retourner contre eux.",
+		isAspect:true},
+
+			{id: "venerationedge",
+		label: "Vénération: Lisière",
+		description: "This organisation venerates the principle called Lisière, which we call upon in the name of the Colonel and the Lionsmith... among others.",
+		isAspect: true
+		},
+					{id: "venerationforge",
+		label: "Vénération: Forge",
+		description: "This organisation venerates the principle called Forge, which we call upon in the name of the Forge of Days herself and the Madrugad... among others.",
+		isAspect: true
+		},
+					{id: "venerationgrail",
+		label: "Vénération: Graal",
+		description: "This organisation venerates the principle called Grail, which we call upon in the name of the Red Grail herself and the Sister-and-Witch... among others.",
+		isAspect: true
+		},
+					{id: "venerationheart",
+		label: "Vénération: Coeur",
+		description: "This organisation venerates the principle called Heart, which we call upon in the name of the Thunderskin and the Velvet... among others.",
+		isAspect: true
+		},
+					{id: "venerationknock",
+		label: "Vénération: Choc",
+		description: "This organisation venerates the principle called Knock, which we call upon in the name of the Mother of Ants and the Meniscate... among others.",
+		isAspect: true
+		},
+					{id: "venerationlantern",
+		label: "Vénération: Lanterne",
+		description: "This organisation venerates the principle called Lantern, which we call upon in the name of the Door-in-the-Eye and the Flowermaker... among others.",
+		isAspect: true
+		},
+							{id: "venerationmoth",
+		label: "Vénération: Phalène",
+		description: "This organisation venerates the principle called Moth, which we call upon in the name of the Moth himself and the Witch-and-Sister... among others.",
+		isAspect: true
+		},
+					{id: "venerationwinter",
+		label: "Vénération: Hiver",
+		description: "This organisation venerates the principle called Winter, which we call upon in the name of the Sun-in-Rags and the Horned Axe... among others.",
+		isAspect: true
+		},
+				{
+		id: "textlatin",
+		label: "Écrit en Latin",
+		aspects: {language:1},
+		description: "Une langue morte : morte comme les diamants. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+					{
+		id: "textfucine",
+		label: "Écrit en Fucin",
+		aspects: {language:1},
+		description: "Un peuple qui vivait à l'est du lac disparu Fucino. Horace mettait en garde qu'ils étaient le pays des sorcières. C'était leur langue, appelée par certains 'la langue sèche' et par d'autres 'la langue des sorcières'.[Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+				{
+		id: "textgreek",
+		label: "Écrit en Grec ancien",
+		aspects: {language:1},
+		description: "Une langue pour philosophes, théologiens et héros. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+					{
+		id: "textphrygian",
+		label: "Écrit en Phrygien",
+		aspects: {language:1},
+		description: "Les Phrygiens vénéraient la Great Mother, que nous appelons le Graal. C'est dans leur pays qu'est née la Sororité du Noeud, et c'est dans leur langue que the Thunderskin pleaded, at his ascension. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+						{
+		id: "textaramaic",
+		label: "Écrit en Araméen",
+		aspects: {language:1},
+		description: "La langue d'Aram, et de tous ses innombrables enfants de ces trois mille dernières années et plus. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+							{
+		id: "textmandaic",
+		label: "Écrit en Deep Mandaic",
+		aspects: {language:1},
+		description: "The most secret script of the innermost rites of the deep sects of the deep desert. The birth-tongue, it is claimed, of the Mother of Ants herself. [Some books must be translated before they can be read.]",
+		isAspect:true
+		},
+									{
+		id: "textsanskrit",
+		label: "Écrit en Sanskrit",
+		aspects: {language:1},
+		description: "La sainte langue du Sous-continent Indien. Quatre mille ans de poésies, de cérémonies et de mystères s'ouvrent à vous dorénavant, du moins si vous pouvez vous débattre au travers des circonvolutions de lotus qui forment son vocabulaire. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+									{
+		id: "textvak",
+		label: "Écrit en Vak",
+		aspects: {language:1},
+		description: "Before gods arose from blood, before ever ape stood upright, this was the language heard in the House of the Sun. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		isAspect:true
+		},
+		
+]
 }

@@ -1,108 +1,96 @@
-{
-  "recipes": [
-    {
-      id: "vitalityhintdream",
-      label: "Vitalité",
-      actionId: "dream",
-      requirements: {
-        vitality: 1
-      },
-      startdescription: "Ceci ne suscite pas de rêves; mais je pourrais l'Étudier pour augmenter ma Santé.",
-      craftable: false,
-      hintonly: true,
-      comments: "Not currently possible with restrictions on Dream primary slot"
+ {"recipes":
+ [
+     			{
+        id: "vitalityhintdream",
+        label: "Vitalité",
+        actionId: "dream",
+        requirements: {vitality:1},
+        startdescription: "Ceci ne suscite pas de rêves; mais je pourrais l'Étudier pour augmenter ma Santé.",
+        craftable: false,
+		hintonly: true,
+		
+		comments: "Not currently possible with restrictions on Dream primary slot"
     },
-    {
-      id: "eruditionhintdream",
-      label: "Érudition",
-      actionId: "dream",
-      requirements: {
-        erudition: 1
-      },
-      startdescription: "Ceci ne suscite pas de rêves; mais je pourrais l'Étudier pour augmenter ma Raison.",
-      craftable: false,
-      hintonly: true,
-      comments: "Not currently possible with restrictions on Dream primary slot"
+	    			{
+        id: "eruditionhintdream",
+        label: "Érudition",
+        actionId: "dream",
+        requirements: {erudition:1},
+        startdescription: "Ceci ne suscite pas de rêves; mais je pourrais l'Étudier pour augmenter ma Raison.",
+        craftable: false,
+		hintonly: true,
+				comments: "Not currently possible with restrictions on Dream primary slot"
     },
-    {
-      id: "glimmeringhintdream",
-      label: "Émerveillement",
-      actionId: "dream",
-      requirements: {
-        glimmering: 1
-      },
-      startdescription: "Ceci ne suscite pas de rêves; mais je pourrais l'Étudier pour augmenter ma Passion.",
-      craftable: false,
-      hintonly: true,
-      comments: "Not currently possible with restrictions on Dream primary slot"
+	    			{
+        id: "glimmeringhintdream",
+        label: "Émerveillement",
+        actionId: "dream",
+        requirements: {glimmering:1},
+        startdescription: "Ceci ne suscite pas de rêves; mais je pourrais l'Étudier pour augmenter ma Passion.",
+        craftable: false,
+		hintonly: true,
+				comments: "Not currently possible with restrictions on Dream primary slot"
     },
-    {
-      id: "contentmenthintdream",
-      label: "Contentement",
-      actionId: "dream",
-      requirements: {
-        contentment: 1
-      },
-      startdescription: "Le contentement n'est pas une clef de songes, même si parfois les rêves me rendent heureux..",
-      craftable: false,
-      hintonly: true,
-      comments: "Not currently possible with restrictions on Dream primary slot"
+    			{
+        id: "contentmenthintdream",
+        label: "Contentement",
+        actionId: "dream",
+        requirements: {contentment:1},
+        startdescription: "Le contentement n'est pas une clef de songes, même si parfois les rêves me rendent heureux..",
+        craftable: false,
+		hintonly: true,
+				comments: "Not currently possible with restrictions on Dream primary slot"
     },
-    {
-      id: "dedicationtoobsession_power_hint",
-      label: "The Next Step",
-      actionId: "dream",
-      requirements: {
-        ascensionpowerb: 1
-      },
-      startdescription: "I've gone as far as I can in dream. I must perform the <b>Work</b>.",
-      craftable: false,
-      hintonly: true
+ 			{
+        id: "dedicationtoobsession_power_hint",
+        label: "The Next Step",
+        actionId: "dream",
+        requirements: {ascensionpowerb:1},
+        startdescription: "I've gone as far as I can in dream. I must perform the <b>Work</b>.",
+        craftable: false,
+		hintonly: true,
+		
     },
-    {
-      id: "dedicationtoobsession_enlightenment_hint",
-      label: "The Next Step",
-      actionId: "dream",
-      requirements: {
-        ascensionenlightenmentb: 1
-      },
-      startdescription: "I've gone as far as I can in dream. I must perform the <b>Work</b>.",
-      craftable: false,
-      hintonly: true
+	
+	 			{
+        id: "dedicationtoobsession_enlightenment_hint",
+        label: "The Next Step",
+        actionId: "dream",
+        requirements: {ascensionenlightenmentb:1},
+        startdescription: "I've gone as far as I can in dream. I must perform the <b>Work</b>.",
+        craftable: false,
+		hintonly: true
     },
-    {
-      id: "tryreducefascination",
-      label: "Seek Composure?",
-      actionId: "dream",
-      requirements: {
-        fascination: 1
-      },
-      startdescription: "The doors of vision swing wide. A little darkness will mellow my light. Even Dread has its uses.",
-      hintonly: true,
-      craftable: false
+						{
+        id: "tryreducefascination",
+        label: "Seek Composure?",
+        actionId: "dream",
+        requirements: {fascination: 1},
+        startdescription: "The doors of vision swing wide. A little darkness will mellow my light. Even Dread has its uses.",
+hintonly:true,
+        craftable: false
     },
-    {
-      id: "tryrecoverreason",
-      label: "Clear my Mind?",
-      actionId: "dream",
-      requirements: {
-        dread: 1
-      },
-      startdescription: "I remember that I was different: but I can't yet remember how. [Dread can be restored to Reason, with the correct resource.]",
-      hintonly: true,
-      craftable: false
+				{
+        id: "tryrecoverreason",
+        label: "Clear my Mind?",
+        actionId: "dream",
+        requirements: {dread: 1},
+        startdescription: "I remember that I was different: but I can't yet remember how. [Dread can be restored to Reason, with the correct resource.]",
+     hintonly:true,
+        craftable: false
     },
-    {
-      id: "tryrecoverillhealth",
-      label: "Recover?",
-      actionId: "dream",
-      requirements: {
-        illhealth: 1
-      },
-      startdescription: "Resting will restore me - if I have the necessary resources.",
-      craftable: false,
-      hintonly: true,
-      comments: "This one's generic."
-    }
-  ]
+			{
+        id: "tryrecoverillhealth",
+        label: "Recover?",
+        actionId: "dream",
+        requirements: {illhealth: 1},
+        startdescription: "Resting will restore me - if I have the necessary resources.",
+        craftable: false,
+		hintonly: true,
+		comments: "This one's generic."
+    },
+
+	
+	
+]
 }

@@ -1,2454 +1,1360 @@
-{
-  "elements": [
-    {
-      id: "auclair_a",
-      label: "Auclair, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Auclair a une allure cultivée et un penchant morbide. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: auclair_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "auclair"
-    },
-    {
-      id: "auclair_b",
-      label: "Auclair, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        winter: 2
-      },
-      animFrames: 1,
-      description: "Auclair est calme, méticuleuse et sans remords.",
-      xtriggers: {
-        promotiontodisciple: auclair_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: auclair_p
-      },
-      uniquenessgroup: "auclair"
-    },
-    {
-      id: "auclair_c",
-      label: "Auclair, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        winter: 5
-      },
-      description: "Auclair parle rarement. Elle choisit ses mots avec soin. Elle économise même ses mouvements. On ne la voit jamais cligner des yeux.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_winter: auclair_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: auclair_p
-      },
-      uniquenessgroup: "auclair"
-    },
-    {
-      id: "auclair_d",
-      label: "Une femme hagarde, qui est le silence",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        winter: 10
-      },
-      description: "L'air est glacial, les chandelles vacillent, les bruits de la rue se taisent. Quelqu'un est ici.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: auclair_p,
-        ,
-        rebellion: auclair_r
-      },
-      uniquenessgroup: "auclair"
-    },
-    {
-      id: "cat_a",
-      label: "Cat Caro, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "'Cat Caro', comme elle se décrit elle-même, gagne sa vie comme médium de scène et comme diseuse de bonne aventure. Elle pourrait avoir de plus profonds talents. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: cat_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "cat"
-    },
-    {
-      id: "cat_b",
-      label: "Cat Caro, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        lantern: 2
-      },
-      animFrames: 1,
-      description: "Une femme vigilante, au regard brillant, qui se rappelle parfaitement de ses rêves.",
-      xtriggers: {
-        promotiontodisciple: cat_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: cat_p
-      },
-      uniquenessgroup: "cat"
-    },
-    {
-      id: "cat_c",
-      label: "Cat Caro, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        lantern: 5
-      },
-      description: "Elle joue encore parfaois dans les salles de théatre. 'Cat Caro,' annoncent les affiches, 'trouve la voie; Cat Caro connait le chemin.'",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_lantern: cat_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: cat_p
-      },
-      uniquenessgroup: "cat"
-    },
-    {
-      id: "cat_d",
-      label: "Cat Caro, une Voyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        lantern: 10
-      },
-      description: "Les archéologues trouvent des trésors dans les tombeaux. Les fermiers récoltent leur moisson des champs. Qu'est-ce que Cat Caro déniche dans ses rêves?",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: cat_p,
-        rebellion: cat_r
-      },
-      uniquenessgroup: "cat"
-    },
-    {
-      id: "clifton_a",
-      label: "'Pape' Clifton, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "A bellowing and unorthodox Catholic with a mystic streak and an untrimmed beard. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: clifton_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "clifton"
-    },
-    {
-      id: "clifton_b",
-      label: "'Pape' Clifton, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        lantern: 2
-      },
-      animFrames: 1,
-      description: "A présent, Clifton improvise de nouvelles prières riches en métaphores solaires. Il crie encore comme un soldat et boit toujours comme un marin.",
-      xtriggers: {
-        promotiontodisciple: clifton_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: clifton_p
-      },
-      uniquenessgroup: "clifton"
-    },
-    {
-      id: "clifton_c",
-      label: "'Pape' Clifton, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        lantern: 5
-      },
-      description: "Les dévotions de Clifton sont devenues complexes. Ses yeux sont dorénavant grands et brillants. Sa voix est devenue encore plus puissante.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_lantern: clifton_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: clifton_p
-      },
-      uniquenessgroup: "clifton"
-    },
-    {
-      id: "clifton_d",
-      label: "Clifton, le Devin",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        lantern: 10
-      },
-      description: "Clifton récite toujours ses prières, mais elles sont devenues étranges comme de vieux miroirs. Il se lève chaque matin pour saluer l'aube. Il le regarde bien en face et vous raconte exactement ce qu'il voit.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: clifton_p,
-        rebellion: clifton_r
-      },
-      uniquenessgroup: "clifton"
-    },
-    {
-      id: "clovette_a",
-      label: "Clovette, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Clovette est heureuse d'une manière qui ne tolère aucun contre-argument au bonheur. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: clovette_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "clovette"
-    },
-    {
-      id: "clovette_b",
-      label: "Clovette, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        heart: 2
-      },
-      animFrames: 1,
-      description: "Le bonheur tenace de Clovette confine à présent au fanatique.",
-      xtriggers: {
-        promotiontodisciple: clovette_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: clovette_p
-      },
-      uniquenessgroup: "clovette"
-    },
-    {
-      id: "clovette_c",
-      label: "Clovette, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        heart: 5
-      },
-      description: "L'optimisme de Clovette est intimidant. Elle manie sa joie comme un marteau..",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_heart: clovette_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: clovette_p
-      },
-      uniquenessgroup: "clovette"
-    },
-    {
-      id: "clovette_d",
-      label: "Clovette, une Tarentelliste",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        heart: 10
-      },
-      description: "Clovette est toujours en mouvement. Elle rit facilement. Son sourire est le croissant qui borde la lune.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: clovette_p,
-        rebellion: clovette_r
-      },
-      uniquenessgroup: "clovette"
-    },
-    {
-      id: "dorothy_a",
-      label: "Dorothy, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Dorothy is an enthusiastic sort with an eclectic reading habit. She's fascinated by your hints about the shapes beneath the world's skin. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: dorothy_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "dorothy"
-    },
-    {
-      id: "dorothy_b",
-      label: "Dorothy, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        heart: 2
-      },
-      animFrames: 1,
-      description: "Dorothy is an enthusiastic sort, and I have turned her enthusiasm to our advantage.",
-      xtriggers: {
-        promotiontodisciple: dorothy_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: dorothy_p
-      },
-      uniquenessgroup: "dorothy"
-    },
-    {
-      id: "dorothy_c",
-      label: "Dorothy, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        heart: 5
-      },
-      description: "Dorothy's enthusiasm has become obsession. She will not cease; and how she loves to dance.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_heart: dorothy_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: dorothy_p
-      },
-      uniquenessgroup: "dorothy"
-    },
-    {
-      id: "dorothy_d",
-      label: "Dorothy, une Tarentelliste",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        heart: 10
-      },
-      description: "Lorsque Dorothy bouge, on entend le tambour. Quand elle parle, on voit la danse. Sa détermination est son bouclier et son arme.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: dorothy_p,
-        rebellion: dorothy_r
-      },
-      uniquenessgroup: "dorothy"
-    },
-    {
-      id: "elridge_a",
-      label: "Elridge, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Un homme élégant aux habitudes inélégantes. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: elridge_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "elridge"
-    },
-    {
-      id: "elridge_b",
-      label: "Elridge, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 2
-      },
-      animFrames: 1,
-      description: "Elridge has almost learnt not to pick his teeth with his knife in conversation. He has not yet learnt to leave his knife in his boot.",
-      xtriggers: {
-        promotiontodisciple: elridge_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: elridge_p
-      },
-      uniquenessgroup: "elridge"
-    },
-    {
-      id: "elridge_c",
-      label: "Elridge, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        edge: 5
-      },
-      description: "Elridge is waiting patiently until it's time to knife someone again.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_edge: elridge_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: elridge_p
-      },
-      uniquenessgroup: "elridge"
-    },
-    {
-      id: "elridge_d",
-      label: "Elridge, un Assassin",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        edge: 10
-      },
-      description: "Elridge n'est jamais vu avec une tache de sang sur sa personne. Pas une tache.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: elridge_p,
-        rebellion: elridge_r
-      },
-      uniquenessgroup: "elridge"
-    },
-    {
-      id: "enid_a",
-      label: "Enid, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Enid parle doucement et parfois son regard ne se concentre plus sur quelque chose de visible. Il se peut que vous ayez rêvé des mêmes rêves. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: enid_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "enid"
-    },
-    {
-      id: "enid_b",
-      label: "Enid, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        knock: 2
-      },
-      animFrames: 1,
-      description: "Enid parle doucement et parfois son regard ne se concentre plus sur quelque chose de visible. Elle voit des choses que les autres ne voient.",
-      xtriggers: {
-        promotiontodisciple: enid_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: enid_p
-      },
-      uniquenessgroup: "enid"
-    },
-    {
-      id: "enid_c",
-      label: "Enid, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        knock: 5
-      },
-      description: "Enid voit ce que les autres ne voient. Cela devient difficile pour elle, mais c'est très utile.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_knock: enid_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: enid_p
-      },
-      uniquenessgroup: "enid"
-    },
-    {
-      id: "enid_d",
-      label: "Enid, la Clef",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        knock: 10
-      },
-      description: "Enid sees the gaps between things, and the arts that she has learned permit her, sometimes, to place her fingers in that gap.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: enid_p,
-        rebellion: enid_r
-      },
-      uniquenessgroup: "enid"
-    },
-    {
-      id: "laidlaw_a",
-      label: "Laidlaw, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Laidlaw est un bricoleur et un mécanicien avec un talent incroyable. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: laidlaw_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "laidlaw"
-    },
-    {
-      id: "laidlaw_b",
-      label: "Laidlaw, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        forge: 2
-      },
-      animFrames: 1,
-      description: "Laidlaw a commencé à comprendre les limites de l'ingéniosité et le pouvoir du sacrifice.",
-      xtriggers: {
-        promotiontodisciple: laidlaw_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: laidlaw_p
-      },
-      uniquenessgroup: "laidlaw"
-    },
-    {
-      id: "laidlaw_c",
-      label: "Laidlaw, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        forge: 5
-      },
-      description: "Laidlaw a appris les astucieuses utilisations du feu et du cuivre, de la cire et de l'acide.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_forge: laidlaw_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: laidlaw_p
-      },
-      uniquenessgroup: "laidlaw"
-    },
-    {
-      id: "laidlaw_d",
-      label: "Laidlaw, a Reshaper",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        forge: 10
-      },
-      description: "Laidlaw can shape what is broken into what is necessary.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: laidlaw_p,
-        rebellion: laidlaw_r
-      },
-      uniquenessgroup: "laidlaw"
-    },
-    {
-      id: "leo_a",
-      label: "Leo, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Leo est du genre sérieux avec un intérêt pour l'occultisme. Il s'accroche à vos allusions des arts invisibles. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: leo_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "leo"
-    },
-    {
-      id: "leo_b",
-      label: "Leo, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        heart: 2
-      },
-      animFrames: 1,
-      description: "Leo est du genre sérieux, mais il est préparé pour faire ce qu'il se doit.",
-      xtriggers: {
-        promotiontodisciple: leo_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: leo_p
-      },
-      uniquenessgroup: "leo"
-    },
-    {
-      id: "leo_c",
-      label: "Leo, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        heart: 5
-      },
-      description: "Leo aspire toujours à préserver ce qui est bon et précieux; mais il comprend que pour protéger ses idéaux, il faut parfois faire des choses discutables.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_heart: leo_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: leo_p
-      },
-      uniquenessgroup: "leo"
-    },
-    {
-      id: "leo_d",
-      label: "Leo, un Tarentelliste",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        heart: 10
-      },
-      description: "Leo préservera, à tout prix. Il ne cessera pas.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: leo_p,
-        rebellion: leo_r
-      },
-      uniquenessgroup: "leo"
-    },
-    {
-      id: "neville_a",
-      label: "Neville, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Neville fait une pause avant de parler, et bronche facilement. Il rit quand il pense que vous avez fait une plaisanterie. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: neville_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "neville"
-    },
-    {
-      id: "neville_b",
-      label: "Neville, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        knock: 2
-      },
-      animFrames: 1,
-      description: "Neville fait une pause avant de parler, et bronche facilement. Il est sensible aux questions plus profondes.",
-      xtriggers: {
-        promotiontodisciple: neville_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: neville_p
-      },
-      uniquenessgroup: "neville"
-    },
-    {
-      id: "neville_c",
-      label: "Neville, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        knock: 5
-      },
-      description: "Le regard fixe de Neville est devenu furtif et sa voix est parfois criarde. Il parle librement de ses rêves.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_knock: neville_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: neville_p
-      },
-      uniquenessgroup: "neville"
-    },
-    {
-      id: "neville_d",
-      label: "Neville, a Key",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        knock: 10
-      },
-      description: "In his dreams, Neville sees the flaws where the world and its ways can be opened.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: neville_p,
-        rebellion: neville_r
-      },
-      uniquenessgroup: "neville"
-    },
-    {
-      id: "porter_a",
-      label: "Porter, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Porter was a barber, until the court case. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: porter_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "porter"
-    },
-    {
-      id: "porter_b",
-      label: "Porter, a believer",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        moth: 2
-      },
-      animFrames: 1,
-      description: "Porter plies his razor and his scissors, to the great advantage of his friends.",
-      xtriggers: {
-        promotiontodisciple: porter_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: porter_p
-      },
-      uniquenessgroup: "porter"
-    },
-    {
-      id: "porter_c",
-      label: "Porter, a disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        moth: 5
-      },
-      description: "Porter passe inaperçu, jusqu'à ce qu'il soit prêt.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_moth: porter_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: porter_p
-      },
-      uniquenessgroup: "porter"
-    },
-    {
-      id: "porter_d",
-      label: "Porter, a Skintwister",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        moth: 10
-      },
-      description: "Porter, comme une araignée, se trouve dans les endroits les plus inattendus..",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: porter_p,
-        rebellion: porter_r
-      },
-      uniquenessgroup: "porter"
-    },
-    {
-      id: "renira_a",
-      label: "Renira, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Renira a été déclarée non coupable trois fois dans trois juridictions distinctes. Elle ne sera probablement jamais reconnue coupable de rien. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: renira_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "renira"
-    },
-    {
-      id: "renira_b",
-      label: "Renira, a believer",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        grail: 2
-      },
-      animFrames: 1,
-      description: "Renira continue de poursuivre ses appétits discrètement, bien que ses ambitions aient grandi. ",
-      xtriggers: {
-        promotiontodisciple: renira_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: renira_p
-      },
-      uniquenessgroup: "renira"
-    },
-    {
-      id: "renira_c",
-      label: "Renira, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        grail: 5
-      },
-      description: "Renira commande l'admiration où qu'elle aille. Elle réserve son attention à ceux qui méritent l'admiration en retour.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_grail: renira_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: renira_p
-      },
-      uniquenessgroup: "renira"
-    },
-    {
-      id: "renira_d",
-      label: "Renira, a Cyprian",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        grail: 10
-      },
-      description: "Renira reçoit presque quotidiennement des témoignage d'admirateurs. Certains cadeaux sont des fleurs, d'autres de la poésie. Parfois, elle reçoit des bijoux ; et parfois, de dramatiques cadeaux enveloppés dans du papier crépon taché de sang.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: renira_p,
-        rebellion: renira_r
-      },
-      uniquenessgroup: "renira"
-    },
-    {
-      id: "rose_a",
-      label: "Rose, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Rose est une maline, et elle vous reconnaît comme quelqu'un d'inhabituel. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: rose_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "rose"
-    },
-    {
-      id: "rose_b",
-      label: "Rose, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 2
-      },
-      animFrames: 1,
-      description: "Rose est une maline, mais fidèle.",
-      xtriggers: {
-        promotiontodisciple: rose_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: rose_p
-      },
-      uniquenessgroup: "rose"
-    },
-    {
-      id: "rose_c",
-      label: "Rose, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        edge: 5
-      },
-      description: "Rose a aiguisé sa ruse en un point concentré.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_edge: rose_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: rose_p
-      },
-      uniquenessgroup: "rose"
-    },
-    {
-      id: "rose_d",
-      label: "Rose, un Assassin",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        edge: 10
-      },
-      description: "La veille de la rencontre entre Rose et son sujet, ce dernier recevra un paquet contenant une simple rose jaune.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: rose_p,
-        rebellion: rose_r
-      },
-      uniquenessgroup: "rose"
-    },
-    {
-      id: "saliba_a",
-      label: "Saliba, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Saliba est un homme aux appétits prodigieux. Il a depuis longtemps passé le stade où leur satisfaction lui donne du plaisir ; mais il en a tellement découvert. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: saliba_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "saliba"
-    },
-    {
-      id: "saliba_b",
-      label: "Saliba, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        grail: 2
-      },
-      animFrames: 1,
-      description: "Saliba comprend le sang. Il ne comprend pourtant pas la naissance.",
-      xtriggers: {
-        promotiontodisciple: saliba_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: saliba_p
-      },
-      uniquenessgroup: "saliba"
-    },
-    {
-      id: "saliba_c",
-      label: "Saliba, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        grail: 5
-      },
-      description: "Les plaisirs de Saliba se prennent dans une pièce sans fenêtre. Ses compagnons y retournent encore et encore, bien qu'à chaque fois ils soient un peu moins.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_grail: saliba_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: saliba_p
-      },
-      uniquenessgroup: "saliba"
-    },
-    {
-      id: "saliba_d",
-      label: "Saliba, a Cyprian",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        grail: 10
-      },
-      description: "Le charisme de Saliba frappe avec la force d'un marteau. Il est horriblement difficile de refuser ses désirs.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: saliba_p,
-        rebellion: saliba_r
-      },
-      uniquenessgroup: "saliba"
-    },
-    {
-      id: "slee_a",
-      label: "Slee, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Craig Slee, the astronomer and avant-garde poet, has developed an interest in the esoteric as his health wanes. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: slee_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "slee"
-    },
-    {
-      id: "slee_b",
-      label: "Slee, a believer",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        lantern: 2
-      },
-      animFrames: 1,
-      description: "Slee speaks earnestly of his theories to all who will listen: the stars as tiny wounds, and the Sun as a haemorrhage of glory. His poetry is more eccentric than ever.",
-      xtriggers: {
-        promotiontodisciple: slee_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: slee_p
-      },
-      uniquenessgroup: "slee"
-    },
-    {
-      id: "slee_c",
-      label: "Slee, a disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        lantern: 5
-      },
-      description: "Slee' headaches have become crippling, but his theories grow more practical by the day. His poetry's getting better, too.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_lantern: slee_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: slee_p
-      },
-      uniquenessgroup: "slee"
-    },
-    {
-      id: "slee_d",
-      label: "Slee, a Seer",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        lantern: 10
-      },
-      description: "Slee speaks exclusively in mathematics and in poetry. Both are compelling: it is increasingly difficult to tell the difference.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: slee_p,
-        rebellion: slee_r
-      },
-      uniquenessgroup: "slee"
-    },
-    {
-      id: "sylvia_a",
-      label: "Sylvia, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Sylvia a perdu son œil dans les bois quand elle avait neuf ans. Chaque année, à la Chandeleur, elle retourne à l'endroit où elle l'a enterré. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: sylvia_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "sylvia"
-    },
-    {
-      id: "sylvia_b",
-      label: "Sylvia, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        moth: 2
-      },
-      animFrames: 1,
-      description: "Sylvia a une connaissance détaillée des arêtes des toits, de la rivière à marée basse, de whisky irlandais et de tours de passe-passe",
-      xtriggers: {
-        promotiontodisciple: sylvia_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: sylvia_p
-      },
-      uniquenessgroup: "sylvia"
-    },
-    {
-      id: "sylvia_c",
-      label: "Sylvia, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        moth: 5
-      },
-      description: "La tactique préférée de Sylvia est de sourire et de fermer son oeil. C'est remarquable le nombre de fois que son interlocuteur laissera échapper ce qu'il pense.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_moth: sylvia_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: sylvia_p
-      },
-      uniquenessgroup: "sylvia"
-    },
-    {
-      id: "sylvia_d",
-      label: "Sylvia, une Skintwister",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        moth: 10
-      },
-      description: "Sylvia a appris à sortir d'un endroit quasiment avant qu'elle ne soit arrivée. Parfois, elle laisse des feuilles mortes au-dessous de l'appui de fenêtre. Parfois, elle écrit son nom là où il ne sera pas trouvé.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: sylvia_p,
-        rebellion: sylvia_r
-      },
-      uniquenessgroup: "sylvia"
-    },
-    {
-      id: "tristan_a",
-      label: "Tristan, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Tristan n'aime pas les distractions. Tristan fait avancer les choses. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: tristan_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "tristan"
-    },
-    {
-      id: "tristan_b",
-      label: "Tristan, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        forge: 2
-      },
-      animFrames: 1,
-      description: "Tristan n'aime pas les distractions; Tristan aime les résultats.",
-      xtriggers: {
-        promotiontodisciple: tristan_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: tristan_p
-      },
-      uniquenessgroup: "tristan"
-    },
-    {
-      id: "tristan_c",
-      label: "Tristan, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        forge: 5
-      },
-      description: "Tristan fera le nécessaire. Pour créer, il faut parfois détruire d'abord.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_forge: tristan_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: tristan_p
-      },
-      uniquenessgroup: "tristan"
-    },
-    {
-      id: "tristan_d",
-      label: "Tristan, a Reshaper",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        forge: 10
-      },
-      description: "À une autre époque, Tristan aurait pu être forgeron. Dans une autre vie, il aurait pu être fabricant de bombes.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: tristan_p,
-        rebellion: tristan_r
-      },
-      uniquenessgroup: "tristan"
-    },
-    {
-      id: "valciane_a",
-      label: "Valciane, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Valciane a exploité son établissement pendant presque vingt ans. Elle n'a jamais employé d'assistant. Ses mains sont terriblement fortes. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: valciane_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "valciane"
-    },
-    {
-      id: "valciane_b",
-      label: "Valciane, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        forge: 2
-      },
-      animFrames: 1,
-      description: "L'ingéniosité de Valciane est infinie, et sa poigne est plus forte qu'un forgeron.",
-      xtriggers: {
-        promotiontodisciple: valciane_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: valciane_p
-      },
-      uniquenessgroup: "valciane"
-    },
-    {
-      id: "valciane_c",
-      label: "Valciane, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        forge: 5
-      },
-      description: "Valciane n'est pas une machine. Nous en sommes raisonnablement confiants, car nous avons pu l'observer, de temps en temps, commettre des erreurs très humaines.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_forge: valciane_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: valciane_p
-      },
-      uniquenessgroup: "valciane"
-    },
-    {
-      id: "valciane_d",
-      label: "Valciane, a Reshaper",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        forge: 10
-      },
-      description: "Valciane a commencé à travailler sans outils. 'Ils gênent,' affirme-t-elle.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: valciane_p,
-        rebellion: valciane_r
-      },
-      uniquenessgroup: "valciane"
-    },
-    {
-      id: "victor_a",
-      label: "Victor, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Victor est un compagnon malin, et il reconnaît une occasion inhabituelle quand il la voit. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: victor_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "victor"
-    },
-    {
-      id: "victor_b",
-      label: "Victor, un croyant",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 2
-      },
-      animFrames: 1,
-      description: "Victor est un compagnon malin, mais fidèle.",
-      xtriggers: {
-        promotiontodisciple: victor_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: victor_p
-      },
-      uniquenessgroup: "victor"
-    },
-    {
-      id: "victor_c",
-      label: "Victor, un disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        edge: 5
-      },
-      description: "Victor a aiguisé sa ruse en un point concentré..",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_edge: victor_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: victor_p
-      },
-      uniquenessgroup: "victor"
-    },
-    {
-      id: "victor_d",
-      label: "Victor, un Assassin",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        edge: 10
-      },
-      description: "Victor aime se familiariser avec ses sujets, afin de pouvoir s’excuser auprès d’eux, juste avant la fin.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: victor_p,
-        rebellion: victor_r
-      },
-      uniquenessgroup: "victor"
-    },
-    {
-      id: "violet_a",
-      label: "Violette, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Violet a toujours donné son temps sans relâche, soulageant la douleur des mourants. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: violet_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "violet"
-    },
-    {
-      id: "violet_b",
-      label: "Violette, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        winter: 2
-      },
-      animFrames: 1,
-      description: "Violet aime peindre. Elle a un don, même si elle a toujours été très modeste à ce sujet. Elle ne met jamais de figures humaines dans ses peintures. Il y a suffisamment de gens dans le monde.",
-      xtriggers: {
-        promotiontodisciple: violet_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: violet_p
-      },
-      uniquenessgroup: "violet"
-    },
-    {
-      id: "violet_c",
-      label: "Violette, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        winter: 5
-      },
-      description: "Violet est toujours très prudente.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_winter: violet_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: violet_p
-      },
-      uniquenessgroup: "violet"
-    },
-    {
-      id: "violet_d",
-      label: "Une femme au visage bienveillant, qui reste silencieuse",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        winter: 10
-      },
-      description: "Dors, maintenant. Ne vous inquiétez pas pour quoique ce soit.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: violet_p,
-        rebellion: violet_r
-      },
-      uniquenessgroup: "violet"
-    },
-    {
-      id: "ysabet_a",
-      label: "Ysabet, une connaissance",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Ysabet a toujours été plus à l'aise au clair de lune. Elle a une excellente vision nocturne. Elle est souvent négligée à la lumière du jour. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      xtriggers: {
-        recruiting: ysabet_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      uniquenessgroup: "ysabet"
-    },
-    {
-      id: "ysabet_b",
-      label: "Ysabet, une croyante",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        moth: 2
-      },
-      animFrames: 1,
-      description: "Ysabet dort par à-coups.  Elle se lève au crépuscule pour faire ce qu'une Ysabet fait.",
-      xtriggers: {
-        promotiontodisciple: ysabet_c,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: ysabet_p
-      },
-      uniquenessgroup: "ysabet"
-    },
-    {
-      id: "ysabet_c",
-      label: "Ysabet, une disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        potential: 1,
-        moth: 5
-      },
-      description: "Ysabet était juste ici, juste à l'instant. Juste ici. Quasiement certain.",
-      animFrames: 1,
-      xtriggers: {
-        promotionto_d_moth: ysabet_d,
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: ysabet_p
-      },
-      uniquenessgroup: "ysabet"
-    },
-    {
-      id: "ysabet_d",
-      label: "Ysabet, une Skintwister",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        exalted: 1,
-        moth: 10
-      },
-      description: "Ysabet never lies, now. She doesn't need to.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: ysabet_p,
-        rebellion: ysabet_r
-      },
-      uniquenessgroup: "ysabet"
-    },
-    {
-      id: "auclair_p",
-      label: "Auclair, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        winter: 5,
-        grail: 3,
-        heart: 3
-      },
-      description: "Auclair ne parle pas ni ne mange.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "auclair"
-    },
-    {
-      id: "cat_p",
-      label: "Cat Caro, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 5,
-        grail: 3,
-        heart: 3
-      },
-      description: "La femme qui se fait appeler 'Cat Caro' dort chaque fois qu'elle le peut.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "cat"
-    },
-    {
-      id: "clifton_p",
-      label: "'Pope' Clifton, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 5,
-        grail: 3,
-        heart: 3
-      },
-      description: "Clifton rugit et maudit, mais les barres tiennent et les murs sont épais.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "clifton"
-    },
-    {
-      id: "clovette_p",
-      label: "Clovette, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 5
-      },
-      description: "Clovette attend que les choses tournent.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "clovette"
-    },
-    {
-      id: "dorothy_p",
-      label: "Dorothy, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 5
-      },
-      description: "Dorothy's constant expostulations wear on the nerves.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "dorothy"
-    },
-    {
-      id: "enid_p",
-      label: "Enid, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        knock: 5
-      },
-      description: "Enid ne parle plus.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "enid"
-    },
-    {
-      id: "elridge_p",
-      label: "Elridge, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        edge: 5
-      },
-      description: "Elridge is not permitted a spoon, or a plate. It is probably unwise to permit him even the sharper vegetables..",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "elridge"
-    },
-    {
-      id: "laidlaw_p",
-      label: "Laidlaw, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        forge: 5
-      },
-      description: "Laidlaw's door is bolted, not locked. We know better than that.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "laidlaw"
-    },
-    {
-      id: "leo_p",
-      label: "Leo, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 5
-      },
-      description: "Leo ne comprend pas ce qu'il a fait de mal.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "leo"
-    },
-    {
-      id: "neville_p",
-      label: "Neville, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        knock: 5
-      },
-      description: "Neville pleure.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "neville"
-    },
-    {
-      id: "porter_p",
-      label: "Porter, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        moth: 5
-      },
-      description: "Porter attend, toujours comme un lézard.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "porter"
-    },
-    {
-      id: "renira_p",
-      label: "Renira, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 5,
-        heart: 3
-      },
-      description: "Renira trouve toujours des moyens de passer le temps.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "renira"
-    },
-    {
-      id: "rose_p",
-      label: "Rose, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        edge: 5
-      },
-      description: "Rose n'a pas baissé les bras. Je la soupçonne de cacher des couverts.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "rose"
-    },
-    {
-      id: "slee_p",
-      label: "Slee, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 5,
-        grail: 3,
-        heart: 3
-      },
-      description: "Slee fait de la poésie sur les murs, d'une manière obsessionnelle. Si nous ne lui fournissons pas d'encre, il utilise ce qu'il peut.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "slee"
-    },
-    {
-      id: "tristan_p",
-      label: "Tristan, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        forge: 5
-      },
-      description: "Tristan va tirer le meilleur parti de sa situation.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "tristan"
-    },
-    {
-      id: "saliba_p",
-      label: "Saliba, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 5,
-        heart: 3
-      },
-      description: "Saliba's anger burns like buried lava.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "saliba"
-    },
-    {
-      id: "sylvia_p",
-      label: "Sylvia, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        moth: 5
-      },
-      description: "Nous vérifions Sylvia toutes les heures, au cas où.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "sylvia"
-    },
-    {
-      id: "valciane_p",
-      label: "Valciane, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        forge: 5
-      },
-      description: "Il est très important de ne jamais être à portée de main de Valciane.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "valciane"
-    },
-    {
-      id: "victor_p",
-      label: "Victor, un prisonnier",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        edge: 5
-      },
-      description: "Les yeux de Victor sont des puits de rage.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "victor"
-    },
-    {
-      id: "violet_p",
-      label: "Violette, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        winter: 5
-      },
-      description: "Violette insists that she's fine. She's fine.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "violet"
-    },
-    {
-      id: "ysabet_p",
-      label: "Ysabet, une prisonnière",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3,
-        moth: 5
-      },
-      description: "Si Ysabet pleure, elle le fait avec des yeux secs.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse",
-      uniquenessgroup: "ysabet"
-    },
-    {
-      id: "generic_a",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      animFrames: 1,
-      comments: "legacy element to keep saves valid",
-      xtriggers: {
-        recruiting: generic_b,
-        killmortal: corpse,
-        derangemortal: lunatic
-      }
-    },
-    {
-      id: "generic_a_edge",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_edge
-      }
-    },
-    {
-      id: "generic_a_forge",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_forge
-      }
-    },
-    {
-      id: "generic_a_grail",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_grail
-      }
-    },
-    {
-      id: "generic_a_heart",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_heart
-      }
-    },
-    {
-      id: "generic_a_knock",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_knock
-      }
-    },
-    {
-      id: "generic_a_lantern",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_lantern
-      }
-    },
-    {
-      id: "generic_a_moth",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        recruiting: generic_b_moth
-      }
-    },
-    {
-      id: "generic_a_winter",
-      label: "Un Parasite",
-      aspects: {
-        mortal: 1,
-        acquaintance: 1
-      },
-      animFrames: 1,
-      description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        recruiting: generic_b_winter
-      }
-    },
-    {
-      id: "generic_b",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      comments: "This is a legacy element to support older saves.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_knock
-      }
-    },
-    {
-      id: "generic_b_edge",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_edge
-      }
-    },
-    {
-      id: "generic_b_forge",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_forge
-      }
-    },
-    {
-      id: "generic_b_grail",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_grail
-      }
-    },
-    {
-      id: "generic_b_heart",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_heart
-      }
-    },
-    {
-      id: "generic_b_knock",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_knock
-      }
-    },
-    {
-      id: "generic_b_lantern",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_lantern
-      }
-    },
-    {
-      id: "generic_b_moth",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_moth
-      }
-    },
-    {
-      id: "generic_b_winter",
-      label: "Un Pion",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        edge: 1
-      },
-      animFrames: 1,
-      description: "Loyal, mais manque d'initiative.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        promotiontodisciple: generic_c_winter
-      }
-    },
-    {
-      id: "generic_c_edge",
-      label: "Un Disciple Robuste",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 2
-      },
-      animFrames: 1,
-      description: "Loyal, et gros bras.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_c_forge",
-      label: "A Practical Disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        forge: 2
-      },
-      animFrames: 1,
-      description: "Loyal, et habile de ses mains.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_c_grail",
-      label: "An Avid Disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        grail: 2
-      },
-      animFrames: 1,
-      description: "Loyal, but greedy.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_c_heart",
-      label: "A Lively Disciple ",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        heart: 2
-      },
-      animFrames: 1,
-      description: "Loyal, and always ready with a song.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_c_knock",
-      label: "A Dextrous Disciple ",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        knock: 2
-      },
-      animFrames: 1,
-      description: "Loyal, and clever with locks.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_c_lantern",
-      label: "A Percipient Disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        lantern: 2
-      },
-      animFrames: 1,
-      description: "Loyal, and keen-sighted.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_c_moth",
-      label: "An Erratic Disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        moth: 2
-      },
-      animFrames: 1,
-      description: "Loyal, if peculiar; peculiar even for one of our kind.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      },
-      lifetime: 600,
-      decayTo: lunatic
-    },
-    {
-      id: "generic_c_winter",
-      label: "A Silent Disciple",
-      aspects: {
-        mortal: 1,
-        follower: 1,
-        disciple: 1,
-        edge: 1,
-        winter: 2
-      },
-      animFrames: 1,
-      description: "Loyal, and quiet as falling snow.",
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic,
-        capturefollower: generic_p,
-        rebellion: generic_r
-      }
-    },
-    {
-      id: "generic_p",
-      label: "Un Acolyte Trahi",
-      aspects: {
-        mortal: 1,
-        prisoner: 1,
-        lantern: 3,
-        grail: 3,
-        heart: 3
-      },
-      description: "This one rails weakly against their fate.",
-      animFrames: 1,
-      xtriggers: {
-        killmortal: corpse,
-        derangemortal: lunatic
-      },
-      lifetime: 600,
-      decayTo: "corpse"
-    }
-  ]
+{"elements":
+    [
+		 {
+        id: "auclair_a",
+            label: "Auclair, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Auclair a une allure cultivée et un penchant morbide. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: auclair_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"auclair"
+        },
+										 {
+        id: "auclair_b",
+            label: "Auclair, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,winter: 2},
+            animFrames: 1,
+			description: "Auclair est calme, méticuleuse et sans remords.",
+			xtriggers: {promotiontodisciple: auclair_c,killmortal:corpse,derangemortal:lunatic,capturefollower:auclair_p},
+			uniquenessgroup:"auclair"
+
+        },
+				 {
+        id: "auclair_c",
+            label: "Auclair, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,winter:5},
+            description: "Auclair parle rarement. Elle choisit ses mots avec soin. Elle économise même ses mouvements. On ne la voit jamais cligner des yeux.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_winter: auclair_d,killmortal:corpse,derangemortal:lunatic,capturefollower:auclair_p},
+			uniquenessgroup:"auclair"
+        },
+				 {
+        id: "auclair_d",
+            label: "Une femme hagarde, qui est le silence",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,winter:10},
+            description: "L'air est glacial, les chandelles vacillent, les bruits de la rue se taisent. Quelqu'un est ici.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:auclair_p,,rebellion:auclair_r},
+			uniquenessgroup:"auclair"
+        },
+		
+		
+			 {
+        id: "cat_a",
+            label: "Cat Caro, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "'Cat Caro', comme elle se décrit elle-même, gagne sa vie comme médium de scène et comme diseuse de bonne aventure. Elle pourrait avoir de plus profonds talents. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: cat_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"cat"
+        },
+										 {
+        id: "cat_b",
+            label: "Cat Caro, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,lantern: 2},
+            animFrames: 1,
+			description: "Une femme vigilante, au regard brillant, qui se rappelle parfaitement de ses rêves.",
+			xtriggers: {promotiontodisciple: cat_c,killmortal:corpse,derangemortal:lunatic,capturefollower:cat_p},
+			uniquenessgroup:"cat"
+
+        },
+		
+				 {
+        id: "cat_c",
+            label: "Cat Caro, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,lantern:5},
+            description: "Elle joue encore parfaois dans les salles de théatre. 'Cat Caro,' annoncent les affiches, 'trouve la voie; Cat Caro connait le chemin.'",
+			animFrames: 1,
+			xtriggers: {promotionto_d_lantern: cat_d,killmortal:corpse,derangemortal:lunatic,capturefollower:cat_p},
+			uniquenessgroup:"cat"
+        },
+				 {
+        id: "cat_d",
+            label: "Cat Caro, une Voyante",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,lantern:10},
+            description: "Les archéologues trouvent des trésors dans les tombeaux. Les fermiers récoltent leur moisson des champs. Qu'est-ce que Cat Caro déniche dans ses rêves?",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:cat_p,rebellion:cat_r},
+			uniquenessgroup:"cat"
+        },
+								 {
+        id: "clifton_a",
+            label: "'Pape' Clifton, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "A bellowing and unorthodox Catholic with a mystic streak and an untrimmed beard. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: clifton_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"clifton"
+        },
+										 {
+        id: "clifton_b",
+            label: "'Pape' Clifton, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,lantern: 2},
+            animFrames: 1,
+			description: "A présent, Clifton improvise de nouvelles prières riches en métaphores solaires. Il crie encore comme un soldat et boit toujours comme un marin.",
+			xtriggers: {promotiontodisciple: clifton_c,killmortal:corpse,derangemortal:lunatic,capturefollower:clifton_p},
+			uniquenessgroup:"clifton"
+
+        },
+		
+				 {
+        id: "clifton_c",
+            label: "'Pape' Clifton, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,lantern:5},
+            description: "Les dévotions de Clifton sont devenues complexes. Ses yeux sont dorénavant grands et brillants. Sa voix est devenue encore plus puissante.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_lantern: clifton_d,killmortal:corpse,derangemortal:lunatic,capturefollower:clifton_p},
+			uniquenessgroup:"clifton"
+        },
+				 {
+        id: "clifton_d",
+            label: "Clifton, le Devin",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,lantern:10},
+            description: "Clifton récite toujours ses prières, mais elles sont devenues étranges comme de vieux miroirs. Il se lève chaque matin pour saluer l'aube. Il le regarde bien en face et vous raconte exactement ce qu'il voit.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:clifton_p,rebellion:clifton_r},
+			uniquenessgroup:"clifton"
+        },
+		
+			 {
+        id: "clovette_a",
+            label: "Clovette, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Clovette est heureuse d'une manière qui ne tolère aucun contre-argument au bonheur. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: clovette_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"clovette"
+        },
+									 {
+        id: "clovette_b",
+            label: "Clovette, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,heart: 2},
+            animFrames: 1,
+			description: "Le bonheur tenace de Clovette confine à présent au fanatique.",
+			xtriggers: {promotiontodisciple: clovette_c,killmortal:corpse,derangemortal:lunatic,capturefollower:clovette_p},
+			uniquenessgroup:"clovette"
+        },
+				 {
+        id: "clovette_c",
+            label: "Clovette, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,heart:5},
+            description: "L'optimisme de Clovette est intimidant. Elle manie sa joie comme un marteau..",
+			animFrames: 1,
+			xtriggers: {promotionto_d_heart: clovette_d,killmortal:corpse,derangemortal:lunatic,capturefollower:clovette_p},
+			uniquenessgroup:"clovette"
+        },
+		{
+        id: "clovette_d",
+            label: "Clovette, une Tarentelliste",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,heart:10},
+            description: "Clovette est toujours en mouvement. Elle rit facilement. Son sourire est le croissant qui borde la lune.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:clovette_p,rebellion:clovette_r},
+			uniquenessgroup:"clovette"
+        },
+		 {
+        id: "dorothy_a",
+            label: "Dorothy, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Dorothy is an enthusiastic sort with an eclectic reading habit. She's fascinated by your hints about the shapes beneath the world's skin. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: dorothy_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"dorothy"
+        },
+							 {
+        id: "dorothy_b",
+            label: "Dorothy, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,heart: 2},
+            animFrames: 1,
+			description: "Dorothy is an enthusiastic sort, and I have turned her enthusiasm to our advantage.",
+			xtriggers: {promotiontodisciple: dorothy_c,killmortal:corpse,derangemortal:lunatic,capturefollower:dorothy_p},
+			uniquenessgroup:"dorothy"
+        },
+				 {
+        id: "dorothy_c",
+            label: "Dorothy, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,heart:5},
+            description: "Dorothy's enthusiasm has become obsession. She will not cease; and how she loves to dance.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_heart: dorothy_d,killmortal:corpse,derangemortal:lunatic,capturefollower:dorothy_p},
+			uniquenessgroup:"dorothy"
+        },
+				 {
+        id: "dorothy_d",
+            label: "Dorothy, une Tarentelliste",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,heart:10},
+            description: "Lorsque Dorothy bouge, on entend le tambour. Quand elle parle, on voit la danse. Sa détermination est son bouclier et son arme.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:dorothy_p,rebellion:dorothy_r},
+			uniquenessgroup:"dorothy"
+        },
+							 {
+        id: "elridge_a",
+            label: "Elridge, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Un homme élégant aux habitudes inélégantes. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: elridge_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"elridge"
+        },
+										 {
+        id: "elridge_b",
+            label: "Elridge, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,edge: 2},
+            animFrames: 1,
+			description: "Elridge has almost learnt not to pick his teeth with his knife in conversation. He has not yet learnt to leave his knife in his boot.",
+			xtriggers: {promotiontodisciple: elridge_c,killmortal:corpse,derangemortal:lunatic,capturefollower:elridge_p},
+			uniquenessgroup:"elridge"
+
+        },
+				 {
+        id: "elridge_c",
+            label: "Elridge, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,edge:5},
+            description: "Elridge is waiting patiently until it's time to knife someone again.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_edge: elridge_d,killmortal:corpse,derangemortal:lunatic,capturefollower:elridge_p},
+			uniquenessgroup:"elridge"
+        },
+				 {
+        id: "elridge_d",
+            label: "Elridge, un Assassin",
+            aspects: {mortal:1,follower:1, disciple:1,exalted:1,edge:10},
+            description: "Elridge n'est jamais vu avec une tache de sang sur sa personne. Pas une tache.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:elridge_p,rebellion:elridge_r},
+			uniquenessgroup:"elridge"
+        },
+				 {
+        id: "enid_a",
+            label: "Enid, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Enid parle doucement et parfois son regard ne se concentre plus sur quelque chose de visible. Il se peut que vous ayez rêvé des mêmes rêves. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: enid_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"enid"
+        },
+								 {
+        id: "enid_b",
+            label: "Enid, une croyante",
+            aspects:
+            {mortal: 1, follower: 1, knock: 2},
+            animFrames: 1,
+			description: "Enid parle doucement et parfois son regard ne se concentre plus sur quelque chose de visible. Elle voit des choses que les autres ne voient.",
+			xtriggers: {promotiontodisciple: enid_c,killmortal:corpse,derangemortal:lunatic,capturefollower:enid_p},
+			uniquenessgroup:"enid"
+        },
+		{
+        id: "enid_c",
+            label: "Enid, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,knock:5},
+            description: "Enid voit ce que les autres ne voient. Cela devient difficile pour elle, mais c'est très utile.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_knock: enid_d,killmortal:corpse,derangemortal:lunatic,capturefollower:enid_p},
+			uniquenessgroup:"enid"
+        },
+						 {
+        id: "enid_d",
+            label: "Enid, la Clef",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,knock:10},
+            description: "Enid sees the gaps between things, and the arts that she has learned permit her, sometimes, to place her fingers in that gap.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:enid_p,rebellion:enid_r},
+			uniquenessgroup:"enid"
+        },
+		 {
+        id: "laidlaw_a",
+            label: "Laidlaw, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Laidlaw est un bricoleur et un mécanicien avec un talent incroyable. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: laidlaw_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"laidlaw"
+        },
+										 {
+        id: "laidlaw_b",
+            label: "Laidlaw, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,forge: 2},
+            animFrames: 1,
+			description: "Laidlaw a commencé à comprendre les limites de l'ingéniosité et le pouvoir du sacrifice.",
+			xtriggers: {promotiontodisciple: laidlaw_c,killmortal:corpse,derangemortal:lunatic,capturefollower:laidlaw_p},
+			uniquenessgroup:"laidlaw"
+
+        },
+		
+				 {
+        id: "laidlaw_c",
+            label: "Laidlaw, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,forge:5},
+            description: "Laidlaw a appris les astucieuses utilisations du feu et du cuivre, de la cire et de l'acide.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_forge: laidlaw_d,killmortal:corpse,derangemortal:lunatic,capturefollower:laidlaw_p},
+			uniquenessgroup:"laidlaw"
+        },
+				 {
+        id: "laidlaw_d",
+            label: "Laidlaw, a Reshaper",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,forge:10},
+            description: "Laidlaw can shape what is broken into what is necessary.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:laidlaw_p,rebellion:laidlaw_r},
+			uniquenessgroup:"laidlaw"
+        },
+	
+				 {
+        id: "leo_a",
+            label: "Leo, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Leo est du genre sérieux avec un intérêt pour l'occultisme. Il s'accroche à vos allusions des arts invisibles. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting:leo_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"leo"
+        },
+						 {
+        id: "leo_b",
+            label: "Leo, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,heart: 2},
+            animFrames: 1,
+			description: "Leo est du genre sérieux, mais il est préparé pour faire ce qu'il se doit.",
+			xtriggers: {promotiontodisciple: leo_c,killmortal:corpse,derangemortal:lunatic,capturefollower:leo_p},
+			uniquenessgroup:"leo"
+        },
+						 {
+        id: "leo_c",
+            label: "Leo, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1, heart:5},
+            description: "Leo aspire toujours à préserver ce qui est bon et précieux; mais il comprend que pour protéger ses idéaux, il faut parfois faire des choses discutables.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_heart:leo_d,killmortal:corpse,derangemortal:lunatic,capturefollower:leo_p},
+			uniquenessgroup:"leo"
+        },
+					 {
+        id: "leo_d",
+            label: "Leo, un Tarentelliste",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1, heart:10},
+            description: "Leo préservera, à tout prix. Il ne cessera pas.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:leo_p,rebellion:leo_r},
+			uniquenessgroup:"leo"
+        },
+				 {
+        id: "neville_a",
+            label: "Neville, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Neville fait une pause avant de parler, et bronche facilement. Il rit quand il pense que vous avez fait une plaisanterie. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: neville_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"neville"
+        },
+					 {
+        id: "neville_b",
+            label: "Neville, un croyant",
+            aspects:
+            {mortal: 1, follower: 1, knock: 2},
+            animFrames: 1,
+			description: "Neville fait une pause avant de parler, et bronche facilement. Il est sensible aux questions plus profondes.",
+			xtriggers: {promotiontodisciple: neville_c,killmortal:corpse,derangemortal:lunatic,capturefollower:neville_p},
+			uniquenessgroup:"neville"
+        },
+						 {
+        id: "neville_c",
+            label: "Neville, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,knock:5},
+            description: "Le regard fixe de Neville est devenu furtif et sa voix est parfois criarde. Il parle librement de ses rêves.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_knock: neville_d,killmortal:corpse,derangemortal:lunatic,capturefollower:neville_p},
+			uniquenessgroup:"neville"
+        },
+						 {
+        id: "neville_d",
+            label: "Neville, a Key",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,knock:10},
+            description: "In his dreams, Neville sees the flaws where the world and its ways can be opened.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:neville_p,rebellion:neville_r},
+			uniquenessgroup:"neville"
+        },
+		
+							 {
+        id: "porter_a",
+            label: "Porter, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Porter was a barber, until the court case. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: porter_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"porter"
+        },
+										 {
+        id: "porter_b",
+            label: "Porter, a believer",
+            aspects:
+            {mortal: 1, follower: 1,moth: 2},
+            animFrames: 1,
+			description: "Porter plies his razor and his scissors, to the great advantage of his friends.",
+			xtriggers: {promotiontodisciple: porter_c,killmortal:corpse,derangemortal:lunatic,capturefollower:porter_p},
+			uniquenessgroup:"porter"
+
+        },
+				 {
+        id: "porter_c",
+            label: "Porter, a disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,moth:5},
+            description: "Porter passe inaperçu, jusqu'à ce qu'il soit prêt.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_moth: porter_d,killmortal:corpse,derangemortal:lunatic,capturefollower:porter_p},
+			uniquenessgroup:"porter"
+        },
+				 {
+        id: "porter_d",
+            label: "Porter, a Skintwister",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,moth:10},
+            description: "Porter, comme une araignée, se trouve dans les endroits les plus inattendus..",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:porter_p,rebellion:porter_r},
+			uniquenessgroup:"porter"
+        },
+		
+			 {
+        id: "renira_a",
+            label: "Renira, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Renira a été déclarée non coupable trois fois dans trois juridictions distinctes. Elle ne sera probablement jamais reconnue coupable de rien. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: renira_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"renira"
+        },
+										 {
+        id: "renira_b",
+            label: "Renira, a believer",
+            aspects:
+            {mortal: 1, follower: 1,grail: 2},
+            animFrames: 1,
+			description: "Renira continue de poursuivre ses appétits discrètement, bien que ses ambitions aient grandi. ",
+			xtriggers: {promotiontodisciple: renira_c,killmortal:corpse,derangemortal:lunatic,capturefollower:renira_p},
+			uniquenessgroup:"renira"
+
+        },
+		
+				 {
+        id: "renira_c",
+            label: "Renira, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,grail:5},
+            description: "Renira commande l'admiration où qu'elle aille. Elle réserve son attention à ceux qui méritent l'admiration en retour.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_grail: renira_d,killmortal:corpse,derangemortal:lunatic,capturefollower:renira_p},
+			uniquenessgroup:"renira"
+        },
+				 {
+        id: "renira_d",
+            label: "Renira, a Cyprian",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,grail:10},
+            description: "Renira reçoit presque quotidiennement des témoignage d'admirateurs. Certains cadeaux sont des fleurs, d'autres de la poésie. Parfois, elle reçoit des bijoux ; et parfois, de dramatiques cadeaux enveloppés dans du papier crépon taché de sang.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:renira_p,rebellion:renira_r},
+			uniquenessgroup:"renira"
+        },
+					 {
+        id: "rose_a",
+            label: "Rose, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Rose est une maline, et elle vous reconnaît comme quelqu'un d'inhabituel. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: rose_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"rose"
+        },
+					 {
+        id: "rose_b",
+            label: "Rose, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,edge:2},
+            animFrames: 1,
+			description: "Rose est une maline, mais fidèle.",
+			xtriggers: {promotiontodisciple: rose_c,killmortal:corpse,derangemortal:lunatic,capturefollower:rose_p},
+			uniquenessgroup:"rose"
+        },
+						 {
+        id: "rose_c",
+            label: "Rose, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,edge:5},
+            description: "Rose a aiguisé sa ruse en un point concentré.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_edge: rose_d,killmortal:corpse,derangemortal:lunatic,capturefollower:rose_p},
+			uniquenessgroup:"rose"
+        },
+						 {
+        id: "rose_d",
+            label: "Rose, un Assassin",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,edge:10},
+            description: "La veille de la rencontre entre Rose et son sujet, ce dernier recevra un paquet contenant une simple rose jaune.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:rose_p,rebellion:rose_r},
+			uniquenessgroup:"rose"
+        },
+
+					 {
+        id: "saliba_a",
+            label: "Saliba, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Saliba est un homme aux appétits prodigieux. Il a depuis longtemps passé le stade où leur satisfaction lui donne du plaisir ; mais il en a tellement découvert. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: saliba_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"saliba"
+        },
+										 {
+        id: "saliba_b",
+            label: "Saliba, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,grail: 2},
+            animFrames: 1,
+			description: "Saliba comprend le sang. Il ne comprend pourtant pas la naissance.",
+			xtriggers: {promotiontodisciple: saliba_c,killmortal:corpse,derangemortal:lunatic,capturefollower:saliba_p},
+			uniquenessgroup:"saliba"
+
+        },
+		
+				 {
+        id: "saliba_c",
+            label: "Saliba, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,grail:5},
+            description: "Les plaisirs de Saliba se prennent dans une pièce sans fenêtre. Ses compagnons y retournent encore et encore, bien qu'à chaque fois ils soient un peu moins.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_grail: saliba_d,killmortal:corpse,derangemortal:lunatic,capturefollower:saliba_p},
+			uniquenessgroup:"saliba"
+        },
+				 {
+        id: "saliba_d",
+            label: "Saliba, a Cyprian",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,grail:10},
+            description: "Le charisme de Saliba frappe avec la force d'un marteau. Il est horriblement difficile de refuser ses désirs.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:saliba_p,rebellion:saliba_r},
+			uniquenessgroup:"saliba"
+        },
+					 {
+        id: "slee_a",
+            label: "Slee, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Craig Slee, the astronomer and avant-garde poet, has developed an interest in the esoteric as his health wanes. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: slee_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"slee"
+        },
+										 {
+        id: "slee_b",
+            label: "Slee, a believer",
+            aspects:
+            {mortal: 1, follower: 1,lantern: 2},
+            animFrames: 1,
+			description: "Slee speaks earnestly of his theories to all who will listen: the stars as tiny wounds, and the Sun as a haemorrhage of glory. His poetry is more eccentric than ever.",
+			xtriggers: {promotiontodisciple: slee_c,killmortal:corpse,derangemortal:lunatic,capturefollower:slee_p},
+			uniquenessgroup:"slee"
+        },
+		
+				 {
+        id: "slee_c",
+            label: "Slee, a disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,lantern:5},
+            description: "Slee' headaches have become crippling, but his theories grow more practical by the day. His poetry's getting better, too.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_lantern: slee_d,killmortal:corpse,derangemortal:lunatic,capturefollower:slee_p},
+			uniquenessgroup:"slee"
+        },
+				 {
+        id: "slee_d",
+            label: "Slee, a Seer",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,lantern:10},
+            description: "Slee speaks exclusively in mathematics and in poetry. Both are compelling: it is increasingly difficult to tell the difference.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:slee_p,rebellion:slee_r},
+			uniquenessgroup:"slee"
+        },
+		
+					 {
+        id: "sylvia_a",
+            label: "Sylvia, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Sylvia a perdu son œil dans les bois quand elle avait neuf ans. Chaque année, à la Chandeleur, elle retourne à l'endroit où elle l'a enterré. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: sylvia_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"sylvia"
+        },
+										 {
+        id: "sylvia_b",
+            label: "Sylvia, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,moth: 2},
+            animFrames: 1,
+			description: "Sylvia a une connaissance détaillée des arêtes des toits, de la rivière à marée basse, de whisky irlandais et de tours de passe-passe",
+			xtriggers: {promotiontodisciple: sylvia_c,killmortal:corpse,derangemortal:lunatic,capturefollower:sylvia_p},
+			uniquenessgroup:"sylvia"
+
+        },
+				 {
+        id: "sylvia_c",
+            label: "Sylvia, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,moth:5},
+            description: "La tactique préférée de Sylvia est de sourire et de fermer son oeil. C'est remarquable le nombre de fois que son interlocuteur laissera échapper ce qu'il pense.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_moth: sylvia_d,killmortal:corpse,derangemortal:lunatic,capturefollower:sylvia_p},
+			uniquenessgroup:"sylvia"
+        },
+				 {
+        id: "sylvia_d",
+            label: "Sylvia, une Skintwister",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,moth:10},
+            description: "Sylvia a appris à sortir d'un endroit quasiment avant qu'elle ne soit arrivée. Parfois, elle laisse des feuilles mortes au-dessous de l'appui de fenêtre. Parfois, elle écrit son nom là où il ne sera pas trouvé.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:sylvia_p,rebellion:sylvia_r},
+			uniquenessgroup:"sylvia"
+        },
+						 {
+        id: "tristan_a",
+            label: "Tristan, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Tristan n'aime pas les distractions. Tristan fait avancer les choses. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: tristan_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"tristan"
+        },
+								 {
+        id: "tristan_b",
+            label: "Tristan, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,forge:2},
+            animFrames: 1,
+			description: "Tristan n'aime pas les distractions; Tristan aime les résultats.",
+						xtriggers: {promotiontodisciple: tristan_c,killmortal:corpse,derangemortal:lunatic,capturefollower:tristan_p},
+			uniquenessgroup:"tristan"
+        },
+								 {
+        id: "tristan_c",
+            label: "Tristan, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,forge:5},
+            description: "Tristan fera le nécessaire. Pour créer, il faut parfois détruire d'abord.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_forge: tristan_d,killmortal:corpse,derangemortal:lunatic,capturefollower:tristan_p},
+			uniquenessgroup:"tristan"
+        },
+								 {
+        id: "tristan_d",
+            label: "Tristan, a Reshaper",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,forge:10},
+            description: "À une autre époque, Tristan aurait pu être forgeron. Dans une autre vie, il aurait pu être fabricant de bombes.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:tristan_p,rebellion:tristan_r},
+			uniquenessgroup:"tristan"
+        },
+		
+					 {
+        id: "valciane_a",
+            label: "Valciane, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Valciane a exploité son établissement pendant presque vingt ans. Elle n'a jamais employé d'assistant. Ses mains sont terriblement fortes. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: valciane_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"valciane"
+        },
+										 {
+        id: "valciane_b",
+            label: "Valciane, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,forge: 2},
+            animFrames: 1,
+			description: "L'ingéniosité de Valciane est infinie, et sa poigne est plus forte qu'un forgeron.",
+			xtriggers: {promotiontodisciple: valciane_c,killmortal:corpse,derangemortal:lunatic,capturefollower:valciane_p},
+			uniquenessgroup:"valciane"
+
+        },
+		
+				 {
+        id: "valciane_c",
+            label: "Valciane, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,forge:5},
+            description: "Valciane n'est pas une machine. Nous en sommes raisonnablement confiants, car nous avons pu l'observer, de temps en temps, commettre des erreurs très humaines.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_forge: valciane_d,killmortal:corpse,derangemortal:lunatic,capturefollower:valciane_p},
+			uniquenessgroup:"valciane"
+        },
+				 {
+        id: "valciane_d",
+            label: "Valciane, a Reshaper",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,forge:10},
+            description: "Valciane a commencé à travailler sans outils. 'Ils gênent,' affirme-t-elle.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:valciane_p,rebellion:valciane_r},
+			uniquenessgroup:"valciane"
+        },
+					 {
+        id: "victor_a",
+            label: "Victor, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Victor est un compagnon malin, et il reconnaît une occasion inhabituelle quand il la voit. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: victor_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"victor"
+        },
+						 {
+        id: "victor_b",
+            label: "Victor, un croyant",
+            aspects:
+            {mortal: 1, follower: 1,edge:2},
+            animFrames: 1,
+			description: "Victor est un compagnon malin, mais fidèle.",
+			xtriggers: {promotiontodisciple: victor_c,killmortal:corpse,derangemortal:lunatic,capturefollower:victor_p},
+			uniquenessgroup:"victor"
+        },
+						 {
+        id: "victor_c",
+            label: "Victor, un disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,edge:5},
+            description: "Victor a aiguisé sa ruse en un point concentré..",
+			animFrames: 1,
+			xtriggers: {promotionto_d_edge: victor_d,killmortal:corpse,derangemortal:lunatic,capturefollower:victor_p},
+			uniquenessgroup:"victor"
+        },
+				 {
+        id: "victor_d",
+            label: "Victor, un Assassin",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,edge:10},
+            description: "Victor aime se familiariser avec ses sujets, afin de pouvoir s’excuser auprès d’eux, juste avant la fin.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:victor_p,rebellion:victor_r},
+			uniquenessgroup:"victor"
+        },
+
+					 {
+        id: "violet_a",
+            label: "Violette, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Violet a toujours donné son temps sans relâche, soulageant la douleur des mourants. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: violet_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"violet"
+        },
+										 {
+        id: "violet_b",
+            label: "Violette, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,winter: 2},
+            animFrames: 1,
+			description: "Violet aime peindre. Elle a un don, même si elle a toujours été très modeste à ce sujet. Elle ne met jamais de figures humaines dans ses peintures. Il y a suffisamment de gens dans le monde.",
+			xtriggers: {promotiontodisciple: violet_c,killmortal:corpse,derangemortal:lunatic,capturefollower:violet_p},
+			uniquenessgroup:"violet"
+
+        },
+		
+				 {
+        id: "violet_c",
+            label: "Violette, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,winter:5},
+            description: "Violet est toujours très prudente.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_winter: violet_d,killmortal:corpse,derangemortal:lunatic,capturefollower:violet_p},
+			uniquenessgroup:"violet"
+        },
+				 {
+        id: "violet_d",
+            label: "Une femme au visage bienveillant, qui reste silencieuse",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,winter:10},
+            description: "Dors, maintenant. Ne vous inquiétez pas pour quoique ce soit.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:violet_p,rebellion:violet_r},
+			uniquenessgroup:"violet"
+        },
+	
+					 {
+        id: "ysabet_a",
+            label: "Ysabet, une connaissance",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Ysabet a toujours été plus à l'aise au clair de lune. Elle a une excellente vision nocturne. Elle est souvent négligée à la lumière du jour. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			xtriggers: {recruiting: ysabet_b,killmortal:corpse,derangemortal:lunatic},
+			uniquenessgroup:"ysabet"
+        },
+										 {
+        id: "ysabet_b",
+            label: "Ysabet, une croyante",
+            aspects:
+            {mortal: 1, follower: 1,moth: 2},
+            animFrames: 1,
+			description: "Ysabet dort par à-coups.  Elle se lève au crépuscule pour faire ce qu'une Ysabet fait.",
+			xtriggers: {promotiontodisciple: ysabet_c,killmortal:corpse,derangemortal:lunatic,capturefollower:ysabet_p},
+			uniquenessgroup:"ysabet"
+
+        },
+				 {
+        id: "ysabet_c",
+            label: "Ysabet, une disciple",
+            aspects:
+            {mortal:1,follower:1, disciple:1,potential:1,moth:5},
+            description: "Ysabet était juste ici, juste à l'instant. Juste ici. Quasiement certain.",
+			animFrames: 1,
+			xtriggers: {promotionto_d_moth: ysabet_d,killmortal:corpse,derangemortal:lunatic,capturefollower:ysabet_p},
+			uniquenessgroup:"ysabet"
+        },
+				 {
+        id: "ysabet_d",
+            label: "Ysabet, une Skintwister",
+            aspects:
+            {mortal:1,follower:1, disciple:1,exalted:1,moth:10},
+            description: "Ysabet never lies, now. She doesn't need to.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:ysabet_p,rebellion:ysabet_r},
+			uniquenessgroup:"ysabet"
+        },
+					 {
+        id: "auclair_p",
+            label: "Auclair, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,winter:5,grail:3,heart:3},
+            description: "Auclair ne parle pas ni ne mange.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"auclair"
+        },
+							 {
+        id: "cat_p",
+            label: "Cat Caro, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:5,grail:3,heart:3},
+            description: "La femme qui se fait appeler 'Cat Caro' dort chaque fois qu'elle le peut.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"cat"
+        },
+							 {
+        id: "clifton_p",
+            label: "'Pope' Clifton, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:5,grail:3,heart:3},
+            description: "Clifton rugit et maudit, mais les barres tiennent et les murs sont épais.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"clifton"
+        },
+			
+				 {
+        id: "clovette_p",
+            label: "Clovette, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:5},
+            description: "Clovette attend que les choses tournent.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"clovette"
+        },
+		 {
+        id: "dorothy_p",
+            label: "Dorothy, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:5},
+            description: "Dorothy's constant expostulations wear on the nerves.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"dorothy"
+        },
+				 {
+        id: "enid_p",
+            label: "Enid, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,knock:5},
+            description: "Enid ne parle plus.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"enid"
+        },
+
+							 {
+        id: "elridge_p",
+            label: "Elridge, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,edge:5},
+            description: "Elridge is not permitted a spoon, or a plate. It is probably unwise to permit him even the sharper vegetables..",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"elridge"
+        },
+							 {
+        id: "laidlaw_p",
+            label: "Laidlaw, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,forge:5},
+            description: "Laidlaw's door is bolted, not locked. We know better than that.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"laidlaw"
+        },
+						 {
+        id: "leo_p",
+            label: "Leo, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:5},
+            description: "Leo ne comprend pas ce qu'il a fait de mal.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"leo"
+        },
+				 {
+        id: "neville_p",
+            label: "Neville, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,knock:5},
+            description: "Neville pleure.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"neville"
+        },
+							 {
+        id: "porter_p",
+            label: "Porter, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,moth:5},
+            description: "Porter attend, toujours comme un lézard.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"porter"
+        },
+							 {
+        id: "renira_p",
+            label: "Renira, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:5,heart:3},
+            description: "Renira trouve toujours des moyens de passer le temps.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"renira"
+        },
+		
+								 {
+        id: "rose_p",
+            label: "Rose, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,edge:5},
+            description: "Rose n'a pas baissé les bras. Je la soupçonne de cacher des couverts.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"rose"
+        },
+							 {
+        id: "slee_p",
+            label: "Slee, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:5,grail:3,heart:3},
+            description: "Slee fait de la poésie sur les murs, d'une manière obsessionnelle. Si nous ne lui fournissons pas d'encre, il utilise ce qu'il peut.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"slee"
+        },
+						 {
+        id: "tristan_p",
+            label: "Tristan, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,forge:5},
+            description: "Tristan va tirer le meilleur parti de sa situation.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"tristan"
+        },
+							 {
+        id: "saliba_p",
+            label: "Saliba, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:5,heart:3},
+            description: "Saliba's anger burns like buried lava.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"saliba"
+        },
+							 {
+        id: "sylvia_p",
+            label: "Sylvia, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,moth:5},
+            description: "Nous vérifions Sylvia toutes les heures, au cas où.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"sylvia"
+        },
+							 {
+        id: "valciane_p",
+            label: "Valciane, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,forge:5},
+            description: "Il est très important de ne jamais être à portée de main de Valciane.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"valciane"
+        },
+
+				 {
+        id: "victor_p",
+            label: "Victor, un prisonnier",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,edge:5},
+            description: "Les yeux de Victor sont des puits de rage.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"victor"
+        },
+							 {
+        id: "violet_p",
+            label: "Violette, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,winter:5},
+            description: "Violette insists that she's fine. She's fine.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"violet"
+        },
+							 {
+        id: "ysabet_p",
+            label: "Ysabet, une prisonnière",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3,moth:5},
+            description: "Si Ysabet pleure, elle le fait avec des yeux secs.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse",
+			uniquenessgroup:"ysabet"
+        },
+						 {
+        id: "generic_a",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			animFrames: 1,
+			comments:"legacy element to keep saves valid",
+			xtriggers: {recruiting: generic_b,killmortal:corpse,derangemortal:lunatic}
+        },
+									 {
+        id: "generic_a_edge",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting: generic_b_edge}
+        },
+										 {
+        id: "generic_a_forge",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting: generic_b_forge}
+        },
+										 {
+        id: "generic_a_grail",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting: generic_b_grail}
+        },
+										 {
+        id: "generic_a_heart",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:generic_b_heart}
+        },
+										 {
+        id: "generic_a_knock",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:generic_b_knock}
+        },
+										 {
+        id: "generic_a_lantern",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:generic_b_lantern}
+        },
+										 {
+        id: "generic_a_moth",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,recruiting:generic_b_moth}
+        },
+										 {
+        id: "generic_a_winter",
+            label: "Un Parasite",
+            aspects:
+            {mortal: 1,acquaintance:1},
+            animFrames: 1,
+		description: "Utilement malléable, mais ils ne s'élèveront probablement jamais beaucoup. [Vous êtes en mesure de recruter cette connaissance en tant qu'acolyte.]",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:generic_b_winter}
+        },
+		{
+        id: "generic_b",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			comments: "This is a legacy element to support older saves.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_knock}
+        },
+								 {
+        id: "generic_b_edge",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_edge}
+        },
+										 {
+        id: "generic_b_forge",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_forge}
+        },
+										 {
+        id: "generic_b_grail",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_grail}
+        },
+										 {
+        id: "generic_b_heart",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_heart}
+        },
+										 {
+        id: "generic_b_knock",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_knock}
+        },
+										 {
+        id: "generic_b_lantern",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_lantern}
+        },
+										 {
+        id: "generic_b_moth",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_moth}
+        },
+										 {
+        id: "generic_b_winter",
+            label: "Un Pion",
+            aspects:
+            {mortal: 1, follower: 1,edge:1},
+            animFrames: 1,
+			description: "Loyal, mais manque d'initiative.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,promotiontodisciple:generic_c_winter}
+        },
+										 {
+        id: "generic_c_edge",
+            label: "Un Disciple Robuste",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:2},
+            animFrames: 1,
+			description: "Loyal, et gros bras.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+										 {
+        id: "generic_c_forge",
+            label: "A Practical Disciple",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,forge:2},
+            animFrames: 1,
+			description: "Loyal, et habile de ses mains.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+										 {
+        id: "generic_c_grail",
+            label: "An Avid Disciple",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,grail:2},
+            animFrames: 1,
+			description: "Loyal, but greedy.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+										 {
+        id: "generic_c_heart",
+            label: "A Lively Disciple ",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,heart:2},
+            animFrames: 1,
+			description: "Loyal, and always ready with a song.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+								 {
+        id: "generic_c_knock",
+            label: "A Dextrous Disciple ",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,knock:2},
+            animFrames: 1,
+			description: "Loyal, and clever with locks.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+
+										 {
+        id: "generic_c_lantern",
+            label: "A Percipient Disciple",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,lantern:2},
+            animFrames: 1,
+			description: "Loyal, and keen-sighted.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+												 {
+        id: "generic_c_moth",
+            label: "An Erratic Disciple",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,moth:2},
+            animFrames: 1,
+			description: "Loyal, if peculiar; peculiar even for one of our kind.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r},
+			lifetime:600,
+			decayTo: lunatic
+        },
+														 {
+        id: "generic_c_winter",
+            label: "A Silent Disciple",
+            aspects:
+            {mortal: 1, follower: 1,disciple:1,edge:1,winter:2},
+            animFrames: 1,
+			description: "Loyal, and quiet as falling snow.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,capturefollower:generic_p,rebellion:generic_r}
+        },
+
+						 {
+        id: "generic_p",
+            label: "Un Acolyte Trahi",
+            aspects:
+            {mortal:1, prisoner:1,lantern:3,grail:3,heart:3},
+            description: "This one rails weakly against their fate.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic},
+			lifetime:600, decayTo: "corpse"
+        },
+
+		]
 };

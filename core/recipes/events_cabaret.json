@@ -1,161 +1,98 @@
-{
-  "recipes": [
-    {
-      id: "explorecabaret",
-      actionId: "explore",
-      label: "Visiter le Exuvie Club",
-      requirements: {
-        locationcabaret: 1,
-        funds: 1
-      },
-      startdescription: "L'entrée est perdue sous de souples tentures cramoisies, vermillon et incarnadine. Au-dessus de la porte, la devise du club : 'IN GI RUM IMUS NOC TE ET CON SUMI MUR IGNI'. Qu'on peut traduire par 'dans le cercle de la nuit, nous volons, jusqu'à ce que le feu nous savoure'.",
-      description: ".",
-      craftable: true,
-      deckeffect: {
-        "cabaretevents": 1
-      },
-      linked: [
-        {
-          id: "cabaretpleasure",
-          chance: 100
-        },
-        {
-          id: "cabaretallure",
-          chance: 100
-        },
-        {
-          id: "cabareteducation",
-          chance: 100
-        },
-        {
-          id: "cabaretglimpse",
-          chance: 100
-        },
-        {
-          id: "cabaretharm",
-          chance: 100
-        },
-        {
-          id: "cabaretexposure",
-          chance: 100
-        },
-        {
-          id: "cabarethunger",
-          chance: 100
-        },
-        {
-          id: "cabaretfey",
-          chance: 100
-        }
-      ]
-    },
-    {
-      id: "cabaretpleasure",
-      label: "Plaisirs nocturnes au Cabaret Club",
-      actionId: "explore",
-      requirements: {
-        contentment: 1
-      },
-      startdescription: "Les boissons, les chansons, la lumière ; les murs voûtés, la brume bleu fumée, la pression et le balancement de la chair vêtue et dévêtus.",
-      description: "J'ai pris du plaisir. Je rentre à la maison à une heures impie et m'écroule dans le lit.",
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabaretallure",
-      label: "Du Charme au Exuvie Club",
-      actionId: "explore",
-      requirements: {
-        fascination: 1
-      },
-      startdescription: "Durant le spectacle de ce soir, 'Amethyste', un chasseur armé de son filet poursuit une femme aux ailes voilées à travers le bruissement d'un dédale de danseurs vêtus de feuilles. Chaque mouvement est une lente plongée.",
-      description: "Petit à petit, les lumières s'éteignent au fur et à mesure que le spectacle se termine. Il n'y a pas d'applaudissements. Nous dérivons chacun dans la rue, seuls avec notre rêve.",
-      effects: {
-        contentment: 1
-      },
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabareteducation",
-      label: "Des Enseignements au Cabaret Club",
-      actionId: "explore",
-      requirements: {
-        erudition: 1
-      },
-      startdescription: "Tonight's performance is a desultory affair of flapping scarves and earnest flesh. Le public s'est tourné en discussions.",
-      description: "J'ai passé la soirée à échanger sur des théories autour d'une table de charlatans, de pédants et - peut-être - d'initiés. Certaines de ces théories pourraient être vraies.",
-      effects: {
-        contentment: 1
-      },
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabaretglimpse",
-      label: "A Glimpse of Something More au Exuvie Club",
-      actionId: "explore",
-      requirements: {
-        glimmering: 1
-      },
-      startdescription: "The backdrops for tonight's performances are painted with Piranesi's drawings of vast impossible subterranean prisons. The dancers are monster-masked, sudden as fire, each movement snapping with wicked intent.",
-      description: "The dancers pass beyond the backdrops, cross them, seem to move upon their staircases and drawbridges. Their bodies become smudged with backdrop-paint. A growl arises from the audience. 'The walls of the House...'",
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabaretharm",
-      label: "A Wounding Consummation au Exuvie Club",
-      actionId: "explore",
-      requirements: {
-        vitality: 1
-      },
-      startdescription: "Ce soir, les artistes passent parmi le public, jonglant avec des couteaux ou des bouteilles de verre carmines, se penchant pour conférer des chuchotements ou d’autres cadeaux.",
-      description: "Une danseuse a pressé contre ma bouche le rouge d'une coupe en verre. Le bord était tranchant. Ma bouche saigne. Mais au moins le vin était robuste -",
-      effects: {
-        contentment: 1
-      },
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabaretexposure",
-      label: "Une Interruption au Exuvie Club",
-      actionId: "explore",
-      requirements: {
-        notoriety: 1
-      },
-      startdescription: "Le spectacle a à peine débuté quand un gémissement de terreur survient du public !",
-      description: "Le spectacle prend fin immédiatement ; les lumières s'allument; nous sommes raccompagné depuis nos places et pressés dans la rue. Nous ne saurons jamais ce qui s'est passé, mais le personnel du Club semblait préparé, comme si cela s'était déjà produit auparavant. Les lumières fleurissent auprès des fenêtres, et les passants restent bouche bée devant foule d'invités se dispersant dans la nuit.",
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabarethunger",
-      label: "The Hungers au Exuvie Club",
-      actionId: "explore",
-      requirements: {
-        influencegrail: 1
-      },
-      startdescription: "Une danseuse entre en scène depuis la gauche, emmaillotée de bandes rouges moulant comme des tendons. Elle en enlève une au loin. Une autre. Puis une autre. Et encore une autre - ",
-      description: "Ce doit être un tour. On ne peut pas ôter ses vêtements si doucement que les os sous la peau en soit visibles. Des os roses comme la chair d'une pêche. Des organes nichés comme des raisins. Les lumières baissent, vacillent, s'estompent, et l'étoile rouge de la scène avec elles. Toutes nos lèvres sont sèches.",
-      warmup: 15,
-      craftable: false
-    },
-    {
-      id: "cabaretfey",
-      label: "Les mystères du Exuvie Club",
-      actionId: "explore",
-      requirements: {
-        influencemoth: 1
-      },
-      startdescription: "'The Wreath!' annonce le maître de cérémonie. Une danseuse ondule sur scène, déployant ses bras. Des phalènes vivants se déversent comme un ruisseau depuis sa bouche !",
-      description: "Des phalènes blancs tourbillonnent à travers le hall. Ils se perchent sur les bords des verres à vin qu'ils sirotent. Le public applaudit. La femme sur scène se déplace comme si elle avait trop de membres. Les phalènes se massent sur mes bras, se nichent contre mon épaule. Sous peu, je sortirai et regarderai les froides étoiles dégagées : supposons que j'ai rêvais de tout cela. Les fumées du Club sont traîtres.",
-      effects: {
-        contentment: 1
-      },
-      warmup: 15,
-      craftable: false
-    }
-  ]
+ {"recipes": [
+
+	
+	{id:"explorecabaret",
+	actionId: "explore",
+	label: "Visiter le Exuvie Club",
+	requirements: {locationcabaret:1,funds:1},
+	startdescription:"L'entrée est perdue sous de souples tentures cramoisies, vermillon et incarnadine. Au-dessus de la porte, la devise du club : 'IN GI RUM IMUS NOC TE ET CON SUMI MUR IGNI'. Qu'on peut traduire par 'dans le cercle de la nuit, nous volons, jusqu'à ce que le feu nous savoure'.",
+	description: ".",
+	craftable:true,
+	deckeffect: {"cabaretevents":1},
+	linked:[{id:"cabaretpleasure",chance:100},
+	{id:"cabaretallure",chance:100},
+	{id:"cabareteducation",chance:100},
+	{id:"cabaretglimpse",chance:100},
+	{id:"cabaretharm",chance:100},
+	{id:"cabaretexposure",chance:100},
+	{id:"cabarethunger",chance:100},
+	{id:"cabaretfey",chance:100}]
+	},
+	{id: "cabaretpleasure",
+	label: "Plaisirs nocturnes au Cabaret Club",
+	actionId: "explore",
+	requirements:{contentment:1},
+	startdescription: "Les boissons, les chansons, la lumière ; les murs voûtés, la brume bleu fumée, la pression et le balancement de la chair vêtue et dévêtus.",
+	description: "J'ai pris du plaisir. Je rentre à la maison à une heures impie et m'écroule dans le lit.",
+	warmup:15,
+	craftable:false
+	},
+		{id: "cabaretallure",
+	label: "Du Charme au Exuvie Club",
+	actionId: "explore",
+	requirements:{fascination:1},
+	startdescription: "Durant le spectacle de ce soir, 'Amethyste', un chasseur armé de son filet poursuit une femme aux ailes voilées à travers le bruissement d'un dédale de danseurs vêtus de feuilles. Chaque mouvement est une lente plongée.",
+	description: "Petit à petit, les lumières s'éteignent au fur et à mesure que le spectacle se termine. Il n'y a pas d'applaudissements. Nous dérivons chacun dans la rue, seuls avec notre rêve.",
+	effects:{contentment:1},
+	warmup:15,
+	craftable:false
+	},
+		{id: "cabareteducation",
+	label: "Des Enseignements au Cabaret Club",
+	actionId: "explore",
+	requirements:{erudition:1},
+	startdescription: "Tonight's performance is a desultory affair of flapping scarves and earnest flesh. Le public s'est tourné en discussions.",
+	description: "J'ai passé la soirée à échanger sur des théories autour d'une table de charlatans, de pédants et - peut-être - d'initiés. Certaines de ces théories pourraient être vraies.",
+	effects:{contentment:1},
+	warmup:15,
+	craftable:false
+	},
+		{id: "cabaretglimpse",
+	label: "A Glimpse of Something More au Exuvie Club",
+	actionId: "explore",
+	requirements:{glimmering:1},
+	startdescription: "The backdrops for tonight's performances are painted with Piranesi's drawings of vast impossible subterranean prisons. The dancers are monster-masked, sudden as fire, each movement snapping with wicked intent.",
+	description: "The dancers pass beyond the backdrops, cross them, seem to move upon their staircases and drawbridges. Their bodies become smudged with backdrop-paint. A growl arises from the audience. 'The walls of the House...'",
+	warmup:15,
+	craftable:false
+	},
+			{id: "cabaretharm",
+	label: "A Wounding Consummation au Exuvie Club",
+	actionId: "explore",
+	requirements:{vitality:1},
+	startdescription: "Ce soir, les artistes passent parmi le public, jonglant avec des couteaux ou des bouteilles de verre carmines, se penchant pour conférer des chuchotements ou d’autres cadeaux.",
+	description: "Une danseuse a pressé contre ma bouche le rouge d'une coupe en verre. Le bord était tranchant. Ma bouche saigne. Mais au moins le vin était robuste -",
+	effects:{contentment:1},
+	warmup:15,
+	craftable:false
+	},
+			{id: "cabaretexposure",
+	label: "Une Interruption au Exuvie Club",
+	actionId: "explore",
+	requirements:{notoriety:1},
+	startdescription: "Le spectacle a à peine débuté quand un gémissement de terreur survient du public !",
+	description: "Le spectacle prend fin immédiatement ; les lumières s'allument; nous sommes raccompagné depuis nos places et pressés dans la rue. Nous ne saurons jamais ce qui s'est passé, mais le personnel du Club semblait préparé, comme si cela s'était déjà produit auparavant. Les lumières fleurissent auprès des fenêtres, et les passants restent bouche bée devant foule d'invités se dispersant dans la nuit.",
+	warmup:15,
+	craftable:false
+	},
+			{id: "cabarethunger",
+	label: "The Hungers au Exuvie Club",
+	actionId: "explore",
+	requirements:{influencegrail:1},
+	startdescription: "Une danseuse entre en scène depuis la gauche, emmaillotée de bandes rouges moulant comme des tendons. Elle en enlève une au loin. Une autre. Puis une autre. Et encore une autre - ",
+	description: "Ce doit être un tour. On ne peut pas ôter ses vêtements si doucement que les os sous la peau en soit visibles. Des os roses comme la chair d'une pêche. Des organes nichés comme des raisins. Les lumières baissent, vacillent, s'estompent, et l'étoile rouge de la scène avec elles. Toutes nos lèvres sont sèches.",
+	warmup:15,
+	craftable:false
+	},
+			{id: "cabaretfey",
+	label: "Les mystères du Exuvie Club",
+	actionId: "explore",
+	requirements:{influencemoth:1},
+	startdescription: "'The Wreath!' annonce le maître de cérémonie. Une danseuse ondule sur scène, déployant ses bras. Des phalènes vivants se déversent comme un ruisseau depuis sa bouche !",
+	description: "Des phalènes blancs tourbillonnent à travers le hall. Ils se perchent sur les bords des verres à vin qu'ils sirotent. Le public applaudit. La femme sur scène se déplace comme si elle avait trop de membres. Les phalènes se massent sur mes bras, se nichent contre mon épaule. Sous peu, je sortirai et regarderai les froides étoiles dégagées : supposons que j'ai rêvais de tout cela. Les fumées du Club sont traîtres.",
+	effects:{contentment:1},
+	warmup:15,
+	craftable:false
+	}
+]
 }

@@ -1,76 +1,64 @@
-{
-  "recipes": [
-    {
-      id: "heartinduction",
-      label: "Le Parcours du Coeur",
-      actionId: "heartinduction",
-      effects: {
-        vitality: 1
-      },
-      startdescription: "Chaque fois que le principe du Coeur est impliqué, je peux gagner de la Vitalité.",
-      description: "Mon coeur bat plus fort, aujourd'hui.",
-      warmup: 30,
-      craftable: false
+ {"recipes": [
+	{
+        id: "heartinduction",
+        label: "Le Parcours du Coeur",
+        actionId: "heartinduction",
+        effects: {vitality:1},
+		startdescription: "Chaque fois que le principe du Coeur est impliqué, je peux gagner de la Vitalité.",
+        description: "Mon coeur bat plus fort, aujourd'hui.",
+        warmup: 30,
+        craftable: false
     },
-    {
-      id: "lanterninduction",
-      label: "Une Lumière dans le Crâne",
-      actionId: "lanterninduction",
-      effects: {
-        erudition: 1
-      },
-      startdescription: "Whenever the principle of the Lantern sheds its light, I may recall additional scraps of knowledge.",
-      description: "Les faits poussiéreux reviennent nettement dans mon cerveau. Pour l'instant du moins.",
-      warmup: 30,
-      craftable: false
+		{
+        id: "lanterninduction",
+        label: "Une Lumière dans le Crâne",
+        actionId: "lanterninduction",
+        effects: {erudition:1},
+		startdescription: "Whenever the principle of the Lantern sheds its light, I may recall additional scraps of knowledge.",
+        description: "Les faits poussiéreux reviennent nettement dans mon cerveau. Pour l'instant du moins.",
+        warmup: 30,
+        craftable: false
     },
-    {
-      id: "mothinduction",
-      label: "Old Unhappy Far-off Things",
-      actionId: "mothinduction",
-      effects: {
-        restlessness: 1
-      },
-      startdescription: "Moth finds the light in the dark, and so do I.",
-      description: "A half-glimpsed wistfulness has touched me.",
-      warmup: 30,
-      craftable: false
+		{
+        id: "mothinduction",
+        label: "Old Unhappy Far-off Things",
+        actionId: "mothinduction",
+        effects: {restlessness:1},
+		startdescription: "Moth finds the light in the dark, and so do I.",
+        description: "A half-glimpsed wistfulness has touched me.",
+        warmup: 30,
+        craftable: false
     },
-    {
-      id: "grailinduction",
-      label: "The Place Behind Desire",
-      actionId: "grailinduction",
-      effects: {
-        glimmering: 1
-      },
-      startdescription: "Is there something to be learnt from the satisfaction of desire?",
-      description: "This is something like enlightenment.",
-      warmup: 30,
-      craftable: false
+			{
+        id: "grailinduction",
+        label: "The Place Behind Desire",
+        actionId: "grailinduction",
+        effects: {glimmering:1},
+		startdescription: "Is there something to be learnt from the satisfaction of desire?",
+        description: "This is something like enlightenment.",
+        warmup: 30,
+        craftable: false
     },
-    {
-      id: "dreadinduction",
-      label: "Night Terrors",
-      actionId: "dreadinduction",
-      effects: {
-        dread: 1
-      },
-      startdescription: "I wake in the night. My palms, my face, are beaded with sweat.",
-      description: "Slowly, my clenched fists relax. I'll slide back into sleep. But something remains, like spiderwebs in the corner of the room.",
-      warmup: 60,
-      craftable: false
+				{
+        id: "dreadinduction",
+        label: "Night Terrors",
+        actionId: "dreadinduction",
+        effects: {dread:1},
+		startdescription: "I wake in the night. My palms, my face, are beaded with sweat.",
+        description: "Slowly, my clenched fists relax. I'll slide back into sleep. But something remains, like spiderwebs in the corner of the room.",
+        warmup: 60,
+        craftable: false
     },
-    {
-      id: "fascinationinduction",
-      label: "New Colours",
-      actionId: "fascinationinduction",
-      effects: {
-        fascination: 1
-      },
-      startdescription: "I have begun to notice colours in the world for which I have no name.",
-      description: "I am seeing things I shouldn't. I know this is dangerous. But it's difficult not to long for it.",
-      warmup: 60,
-      craftable: false
-    }
-  ]
+	
+					{
+        id: "fascinationinduction",
+        label: "New Colours",
+        actionId: "fascinationinduction",
+        effects: {fascination:1},
+		startdescription: "I have begun to notice colours in the world for which I have no name.",
+        description: "I am seeing things I shouldn't. I know this is dangerous. But it's difficult not to long for it.",
+        warmup: 60,
+        craftable: false
+    },
+]
 }

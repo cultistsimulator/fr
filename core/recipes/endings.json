@@ -1,34 +1,30 @@
 {
-  "recipes": [
-    {
-      id: "deathofthebody",
-      label: "No Health is left",
-      actionId: "healthend",
-      requirements: {
-        health: -1
-      },
-      effects: {},
-      startdescription: "Ma vie s'éclipse -",
-      description: "Where will they find me? I am not here.",
-      warmup: 0,
-      craftable: false,
-      ending: "deathofthebody",
-      signalEndingFlavour: Melancholy
+"recipes": [
+   {
+        id: "deathofthebody",
+        label: "No Health is left",
+        actionId: "healthend",
+        requirements: {health: -1},
+        effects: {},
+        startdescription: "Ma vie s'éclipse -",
+        description: "Where will they find me? I am not here.",
+        warmup: 0,
+        craftable: false,
+		ending: "deathofthebody",
+		signalEndingFlavour: Melancholy
     },
-    {
-      id: "workvictory",
-      label: "Je vais m'installer dans une confortable existence",
-      actionId: "workwin",
-      requirements: {
-        passion: 1
-      },
-      effects: {},
-      startdescription: "J'ai renoncé mes rêves; Je vais vivre assez sainement.",
-      description: "C'est fini",
-      warmup: 0,
-      craftable: false,
-      ending: "workvictory",
-      burnimage: "retirement"
+		{
+        id: "workvictory",
+        label: "Je vais m'installer dans une confortable existence",
+        actionId: "workwin",
+        requirements: {passion:1},
+        effects: {},
+        startdescription: "J'ai renoncé mes rêves; Je vais vivre assez sainement.",
+        description: "C'est fini",
+        warmup: 0,
+        craftable: false,
+		ending: "workvictory",
+		burnimage: "retirement"
     }
-  ]
+]
 }

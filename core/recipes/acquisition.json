@@ -1,117 +1,63 @@
-{
-  "recipes": [
-    {
-      id: "auctionbuy",
-      label: "Enchérir dans une vente aux enchères",
-      actionId: "explore",
-      effects: {},
-      slots: [
-        {
-          id: "Bid",
-          required: {
-            funds: 1
-          }
-        }
-      ],
-      startdescription: "Une foule de visages transis, le regard brillant. Qui va enchérir ? [L'objet aux enchères est visible à droite. Il disparaitra pour toujours si la vente aux enchères est perdue.]",
-      description: ".",
-      warmup: 30,
-      craftable: false,
-      alternativerecipes: [
-        {
-          id: "playerincreasedbid",
-          chance: 100,
-          expulsion:
-        }
-      ],
-      linked: [
-        {
-          id: "auctionfailure",
-          chance: 100
-        }
-      ]
-      comments: "The auction item should be inherited from the linking recipe. If this event completes, the auction has failed and the item is removed. NB the auctioncomplete aspect, which converts existing bids back into funds."
-    },
-    {
-      id: "playerincreasedbid",
-      actionId: "explore",
-      label: "J'ai enchéri !",
-      requirements: {
-        funds: 1
-      },
-      startdescription: "J'ai levé la main. Le commissaire-priseur raps out an acknowledgement. Est-ce que quelqu'un va surenchérir ?",
-      description: ".",
-      effects: {
-        funds: -1,
-        bid: 1
-      }
-      warmup: 0,
-      linked: [
-        {
-          id: "auctionsuccess",
-          chance: 70
-        },
-        {
-          id: "auctionbidmatched",
-          chance: 100
-        }
-      ]
-    },
-    {
-      id: "auctionbidmatched",
-      label: "Un autre enchérisseur !",
-      actionId: "explore",
-      startdescription: "Quelqu'un d'autre a surenchéri ! Je dois avancer plus de fonds, ou renoncer à mon lot.",
-      description: ".",
-      slots: [
-        {
-          id: "Bid",
-          required: {
-            funds: 1
-          }
-        }
-      ],
-      alternativerecipes: [
-        {
-          id: "playerincreasedbid",
-          chance: 100
-        }
-      ],
-      linked: [
-        {
-          id: "auctionfailure",
-          chance: 100
-        }
-      ],
-      warmup: 30
-    },
-    {
-      id: "auctionfailure",
-      actionId: "explore",
-      label: "Je n'ai pas gagné l'enchère",
-      effects: {
-        text: -1
-      },
-      aspects: {
-        restore: 1
-      },
-      startdescription: ".",
-      description: "La vente aux enchères est terminée. Le livre a quitté les lieux. Je conserve mes fonds.",
-      warmup: 0
-    },
-    {
-      id: "auctionsuccess",
-      label: "J'ai gagné la vente aux enchères !",
-      actionId: "explore",
-      effects: {
-        funds: -100,
-        bid: -100
-      },
-      startdescription: ".",
-      description: "Le commissaire-priseur prend note de mon nom et le signale à l'un des préposés. J'ai mon lot. J'espère que cela en valaitla peine.",
-      warmup: 0,
-      craftable: false,
-      comments: "The auction item should be inherited from the linking recipe."
-    }
-  ]
+ {"recipes": [
+
+		{
+        id: "auctionbuy",
+        label: "Enchérir dans une vente aux enchères",
+        actionId: "explore",
+		effects: {},
+		slots:[{id:"Bid",required: {funds:1}}],
+        startdescription: "Une foule de visages transis, le regard brillant. Qui va enchérir ? [L'objet aux enchères est visible à droite. Il disparaitra pour toujours si la vente aux enchères est perdue.]",
+        description: ".",
+        warmup: 30,
+        craftable: false,
+		alternativerecipes:[{id:"playerincreasedbid",chance:100,expulsion:}],
+		linked:[{id:"auctionfailure",chance:100}]
+		comments: "The auction item should be inherited from the linking recipe. If this event completes, the auction has failed and the item is removed. NB the auctioncomplete aspect, which converts existing bids back into funds."
+       },
+	   {id: "playerincreasedbid",
+	   actionId:"explore",
+	   label:"J'ai enchéri !",
+	   requirements:{funds:1},
+	   startdescription: "J'ai levé la main. Le commissaire-priseur raps out an acknowledgement. Est-ce que quelqu'un va surenchérir ?",
+	   description:".",
+	   effects:{funds:-1,bid:1}
+	   warmup:0,
+	   linked:[
+	   {id:"auctionsuccess",chance:70},
+	   {id:"auctionbidmatched",chance:100}
+	   ]
+	   },
+	   {id:"auctionbidmatched",
+	   label: "Un autre enchérisseur !",
+	   actionId:"explore",
+	   startdescription:"Quelqu'un d'autre a surenchéri ! Je dois avancer plus de fonds, ou renoncer à mon lot.",
+	   description:".",
+	   slots:[{id:"Bid",required: {funds:1}}],
+		alternativerecipes:[{id:"playerincreasedbid",chance:100}],
+		linked:[{id:"auctionfailure",chance:100}],
+		warmup:30
+	},
+	   {id:"auctionfailure",
+	   actionId:"explore",
+	   label: "Je n'ai pas gagné l'enchère",
+	   		effects:{text:-1},
+		aspects: {restore:1},
+		startdescription:".",
+		description:"La vente aux enchères est terminée. Le livre a quitté les lieux. Je conserve mes fonds.",
+		warmup:0,
+	   },
+	   {
+        id: "auctionsuccess",
+        label: "J'ai gagné la vente aux enchères !",
+        actionId: "explore",
+		effects: {funds:-100,bid:-100},
+        startdescription: ".",
+        description: "Le commissaire-priseur prend note de mon nom et le signale à l'un des préposés. J'ai mon lot. J'espère que cela en valaitla peine.",
+        warmup: 0,
+        craftable: false,
+		comments: "The auction item should be inherited from the linking recipe."
+       },
+			
+	
+]
 }
