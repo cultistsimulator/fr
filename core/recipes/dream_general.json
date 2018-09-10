@@ -1,222 +1,374 @@
 {
-"recipes": [
-		{
-        id: "dreamascensionpowera",
-        label: "Meditate on my goal of unearthly power",
-        actionId: "dream",
-        requirements: {ascensionpowera: 1},
-		slots: [{id:"Calculation",required:{lore:1,health:1,reason:1}, description: "Me consacrer sur le lore du principle que je recherche ; ou concentrer mes efforts ailleurs."}],
-        startdescription: "Dois-je me consacrer à mon but ? Ou concentrer mes efforts ailleurs ?",
-        description: "J'ai décidé de demeurer comme je suis... pour le moment.",
-		alternativerecipes:[{id: "dreamascension_switchto_sensation",chance:100},
-		{id: "dreamascension_switchto_enlightenment",chance:100},
-		{id: "dreamascension_upgrade_power_1to2",chance:100}],
-        warmup: 60,
-        craftable: true
+  "recipes": [
+    {
+      id: "dreamascensionpowera",
+      label: "Meditate on my goal of unearthly power",
+      actionId: "dream",
+      requirements: {
+        ascensionpowera: 1
+      },
+      slots: [
+        {
+          id: "Calculation",
+          required: {
+            lore: 1,
+            health: 1,
+            reason: 1
+          },
+          description: "Me consacrer sur le lore du principle que je recherche ; ou concentrer mes efforts ailleurs."
+        }
+      ],
+      startdescription: "Dois-je me consacrer à mon but ? Ou concentrer mes efforts ailleurs ?",
+      description: "J'ai décidé de demeurer comme je suis... pour le moment.",
+      alternativerecipes: [
+        {
+          id: "dreamascension_switchto_sensation",
+          chance: 100
+        },
+        {
+          id: "dreamascension_switchto_enlightenment",
+          chance: 100
+        },
+        {
+          id: "dreamascension_upgrade_power_1to2",
+          chance: 100
+        }
+      ],
+      warmup: 60,
+      craftable: true
     },
-				{
-        id: "dreamascensionsensationa",
-        label: "Meditate on the pursuit of sensation",
-        actionId: "dream",
-        requirements: {ascensionsensationa: 1},
-		slots: [{id:"Musing",required:{lore:1,passion:1,reason:1}, description: "Me consacrer sur le lore du principle que je recherche ; ou concentrer mes efforts ailleurs."}],
-        startdescription: "Dois-je me consacrer à mon but ? Ou concentrer mes efforts ailleurs ?",
-        description: "J'ai décidé de demeurer comme je suis... pour le moment.",
-        		alternativerecipes:[{id: "dreamascension_switchto_power",chance:100},
-		{id: "dreamascension_switchto_enlightenment",chance:100},
-		{id: "dreamascension_upgrade_sensation_1to2m",chance:50},
-		{id: "dreamascension_upgrade_sensation_1to2f",chance:100}],
-		warmup: 60,
-        craftable: true
+    {
+      id: "dreamascensionsensationa",
+      label: "Meditate on the pursuit of sensation",
+      actionId: "dream",
+      requirements: {
+        ascensionsensationa: 1
+      },
+      slots: [
+        {
+          id: "Musing",
+          required: {
+            lore: 1,
+            passion: 1,
+            reason: 1
+          },
+          description: "Me consacrer sur le lore du principle que je recherche ; ou concentrer mes efforts ailleurs."
+        }
+      ],
+      startdescription: "Dois-je me consacrer à mon but ? Ou concentrer mes efforts ailleurs ?",
+      description: "J'ai décidé de demeurer comme je suis... pour le moment.",
+      alternativerecipes: [
+        {
+          id: "dreamascension_switchto_power",
+          chance: 100
+        },
+        {
+          id: "dreamascension_switchto_enlightenment",
+          chance: 100
+        },
+        {
+          id: "dreamascension_upgrade_sensation_1to2m",
+          chance: 50
+        },
+        {
+          id: "dreamascension_upgrade_sensation_1to2f",
+          chance: 100
+        }
+      ],
+      warmup: 60,
+      craftable: true
     },
-			{
-        id: "dreamascensionenlightenmenta",
-        label: "Meditate on my goal of unearthly knowledge",
-        actionId: "dream",
-        requirements: {ascensionenlightenmenta: 1},
-		slots: [{id:"Reflection",required:{lore:1,passion:1,health:1},description: "Me consacrer sur le lore du principle que je recherche ; ou concentrer mes efforts ailleurs."}],
-        startdescription: "Dois-je me consacrer à mon but ? Ou concentrer mes efforts ailleurs ?",
-        description: "J'ai décidé de demeurer comme je suis... pour le moment.",
-        		alternativerecipes:[{id: "dreamascension_switchto_sensation",chance:100},
-		{id: "dreamascension_switchto_power",chance:100},
-		{id: "dreamascension_upgrade_enlightenment_1to2",chance:100}],
-		warmup: 60,
-        craftable: true
+    {
+      id: "dreamascensionenlightenmenta",
+      label: "Meditate on my goal of unearthly knowledge",
+      actionId: "dream",
+      requirements: {
+        ascensionenlightenmenta: 1
+      },
+      slots: [
+        {
+          id: "Reflection",
+          required: {
+            lore: 1,
+            passion: 1,
+            health: 1
+          },
+          description: "Me consacrer sur le lore du principle que je recherche ; ou concentrer mes efforts ailleurs."
+        }
+      ],
+      startdescription: "Dois-je me consacrer à mon but ? Ou concentrer mes efforts ailleurs ?",
+      description: "J'ai décidé de demeurer comme je suis... pour le moment.",
+      alternativerecipes: [
+        {
+          id: "dreamascension_switchto_sensation",
+          chance: 100
+        },
+        {
+          id: "dreamascension_switchto_power",
+          chance: 100
+        },
+        {
+          id: "dreamascension_upgrade_enlightenment_1to2",
+          chance: 100
+        }
+      ],
+      warmup: 60,
+      craftable: true
     },
-{
-        id: "dreamascension_switchto_power",
-		label: "Mon objectif est le Pouvoir, à présent.",
-		actionId: "dream",
-		requirements: {passion:1},
-		effects:{desire:-1,ascensionpowera:1},
-		startdescription:"Peut-être que le Pouvoir est un objectif bien plus irrésistible.",
-		description: "J'ai recentré mes desseins. Mes prédécesseurs maniaient le pouvoir du renouveau : un pouvoir que les impératrices, les généraux, les physiciens ne pouvaient que rêver. Je dois y arriver, même si le pouvoir puisse me déchirer.",
-},
-{
-        id: "dreamascension_switchto_sensation",
-		label: "Mon objectif est la Sensation, à présent.",
-		actionId: "dream",
-		requirements: {health:1},
-		effects:{desire:-1,ascensionsensationa:1},
-		startdescription:"Peut-être que la Sensation est un objectif bien plus suave.",
-		description: "J'ai recentré mes desseins. Il existe des expériences cachées telles des veines sous la peau du monde. Je connaîtraiI le plus profond d'entre eux, même si l'expérience puisse me dévorer.",
-},
-
-{
-        id: "dreamascension_switchto_enlightenment",
-		label: "Mon objectif est l'Illumination, à présent.",
-		actionId: "dream",
-		requirements: {reason:1},
-				effects:{desire:-1,ascensionenlightenmenta:1},
-		startdescription:"Peut-être que la connaissance est un objectif bien plus beau.",
-				description: "J'ai recentré mes desseins. Mes prédécesseurs ont compris les plus grands secrets, les secrets de recherche, les secrets qui illuminent les os comme du verre et la peau comme du parchemin. Je dois y arriver, même si la connaissance puisse me défaire.",
-},
-
-{
-        id: "dreamascension_upgrade_power_1to2",
-		label: "Flame's Dedication",
-		actionId: "dream",
-		requirements: {lore:1,forge:1},
-		startdescription:"I will dedicate myself to the pursuit of power.",
-		description: "J'ai murmuré les mots que le forgeron souffle au fer, que le meurtrier prononce à ses victimes, que le feu dit à son carburant. Seulement je sais ce que j'ai fait, et cela va façonner ma voie à présent. [J'ai progressé d'un cran vers une terrible ascension.]",
-		effects:{ascensionpowera:-1,ascensionpowerb:1},
-		burnimage: "forgededication"
-},
-
-
-{
-        id: "dreamascension_upgrade_sensation_1to2m",
-		label: "Blood's Dedication",
-		actionId: "dream",
-		requirements: {lore:1,grail:1},
-		startdescription:"I will dedicate myself to the pursuit of sensation.",
-		description: "Certains mots sont mieux entendus. Certains mots ont une bien meilleur saveur. Cette saveur est sur ma langue à présent, et je ne l'oublierai jamais. [J'ai progressé d'un cran vers une terrible ascension.]",
-		effects:{ascensionsensationa:-1,ascensionsensationbm:1},
-		burnimage: "graildedication"
-},
-{
-        id: "dreamascension_upgrade_sensation_1to2f",
-		label: "Blood's Dedication",
-		actionId: "dream",
-		requirements: {lore:1,grail:1},
-		startdescription:"I will dedicate myself to the pursuit of sensation.",
-		description: "Certains mots sont mieux entendus. Certains mots ont une bien meilleur saveur. Cette saveur est sur ma langue à présent, et je ne l'oublierai jamais. [J'ai progressé d'un cran vers une terrible ascension.]",
-		effects:{ascensionsensationa:-1,ascensionsensationbf:1},		
-		burnimage: "graildedication"
-},
-
-{
-        id: "dreamascension_upgrade_enlightenment_1to2",
-		label: "Light's Dedication",
-		actionId: "dream",
-		requirements: {lore:1,lantern:1},
-		startdescription:"I will dedicate myself to the pursuit of knowledge.",
-		description: "J'ai prononcé les mots : 'Each Hour has its colour, but colour exists only where there is light.' I will go where there is light, though it bleach me to glass. [J'ai progressé d'un cran vers une terrible ascension.]",
-		effects:{ascensionenlightenmenta:-1,ascensionenlightenmentb:1},		
-		burnimage: "lanterndedication"
-},
-
-
-
-
-	{
-	id: "dreamreason",
-	label: "L'Esprit Errant",
-	actionId: "dream",
-	requirements: {reason: 1},
-	effects: {},
-	startdescription: "Jadis un homme a dit que le sommeil de raison produisait des monstres. Souvent, il est sain de laisser l'esprit vagabonder durant le sommeil. Mais si je continue de rêver ainsi, tôt ou tard, une sorte de monstre surgira de mes propres peurs.",
-	description: ".",
-	warmup: 60,
-	craftable: true,
-	linked: [{id:"dream_router",chance:100}]
-	},
-	
-	{id: "dream_router",
-	label: "The Crowds of Sleep",
-	actionId: "dream",
-	deckeffect: {dreamreasonresults:1},
-	linked: [
-	{id: "dreamcontentment",chance: 100},
-	{id: "dreamrestlessness",chance: 100},
-{id: "dreamvitality",chance: 100},	
-	{id: "dreamglimmering", chance: 100},
-	{id: "nightmarehersault", chance: 100},
-	{id: "nightmarecleansingdawn", chance: 100},
-	],
-	warmup:10
-	},
-	{
-	id: "dreamcontentment",
-	label: "Dreams of the Rain",
-	actionId: "dream",
-	requirements: {contentment:1},
-	
-	startdescription: "Rain is coming; but the right kind of rain.",
-	description: "J'ai rêvé de la pluie, chuchotant dans les corniches, tapotant sur les fenêtres tel un vieil ami, sifflant farouchement dans la cheminée. Il est difficile d’être malheureux sous la pluie adéquate.",
-	warmup: 10,
-	},
-	{
-	id: "dreamrestlessness",
-	label: "Rêves de Portes",
-	actionId: "dream",
-	requirements: {restlessness:1},
-	startdescription: "Ce soir ce sera râve du labyrinthe de portes.",
-	description: "J'ai rêvé d'ouverture de portes. Des portes rouges, des portes en or, des portes en verre, des portes attachées comme des livres, des portes de wagon, des porches de château. Derrière l'une d'entre elle se trouvait ce que je cherche. Je me suis réveillé avec le claquement de portes résonnant encore dans mes oreilles.",
-	warmup: 10,
-	},{
-	id: "dreamvitality",
-	label: "Un Sommeil Profond et Reposant",
-	actionId: "dream",
-	requirements: {vitality:1},
-	startdescription: "Ce soir je rêverai de -",
-	description: "J'ai rêvé de rien du tout. Je me suis réveillé, étiré et levé sans hâte. Ces heures calmes m'ont remis d'aplomb.",
-	warmup: 10,
-	},
-	{
-	id: "dreamglimmering",
-	label: "Rêves de Curiosités Derrière un Carreau",
-	actionId: "dream",
-	requirements: {glimmering:1},
-	startdescription: "Ce soir je rêverai d'un musée.",
-	description: "Dans les vitrines de l'invraisemblable musée, je vois toujours une pomme blanche comme la neige et dure comme du marbre. Un scarabée doré dans une sombre boîte. A coy geometry awaiting my touch. A black envelope bursting with spring. Une opera-box en laiton pour instruments d'enregistrement et de mesure. Une tempête dans une conserve. Je me réveille toujours avant d'atteindre la fin de l'allée.",
-	warmup: 10,
-	},
-		{
-	id: "nightmarecleansingdawn",
-	label: "Cauchemar : L'Aube Abstergent",
-	actionId: "dream",
-	requirements: {fascination: 1},
-		alternativerecipes: [{id: "nightmarecleansingdawnsuccess",chance: 30}],
-	startdescription: "Le soleil se lève. Sans m'épargner.",
-	description: "A présent, je peux détacher ma chair, morceau par morceau, tiraillant les tendons libérés comme des fibres sélectionnées par les dents. Ma peau m'accable comme une couverture déchirée. Le soleil se traine par-dessus l'horizon dans un cri de bataille triomphant. La lumière tombe comme de l'acide sur mes os nus. La douleur me réveille. Mes os vont palpiter durant des jours.",
-	warmup: 10,
-	},
-		{id: "nightmarecleansingdawnsuccess",
-		actionId:"dream",
-	effects: {influencelanternc: 1},
-		description: "A présent, je peux détacher ma chair, morceau par morceau, tiraillant les tendons libérés comme des fibres sélectionnées par les dents. Ma peau m'accable comme une couverture déchirée. Le soleil se traine par-dessus l'horizon dans un cri de bataille triomphant. La lumière tombe comme de l'acide sur mes os nus. La douleur me réveille, et mon corps sera endolori durant des jours, mais les mots du Soleil resteront cachés dans mes os."
-	},
-	{
-	id: "nightmarehersault",
-	label: "Cauchemar d'Hersault",
-	actionId: "dream",
-	requirements: {dread: 1},
-	alternativerecipes: [{id: "nightmarehersaultsuccess",chance: 30}],
-	startdescription: "Down I go.",
-	description: "je me rappelle que Hersault écrit ceci. J'ai soulevé le plancher, et me suis bien tortillé. A présent, je suis comprimé sous eux tel un corps dissimulé. L'air empeste d'une chaude poussière. Ma bouche est pleine d'échardes. Cette fois-ci, je n’ai pas appris ce que j’espérais - quoi que cela était.",
-	warmup: 10,
-	},
-	{id: "nightmarehersaultsuccess",
-	label: "Cauchemar d'Hersault",
-	actionId: "dream",
-	effects: {influenceknockc: 1},
-		description: "J'ai soulevé le plancher, et me suis bien tortillé. A présent, je suis comprimé sous eux tel un corps dissimulé. L'air empeste d'une chaude poussière. Ma bouche est pleine d'échardes. But this is the space below."
-	},
-	
-	
-	
-	
-	]
-
+    {
+      id: "dreamascension_switchto_power",
+      label: "Mon objectif est le Pouvoir, à présent.",
+      actionId: "dream",
+      requirements: {
+        passion: 1
+      },
+      effects: {
+        desire: -1,
+        ascensionpowera: 1
+      },
+      startdescription: "Peut-être que le Pouvoir est un objectif bien plus irrésistible.",
+      description: "J'ai recentré mes desseins. Mes prédécesseurs maniaient le pouvoir du renouveau : un pouvoir que les impératrices, les généraux, les physiciens ne pouvaient que rêver. Je dois y arriver, même si le pouvoir puisse me déchirer."
+    },
+    {
+      id: "dreamascension_switchto_sensation",
+      label: "Mon objectif est la Sensation, à présent.",
+      actionId: "dream",
+      requirements: {
+        health: 1
+      },
+      effects: {
+        desire: -1,
+        ascensionsensationa: 1
+      },
+      startdescription: "Peut-être que la Sensation est un objectif bien plus suave.",
+      description: "J'ai recentré mes desseins. Il existe des expériences cachées telles des veines sous la peau du monde. Je connaîtraiI le plus profond d'entre eux, même si l'expérience puisse me dévorer."
+    },
+    {
+      id: "dreamascension_switchto_enlightenment",
+      label: "Mon objectif est l'Illumination, à présent.",
+      actionId: "dream",
+      requirements: {
+        reason: 1
+      },
+      effects: {
+        desire: -1,
+        ascensionenlightenmenta: 1
+      },
+      startdescription: "Peut-être que la connaissance est un objectif bien plus beau.",
+      description: "J'ai recentré mes desseins. Mes prédécesseurs ont compris les plus grands secrets, les secrets de recherche, les secrets qui illuminent les os comme du verre et la peau comme du parchemin. Je dois y arriver, même si la connaissance puisse me défaire."
+    },
+    {
+      id: "dreamascension_upgrade_power_1to2",
+      label: "Flame's Dedication",
+      actionId: "dream",
+      requirements: {
+        lore: 1,
+        forge: 1
+      },
+      startdescription: "I will dedicate myself to the pursuit of power.",
+      description: "J'ai murmuré les mots que le forgeron souffle au fer, que le meurtrier prononce à ses victimes, que le feu dit à son carburant. Seulement je sais ce que j'ai fait, et cela va façonner ma voie à présent. [J'ai progressé d'un cran vers une terrible ascension.]",
+      effects: {
+        ascensionpowera: -1,
+        ascensionpowerb: 1
+      },
+      burnimage: "forgededication"
+    },
+    {
+      id: "dreamascension_upgrade_sensation_1to2m",
+      label: "Blood's Dedication",
+      actionId: "dream",
+      requirements: {
+        lore: 1,
+        grail: 1
+      },
+      startdescription: "I will dedicate myself to the pursuit of sensation.",
+      description: "Certains mots sont mieux entendus. Certains mots ont une bien meilleur saveur. Cette saveur est sur ma langue à présent, et je ne l'oublierai jamais. [J'ai progressé d'un cran vers une terrible ascension.]",
+      effects: {
+        ascensionsensationa: -1,
+        ascensionsensationbm: 1
+      },
+      burnimage: "graildedication"
+    },
+    {
+      id: "dreamascension_upgrade_sensation_1to2f",
+      label: "Blood's Dedication",
+      actionId: "dream",
+      requirements: {
+        lore: 1,
+        grail: 1
+      },
+      startdescription: "I will dedicate myself to the pursuit of sensation.",
+      description: "Certains mots sont mieux entendus. Certains mots ont une bien meilleur saveur. Cette saveur est sur ma langue à présent, et je ne l'oublierai jamais. [J'ai progressé d'un cran vers une terrible ascension.]",
+      effects: {
+        ascensionsensationa: -1,
+        ascensionsensationbf: 1
+      },
+      burnimage: "graildedication"
+    },
+    {
+      id: "dreamascension_upgrade_enlightenment_1to2",
+      label: "Light's Dedication",
+      actionId: "dream",
+      requirements: {
+        lore: 1,
+        lantern: 1
+      },
+      startdescription: "I will dedicate myself to the pursuit of knowledge.",
+      description: "J'ai prononcé les mots : 'Each Hour has its colour, but colour exists only where there is light.' I will go where there is light, though it bleach me to glass. [J'ai progressé d'un cran vers une terrible ascension.]",
+      effects: {
+        ascensionenlightenmenta: -1,
+        ascensionenlightenmentb: 1
+      },
+      burnimage: "lanterndedication"
+    },
+    {
+      id: "dreamreason",
+      label: "L'Esprit Errant",
+      actionId: "dream",
+      requirements: {
+        reason: 1
+      },
+      effects: {},
+      startdescription: "Jadis un homme a dit que le sommeil de raison produisait des monstres. Souvent, il est sain de laisser l'esprit vagabonder durant le sommeil. Mais si je continue de rêver ainsi, tôt ou tard, une sorte de monstre surgira de mes propres peurs.",
+      description: ".",
+      warmup: 60,
+      craftable: true,
+      linked: [
+        {
+          id: "dream_router",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "dream_router",
+      label: "The Crowds of Sleep",
+      actionId: "dream",
+      deckeffect: {
+        dreamreasonresults: 1
+      },
+      linked: [
+        {
+          id: "dreamcontentment",
+          chance: 100
+        },
+        {
+          id: "dreamrestlessness",
+          chance: 100
+        },
+        {
+          id: "dreamvitality",
+          chance: 100
+        },
+        {
+          id: "dreamglimmering",
+          chance: 100
+        },
+        {
+          id: "nightmarehersault",
+          chance: 100
+        },
+        {
+          id: "nightmarecleansingdawn",
+          chance: 100
+        }
+      ],
+      warmup: 10
+    },
+    {
+      id: "dreamcontentment",
+      label: "Dreams of the Rain",
+      actionId: "dream",
+      requirements: {
+        contentment: 1
+      },
+      startdescription: "Rain is coming; but the right kind of rain.",
+      description: "J'ai rêvé de la pluie, chuchotant dans les corniches, tapotant sur les fenêtres tel un vieil ami, sifflant farouchement dans la cheminée. Il est difficile d’être malheureux sous la pluie adéquate.",
+      warmup: 10
+    },
+    {
+      id: "dreamrestlessness",
+      label: "Rêves de Portes",
+      actionId: "dream",
+      requirements: {
+        restlessness: 1
+      },
+      startdescription: "Ce soir ce sera râve du labyrinthe de portes.",
+      description: "J'ai rêvé d'ouverture de portes. Des portes rouges, des portes en or, des portes en verre, des portes attachées comme des livres, des portes de wagon, des porches de château. Derrière l'une d'entre elle se trouvait ce que je cherche. Je me suis réveillé avec le claquement de portes résonnant encore dans mes oreilles.",
+      warmup: 10
+    },
+    {
+      id: "dreamvitality",
+      label: "Un Sommeil Profond et Reposant",
+      actionId: "dream",
+      requirements: {
+        vitality: 1
+      },
+      startdescription: "Ce soir je rêverai de -",
+      description: "J'ai rêvé de rien du tout. Je me suis réveillé, étiré et levé sans hâte. Ces heures calmes m'ont remis d'aplomb.",
+      warmup: 10
+    },
+    {
+      id: "dreamglimmering",
+      label: "Rêves de Curiosités Derrière un Carreau",
+      actionId: "dream",
+      requirements: {
+        glimmering: 1
+      },
+      startdescription: "Ce soir je rêverai d'un musée.",
+      description: "Dans les vitrines de l'invraisemblable musée, je vois toujours une pomme blanche comme la neige et dure comme du marbre. Un scarabée doré dans une sombre boîte. A coy geometry awaiting my touch. A black envelope bursting with spring. Une opera-box en laiton pour instruments d'enregistrement et de mesure. Une tempête dans une conserve. Je me réveille toujours avant d'atteindre la fin de l'allée.",
+      warmup: 10
+    },
+    {
+      id: "nightmarecleansingdawn",
+      label: "Cauchemar : L'Aube Abstergent",
+      actionId: "dream",
+      requirements: {
+        fascination: 1
+      },
+      alternativerecipes: [
+        {
+          id: "nightmarecleansingdawnsuccess",
+          chance: 30
+        }
+      ],
+      startdescription: "Le soleil se lève. Sans m'épargner.",
+      description: "A présent, je peux détacher ma chair, morceau par morceau, tiraillant les tendons libérés comme des fibres sélectionnées par les dents. Ma peau m'accable comme une couverture déchirée. Le soleil se traine par-dessus l'horizon dans un cri de bataille triomphant. La lumière tombe comme de l'acide sur mes os nus. La douleur me réveille. Mes os vont palpiter durant des jours.",
+      warmup: 10
+    },
+    {
+      id: "nightmarecleansingdawnsuccess",
+      actionId: "dream",
+      effects: {
+        influencelanternc: 1
+      },
+      description: "A présent, je peux détacher ma chair, morceau par morceau, tiraillant les tendons libérés comme des fibres sélectionnées par les dents. Ma peau m'accable comme une couverture déchirée. Le soleil se traine par-dessus l'horizon dans un cri de bataille triomphant. La lumière tombe comme de l'acide sur mes os nus. La douleur me réveille, et mon corps sera endolori durant des jours, mais les mots du Soleil resteront cachés dans mes os."
+    },
+    {
+      id: "nightmarehersault",
+      label: "Cauchemar d'Hersault",
+      actionId: "dream",
+      requirements: {
+        dread: 1
+      },
+      alternativerecipes: [
+        {
+          id: "nightmarehersaultsuccess",
+          chance: 30
+        }
+      ],
+      startdescription: "Down I go.",
+      description: "je me rappelle que Hersault écrit ceci. J'ai soulevé le plancher, et me suis bien tortillé. A présent, je suis comprimé sous eux tel un corps dissimulé. L'air empeste d'une chaude poussière. Ma bouche est pleine d'échardes. Cette fois-ci, je n’ai pas appris ce que j’espérais - quoi que cela était.",
+      warmup: 10
+    },
+    {
+      id: "nightmarehersaultsuccess",
+      label: "Cauchemar d'Hersault",
+      actionId: "dream",
+      effects: {
+        influenceknockc: 1
+      },
+      description: "J'ai soulevé le plancher, et me suis bien tortillé. A présent, je suis comprimé sous eux tel un corps dissimulé. L'air empeste d'une chaude poussière. Ma bouche est pleine d'échardes. But this is the space below."
+    }
+  ]
 }

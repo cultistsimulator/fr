@@ -1,32 +1,54 @@
 {
-"recipes": [
-
-		{
-        id: "studymapbookdealer",
-        label: "Trouver la boutique de Morland",
-        actionId: "study",
-        requirements: {mapbookdealer:1},
-		effects: {mapbookdealer:-1,locationbookdealer:1},
-		alternativerecipes:	[{id: "openexplore",chance:100, additional: true}],
-        startdescription: "Les indications pour la boutique de Morland sont sibyllins. Quand on distribue le genre de livres que mon correspondant a étudié, il faut être prudent.",
-        description: "An ill-lit street at an ill-favoured bend in a lesser river. Une douce lumière jaune à travers une fenêtre crasseuse. Miss Morland incline la tête à mon entrée, mais ne se lève pas. 'Je ne demande jamais les noms de mes clients,' m'informe-t-elle, avant que je ne prenne le temps de me présenter.\n
-		[<b>Explorer</b> est débloqué.]",
-        warmup: 30,
-        craftable: true,
-		comments: "This is one way the Explore verb may be opened."
+  "recipes": [
+    {
+      id: "studymapbookdealer",
+      label: "Trouver la boutique de Morland",
+      actionId: "study",
+      requirements: {
+        mapbookdealer: 1
+      },
+      effects: {
+        mapbookdealer: -1,
+        locationbookdealer: 1
+      },
+      alternativerecipes: [
+        {
+          id: "openexplore",
+          chance: 100,
+          additional: true
+        }
+      ],
+      startdescription: "Les indications pour la boutique de Morland sont sibyllins. Quand on distribue le genre de livres que mon correspondant a étudié, il faut être prudent.",
+      description: "An ill-lit street at an ill-favoured bend in a lesser river. Une douce lumière jaune à travers une fenêtre crasseuse. Miss Morland incline la tête à mon entrée, mais ne se lève pas. 'Je ne demande jamais les noms de mes clients,' m'informe-t-elle, avant que je ne prenne le temps de me présenter.\n
+    [
+      <b>Explorer</b>
+      est
+      débloqué.
+    ]
+    ",
+    warmup
+    :
+    30,
+    craftable
+    :
+    true,
+    comments
+    :
+    "This is one way the Explore verb may be opened."
     },
-
-{
-id: "openexplore",
-label: "Explorer",
-actionId: "explore",
-requirements: {},
-effects: {fragmentsecrethistories:1},
-startdescription: ".",
-description: "Maintenant que j'ai trouvé un lieu, je peux l'EXPLORER.",
-warmup: 0,
-maxexecutions: 1,
-craftable: false
-}
-]
+    {
+      id: "openexplore",
+      label: "Explorer",
+      actionId: "explore",
+      requirements: {},
+      effects: {
+        fragmentsecrethistories: 1
+      },
+      startdescription: ".",
+      description: "Maintenant que j'ai trouvé un lieu, je peux l'EXPLORER.",
+      warmup: 0,
+      maxexecutions: 1,
+      craftable: false
+    }
+  ]
 }\

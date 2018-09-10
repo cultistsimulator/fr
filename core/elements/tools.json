@@ -1,171 +1,412 @@
-{"elements":
-    [
-					{id: "tooledgeb",
-	label: "Les balles en fer-taïnite sont parfois extraites du squelette de bêtes inhabituelles, en Europe, au Moyen-Orient et en Inde. Quelqu'un a chassé des monstres.",
-	aspects: {edge:4,auctionable:3,tool:1}
-	},
-				{id: "tooledged",
-	label: "La lame de Biedde",
-	description: "Une entaille de cette lame ne cessera pas de saigner tant que la blessure n'aura pas été soignée. Selon un récit, Biedde était un inciseur-coureur amateur de couteaux du XVIIIe siècle près de Toulouse. Un autre récit affirme que Biedde serait seulement une bâtardisation du mot Arabe 'moustique'.",
-	aspects: {edge:8,auctionable:5,tool:1}
-	},
-		{id: "tooledgef",
-	label: "Furious Sliver",
-	description: "When the Lionsmith turned against the Colonel, he crushed his own sword in his fist. Each tiniest fragment of that weapon still thrills with rage.",
-	aspects: {edge:12,auctionable:6,tool:1}
-	},
-			{id: "toolforgeb",
-	label: "Amulette de Cinabre",
-	description: "L'écarlate est la couleur de la chaleur. Le mercure détient la clef de la dissolution ultime.",
-	aspects: {forge:4,auctionable:3,tool:1}
-	},
-		{id: "toolforged",
-	label: "Malleus Imperative",
-	description: "Un minuscule tympan, noircie par une intense chaleur. Appliqué correctement, il peut fissurer la pierre.",
-	aspects: {forge:8,auctionable:5,tool:1}
-	},
-	{id: "toolforgef",
-	label: "Carcass Spark",
-	description: "A remnant of a greater radiance, glowing softly as decay. Just possibly, a mote of the divided Sun.",
-	aspects: {forge:12,auctionable:6,tool:1}
-	},
-	{id: "toolgrailmoth",
-	label: "Amulette Susurrante",
-	description: "Elle sait ce que je désire ; ou j'imagine que c'est le cas..",
-	aspects: {grail:2,moth:2,auctionable:2,tool:1}
-	},
-		{id: "toolgrailb",
-	label: "Gants Teintés",
-	description: "Pour quel usage sont-ils connus ? Quelles leçons peuvent-ils enseigner à mes mains ?",
-	aspects: {grail:4,auctionable:3,tool:1}
-	},
-		{id: "toolgraild",
-	label: "Hallowed Polos",
-	description: "The ring-crown of a savage mother, stained with essence, woven with scraps of hair and blessed with flecks of skin.",
-	aspects: {grail:8,auctionable:5,tool:1}
-	},
-	{id: "toolgrailf",
-	label: "Calice aux Murmures",
-	description: "Les nuits où nous buvons au calice, nous ne sommes pas certains, après coup, de ce que nous avons fait. Mais nous pouvons être sûrs que c'est ce qui a toujours été fait et si nous ne nous en souvenons pas, nos enfants le feront dans leurs rêves les plus fous.",
-	aspects: {grail:12,auctionable:6,tool:1}
-	},
-					{id: "toolheartb",
-	label: "Marruvine Idol",
-	description: "The Marruvii would make little wooden idols to placate the witch-twins they feared in their lake. The lake is almost dry now, but the idols and the witch-twins yet remain, yet shadowed with the aspect of the Heart.",
-	aspects: {heart:4,auctionable:3,tool:1}
-	},
-		{id: "toolheartd",
-	label: "Wakeful Tympanum",
-	description: "In the grove where they flayed the thunder, they rattled their instruments to rouse the frenzy. The power still clings, like scent.",
-	aspects: {heart:8,auctionable:5,tool:1}
-	},
-	{id: "toolheartf",
-	label: "Kingskin Bodhrán",
-	description: "In the deep forests, the monarch gave up the last thing they had to give, and so the tool was shaped to keep their land forever safe. Then, of course, an empire stole it, as empires do.",
-	aspects: {heart:12,auctionable:6,tool:1}
-	},
-						{id: "toolknockb",
-	label: "Icône de St Agnès",
-	description: "St Agnès de Bohême était renommée pour son dévouement zélée à la mortification de la chair. Cette icône en fait une effroyable représentation.",
-	aspects: {knock:4,auctionable:3,tool:1}
-	},
-		{id: "toolknockd",
-	label: "Linteau Consacré",
-	description: "This is the skull of a door through which power has passed.",
-	aspects: {knock:8,auctionable:5,tool:1}
-	},
-	{id: "toolknockf",
-	label: "Frangiclave",
-	description: "Il y a des clés qui ouvrent des portes ; et il y a des clés qui les détruisent.",
-	aspects: {knock:12,auctionable:6,tool:1}
-	},
-
-				{id: "toollanternb",
-	label: "Pierre de Midi",
-	description: "Le Midi, dit-on, n'est plus ce qu'il était ; mais cette pierre polie conserve toujour un éclat de coucher de soleil.",
-	aspects: {lantern:4,auctionable:3,tool:1},
-	xtriggers: {crackmirror:toollanternbcracked}
-	},
-		{id: "toollanternd",
-	label: "Miroir Wildering",
-	description: "Une multitude d'images! Un enchevêtrement de visions! Contemples-moi, et réjouis-toi de la dissolution de tes sens!",
-	aspects: {lantern:8,auctionable:5,tool:1,mirror:1},
-	xtriggers: {crackmirror:toollanterndcracked}
-	},
-	{id: "toollanternf",
-	label: "Miroir du Veilleur",
-	description: "C'est le miroir que l'on ne regarde pas deux fois.",
-	aspects: {lantern:12,auctionable:6,tool:1,mirror:1},
-	xtriggers: {crackmirror:toollanternfcracked},
-	animFrames:1
-	},
-
-				{id: "toolmothb",
-	label: "Poupée Wingèd",
-	description: "Dans un grenier par-dessus la charpente d'une maison, se trouvait une fenêtre. À côté de la fenêtre, il y avait une boîte. Dans cette boîte, reposait un bandage. Dans le bandage, se trouvait une pelote de cheveux. Dans les cheveux était enroulé une poupée , car la fenêtre n'avait jamais été ouverte.",
-	aspects: {moth:4,auctionable:3,tool:1}
-	},
-		{id: "toolmothd",
-	label: "Dappled Mask",
-	description: "In the forest where the moon couldn't go, the boughs of the trees were woven together like bandages or lovers. The moon might change herself to an ant or to a bird or to her sister, but the forest would not yield to her penetrations, no matter her caresses. One day we came with our scissors, and we severed the branches until the moon and the blood dappled the rotting leaves on the forest floor.",
-	aspects: {moth:8,auctionable:5,tool:1}
-	},
-	{id: "toolmothf",
-	label: "Cisailles Alakapurine",
-	description: "Au Nord, se trouvait un citée d'une grande richesse où résidait un protecteur du monde. Un jour il s'est tut. Ces cisailles ont été utilisés pour lui prendre d'abord ses cheveux puis ses doigts et ensuite ce qui restait.",
-	aspects: {moth:12,auctionable:6,tool:1}
-	},
-					{id: "toolsecrethistoriesb",
-	label: "Paradoxical Curio",
-	description: "Parfois, il est difficile de savoir si une flèche a tué l’Impératrice Herodias ou l’Impératrice Eudokia. Parfois, il est possible qu'une horloge en bronze doré ait été volée lors du sac de Vienne alors qu'elle reposait en sécurité dans les caveaux de Rome.",
-	aspects: {secrethistories:4,auctionable:3,tool:1}
-	},
-						{id: "toolsecrethistoriesd",
-	label: "Atlas des Rêves",
-	description: "Les contours du monde changent à chaque époque, mais les contours du Mansus se reflètent dans chacun d'eux. On ne peut pas cartographier le Mansus, mais on peut tenter de cartographier ses reflets.",
-	aspects: {secrethistories:8,auctionable:5,tool:1}
-	},
-
-				{id: "toolwinterb",
-	label: "Flûte d'os",
-	description: "Son son cessera.",
-	aspects: {winter:4,auctionable:3,tool:1}
-	},
-		{id: "toolwinterd",
-	label: "Elagabaline Manacle",
-	description: "It does not relinquish its grip.",
-	aspects: {winter:8,auctionable:5,tool:1}
-	},
-	{id: "toolwinterf",
-	label: "Division Bell",
-	description: "First, its voice, and after, nothing.",
-	aspects: {winter:12,auctionable:6,tool:1}
-	},
-	
-	
-					{id: "toollanternbcracked",
-	label: "Cracked Noonstone",
-	description: "Noon, the saying goes, is not what it was; but this stone still retains an embery glow. It has been cracked. A Forge-aspected follower could restore it, with sufficient resources - or I could use up what power remains in it.",
-	aspects: {lantern:1,ingredient:1}
-	},
-		{id: "toollanterndcracked",
-	label: "Cracked Wildering Mirror",
-	description: "A deep crack runs across the shimmering metal. A Forge-aspected follower could repair it, with sufficient resources - or I could use up what power remains in it.",
-	aspects: {lantern:2,ingredient:1}
-	},
-	{id: "toollanternfcracked",
-	label: "Cracked Glass du Veilleur",
-	description: " A Forge-aspected follower could repair it, but the cost would be high - or I could use up what power remains in it.",
-	aspects: {lantern:3,ingredient:1}
-	},
-	{id:"paintingmasteredge",label:"'Colonel and Lionsmith'",description:"Since Issus have they striven so.",aspects:{edge:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmasterforge",label:"'The Forge of Days'",description:"If the Forge could regret, it would regret the Intercalate, but in all its other work, it knows joy.",aspects:{forge:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmastergrail",label:"'The Red Grail'",description:"She did not split the Sun, but here we might imagine how she must have desired it.",aspects:{grail:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmasterheart",label:"'The Sister-and-Witch'",description:"She has been a pair of funeral birds, but here she is as she would wish to drown.",aspects:{heart:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmasterknock",label:"'The Mother of Ants'",description:"Even in the days of Elam, she had begun to appear thus.",aspects:{knock:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmasterlantern",label:"'The Door in the Eye'",description:"He came from the Glory. We cannot help but see.",aspects:{lantern:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmastermoth",label:"'The Moth'",description:"In the forests of the first continent, our ancestors cursed themselves with their own god.",aspects:{moth:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmastersecrethistories",label:"'Teresa and Christopher'",description:"Love, like the Mansus, defies boundaries.",aspects:{secrethistories:8,auctionable:5,tool:1},unique:true},
-		{id:"paintingmasterwinter",label:"'The Wolf-Divided'",description:"CAPUT GERAT LUPINUM. The Sun was divided, and this is its wound.",aspects:{winter:8,auctionable:5,tool:1},unique:true}
-]
+{
+  "elements": [
+    {
+      id: "tooledgeb",
+      label: "Les balles en fer-taïnite sont parfois extraites du squelette de bêtes inhabituelles, en Europe, au Moyen-Orient et en Inde. Quelqu'un a chassé des monstres.",
+      aspects: {
+        edge: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "tooledged",
+      label: "La lame de Biedde",
+      description: "Une entaille de cette lame ne cessera pas de saigner tant que la blessure n'aura pas été soignée. Selon un récit, Biedde était un inciseur-coureur amateur de couteaux du XVIIIe siècle près de Toulouse. Un autre récit affirme que Biedde serait seulement une bâtardisation du mot Arabe 'moustique'.",
+      aspects: {
+        edge: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "tooledgef",
+      label: "Furious Sliver",
+      description: "When the Lionsmith turned against the Colonel, he crushed his own sword in his fist. Each tiniest fragment of that weapon still thrills with rage.",
+      aspects: {
+        edge: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toolforgeb",
+      label: "Amulette de Cinabre",
+      description: "L'écarlate est la couleur de la chaleur. Le mercure détient la clef de la dissolution ultime.",
+      aspects: {
+        forge: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolforged",
+      label: "Malleus Imperative",
+      description: "Un minuscule tympan, noircie par une intense chaleur. Appliqué correctement, il peut fissurer la pierre.",
+      aspects: {
+        forge: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolforgef",
+      label: "Carcass Spark",
+      description: "A remnant of a greater radiance, glowing softly as decay. Just possibly, a mote of the divided Sun.",
+      aspects: {
+        forge: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toolgrailmoth",
+      label: "Amulette Susurrante",
+      description: "Elle sait ce que je désire ; ou j'imagine que c'est le cas..",
+      aspects: {
+        grail: 2,
+        moth: 2,
+        auctionable: 2,
+        tool: 1
+      }
+    },
+    {
+      id: "toolgrailb",
+      label: "Gants Teintés",
+      description: "Pour quel usage sont-ils connus ? Quelles leçons peuvent-ils enseigner à mes mains ?",
+      aspects: {
+        grail: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolgraild",
+      label: "Hallowed Polos",
+      description: "The ring-crown of a savage mother, stained with essence, woven with scraps of hair and blessed with flecks of skin.",
+      aspects: {
+        grail: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolgrailf",
+      label: "Calice aux Murmures",
+      description: "Les nuits où nous buvons au calice, nous ne sommes pas certains, après coup, de ce que nous avons fait. Mais nous pouvons être sûrs que c'est ce qui a toujours été fait et si nous ne nous en souvenons pas, nos enfants le feront dans leurs rêves les plus fous.",
+      aspects: {
+        grail: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toolheartb",
+      label: "Marruvine Idol",
+      description: "The Marruvii would make little wooden idols to placate the witch-twins they feared in their lake. The lake is almost dry now, but the idols and the witch-twins yet remain, yet shadowed with the aspect of the Heart.",
+      aspects: {
+        heart: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolheartd",
+      label: "Wakeful Tympanum",
+      description: "In the grove where they flayed the thunder, they rattled their instruments to rouse the frenzy. The power still clings, like scent.",
+      aspects: {
+        heart: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolheartf",
+      label: "Kingskin Bodhrán",
+      description: "In the deep forests, the monarch gave up the last thing they had to give, and so the tool was shaped to keep their land forever safe. Then, of course, an empire stole it, as empires do.",
+      aspects: {
+        heart: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toolknockb",
+      label: "Icône de St Agnès",
+      description: "St Agnès de Bohême était renommée pour son dévouement zélée à la mortification de la chair. Cette icône en fait une effroyable représentation.",
+      aspects: {
+        knock: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolknockd",
+      label: "Linteau Consacré",
+      description: "This is the skull of a door through which power has passed.",
+      aspects: {
+        knock: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolknockf",
+      label: "Frangiclave",
+      description: "Il y a des clés qui ouvrent des portes ; et il y a des clés qui les détruisent.",
+      aspects: {
+        knock: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toollanternb",
+      label: "Pierre de Midi",
+      description: "Le Midi, dit-on, n'est plus ce qu'il était ; mais cette pierre polie conserve toujour un éclat de coucher de soleil.",
+      aspects: {
+        lantern: 4,
+        auctionable: 3,
+        tool: 1
+      },
+      xtriggers: {
+        crackmirror: toollanternbcracked
+      }
+    },
+    {
+      id: "toollanternd",
+      label: "Miroir Wildering",
+      description: "Une multitude d'images! Un enchevêtrement de visions! Contemples-moi, et réjouis-toi de la dissolution de tes sens!",
+      aspects: {
+        lantern: 8,
+        auctionable: 5,
+        tool: 1,
+        mirror: 1
+      },
+      xtriggers: {
+        crackmirror: toollanterndcracked
+      }
+    },
+    {
+      id: "toollanternf",
+      label: "Miroir du Veilleur",
+      description: "C'est le miroir que l'on ne regarde pas deux fois.",
+      aspects: {
+        lantern: 12,
+        auctionable: 6,
+        tool: 1,
+        mirror: 1
+      },
+      xtriggers: {
+        crackmirror: toollanternfcracked
+      },
+      animFrames: 1
+    },
+    {
+      id: "toolmothb",
+      label: "Poupée Wingèd",
+      description: "Dans un grenier par-dessus la charpente d'une maison, se trouvait une fenêtre. À côté de la fenêtre, il y avait une boîte. Dans cette boîte, reposait un bandage. Dans le bandage, se trouvait une pelote de cheveux. Dans les cheveux était enroulé une poupée , car la fenêtre n'avait jamais été ouverte.",
+      aspects: {
+        moth: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolmothd",
+      label: "Dappled Mask",
+      description: "In the forest where the moon couldn't go, the boughs of the trees were woven together like bandages or lovers. The moon might change herself to an ant or to a bird or to her sister, but the forest would not yield to her penetrations, no matter her caresses. One day we came with our scissors, and we severed the branches until the moon and the blood dappled the rotting leaves on the forest floor.",
+      aspects: {
+        moth: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolmothf",
+      label: "Cisailles Alakapurine",
+      description: "Au Nord, se trouvait un citée d'une grande richesse où résidait un protecteur du monde. Un jour il s'est tut. Ces cisailles ont été utilisés pour lui prendre d'abord ses cheveux puis ses doigts et ensuite ce qui restait.",
+      aspects: {
+        moth: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toolsecrethistoriesb",
+      label: "Paradoxical Curio",
+      description: "Parfois, il est difficile de savoir si une flèche a tué l’Impératrice Herodias ou l’Impératrice Eudokia. Parfois, il est possible qu'une horloge en bronze doré ait été volée lors du sac de Vienne alors qu'elle reposait en sécurité dans les caveaux de Rome.",
+      aspects: {
+        secrethistories: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolsecrethistoriesd",
+      label: "Atlas des Rêves",
+      description: "Les contours du monde changent à chaque époque, mais les contours du Mansus se reflètent dans chacun d'eux. On ne peut pas cartographier le Mansus, mais on peut tenter de cartographier ses reflets.",
+      aspects: {
+        secrethistories: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolwinterb",
+      label: "Flûte d'os",
+      description: "Son son cessera.",
+      aspects: {
+        winter: 4,
+        auctionable: 3,
+        tool: 1
+      }
+    },
+    {
+      id: "toolwinterd",
+      label: "Elagabaline Manacle",
+      description: "It does not relinquish its grip.",
+      aspects: {
+        winter: 8,
+        auctionable: 5,
+        tool: 1
+      }
+    },
+    {
+      id: "toolwinterf",
+      label: "Division Bell",
+      description: "First, its voice, and after, nothing.",
+      aspects: {
+        winter: 12,
+        auctionable: 6,
+        tool: 1
+      }
+    },
+    {
+      id: "toollanternbcracked",
+      label: "Cracked Noonstone",
+      description: "Noon, the saying goes, is not what it was; but this stone still retains an embery glow. It has been cracked. A Forge-aspected follower could restore it, with sufficient resources - or I could use up what power remains in it.",
+      aspects: {
+        lantern: 1,
+        ingredient: 1
+      }
+    },
+    {
+      id: "toollanterndcracked",
+      label: "Cracked Wildering Mirror",
+      description: "A deep crack runs across the shimmering metal. A Forge-aspected follower could repair it, with sufficient resources - or I could use up what power remains in it.",
+      aspects: {
+        lantern: 2,
+        ingredient: 1
+      }
+    },
+    {
+      id: "toollanternfcracked",
+      label: "Cracked Glass du Veilleur",
+      description: " A Forge-aspected follower could repair it, but the cost would be high - or I could use up what power remains in it.",
+      aspects: {
+        lantern: 3,
+        ingredient: 1
+      }
+    },
+    {
+      id: "paintingmasteredge",
+      label: "'Colonel and Lionsmith'",
+      description: "Since Issus have they striven so.",
+      aspects: {
+        edge: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmasterforge",
+      label: "'The Forge of Days'",
+      description: "If the Forge could regret, it would regret the Intercalate, but in all its other work, it knows joy.",
+      aspects: {
+        forge: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmastergrail",
+      label: "'The Red Grail'",
+      description: "She did not split the Sun, but here we might imagine how she must have desired it.",
+      aspects: {
+        grail: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmasterheart",
+      label: "'The Sister-and-Witch'",
+      description: "She has been a pair of funeral birds, but here she is as she would wish to drown.",
+      aspects: {
+        heart: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmasterknock",
+      label: "'The Mother of Ants'",
+      description: "Even in the days of Elam, she had begun to appear thus.",
+      aspects: {
+        knock: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmasterlantern",
+      label: "'The Door in the Eye'",
+      description: "He came from the Glory. We cannot help but see.",
+      aspects: {
+        lantern: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmastermoth",
+      label: "'The Moth'",
+      description: "In the forests of the first continent, our ancestors cursed themselves with their own god.",
+      aspects: {
+        moth: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmastersecrethistories",
+      label: "'Teresa and Christopher'",
+      description: "Love, like the Mansus, defies boundaries.",
+      aspects: {
+        secrethistories: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    },
+    {
+      id: "paintingmasterwinter",
+      label: "'The Wolf-Divided'",
+      description: "CAPUT GERAT LUPINUM. The Sun was divided, and this is its wound.",
+      aspects: {
+        winter: 8,
+        auctionable: 5,
+        tool: 1
+      },
+      unique: true
+    }
+  ]
 };

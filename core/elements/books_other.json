@@ -1,31 +1,67 @@
-{"elements":
-    [
-		 {
-        id: "textbookreason",
-            label: "Une Collection d'Essais",
-            aspects:
-            {text:1,auctionable:1},
-            description: "Si l'esprit est une lame, alors ceci est une pierre à aiguiser. [Étudier avec deux Éruditions pour gagner de la Raison.]",
-			slots: [{id:"Insight",actionId: "study", required: {erudition:1},consumes:true},
-			{id:"Understanding", actionId: "study",  required: {erudition:1},consumes:true}]
+{
+  "elements": [
+    {
+      id: "textbookreason",
+      label: "Une Collection d'Essais",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "Si l'esprit est une lame, alors ceci est une pierre à aiguiser. [Étudier avec deux Éruditions pour gagner de la Raison.]",
+      slots: [
+        {
+          id: "Insight",
+          actionId: "study",
+          required: {
+            erudition: 1
+          },
+          consumes: true
         },
-		 {
-        id: "textbookpassion",
-            label: "Une Collection de Poésies",
-            aspects:
-            {text:1,auctionable:1},
-            description: "'Le poète se fait lui-même le prophète d'un énorme, long, et délibéré bouleversement de tous les sens...' Tout le contraire de la sagesse, heureusement. [Étudier avec deux Glimmerings pour gagner de la Passion.]",
-			slots:[{id:"Inspiration", actionId: "study", required: {glimmering:1},consumes:true},
-			{id:"Influence", actionId: "study", required: {glimmering:1},consumes:true}]
-        },
-						 {
-        id: "genericrubbishbook",
-            label: "Something something DEEP MYSTERIES something",
-            aspects:
-            {text:1,auctionable:1},
-            description: "A dreadful soufflé of half-digested rumour about the 'Secret Worlds' and the irrelevance of contemporary morality, including a catalogue of unlikely, and probably invented, debaucheries. [Si je l'ai acheté dans un magasin, cela signifie probablement qu'il n'y a plus rien d'autre d'intéressant en stock.]."
+        {
+          id: "Understanding",
+          actionId: "study",
+          required: {
+            erudition: 1
+          },
+          consumes: true
         }
-		 
-
-]
+      ]
+    },
+    {
+      id: "textbookpassion",
+      label: "Une Collection de Poésies",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "'Le poète se fait lui-même le prophète d'un énorme, long, et délibéré bouleversement de tous les sens...' Tout le contraire de la sagesse, heureusement. [Étudier avec deux Glimmerings pour gagner de la Passion.]",
+      slots: [
+        {
+          id: "Inspiration",
+          actionId: "study",
+          required: {
+            glimmering: 1
+          },
+          consumes: true
+        },
+        {
+          id: "Influence",
+          actionId: "study",
+          required: {
+            glimmering: 1
+          },
+          consumes: true
+        }
+      ]
+    },
+    {
+      id: "genericrubbishbook",
+      label: "Something something DEEP MYSTERIES something",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "A dreadful soufflé of half-digested rumour about the 'Secret Worlds' and the irrelevance of contemporary morality, including a catalogue of unlikely, and probably invented, debaucheries. [Si je l'ai acheté dans un magasin, cela signifie probablement qu'il n'y a plus rien d'autre d'intéressant en stock.]."
+    }
+  ]
 };

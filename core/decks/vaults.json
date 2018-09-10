@@ -1,92 +1,95 @@
-{"decks":
-    [
-	{id: "locationscapital",
-	label:"Lieux cachés dans la Capitale",
-	description:"Sites à portée de main.",
-	spec:
-	["vaultcapital1",
-	"vaultcapital2",
-	"vaultcapital3",
-	"vaultcapital4"
-	],
-defaultcard: "vaultcapitaldefault",
-resetonexhaustion:false	
-	},
-		{id: "vaultsshires",
-	label:"Lieux cachés à la Campagne",
-	description:"L'occasion de prendre un grand bol d'air frais, peut-être.",
-	spec:
-	["vaultshires1",
-	"vaultshires2",
-	"vaultshires3",
-	"vaultshires4"
-	],
-defaultcard: "vaultshiresdefault",
-resetonexhaustion:false	
-	},
-		{id: "vaultscontinent",
-		label:"Lieux cachés sur le Continent",
-	description:"Un vaste monde s'étend de l'autre côté de la Manche.",
-	spec:
-	["vaultcontinent1",
-	"vaultcontinent2",
-	"vaultcontinent3",
-	"vaultcontinent4"
-	],
-defaultcard: "vaultcontinentdefault",
-resetonexhaustion:false	
-	},
-	
-		{id: "vaultslandbeyondforest",
-		label:"Lieux cachés dans les Terres au-delà de la Forêt",
-	description:"Une mosaïque de possibilités dans une région troublée du monde.",
-	spec:
-	["vaultlandbeyondforest1",
-	"vaultlandbeyondforest2",
-	"vaultlandbeyondforest3",
-	"vaultlandbeyondforest4"
-	],
-defaultcard: "vaultlandbeyondforestdefault",
-resetonexhaustion:false	
-	},
-	
-		{id: "vaultsrendingmountains",
-		label:"Lieux cachés dans les Rending Mountains",
-	description:"De dangereux caveaux et temples reculés",
-	spec:
-	["vaultrendingmountains1",
-	"vaultrendingmountains2",
-	"vaultrendingmountains3",
-	"vaultrendingmountains4"
-	],
-defaultcard: "vaultrendingmountainsdefault",
-resetonexhaustion:false	
-	},
-	
-			{id: "vaultsloneandlevelsands",
-				label:"Lieux cachés dans les Sables Isolés et Nivelés",
-	description:"Ici reposent des trésors de l'antiquité, du moins pour ceux capables de s'en saisir.",
-	spec:
-	["vaultloneandlevelsands1",
-	"vaultloneandlevelsands2",
-	"vaultloneandlevelsands3",
-	"vaultloneandlevelsands4"
-	],
-defaultcard: "vaultloneandlevelsandsdefault",
-resetonexhaustion:false	
-	},
-	
-				{id: "vaultseveningisles",
-					label:"Lieux cachés dans les Evening Isles",
-	description:"Iles non cartographiées à proximité de Port Noon.",
-	spec:
-	["vaulteveningisles1",
-	"vaulteveningisles2",
-	"vaulteveningisles3",
-	"vaulteveningisles4"
-	],
-defaultcard: "vaulteveningislesdefault",
-resetonexhaustion:false	
-	},
-	]
+{
+  "decks": [
+    {
+      id: "locationscapital",
+      label: "Lieux cachés dans la Capitale",
+      description: "Sites à portée de main.",
+      spec: [
+        "vaultcapital1",
+        "vaultcapital2",
+        "vaultcapital3",
+        "vaultcapital4"
+      ],
+      defaultcard: "vaultcapitaldefault",
+      resetonexhaustion: false
+    },
+    {
+      id: "vaultsshires",
+      label: "Lieux cachés à la Campagne",
+      description: "L'occasion de prendre un grand bol d'air frais, peut-être.",
+      spec: [
+        "vaultshires1",
+        "vaultshires2",
+        "vaultshires3",
+        "vaultshires4"
+      ],
+      defaultcard: "vaultshiresdefault",
+      resetonexhaustion: false
+    },
+    {
+      id: "vaultscontinent",
+      label: "Lieux cachés sur le Continent",
+      description: "Un vaste monde s'étend de l'autre côté de la Manche.",
+      spec: [
+        "vaultcontinent1",
+        "vaultcontinent2",
+        "vaultcontinent3",
+        "vaultcontinent4"
+      ],
+      defaultcard: "vaultcontinentdefault",
+      resetonexhaustion: false
+    },
+    {
+      id: "vaultslandbeyondforest",
+      label: "Lieux cachés dans les Terres au-delà de la Forêt",
+      description: "Une mosaïque de possibilités dans une région troublée du monde.",
+      spec: [
+        "vaultlandbeyondforest1",
+        "vaultlandbeyondforest2",
+        "vaultlandbeyondforest3",
+        "vaultlandbeyondforest4"
+      ],
+      defaultcard: "vaultlandbeyondforestdefault",
+      resetonexhaustion: false
+    },
+    {
+      id: "vaultsrendingmountains",
+      label: "Lieux cachés dans les Rending Mountains",
+      description: "De dangereux caveaux et temples reculés",
+      spec: [
+        "vaultrendingmountains1",
+        "vaultrendingmountains2",
+        "vaultrendingmountains3",
+        "vaultrendingmountains4"
+      ],
+      defaultcard: "vaultrendingmountainsdefault",
+      resetonexhaustion: false
+    },
+    {
+      id: "vaultsloneandlevelsands",
+      label: "Lieux cachés dans les Sables Isolés et Nivelés",
+      description: "Ici reposent des trésors de l'antiquité, du moins pour ceux capables de s'en saisir.",
+      spec: [
+        "vaultloneandlevelsands1",
+        "vaultloneandlevelsands2",
+        "vaultloneandlevelsands3",
+        "vaultloneandlevelsands4"
+      ],
+      defaultcard: "vaultloneandlevelsandsdefault",
+      resetonexhaustion: false
+    },
+    {
+      id: "vaultseveningisles",
+      label: "Lieux cachés dans les Evening Isles",
+      description: "Iles non cartographiées à proximité de Port Noon.",
+      spec: [
+        "vaulteveningisles1",
+        "vaulteveningisles2",
+        "vaulteveningisles3",
+        "vaulteveningisles4"
+      ],
+      defaultcard: "vaulteveningislesdefault",
+      resetonexhaustion: false
+    }
+  ]
 }

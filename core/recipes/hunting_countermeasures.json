@@ -1,414 +1,980 @@
-{"recipes": [
-{id: "huntermysticsurvives",
-actionId:"talk",
-label:"Sceaux et Protections",
-requirements:{mystic:1,summoned:1},
-description:"'Notre ennemi dispose de la plus dangereuse des armes : la connaissance.'\n
-Votre invocation a été la proie des contre-mesures de votre adversaire. Les Enquêteurs Mystiques connaissent les protections appropriées et survivent généralement aux attaques des minions invoqués. Mais tôt ou tard, ils commettent une erreur.",
-effects:{notoriety:1,summoned:-1},
-   },
-   {id: "huntertenacioussurvives",
-actionId:"talk",
-label:"Tenacity",
-requirements:{tenacious:1},
-description:"'Mais - personne n'aurait pu survivre à ça !'\n
-De temps à autre, les Enquêteurs Tenaces survivent d'une manière ou d'une autre aux attaques qui auraient dû les tuer. Mais leur chance ne dure pas éternellement ; et il existe d'autres moyens pour éliminer un Enquêteur que l'agression physique.",
-effects:{notoriety:1}
-   },
-      {id: "huntersurvives_becomestenacious",
-actionId:"talk",
-label:"Balafres",
-requirements:{tenacious:-1},
-description:"'Ils sont plus solides qu'ils n'y paraissent'\n
-Un Enquêteur qui survit à une attaque physique peut parfois devenir Tenace. Les Enquêteurs Tenaces sont plus difficiles à tuer.",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:tenacious,mutationLevel:1}],
-effects:{notoriety:1,follower:-1}
-   },
-         {id: "huntersurvives_becomesmystic",
-actionId:"talk",
-label:"Dures Leçons",
-requirements:{summoned:1,mystic:-1},
-description:"'Ce qui ne tue pas les rend parfois étranges.'\n
-Lorsqu'un Enquêteur survit à une attaque d'une créature invoquée, il peut parfois être inspiré et apprendre les contre-mesures face aux formes du Mansus, devenant ainsi Mystique. Les Enquêteurs Mystiques survivent généralement d'avantage aux attaques de créatures invoquées.",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:mystic,mutationLevel:1}],
-effects:{notoriety:1,summoned:-1}
-   },
-      {id: "hunterspeakpoison",
-	   label: "Employer un Remarquable Poison contre un Enquêteur",
-	  actionId:"talk",
-	  requirements:{poison:1},
-	  startdescription:"'Appréciez-vous votre thé ?'",
-	  description:"Une fin moche mais rapide et quasi-indolore. Il y a de bien pires façons de mourir.",
-	  	  alternativerecipes:[{id:"huntertenacioussurvives",chance:30}],
-	  effects:{poison:-1,notoriety:1},
-	  aspects:{killhunter:1},
-	  },
-   
-   {id: "hunterattackhighwinter",
-	   label: "Envoyer un Minion silencieux pour résoudre le problème de l'Enquêteur",
-	  actionId:"talk",
-	  startdescription:"Avec ça, l'Enquêteur devrait cesser de nous importuner. [Ceci a moins de chances de succès qu'une attaque depuis la Lisière, et cela attirera l'attention en cas d'échec ou de réussite, mais le minion survivra généralement.]",
-	  requirements: {hunter:1,winter:10,follower:1},
-	  linked: [{id:"hunterstealthattacksuccess",chance:70},
-	  {id:"hunterstealthattackfailure",chance:100}
-	  ]
-	  },
-	  	   {id: "hunterattackmidwinter",
-	   label: "Envoyer un Minion calme pour résoudre le problème de l'Enquêteur",
-	  actionId:"talk",
-	  startdescription:"Mon Minion va guetter et attendre. Avec de la chance, une occasion lui permettra de se débarrasser de notre ennemi. [Ceci a moins de chances de succès qu'une attaque depuis la Lisière, et cela attirera l'attention en cas d'échec ou de réussite, mais le minion survivra généralement.]",
-	  description:".",
-	  requirements: {hunter:1,winter:5,follower:1},
-	  linked: [{id:"hunterstealthattacksuccess",chance:30},
-	  {id:"hunterstealthattackfailure",chance:100}
-	  ]
-	  },
-	  	  	   {id: "hunterattacklowwinter",
-	   label: "Envoyer un Minion prudent pour résoudre le problème de l'Enquêteur",
-	  actionId:"talk",
-	  startdescription:"Mon Minion attendra le bon moment, mais il est fort possible que ce moment ne vienne jamais. [Ceci a moins de chances de succès qu'une attaque depuis la Lisière, et cela attirera l'attention en cas d'échec ou de réussite, mais le minion survivra généralement.]",
-	  description:".",
-	  requirements: {hunter:1,winter:1,follower:1},
-	  linked: [{id:"hunterstealthattacksuccess",chance:10},
-	  {id:"hunterstealthattackfailure",chance:100}
-	  ]
-	  },
-
-	  
-	  	  {id: "hunterstealthattacksuccess",
-	   label: "Patience...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion est revenu, avec un trophée.",
-	  effects: {notoriety:1},
-	  aspects:{killhunter:1},
-	  alternativerecipes:[{id:"huntertenacioussurvives",chance:30},
-	  {id:"huntermysticsurvives",chance:70}],
-	  comments:"No summoned creatures currently attack with Winter. This is in case I add one later.",
-	  warmup:10	  
-	  },
-	  
-	  	  {id: "hunterstealthattackfailure",
-	   label: "Patience...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion est revenu. Il n'a pas eu d'occasion pour mettre fin à la vie de l'Enquêteur; et ce dernier est peut-être conscient dorénavant du danger.",
-	  effects: {notoriety:1},
-	  warmup:10	  
-	  },
-
-
-	   {id: "hunterattackhighedge",
-	   label: "Send an Unstoppable Force to murder a Hunter",
-	  actionId:"talk",
-	  startdescription:"Unless this Hunter has some unusual protection, they're already dead. But their demise will attract attention.",
-	  description:".",
-	  requirements: {hunter:1,edge:10,follower:1},
-	  linked: [{id:"hunterattacksuccess",chance:100},
-	  ]
-	  },
-	  	   {id: "hunterattackmidedge",
-	   label: "Send a Potent Minion to murder a Hunter",
-	  actionId:"talk",
-	  startdescription:"My minion is powerful. This Hunter is unlikely to survive. But the attempt will draw attention.",
-	  description:".",
-	  requirements: {hunter:1,edge:5,follower:1},
-	  linked: [{id:"hunterattacksuccess",chance:70},
-	  {id:"hunterattackfailure",chance:100}
-	  ]
-	  },
-	  	  	   {id: "hunterattacklowedge",
-	   label: "Send a Minion to murder a Hunter",
-	  actionId:"talk",
-	  startdescription:"My minion's skills are limited. This Hunter will probably survive, and the attempt will draw attention.",
-	  description:".",
-	  requirements: {hunter:1,edge:1,follower:1},
-	  linked: [{id:"hunterattacksuccess",chance:30},
-	  {id:"hunterattackfailure",chance:100}
-	  ]
-	  },
-	   {id: "hunterattacknoedge",
-	   label: "Send Someone Unsuitable to Murder a Hunter",
-	  actionId:"talk",
-	  startdescription:"My minion lacks the Lisière aspect, and is woefully unsuited to attacking the hunter. There's a small chance they might succeed.",
-	  description:".",
-	  requirements: {hunter:1,follower:1},
-	  linked: [{id:"hunterattacksuccess",chance:10},
-	  {id:"hunterattackfailure",chance:100}
-	  ]
-	  },
-	  
-	  
-	  {id: "hunterattacksuccess",
-	   label: "Hunting a Hunter...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion est revenu, avec un trophée.",
-	  effects: {hunter:-1,corpse:1,notoriety:1},
-	  alternativerecipes:[{id:"huntertenacioussurvives",chance:30},
-	  {id:"huntermysticsurvives",chance:70},
-	  {id:"huntercapturesuccess",chance:30}],
-	  warmup:10	  
-	  },
-	  
-	  	  {id: "huntercapturesuccess",
-	   label: "Hunting a Hunter...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion est revenu, avec un prisonnier!",
-	  effects: {notoriety:1},
-	  aspects: {capturehunter:1},
-	  warmup:10	  
-	  },
-	  
-	  
-	  {id: "hunterattackfailure",
-	   label: "Hunting a Hunter...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion n'est pas revenu. Il a du échouer.",
-	  effects: {follower:-1,notoriety:1},
-	  alternativerecipes:[{id:"huntersurvives_becomesmystic",chance:30},
-	  {id:"huntersurvives_becomestenacious",chance:10}]	  
-	  warmup:10	  
-	  },
-	  
-	  
-	  	   {id: "evidencedestroymidmoth",
-	   label: "Send a Devious Minion to destroy Evidence",
-	  actionId:"talk",
-	  startdescription:"My scheme will most likely succeed. There is always a chance that something will go awry.",
-	  description:".",
-	  requirements: {follower:1,moth:5,evidencelevel:1},
-	  linked: [{id:"evidencedestroysuccess",chance:70},
-	  {id:"evidencedestroyfailure",chance:100}
-	  ],
-	  	  comments: "We don't want a 100% chance because there's no downside. This could easily change later."
-	  },
-	  	  	   {id: "evidencedestroylowmoth",
-	   label: "Send a Minion to destroy Evidence",
-	  actionId:"talk",
-	  startdescription:"My minion's talent for deceit is limited, and this is a difficult task. They will likely fail.",
-	  description:".",
-	  requirements: {follower:1,moth:1,evidencelevel:1},
-	  linked: [{id:"evidencedestroysuccess",chance:30},
-	  {id:"evidencedestroyfailure",chance:100}
-	  ]
-	  },
-	   {id: "evidencedestroynomoth",
-	   label: "Send Someone Unsuitable to Destroy Evidence",
-	  actionId:"talk",
-	  startdescription:"My minion lacks the Moth aspect, and will be out of their depth. There's a small chance they might succeed.",
-	  description:".",
-	  requirements: {evidencelevel:1},
-	  linked: [{id:"evidencedestroysuccess",chance:10},
-	  {id:"evidencedestroyfailure",chance:100}
-	  ]
-	  },
-
-	  {id: "evidencedestroysuccess",
-	   label: "Falsifier les Dossiers...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion est revenu. Les preuves ont été détruites. I am a little safer.",
-	  effects: {evidencelevel:-1},
-	  warmup:10	  
-	  },
-	  {id: "evidencedestroyfailure",
-	   label: "Falsifier les Dossiers...",
-	  actionId:"talk",
-	  startdescription: "J'attends des nouvelles....",
-	  description:"Mon minion n'est pas revenu. Il a échoué, et sa bourde pourrait attirer l'attention...",
-	  effects: {follower:-1,notoriety:1},
-	  warmup:10	  
-	  },
-	  	  	  {id:"hunterspeakwinterg",
-	  actionId:"talk",
-	  label:"Share a terrible mystery of the Ragged Lore",
-	  startdescription:"'When the Forge is cold and the Glory is dark and the Wood is dust, perhaps the Wolf Divided will rest, but only until it can devour itself. Hear me now...'  [This will likely terrify the Hunter, but it will always increase your own Dread.]",
-	  requirements:{winter:14,lore:1},
-	  mutations:[{filterOnAspectId:hunter,mutateAspectId:grim,mutationLevel:1}],
-linked:[{id:"hunterspeakdread_resistant",chance:100},
-{id:"hunterspeakdread_vulnerable_demoralised",chance:70},
-{id:"hunterspeakdread_demoralised",chance:70},
-{id:"hunterspeakdread_survives",chance:100}]
-},
-	  
-	  	  {id:"hunterspeakwinterd",
-	  actionId:"talk",
-	  label:"Share the colder invocations of the Ragged Lore",
-	  startdescription:"'There is a power that commemorates and grieves, from whom nothing is taken, but who cannot be deceived. I will tell you that power's name. Listen to me...' [This might terrify the Hunter, especially if they're already Grim, but it will always increase your own Dread.]",
-	  requirements:{winter:8,lore:1},
-linked:[{id:"hunterspeakdread_resistant",chance:100},
-{id:"hunterspeakdread_vulnerable_demoralised",chance:70},
-{id:"hunterspeakdread_demoralised",chance:30},
-{id:"hunterspeakdread_survives",chance:100}]
-},
-	  
-	  {id:"hunterspeakwinter",
-	  actionId:"talk",
-	  label:"Hint at the Ragged Lore",
-	  startdescription:"'Let's speak of endings. Let's speak of the declining sun. Let's speak of things that aren't quite dead, and won't quite die...' [This might terrify the Hunter, but it will always increase your own Dread.]",
-	  requirements:{winter:1,lore:1},
-linked:[{id:"hunterspeakdread_resistant",chance:100},
-{id:"hunterspeakdread_vulnerable_demoralised",chance:30},
-{id:"hunterspeakdread_demoralised",chance:30},
-{id:"hunterspeakdread_survives",chance:100}]
-},
-	  
-
-{id:"hunterspeakdread",
-actionId:"talk",
-label:"Décrire les horreurs qui attendent votre adversaire",
-requirements:{dread:1},
-startdescription:"'Something to think about, every time you close your eyes.' [Cela pourrait terrifier l'Enquêteur, mais cela augmentera toujours votre propre Terreur.]",
-description:"",
-linked:[{id:"hunterspeakdread_resistant",chance:100},
-{id:"hunterspeakdread_vulnerable_demoralised",chance:30},
-{id:"hunterspeakdread_demoralised",chance:30},
-{id:"hunterspeakdread_survives",chance:100}]
-
-},
-{id:"hunterspeakdread_resistant",
-actionId:"talk",
-requirements:{idealist:1},
-label:"The Horrors Beneath the World's Skin",
-startdescription:"'All right, it might end badly for me, but it's worth the sacrifice. And others will carry on the struggle. We'll meet again. [Idealists cannot be demoralised.]",
-effects:{notoriety:1,dread:1}
-
-},
-{id:"hunterspeakdread_vulnerable_demoralised",
-actionId:"talk",
-requirements:{grim:1},
-label:"The Horrors Beneath the World's Skin",
-startdescription:"Your account is too much for the Hunter. Their eyes bulge. Their jaw tightens. In the days to come, they will sink inexorably into despair.",
-description:"",
-effects:{dread:1},
-aspects:{derangemortal:1}
-
-},
-{id:"hunterspeakdread_demoralised",
-actionId:"talk",
-requirements:{grim:-1},
-label:"The Horrors Beneath the World's Skin",
-startdescription:"The Hunter growls defiance, but you can see that your words have found their mark. [This Hunter has become Grim.] ",
-description:"",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:grim,mutationLevel:1}],
-effects:{notoriety:1,dread:1}
-
-},
-{id:"hunterspeakdread_survives",
-actionId:"talk",
-label:"The Horrors Beneath the World's Skin",
-alternativerecipes:[{id:"hunterspeakdread_survives_becometenacious",chance:100}],
-startdescription:"",
-description:"'Yes, there are terrible things in the world, but that's all the more reason to resist them. I should thank you. You've shown me what I must do.' [This Hunter has become an Idealist.]",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:idealist,mutationLevel:1}],
-effects:{notoriety:1,dread:1}
-
-},
-{id:"hunterspeakdread_survives_becometenacious",
-actionId:"talk",
-label:"The Horrors Beneath the World's Skin",
-requirements:{tenacious:-1}
-startdescription:"",
-description:"'Yes, there are terrible things in the world, but that's all the more reason to resist them. I should thank you. You've shown me what I must do.' [This Hunter has become an Idealist.]",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:idealist,mutationLevel:1}],
-effects:{notoriety:1,dread:1}
-
-},
-
-	  {id:"hunterspeaklanterng",
-	  actionId:"talk",
-	  label:"Share a terrible mystery of the Glorious Lore",
-	  startdescription:"'This is the secret doctrine of the Door-in-the-Eye. Open your ears...' [This will is likely to fascinate the Hunter, but will always increase your own Fascination.]",
-	  requirements:{lantern:14,lore:1},
-	  mutations:[{filterOnAspectId:hunter,mutateAspectId:idealist,mutationLevel:1}],
-linked:[{id:"hunterspeakfascination_resistant",chance:100},
-{id:"hunterspeakfascination_vulnerable_fascinated",chance:70},
-{id:"hunterspeakfascination_fascinated",chance:70},
-{id:"hunterspeakfascination_survives",chance:100}]
-},
-
-	  {id:"hunterspeaklanternd",
-	  actionId:"talk",
-	  label:"Share the brighter invocations of the Glorious Lore",
-	  startdescription:"'The Door-in-the-Eye navigates; he is not merciful; but first and always, he illuminates. Listen, and be illuminated...' [This may fascinate the Hunter, especially if they're already an Idealist, but will always increase your own Fascination.]",
-	  requirements:{lantern:8,lore:1},
-linked:[{id:"hunterspeakfascination_resistant",chance:100},
-{id:"hunterspeakfascination_vulnerable_fascinated",chance:70},
-{id:"hunterspeakfascination_fascinated",chance:30},
-{id:"hunterspeakfascination_survives",chance:100}]
-},
-
-	  {id:"hunterspeaklantern",
-	  actionId:"talk",
-	  label:"Hint at the Glorious Lore",
-	  startdescription:"'There are finer things than we see. You must have felt it. Consider the possibilities of eternity...' [This may fascinate the Hunter, but will always increase your own Fascination.]",
-	  requirements:{lantern:1,lore:1},	  
-linked:[{id:"hunterspeakfascination_resistant",chance:100},
-{id:"hunterspeakfascination_vulnerable_fascinated",chance:30},
-{id:"hunterspeakfascination_fascinated",chance:30},
-{id:"hunterspeakfascination_survives",chance:100}]
-},
-
-{id:"hunterspeakfascination",
-actionId:"talk",
-label:"Décrire vos visions à votre adversaire",
-requirements:{fascination:1},
-startdescription:"'Plus vous vous élèverez, plus vous verrez.' [Cela peut fasciner l'Enquêteur, mais augmentera toujours votre propre Fascination.]",
-description:"",
-linked:[{id:"hunterspeakfascination_resistant",chance:100},
-{id:"hunterspeakfascination_vulnerable_fascinated",chance:30},
-{id:"hunterspeakfascination_fascinated",chance:30},
-{id:"hunterspeakfascination_survives",chance:100}]
-
-},
-{id:"hunterspeakfascination_resistant",
-actionId:"talk",
-requirements:{grim:1},
-label:"Visions of Glory",
-startdescription:"'Ça a l'air joli. Mais j'ai un travail à faire. Vous aurez bientôt de mes nouvelles.' [Les Sinistres Enquêteurs ne peuvent pas être Fascinés.]",
-effects:{notoriety:1,fascination:1}
-
-},
-{id:"hunterspeakfascination_vulnerable_fascinated",
-actionId:"talk",
-requirements:{idealist:1},
-label:"Visions of Glory",
-startdescription:"Your account is too much for the Hunter. Their eyes grow wide and bright. Their smile becomes dreamy. In the days to come, they will forsake everything they once knew.",
-description:"",
-effects:{fascination:1},
-aspects:{derangemortal:1}
-
-},
-{id:"hunterspeakfascination_fascinated",
-actionId:"talk",
-requirements:{idealist:-1},
-label:"Visions of Glory",
-startdescription:"The Hunter scoffs, but you can see that the urgency of your account has struck a spark. [This Hunter has become an Idealist.] ",
-description:"",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:idealist,mutationLevel:1}],
-effects:{notoriety:1,fascination:1}
-
-},
-{id:"hunterspeakfascination_survives",
-actionId:"talk",
-label:"Visions of Glory",
-alternativerecipes:[{id:"hunterspeakfascination_survives_becometenacious",chance:100}],
-description:"'Yes, I could be something finer, but what we are is less important than what we do. The world is where we live, and I will defend it till I die. You can keep your visions.' [This Hunter has become Grim.]",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:grim,mutationLevel:1}],
-effects:{notoriety:1,fascination:1}
-},
-{id:"hunterspeakfascination_survives_becometenacious",
-actionId:"talk",
-label:"Visions of Glory",
-requirements:{tenacious:-1},
-description:"'Yes, I could be something finer, but what we are is less important than what we do. The world is where we live, and I will defend it till I die. You can keep your visions.' [This Hunter has become Grim and Tenacious.]",
-mutations:[{filterOnAspectId:hunter,mutateAspectId:grim,mutationLevel:1},
-{filterOnAspectId:hunter,mutateAspectId:tenacious,mutationLevel:1}],
-effects:{notoriety:1,fascination:1}
-},
-
-]
+{
+  "recipes": [
+    {
+      id: "huntermysticsurvives",
+      actionId: "talk",
+      label: "Sceaux et Protections",
+      requirements: {
+        mystic: 1,
+        summoned: 1
+      },
+      description: "'Notre ennemi dispose de la plus dangereuse des armes : la connaissance.'\n
+      Votre
+      invocation
+      a
+      été
+      la
+      proie
+      des
+      contre-mesures
+      de
+      votre
+      adversaire.
+      Les
+      Enquêteurs
+      Mystiques
+      connaissent
+      les
+      protections
+      appropriées
+      et
+      survivent
+      généralement
+      aux
+      attaques
+      des
+      minions
+      invoqués.
+      Mais
+      tôt
+      ou
+      tard,
+      ils
+      commettent
+      une
+      erreur.
+      ",
+      effects: {
+        notoriety: 1,
+        summoned: -1
+      }
+    },
+    {
+      id: "huntertenacioussurvives",
+      actionId: "talk",
+      label: "Tenacity",
+      requirements: {
+        tenacious: 1
+      },
+      description: "'Mais - personne n'aurait pu survivre à ça !'\n
+      De
+      temps
+      à
+      autre,
+      les
+      Enquêteurs
+      Tenaces
+      survivent
+      d
+      'une manière ou d'
+      une
+      autre
+      aux
+      attaques
+      qui
+      auraient
+      dû
+      les
+      tuer.
+      Mais
+      leur
+      chance
+      ne
+      dure
+      pas
+      éternellement
+      ;
+      et
+      il
+      existe
+      d
+      'autres moyens pour éliminer un Enquêteur que l'
+      agression
+      physique.
+      ",
+      effects: {
+        notoriety: 1
+      }
+    },
+    {
+      id: "huntersurvives_becomestenacious",
+      actionId: "talk",
+      label: "Balafres",
+      requirements: {
+        tenacious: -1
+      },
+      description: "'Ils sont plus solides qu'ils n'y paraissent'\n
+      Un
+      Enquêteur
+      qui
+      survit
+      à
+      une
+      attaque
+      physique
+      peut
+      parfois
+      devenir
+      Tenace.
+      Les
+      Enquêteurs
+      Tenaces
+      sont
+      plus
+      difficiles
+      à
+      tuer.
+      ",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: tenacious,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        follower: -1
+      }
+    },
+    {
+      id: "huntersurvives_becomesmystic",
+      actionId: "talk",
+      label: "Dures Leçons",
+      requirements: {
+        summoned: 1,
+        mystic: -1
+      },
+      description: "'Ce qui ne tue pas les rend parfois étranges.'\n
+      Lorsqu
+      'un Enquêteur survit à une attaque d'
+      une
+      créature
+      invoquée,
+      il
+      peut
+      parfois
+      être
+      inspiré
+      et
+      apprendre
+      les
+      contre-mesures
+      face
+      aux
+      formes
+      du
+      Mansus,
+      devenant
+      ainsi
+      Mystique.
+      Les
+      Enquêteurs
+      Mystiques
+      survivent
+      généralement
+      d
+      'avantage aux attaques de créatures invoquées.",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: mystic,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        summoned: -1
+      }
+    },
+    {
+      id: "hunterspeakpoison",
+      label: "Employer un Remarquable Poison contre un Enquêteur",
+      actionId: "talk",
+      requirements: {
+        poison: 1
+      },
+      startdescription: "'Appréciez-vous votre thé ?'",
+      description: "Une fin moche mais rapide et quasi-indolore. Il y a de bien pires façons de mourir.",
+      alternativerecipes: [
+        {
+          id: "huntertenacioussurvives",
+          chance: 30
+        }
+      ],
+      effects: {
+        poison: -1,
+        notoriety: 1
+      },
+      aspects: {
+        killhunter: 1
+      }
+    },
+    {
+      id: "hunterattackhighwinter",
+      label: "Envoyer un Minion silencieux pour résoudre le problème de l'Enquêteur",
+      actionId: "talk",
+      startdescription: "Avec ça, l'Enquêteur devrait cesser de nous importuner. [Ceci a moins de chances de succès qu'une attaque depuis la Lisière, et cela attirera l'attention en cas d'échec ou de réussite, mais le minion survivra généralement.]",
+      requirements: {
+        hunter: 1,
+        winter: 10,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterstealthattacksuccess",
+          chance: 70
+        },
+        {
+          id: "hunterstealthattackfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterattackmidwinter",
+      label: "Envoyer un Minion calme pour résoudre le problème de l'Enquêteur",
+      actionId: "talk",
+      startdescription: "Mon Minion va guetter et attendre. Avec de la chance, une occasion lui permettra de se débarrasser de notre ennemi. [Ceci a moins de chances de succès qu'une attaque depuis la Lisière, et cela attirera l'attention en cas d'échec ou de réussite, mais le minion survivra généralement.]",
+      description: ".",
+      requirements: {
+        hunter: 1,
+        winter: 5,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterstealthattacksuccess",
+          chance: 30
+        },
+        {
+          id: "hunterstealthattackfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterattacklowwinter",
+      label: "Envoyer un Minion prudent pour résoudre le problème de l'Enquêteur",
+      actionId: "talk",
+      startdescription: "Mon Minion attendra le bon moment, mais il est fort possible que ce moment ne vienne jamais. [Ceci a moins de chances de succès qu'une attaque depuis la Lisière, et cela attirera l'attention en cas d'échec ou de réussite, mais le minion survivra généralement.]",
+      description: ".",
+      requirements: {
+        hunter: 1,
+        winter: 1,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterstealthattacksuccess",
+          chance: 10
+        },
+        {
+          id: "hunterstealthattackfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterstealthattacksuccess",
+      label: "Patience...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion est revenu, avec un trophée.",
+      effects: {
+        notoriety: 1
+      },
+      aspects: {
+        killhunter: 1
+      },
+      alternativerecipes: [
+        {
+          id: "huntertenacioussurvives",
+          chance: 30
+        },
+        {
+          id: "huntermysticsurvives",
+          chance: 70
+        }
+      ],
+      comments: "No summoned creatures currently attack with Winter. This is in case I add one later.",
+      warmup: 10
+    },
+    {
+      id: "hunterstealthattackfailure",
+      label: "Patience...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion est revenu. Il n'a pas eu d'occasion pour mettre fin à la vie de l'Enquêteur; et ce dernier est peut-être conscient dorénavant du danger.",
+      effects: {
+        notoriety: 1
+      },
+      warmup: 10
+    },
+    {
+      id: "hunterattackhighedge",
+      label: "Send an Unstoppable Force to murder a Hunter",
+      actionId: "talk",
+      startdescription: "Unless this Hunter has some unusual protection, they're already dead. But their demise will attract attention.",
+      description: ".",
+      requirements: {
+        hunter: 1,
+        edge: 10,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterattacksuccess",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterattackmidedge",
+      label: "Send a Potent Minion to murder a Hunter",
+      actionId: "talk",
+      startdescription: "My minion is powerful. This Hunter is unlikely to survive. But the attempt will draw attention.",
+      description: ".",
+      requirements: {
+        hunter: 1,
+        edge: 5,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterattacksuccess",
+          chance: 70
+        },
+        {
+          id: "hunterattackfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterattacklowedge",
+      label: "Send a Minion to murder a Hunter",
+      actionId: "talk",
+      startdescription: "My minion's skills are limited. This Hunter will probably survive, and the attempt will draw attention.",
+      description: ".",
+      requirements: {
+        hunter: 1,
+        edge: 1,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterattacksuccess",
+          chance: 30
+        },
+        {
+          id: "hunterattackfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterattacknoedge",
+      label: "Send Someone Unsuitable to Murder a Hunter",
+      actionId: "talk",
+      startdescription: "My minion lacks the Lisière aspect, and is woefully unsuited to attacking the hunter. There's a small chance they might succeed.",
+      description: ".",
+      requirements: {
+        hunter: 1,
+        follower: 1
+      },
+      linked: [
+        {
+          id: "hunterattacksuccess",
+          chance: 10
+        },
+        {
+          id: "hunterattackfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterattacksuccess",
+      label: "Hunting a Hunter...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion est revenu, avec un trophée.",
+      effects: {
+        hunter: -1,
+        corpse: 1,
+        notoriety: 1
+      },
+      alternativerecipes: [
+        {
+          id: "huntertenacioussurvives",
+          chance: 30
+        },
+        {
+          id: "huntermysticsurvives",
+          chance: 70
+        },
+        {
+          id: "huntercapturesuccess",
+          chance: 30
+        }
+      ],
+      warmup: 10
+    },
+    {
+      id: "huntercapturesuccess",
+      label: "Hunting a Hunter...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion est revenu, avec un prisonnier!",
+      effects: {
+        notoriety: 1
+      },
+      aspects: {
+        capturehunter: 1
+      },
+      warmup: 10
+    },
+    {
+      id: "hunterattackfailure",
+      label: "Hunting a Hunter...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion n'est pas revenu. Il a du échouer.",
+      effects: {
+        follower: -1,
+        notoriety: 1
+      },
+      alternativerecipes: [
+        {
+          id: "huntersurvives_becomesmystic",
+          chance: 30
+        },
+        {
+          id: "huntersurvives_becomestenacious",
+          chance: 10
+        }
+      ]
+      warmup: 10
+    },
+    {
+      id: "evidencedestroymidmoth",
+      label: "Send a Devious Minion to destroy Evidence",
+      actionId: "talk",
+      startdescription: "My scheme will most likely succeed. There is always a chance that something will go awry.",
+      description: ".",
+      requirements: {
+        follower: 1,
+        moth: 5,
+        evidencelevel: 1
+      },
+      linked: [
+        {
+          id: "evidencedestroysuccess",
+          chance: 70
+        },
+        {
+          id: "evidencedestroyfailure",
+          chance: 100
+        }
+      ],
+      comments: "We don't want a 100% chance because there's no downside. This could easily change later."
+    },
+    {
+      id: "evidencedestroylowmoth",
+      label: "Send a Minion to destroy Evidence",
+      actionId: "talk",
+      startdescription: "My minion's talent for deceit is limited, and this is a difficult task. They will likely fail.",
+      description: ".",
+      requirements: {
+        follower: 1,
+        moth: 1,
+        evidencelevel: 1
+      },
+      linked: [
+        {
+          id: "evidencedestroysuccess",
+          chance: 30
+        },
+        {
+          id: "evidencedestroyfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "evidencedestroynomoth",
+      label: "Send Someone Unsuitable to Destroy Evidence",
+      actionId: "talk",
+      startdescription: "My minion lacks the Moth aspect, and will be out of their depth. There's a small chance they might succeed.",
+      description: ".",
+      requirements: {
+        evidencelevel: 1
+      },
+      linked: [
+        {
+          id: "evidencedestroysuccess",
+          chance: 10
+        },
+        {
+          id: "evidencedestroyfailure",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "evidencedestroysuccess",
+      label: "Falsifier les Dossiers...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion est revenu. Les preuves ont été détruites. I am a little safer.",
+      effects: {
+        evidencelevel: -1
+      },
+      warmup: 10
+    },
+    {
+      id: "evidencedestroyfailure",
+      label: "Falsifier les Dossiers...",
+      actionId: "talk",
+      startdescription: "J'attends des nouvelles....",
+      description: "Mon minion n'est pas revenu. Il a échoué, et sa bourde pourrait attirer l'attention...",
+      effects: {
+        follower: -1,
+        notoriety: 1
+      },
+      warmup: 10
+    },
+    {
+      id: "hunterspeakwinterg",
+      actionId: "talk",
+      label: "Share a terrible mystery of the Ragged Lore",
+      startdescription: "'When the Forge is cold and the Glory is dark and the Wood is dust, perhaps the Wolf Divided will rest, but only until it can devour itself. Hear me now...'  [This will likely terrify the Hunter, but it will always increase your own Dread.]",
+      requirements: {
+        winter: 14,
+        lore: 1
+      },
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: grim,
+          mutationLevel: 1
+        }
+      ],
+      linked: [
+        {
+          id: "hunterspeakdread_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakdread_vulnerable_demoralised",
+          chance: 70
+        },
+        {
+          id: "hunterspeakdread_demoralised",
+          chance: 70
+        },
+        {
+          id: "hunterspeakdread_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeakwinterd",
+      actionId: "talk",
+      label: "Share the colder invocations of the Ragged Lore",
+      startdescription: "'There is a power that commemorates and grieves, from whom nothing is taken, but who cannot be deceived. I will tell you that power's name. Listen to me...' [This might terrify the Hunter, especially if they're already Grim, but it will always increase your own Dread.]",
+      requirements: {
+        winter: 8,
+        lore: 1
+      },
+      linked: [
+        {
+          id: "hunterspeakdread_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakdread_vulnerable_demoralised",
+          chance: 70
+        },
+        {
+          id: "hunterspeakdread_demoralised",
+          chance: 30
+        },
+        {
+          id: "hunterspeakdread_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeakwinter",
+      actionId: "talk",
+      label: "Hint at the Ragged Lore",
+      startdescription: "'Let's speak of endings. Let's speak of the declining sun. Let's speak of things that aren't quite dead, and won't quite die...' [This might terrify the Hunter, but it will always increase your own Dread.]",
+      requirements: {
+        winter: 1,
+        lore: 1
+      },
+      linked: [
+        {
+          id: "hunterspeakdread_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakdread_vulnerable_demoralised",
+          chance: 30
+        },
+        {
+          id: "hunterspeakdread_demoralised",
+          chance: 30
+        },
+        {
+          id: "hunterspeakdread_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeakdread",
+      actionId: "talk",
+      label: "Décrire les horreurs qui attendent votre adversaire",
+      requirements: {
+        dread: 1
+      },
+      startdescription: "'Something to think about, every time you close your eyes.' [Cela pourrait terrifier l'Enquêteur, mais cela augmentera toujours votre propre Terreur.]",
+      description: "",
+      linked: [
+        {
+          id: "hunterspeakdread_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakdread_vulnerable_demoralised",
+          chance: 30
+        },
+        {
+          id: "hunterspeakdread_demoralised",
+          chance: 30
+        },
+        {
+          id: "hunterspeakdread_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeakdread_resistant",
+      actionId: "talk",
+      requirements: {
+        idealist: 1
+      },
+      label: "The Horrors Beneath the World's Skin",
+      startdescription: "'All right, it might end badly for me, but it's worth the sacrifice. And others will carry on the struggle. We'll meet again. [Idealists cannot be demoralised.]",
+      effects: {
+        notoriety: 1,
+        dread: 1
+      }
+    },
+    {
+      id: "hunterspeakdread_vulnerable_demoralised",
+      actionId: "talk",
+      requirements: {
+        grim: 1
+      },
+      label: "The Horrors Beneath the World's Skin",
+      startdescription: "Your account is too much for the Hunter. Their eyes bulge. Their jaw tightens. In the days to come, they will sink inexorably into despair.",
+      description: "",
+      effects: {
+        dread: 1
+      },
+      aspects: {
+        derangemortal: 1
+      }
+    },
+    {
+      id: "hunterspeakdread_demoralised",
+      actionId: "talk",
+      requirements: {
+        grim: -1
+      },
+      label: "The Horrors Beneath the World's Skin",
+      startdescription: "The Hunter growls defiance, but you can see that your words have found their mark. [This Hunter has become Grim.] ",
+      description: "",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: grim,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        dread: 1
+      }
+    },
+    {
+      id: "hunterspeakdread_survives",
+      actionId: "talk",
+      label: "The Horrors Beneath the World's Skin",
+      alternativerecipes: [
+        {
+          id: "hunterspeakdread_survives_becometenacious",
+          chance: 100
+        }
+      ],
+      startdescription: "",
+      description: "'Yes, there are terrible things in the world, but that's all the more reason to resist them. I should thank you. You've shown me what I must do.' [This Hunter has become an Idealist.]",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: idealist,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        dread: 1
+      }
+    },
+    {
+      id: "hunterspeakdread_survives_becometenacious",
+      actionId: "talk",
+      label: "The Horrors Beneath the World's Skin",
+      requirements: {
+        tenacious: -1
+      }
+      startdescription: "",
+      description: "'Yes, there are terrible things in the world, but that's all the more reason to resist them. I should thank you. You've shown me what I must do.' [This Hunter has become an Idealist.]",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: idealist,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        dread: 1
+      }
+    },
+    {
+      id: "hunterspeaklanterng",
+      actionId: "talk",
+      label: "Share a terrible mystery of the Glorious Lore",
+      startdescription: "'This is the secret doctrine of the Door-in-the-Eye. Open your ears...' [This will is likely to fascinate the Hunter, but will always increase your own Fascination.]",
+      requirements: {
+        lantern: 14,
+        lore: 1
+      },
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: idealist,
+          mutationLevel: 1
+        }
+      ],
+      linked: [
+        {
+          id: "hunterspeakfascination_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakfascination_vulnerable_fascinated",
+          chance: 70
+        },
+        {
+          id: "hunterspeakfascination_fascinated",
+          chance: 70
+        },
+        {
+          id: "hunterspeakfascination_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeaklanternd",
+      actionId: "talk",
+      label: "Share the brighter invocations of the Glorious Lore",
+      startdescription: "'The Door-in-the-Eye navigates; he is not merciful; but first and always, he illuminates. Listen, and be illuminated...' [This may fascinate the Hunter, especially if they're already an Idealist, but will always increase your own Fascination.]",
+      requirements: {
+        lantern: 8,
+        lore: 1
+      },
+      linked: [
+        {
+          id: "hunterspeakfascination_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakfascination_vulnerable_fascinated",
+          chance: 70
+        },
+        {
+          id: "hunterspeakfascination_fascinated",
+          chance: 30
+        },
+        {
+          id: "hunterspeakfascination_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeaklantern",
+      actionId: "talk",
+      label: "Hint at the Glorious Lore",
+      startdescription: "'There are finer things than we see. You must have felt it. Consider the possibilities of eternity...' [This may fascinate the Hunter, but will always increase your own Fascination.]",
+      requirements: {
+        lantern: 1,
+        lore: 1
+      },
+      linked: [
+        {
+          id: "hunterspeakfascination_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakfascination_vulnerable_fascinated",
+          chance: 30
+        },
+        {
+          id: "hunterspeakfascination_fascinated",
+          chance: 30
+        },
+        {
+          id: "hunterspeakfascination_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeakfascination",
+      actionId: "talk",
+      label: "Décrire vos visions à votre adversaire",
+      requirements: {
+        fascination: 1
+      },
+      startdescription: "'Plus vous vous élèverez, plus vous verrez.' [Cela peut fasciner l'Enquêteur, mais augmentera toujours votre propre Fascination.]",
+      description: "",
+      linked: [
+        {
+          id: "hunterspeakfascination_resistant",
+          chance: 100
+        },
+        {
+          id: "hunterspeakfascination_vulnerable_fascinated",
+          chance: 30
+        },
+        {
+          id: "hunterspeakfascination_fascinated",
+          chance: 30
+        },
+        {
+          id: "hunterspeakfascination_survives",
+          chance: 100
+        }
+      ]
+    },
+    {
+      id: "hunterspeakfascination_resistant",
+      actionId: "talk",
+      requirements: {
+        grim: 1
+      },
+      label: "Visions of Glory",
+      startdescription: "'Ça a l'air joli. Mais j'ai un travail à faire. Vous aurez bientôt de mes nouvelles.' [Les Sinistres Enquêteurs ne peuvent pas être Fascinés.]",
+      effects: {
+        notoriety: 1,
+        fascination: 1
+      }
+    },
+    {
+      id: "hunterspeakfascination_vulnerable_fascinated",
+      actionId: "talk",
+      requirements: {
+        idealist: 1
+      },
+      label: "Visions of Glory",
+      startdescription: "Your account is too much for the Hunter. Their eyes grow wide and bright. Their smile becomes dreamy. In the days to come, they will forsake everything they once knew.",
+      description: "",
+      effects: {
+        fascination: 1
+      },
+      aspects: {
+        derangemortal: 1
+      }
+    },
+    {
+      id: "hunterspeakfascination_fascinated",
+      actionId: "talk",
+      requirements: {
+        idealist: -1
+      },
+      label: "Visions of Glory",
+      startdescription: "The Hunter scoffs, but you can see that the urgency of your account has struck a spark. [This Hunter has become an Idealist.] ",
+      description: "",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: idealist,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        fascination: 1
+      }
+    },
+    {
+      id: "hunterspeakfascination_survives",
+      actionId: "talk",
+      label: "Visions of Glory",
+      alternativerecipes: [
+        {
+          id: "hunterspeakfascination_survives_becometenacious",
+          chance: 100
+        }
+      ],
+      description: "'Yes, I could be something finer, but what we are is less important than what we do. The world is where we live, and I will defend it till I die. You can keep your visions.' [This Hunter has become Grim.]",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: grim,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        fascination: 1
+      }
+    },
+    {
+      id: "hunterspeakfascination_survives_becometenacious",
+      actionId: "talk",
+      label: "Visions of Glory",
+      requirements: {
+        tenacious: -1
+      },
+      description: "'Yes, I could be something finer, but what we are is less important than what we do. The world is where we live, and I will defend it till I die. You can keep your visions.' [This Hunter has become Grim and Tenacious.]",
+      mutations: [
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: grim,
+          mutationLevel: 1
+        },
+        {
+          filterOnAspectId: hunter,
+          mutateAspectId: tenacious,
+          mutationLevel: 1
+        }
+      ],
+      effects: {
+        notoriety: 1,
+        fascination: 1
+      }
+    }
+  ]
 }

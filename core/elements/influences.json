@@ -1,294 +1,350 @@
-{"elements":
-    [
-								          {
-        id: "influenceedge",
-            label: "Un Air Palpitant",
-            aspects:
-            {edge: 2,influence:1},
-            description: "Les sens sont affûtés. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influenceedgec",
-            label: "Un Air Stimulant",
-            aspects:
-            {edge: 6,influence:1},
-            description: "Les passions sont stimulées. [Une influence de sixième ordre: les signes sont manifestes. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-						          {
-        id: "influenceedgee",
-            label: "Un Air Furieux",
-            aspects:
-            {edge: 10,influence:1},
-            description: "La colère est implicite dans chaque forme. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-								          {
-        id: "influenceedgeg",
-            label: "Une Résolution",
-            aspects:
-            {edge: 15,influence:1},
-            description: "Qui peut éviter la finalité de la bataille ? [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-		
-								          {
-        id: "influenceforge",
-            label: "Une Chaleur Croissante",
-            aspects:
-            {forge: 2,influence:1},
-            description: "Une brume et un chatoiement. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influenceforgec",
-            label: "Une Chaleur Flageolante",
-            aspects:
-            {forge: 6,influence:1},
-            description: "Une contingence d'étincelles.. [Une influence de sixième ordre: les signes sont manifestes. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo:"fascination"
-        },
-						          {
-        id: "influenceforgee",
-            label: "Une Chaleur Exaltante",
-            aspects:
-            {forge: 10,influence:1},
-            description: "Voici l'émanation au bord du volcan. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo:"fascination"
-        },
-								          {
-        id: "influenceforgeg",
-            label: "Une Incandescence",
-            aspects:
-            {forge: 15,influence:1},
-            description: "Change follows fire. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo:"fascination"
-        },
-		
-		
-							          {
-        id: "influencegrail",
-            label: "Une Notion d'Appétit",
-            aspects:
-            {grail: 2,influence:1},
-            description: "Chaque sens est renforcé; chaque sensation, approfondi. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influencegrailc",
-            label: "Une Urgence d'Appétit",
-            aspects:
-            {grail: 6,influence:1},
-            description: "Difficile de se contrôler soi-même. [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-						          {
-        id: "influencegraile",
-            label: "An Imperative of Appetite",
-            aspects:
-            {grail: 10,influence:1},
-            description: "Les lèvres se languissent de savourer ; les doigts se languissent d'empoigner. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-								          {
-        id: "influencegrailg",
-            label: "An Incarnadescence",
-            aspects:
-            {grail: 15,influence:1},
-            description: "The very air is succulent with possibility. Pierce it, and it might bleed. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-		
-							          {
-        id: "influenceheart",
-            label: "Trembling Airs",
-            aspects:
-            {heart: 2,influence:1},
-            description: "The toes tap. All is brisk and all is well. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influenceheartc",
-            label: "Pulsing Airs",
-            aspects:
-            {heart: 6,influence:1},
-            description: "A rising power; a reassuring energy. [Une influence de sixième ordre: des résonances ou correspondances significatives. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo:"vitality"
-        },
-						          {
-        id: "influencehearte",
-            label: "Pounding Airs",
-            aspects:
-            {heart: 10,influence:1},
-            description: "The heart moves; the world moves. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo:"vitality"
-        },
-								          {
-        id: "influenceheartg",
-            label: "An Imminence",
-            aspects:
-            {heart: 15,influence:1},
-            description: "The sky is a drum; the earth is ready for its ecstacy. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo:"vitality"
-        },
-		
-								          {
-        id: "influenceknock",
-            label: "Subtle Flaw",
-            aspects:
-            {knock: 2,influence:1},
-            description: "Laces uncoil -- windows swing open -- locks move as if oiled. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influenceknockc",
-            label: "Subtile Fracture",
-            aspects:
-            {knock: 6,influence:1},
-            description: "Clouds part -- walls creak -- old wounds ache. [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-						          {
-        id: "influenceknocke",
-            label: "Subtle Rupture",
-            aspects:
-            {knock: 10,influence:1},
-            description: "Geometry contorts -- doors burst open -- snakes boil from the earth! [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-								          {
-        id: "influenceknockg",
-            label: "Wrong Door",
-            aspects:
-            {knock: 15,influence:1},
-            description: "There is a Door that should not open, and even now its hinges are roused -- [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "bloodshed"
-        },
-		
-								          {
-        id: "influencelantern",
-            label: "Une Conscience de Radiance",
-            aspects:
-            {lantern: 2,influence:1},
-            description: "Il existe une lumière derrière le monde, une lumière par dessus le Mansus, une lumière qui pénètre aussi bien le verre que la peau. Elle se présente ici. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influencelanternc",
-            label: "Une Intensité de Radiance",
-            aspects:
-            {lantern: 6,influence:1},
-            description: "Une rosée de lumière sur la peau et qui se répand dans l'air. [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "fascination"
-        },
-						          {
-        id: "influencelanterne",
-            label: "Un flamboiement de Radiance",
-            aspects:
-            {lantern: 10,influence:1},
-            description: "Chaque couleur a brillé comme une nouvelle teinte, mais à présent toutes commencent à déteindre vers le blanc. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Fascination.]",
-			lifetime: 60,
-			decayTo: "fascination"
-        },
-								          {
-        id: "influencelanterng",
-            label: "Une Splendeur",
-            aspects:
-            {lantern: 15,influence:1},
-            description: "Couvrez vos yeux, si vous voulez. Cela ne servira à rien. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. This can be used in some Rites to summon minions. Si inutilisé, devient de la Fascination.]",
-			lifetime: 60,
-			decayTo: "fascination"
-        },
-		
-						          {
-        id: "influencemoth",
-            label: "Un Bourdonnement dans la Tête",
-            aspects:
-            {moth: 2,influence:1},
-            description: "in gi rum imus noc te et con sumi <b>snip snip snip</b> [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-								          {
-        id: "influencemothc",
-            label: "A Rattling in the Soul",
-            aspects:
-            {moth: 6,influence:1},
-            description: "Oh the friends that we played and the skins that we made; still they drive us! [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "restlessness"
-        },
-						          {
-        id: "influencemothe",
-            label: "A Howling in the Heart",
-            aspects:
-            {moth: 10,influence:1},
-            description: "Emotions contort our thoughts. One passion yields to the next like leaves in the wind's grip! [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60,
-			decayTo: "restlessness"
-        },
-								          {
-        id: "influencemothg",
-            label: "That Old Yearning",
-            aspects:
-            {moth: 15,influence:1},
-            description: "			
-			please",		
-			lifetime: 60,
-			decayTo: "restlessness"
-        },
-		
-				          {
-        id: "influencewinter",
-            label: "Une Fraiche Atmosphère",
-            aspects:
-            {winter: 2,influence:1},
-            description: "Un étrange froid persiste dans mes salles. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
-			lifetime: 60
-        },
-						          {
-        id: "influencewinterc",
-            label: "Une Atmosphère Glaciale",
-            aspects:
-            {winter: 6,influence:1},
-            description: "L'air croque la peau. Le gel marque le verre. [Une influence de sixième ordre: les signes sont manifestes. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Terreur.]",
-			lifetime: 60,
-			decayTo: "dread"
-        },
-						          {
-        id: "influencewintere",
-            label: "Une Atmosphère Mordante",
-            aspects:
-            {winter: 10,influence:1},
-            description: "L'hiver traverse les vêtements, traverse la peau, se niche dans les veines. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Terreur.]",
-			lifetime: 60,
-			decayTo: "dread"
-        },
-								          {
-        id: "influencewinterg",
-            label: "Givre Parfait",
-            aspects:
-            {winter: 15,influence:1},
-            description: "The world is still as ice. Each movement is a journey. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Terreur.]",
-			lifetime: 60,
-			decayTo: "dread"
-        },
-
-]
+{
+  "elements": [
+    {
+      id: "influenceedge",
+      label: "Un Air Palpitant",
+      aspects: {
+        edge: 2,
+        influence: 1
+      },
+      description: "Les sens sont affûtés. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influenceedgec",
+      label: "Un Air Stimulant",
+      aspects: {
+        edge: 6,
+        influence: 1
+      },
+      description: "Les passions sont stimulées. [Une influence de sixième ordre: les signes sont manifestes. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influenceedgee",
+      label: "Un Air Furieux",
+      aspects: {
+        edge: 10,
+        influence: 1
+      },
+      description: "La colère est implicite dans chaque forme. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influenceedgeg",
+      label: "Une Résolution",
+      aspects: {
+        edge: 15,
+        influence: 1
+      },
+      description: "Qui peut éviter la finalité de la bataille ? [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influenceforge",
+      label: "Une Chaleur Croissante",
+      aspects: {
+        forge: 2,
+        influence: 1
+      },
+      description: "Une brume et un chatoiement. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influenceforgec",
+      label: "Une Chaleur Flageolante",
+      aspects: {
+        forge: 6,
+        influence: 1
+      },
+      description: "Une contingence d'étincelles.. [Une influence de sixième ordre: les signes sont manifestes. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "fascination"
+    },
+    {
+      id: "influenceforgee",
+      label: "Une Chaleur Exaltante",
+      aspects: {
+        forge: 10,
+        influence: 1
+      },
+      description: "Voici l'émanation au bord du volcan. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "fascination"
+    },
+    {
+      id: "influenceforgeg",
+      label: "Une Incandescence",
+      aspects: {
+        forge: 15,
+        influence: 1
+      },
+      description: "Change follows fire. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "fascination"
+    },
+    {
+      id: "influencegrail",
+      label: "Une Notion d'Appétit",
+      aspects: {
+        grail: 2,
+        influence: 1
+      },
+      description: "Chaque sens est renforcé; chaque sensation, approfondi. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influencegrailc",
+      label: "Une Urgence d'Appétit",
+      aspects: {
+        grail: 6,
+        influence: 1
+      },
+      description: "Difficile de se contrôler soi-même. [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influencegraile",
+      label: "An Imperative of Appetite",
+      aspects: {
+        grail: 10,
+        influence: 1
+      },
+      description: "Les lèvres se languissent de savourer ; les doigts se languissent d'empoigner. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influencegrailg",
+      label: "An Incarnadescence",
+      aspects: {
+        grail: 15,
+        influence: 1
+      },
+      description: "The very air is succulent with possibility. Pierce it, and it might bleed. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influenceheart",
+      label: "Trembling Airs",
+      aspects: {
+        heart: 2,
+        influence: 1
+      },
+      description: "The toes tap. All is brisk and all is well. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influenceheartc",
+      label: "Pulsing Airs",
+      aspects: {
+        heart: 6,
+        influence: 1
+      },
+      description: "A rising power; a reassuring energy. [Une influence de sixième ordre: des résonances ou correspondances significatives. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "vitality"
+    },
+    {
+      id: "influencehearte",
+      label: "Pounding Airs",
+      aspects: {
+        heart: 10,
+        influence: 1
+      },
+      description: "The heart moves; the world moves. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "vitality"
+    },
+    {
+      id: "influenceheartg",
+      label: "An Imminence",
+      aspects: {
+        heart: 15,
+        influence: 1
+      },
+      description: "The sky is a drum; the earth is ready for its ecstacy. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "vitality"
+    },
+    {
+      id: "influenceknock",
+      label: "Subtle Flaw",
+      aspects: {
+        knock: 2,
+        influence: 1
+      },
+      description: "Laces uncoil -- windows swing open -- locks move as if oiled. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influenceknockc",
+      label: "Subtile Fracture",
+      aspects: {
+        knock: 6,
+        influence: 1
+      },
+      description: "Clouds part -- walls creak -- old wounds ache. [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influenceknocke",
+      label: "Subtle Rupture",
+      aspects: {
+        knock: 10,
+        influence: 1
+      },
+      description: "Geometry contorts -- doors burst open -- snakes boil from the earth! [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influenceknockg",
+      label: "Wrong Door",
+      aspects: {
+        knock: 15,
+        influence: 1
+      },
+      description: "There is a Door that should not open, and even now its hinges are roused -- [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "bloodshed"
+    },
+    {
+      id: "influencelantern",
+      label: "Une Conscience de Radiance",
+      aspects: {
+        lantern: 2,
+        influence: 1
+      },
+      description: "Il existe une lumière derrière le monde, une lumière par dessus le Mansus, une lumière qui pénètre aussi bien le verre que la peau. Elle se présente ici. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influencelanternc",
+      label: "Une Intensité de Radiance",
+      aspects: {
+        lantern: 6,
+        influence: 1
+      },
+      description: "Une rosée de lumière sur la peau et qui se répand dans l'air. [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "fascination"
+    },
+    {
+      id: "influencelanterne",
+      label: "Un flamboiement de Radiance",
+      aspects: {
+        lantern: 10,
+        influence: 1
+      },
+      description: "Chaque couleur a brillé comme une nouvelle teinte, mais à présent toutes commencent à déteindre vers le blanc. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Fascination.]",
+      lifetime: 60,
+      decayTo: "fascination"
+    },
+    {
+      id: "influencelanterng",
+      label: "Une Splendeur",
+      aspects: {
+        lantern: 15,
+        influence: 1
+      },
+      description: "Couvrez vos yeux, si vous voulez. Cela ne servira à rien. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. This can be used in some Rites to summon minions. Si inutilisé, devient de la Fascination.]",
+      lifetime: 60,
+      decayTo: "fascination"
+    },
+    {
+      id: "influencemoth",
+      label: "Un Bourdonnement dans la Tête",
+      aspects: {
+        moth: 2,
+        influence: 1
+      },
+      description: "in gi rum imus noc te et con sumi <b>snip snip snip</b> [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influencemothc",
+      label: "A Rattling in the Soul",
+      aspects: {
+        moth: 6,
+        influence: 1
+      },
+      description: "Oh the friends that we played and the skins that we made; still they drive us! [Une influence de sixième ordre: significatives résonances ou correspondances. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "restlessness"
+    },
+    {
+      id: "influencemothe",
+      label: "A Howling in the Heart",
+      aspects: {
+        moth: 10,
+        influence: 1
+      },
+      description: "Emotions contort our thoughts. One passion yields to the next like leaves in the wind's grip! [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60,
+      decayTo: "restlessness"
+    },
+    {
+      id: "influencemothg",
+      label: "That Old Yearning",
+      aspects: {
+        moth: 15,
+        influence: 1
+      },
+      description: "
+      please
+      ",
+      lifetime: 60,
+      decayTo: "restlessness"
+    },
+    {
+      id: "influencewinter",
+      label: "Une Fraiche Atmosphère",
+      aspects: {
+        winter: 2,
+        influence: 1
+      },
+      description: "Un étrange froid persiste dans mes salles. [Une influence de second ordre: apparente à la perception, immédiatement reconnaissable à un adepte. Peut être utilisé dans certains rites afin d'invoquer des minions.]",
+      lifetime: 60
+    },
+    {
+      id: "influencewinterc",
+      label: "Une Atmosphère Glaciale",
+      aspects: {
+        winter: 6,
+        influence: 1
+      },
+      description: "L'air croque la peau. Le gel marque le verre. [Une influence de sixième ordre: les signes sont manifestes. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Terreur.]",
+      lifetime: 60,
+      decayTo: "dread"
+    },
+    {
+      id: "influencewintere",
+      label: "Une Atmosphère Mordante",
+      aspects: {
+        winter: 10,
+        influence: 1
+      },
+      description: "L'hiver traverse les vêtements, traverse la peau, se niche dans les veines. [Une influence du dixième ordre ! Un nœud agglomérant de pouvoir et de danger. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Terreur.]",
+      lifetime: 60,
+      decayTo: "dread"
+    },
+    {
+      id: "influencewinterg",
+      label: "Givre Parfait",
+      aspects: {
+        winter: 15,
+        influence: 1
+      },
+      description: "The world is still as ice. Each movement is a journey. [Une influence du quinzième ordre ! This might be the personal attention of an Hour. Peut être utilisé dans certains rites afin d'invoquer des minions. Si inutilisé, devient de la Terreur.]",
+      lifetime: 60,
+      decayTo: "dread"
+    }
+  ]
 };

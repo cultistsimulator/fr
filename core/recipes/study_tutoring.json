@@ -1,137 +1,250 @@
- {"recipes": [
-	
-	{
-        id: "studylatintutoring",
-        label: "Étudier le Latin avec un Tuteur",
-        actionId: "study",
-        requirements: {tutorlatin:1,commission:-1,article:-1},
-			slots:[{id:"Costs",required: {compensationvalue: 1}}],
-				alternativerecipes: [{id:"studylatintutoringpaid",chance:100}],
-		startdescription: "Si j'ai besoin d'apprendre le Latin, en voilà un qui m'aidera ; mais je devrai payer en spintriae, la monnaie du monde caché.",
-        description: "Les tuteurs ne travaillent pas gratuitement. Une autre fois.",
-        warmup: 60,
-        craftable: true,
+{
+  "recipes": [
+    {
+      id: "studylatintutoring",
+      label: "Étudier le Latin avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        tutorlatin: 1,
+        commission: -1,
+        article: -1
+      },
+      slots: [
+        {
+          id: "Costs",
+          required: {
+            compensationvalue: 1
+          }
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "studylatintutoringpaid",
+          chance: 100
+        }
+      ],
+      startdescription: "Si j'ai besoin d'apprendre le Latin, en voilà un qui m'aidera ; mais je devrai payer en spintriae, la monnaie du monde caché.",
+      description: "Les tuteurs ne travaillent pas gratuitement. Une autre fois.",
+      warmup: 60,
+      craftable: true
     },
-		{
-        id: "studylatintutoringpaid",
-        label: "Étudier le Latin avec un Tuteur",
-        actionId: "study",
-        requirements: {compensationvalue:2},
-			effects: {scholarlatin:1,compensationvalue:-2},
-		startdescription: "Ce sera suffisant. Je vais tendre l'oreille attentivement.",
-        description: "La langue de Lucretius' 'On the Nature of Things', of Aquinas' 'Summa Theologiae', et du fameux 'De Horis...'",
+    {
+      id: "studylatintutoringpaid",
+      label: "Étudier le Latin avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        compensationvalue: 2
+      },
+      effects: {
+        scholarlatin: 1,
+        compensationvalue: -2
+      },
+      startdescription: "Ce sera suffisant. Je vais tendre l'oreille attentivement.",
+      description: "La langue de Lucretius' 'On the Nature of Things', of Aquinas' 'Summa Theologiae', et du fameux 'De Horis...'"
     },
-	
-		{
-        id: "studygreektutoring",
-        label: "Étudier le Grec ancien avec un Tuteur",
-        actionId: "study",
-        requirements: {tutorgreek:1,commission:-1,article:-1},
-			slots:[	{id:"Costs",required: {compensationvalue: 1}}],
-				alternativerecipes: [{id:"studygreektutoringpaid",chance:100}],
-		startdescription: "Si j'ai besoin d'apprendre le Grec ancien, en voilà un qui m'aidera ; mais je devrai payer en spintriae, la monnaie du monde caché.",
-        description: "Les tuteurs ne travaillent pas gratuitement. Une autre fois.",
-        warmup: 60,
-        craftable: true,
+    {
+      id: "studygreektutoring",
+      label: "Étudier le Grec ancien avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        tutorgreek: 1,
+        commission: -1,
+        article: -1
+      },
+      slots: [
+        {
+          id: "Costs",
+          required: {
+            compensationvalue: 1
+          }
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "studygreektutoringpaid",
+          chance: 100
+        }
+      ],
+      startdescription: "Si j'ai besoin d'apprendre le Grec ancien, en voilà un qui m'aidera ; mais je devrai payer en spintriae, la monnaie du monde caché.",
+      description: "Les tuteurs ne travaillent pas gratuitement. Une autre fois.",
+      warmup: 60,
+      craftable: true
     },
-		{
-        id: "studygreektutoringpaid",
-        label: "Étudier le Grec ancien avec un Tuteur",
-        actionId: "study",
-        requirements: {compensationvalue:2},
-			effects: {scholargreek:1,compensationvalue:-2},
-		startdescription: "Ce sera suffisant. Je vais tendre l'oreille attentivement.",
-        description: "The language of the Metaphysics, of Procopius' 'Secret History', and of the menacing 'On What is Contained by Silver'...",
+    {
+      id: "studygreektutoringpaid",
+      label: "Étudier le Grec ancien avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        compensationvalue: 2
+      },
+      effects: {
+        scholargreek: 1,
+        compensationvalue: -2
+      },
+      startdescription: "Ce sera suffisant. Je vais tendre l'oreille attentivement.",
+      description: "The language of the Metaphysics, of Procopius' 'Secret History', and of the menacing 'On What is Contained by Silver'..."
     },
-	
-		{
-        id: "studyaramaictutoring",
-        label: "Étudier l'Araméen avec un Tuteur",
-        actionId: "study",
-        requirements: {tutoraramaic:1,commission:-1,article:-1},
-			slots:[{id:"Costs",required: {compensationvalue: 1}}],
-				alternativerecipes: [{id:"studyaramaictutoringpaid",chance:100}],
-		startdescription: "Si j'ai besoin d'apprendre l'Araméen, en voilà un qui m'aidera ; mais je devrai payer en spintriae, la monnaie du monde caché.",
-        description: "Les tuteurs ne travaillent pas gratuitement. Une autre fois.",
-        warmup: 60,
-        craftable: true,
+    {
+      id: "studyaramaictutoring",
+      label: "Étudier l'Araméen avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        tutoraramaic: 1,
+        commission: -1,
+        article: -1
+      },
+      slots: [
+        {
+          id: "Costs",
+          required: {
+            compensationvalue: 1
+          }
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "studyaramaictutoringpaid",
+          chance: 100
+        }
+      ],
+      startdescription: "Si j'ai besoin d'apprendre l'Araméen, en voilà un qui m'aidera ; mais je devrai payer en spintriae, la monnaie du monde caché.",
+      description: "Les tuteurs ne travaillent pas gratuitement. Une autre fois.",
+      warmup: 60,
+      craftable: true
     },
-		{
-        id: "studyaramaictutoringpaid",
-        label: "Étudier l'Araméen avec un Tuteur",
-        actionId: "study",
-        requirements: {compensationvalue:2},
-			effects: {scholararamaic:1,compensationvalue:-2},
-		startdescription: "Ce sera suffisant. Je vais tendre l'oreille attentivement.",
-        description: "The language of the Visions of Aram, of the Book of Daniel, and of the Account of Kanishk at the Spider's Door." 
+    {
+      id: "studyaramaictutoringpaid",
+      label: "Étudier l'Araméen avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        compensationvalue: 2
+      },
+      effects: {
+        scholararamaic: 1,
+        compensationvalue: -2
+      },
+      startdescription: "Ce sera suffisant. Je vais tendre l'oreille attentivement.",
+      description: "The language of the Visions of Aram, of the Book of Daniel, and of the Account of Kanishk at the Spider's Door."
     },
-	
-			{
-        id: "studyfucinetutoringspirit",
-        label: "Étudier le Fucin avec un Tuteur",
-        actionId: "study",
-        requirements: {spirittutorfucine:1,summoned:1},
-			slots:[{id:"Background",required: {scholarlatin: 1}}],
-				alternativerecipes: [{id:"studyfucinetutoringsuccessful",chance:100}],
-		startdescription: "'Fucine? Yes, I get by in Fucine. I can teach you, if you have Latin as a grounding. But if I hear one crack about the 'tongue of witches', it's off.'",
-        description: "I don't have the grounding I needed.",
-        warmup: 60,
-        craftable: true,
+    {
+      id: "studyfucinetutoringspirit",
+      label: "Étudier le Fucin avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        spirittutorfucine: 1,
+        summoned: 1
+      },
+      slots: [
+        {
+          id: "Background",
+          required: {
+            scholarlatin: 1
+          }
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "studyfucinetutoringsuccessful",
+          chance: 100
+        }
+      ],
+      startdescription: "'Fucine? Yes, I get by in Fucine. I can teach you, if you have Latin as a grounding. But if I hear one crack about the 'tongue of witches', it's off.'",
+      description: "I don't have the grounding I needed.",
+      warmup: 60,
+      craftable: true
     },
-		{
-        id: "studyfucinetutoringsuccessful",
-        label: "Étudier le Fucin avec un Tuteur",
-        actionId: "study",
-        requirements: {scholarlatin:1},
-			effects: {scholarfucine:1},
-		startdescription: "My Latin will serve as a foundation. I'll learn everything I can.",
-        description: "One cannot speak Fucine for long without sipping water. It parches the lips; it dries the throat. It could only have been spoken by a people who lived close to a lake-shore.",
+    {
+      id: "studyfucinetutoringsuccessful",
+      label: "Étudier le Fucin avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        scholarlatin: 1
+      },
+      effects: {
+        scholarfucine: 1
+      },
+      startdescription: "My Latin will serve as a foundation. I'll learn everything I can.",
+      description: "One cannot speak Fucine for long without sipping water. It parches the lips; it dries the throat. It could only have been spoken by a people who lived close to a lake-shore."
     },
-	
-	
-		{
-        id: "studyphrygiantutoringspirit",
-        label: "Étudier le Phrygien avec un Tuteur",
-        actionId: "study",
-        requirements: {spirittutorphrygian:1,summoned:1},
-			slots:[{id:"Background",required: {scholargreek: 1}}],
-				alternativerecipes: [{id:"studyphrygiantutoringsuccessful",chance:100}],
-		startdescription: "'Phrygian! The Great Mother's tongue! Of course. If you have enough Greek, I guarantee that the experience of learning Phrygian will be <i>very</i> pleasant.'",
-        description: "I don't have the grounding I needed.",
-        warmup: 60,
-        craftable: true,
+    {
+      id: "studyphrygiantutoringspirit",
+      label: "Étudier le Phrygien avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        spirittutorphrygian: 1,
+        summoned: 1
+      },
+      slots: [
+        {
+          id: "Background",
+          required: {
+            scholargreek: 1
+          }
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "studyphrygiantutoringsuccessful",
+          chance: 100
+        }
+      ],
+      startdescription: "'Phrygian! The Great Mother's tongue! Of course. If you have enough Greek, I guarantee that the experience of learning Phrygian will be <i>very</i> pleasant.'",
+      description: "I don't have the grounding I needed.",
+      warmup: 60,
+      craftable: true
     },
-		{
-        id: "studyphrygiantutoringsuccessful",
-        label: "Étudier le Phrygien avec un Tuteur",
-        actionId: "study",
-        requirements: {scholargreek:1},
-			effects: {scholarphrygian:1},
-		startdescription: "My Greek will serve as a foundation. I'll learn everything I can.",
-        description: "Herodotus tells a wild story of a pharaoh who discovered the Phrygian language was the first spoken by humans. He was wrong, of course; it was Vak. But everyone enjoys the story.",
+    {
+      id: "studyphrygiantutoringsuccessful",
+      label: "Étudier le Phrygien avec un Tuteur",
+      actionId: "study",
+      requirements: {
+        scholargreek: 1
+      },
+      effects: {
+        scholarphrygian: 1
+      },
+      startdescription: "My Greek will serve as a foundation. I'll learn everything I can.",
+      description: "Herodotus tells a wild story of a pharaoh who discovered the Phrygian language was the first spoken by humans. He was wrong, of course; it was Vak. But everyone enjoys the story."
     },
-	
-			{
-        id: "studymandaictutoringspirit",
-        label: "Study Deep Mandaic with a Tutor",
-        actionId: "study",
-        requirements: {spirittutormandaic:1,summoned:1},
-			slots:[{id:"Background",required: {scholararamaic: 1}}],
-				alternativerecipes: [{id:"studymandaictutoringsuccessful",chance:100}],
-		startdescription: "'TOGETHER WE WILL COMMEMORATE THE TONGUE OF THE UNBURNT GOD.'",
-        description: "I don't have the grounding I needed.",
-        warmup: 60,
-        craftable: true,
+    {
+      id: "studymandaictutoringspirit",
+      label: "Study Deep Mandaic with a Tutor",
+      actionId: "study",
+      requirements: {
+        spirittutormandaic: 1,
+        summoned: 1
+      },
+      slots: [
+        {
+          id: "Background",
+          required: {
+            scholararamaic: 1
+          }
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "studymandaictutoringsuccessful",
+          chance: 100
+        }
+      ],
+      startdescription: "'TOGETHER WE WILL COMMEMORATE THE TONGUE OF THE UNBURNT GOD.'",
+      description: "I don't have the grounding I needed.",
+      warmup: 60,
+      craftable: true
     },
-		{
-        id: "studymandaictutoringsuccessful",
-        label: "Study Deep Mandaic with a Tutor",
-        actionId: "study",
-        requirements: {scholararamaic:1},
-			effects: {scholarmandaic:1},
-		startdescription: "My Aramaic will serve as a foundation. I'll learn everything I can.",
-        description: "In one History, this was the tongue the Shadowless Kings spoke. In another, it was the basis of the incantations of the children of the Leashed Flame.",
-    },
-
-]
+    {
+      id: "studymandaictutoringsuccessful",
+      label: "Study Deep Mandaic with a Tutor",
+      actionId: "study",
+      requirements: {
+        scholararamaic: 1
+      },
+      effects: {
+        scholarmandaic: 1
+      },
+      startdescription: "My Aramaic will serve as a foundation. I'll learn everything I can.",
+      description: "In one History, this was the tongue the Shadowless Kings spoke. In another, it was the basis of the incantations of the children of the Leashed Flame."
+    }
+  ]
 }

@@ -1,65 +1,105 @@
-{"elements":
-    [
-	{id: "rumour",
-	label: "Rumeur Étrange",
-	description: "Cela pourrait me mener à quelqu'un dont j'ai besoin ; ou cela pourrait signifier une toute autre chose. [Explorer avec une Rumeur pour en faire le suivi.]",
-	aspects:{ingredient:1, secrethistories:1,moth:1},
-	lifetime: 60
-	},
-		{id: "favour",
-	label: "Une Faveur d'Autorité",
-	description: "J'ai découvert quelque chose qui me vaudra une faveur, une seule fois. [Ceci vous préservera, vous ou un Acolyte, d'un emprisonnement ... mais on ne peut pas s'y fier.] ",
-	aspects:{suspicious:1},
-	lifetime: 300
-	},
-		{id: "mistakenidentity",
-	label: "Un Cas d'Identité Erronée",
-	aspects: {mortal:1},
-	description: "This isn't who you hoped for, after all. They're no-one of particular importance, and eventually they'll pass from your memory. Perhaps there is no-one else available that you'd care to meet.",
-	lifetime: 10
-	},
-          {
-        id: "funds",
-            label: "Fonds",
-            aspects:
-            {ingredient: 1},
-            description: "Suffisant pour subvenir à mes besoins durant un certain temps.",
-        },
-		          {
-        id: "compensation",
-            label: "Spintria de Fer",
-			aspects: {edge:2, secrethistories:1,compensationvalue:2,ingredient:1,auctionable:2},
-            description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Les spintriae de fer sont la plus petite valeur, et montrent des scènes de meutres sur l'avers. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
-        },
-		          {
-        id: "compensationb",
-            label: "Spintria de Bronze",
-            aspects: {forge:4, secrethistories:1,compensationvalue:4,ingredient:1,auctionable:3},
-			description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Les spintriae de bronze montrent généralement le geste du façonnement sur l'avers. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
-        },
-		{
-        id: "compensationc",
-            label: "Spintria d'Argent",
-			aspects: {grail:6, secrethistories:1,compensationvalue:8,ingredient:1,auctionable:4},
-            description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Elles sont plus facile à vendre contre des fonds plus traditionnels. Les spintriae d'argent sont plus précieuse, et montrent généralement des scènes de débauche sur l'avers. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
-        },
-				{
-        id: "compensationd",
-            label: "Spintria d'Or",
-			aspects: {lantern:8, secrethistories:1,compensationvalue:16,ingredient:1,auctionable:5},
-            description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Elles sont plus facile à vendre contre des fonds plus traditionnels. Les spintriae d'or montrent, sur l'avers, des scènes invisibles aux yeux des mortels. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
-
-        },
-		{
-        id: "mapbookdealer",
-            label: "Directions to Morland's",
-            aspects:{text:1},
-            description: "Cryptic directions to the obscure address of a certain Morland, a dealer in the rarer sort of book."
-        },		{
-        id: "jumble",
-            label: "Fouillis",
-            aspects:{auctionable:1},
-            description: "Vieux vêtements, accessoires quasi sans valeur. It might pick up a few pennies somewhere, but it's of little use to me."
-        }
-]
+{
+  "elements": [
+    {
+      id: "rumour",
+      label: "Rumeur Étrange",
+      description: "Cela pourrait me mener à quelqu'un dont j'ai besoin ; ou cela pourrait signifier une toute autre chose. [Explorer avec une Rumeur pour en faire le suivi.]",
+      aspects: {
+        ingredient: 1,
+        secrethistories: 1,
+        moth: 1
+      },
+      lifetime: 60
+    },
+    {
+      id: "favour",
+      label: "Une Faveur d'Autorité",
+      description: "J'ai découvert quelque chose qui me vaudra une faveur, une seule fois. [Ceci vous préservera, vous ou un Acolyte, d'un emprisonnement ... mais on ne peut pas s'y fier.] ",
+      aspects: {
+        suspicious: 1
+      },
+      lifetime: 300
+    },
+    {
+      id: "mistakenidentity",
+      label: "Un Cas d'Identité Erronée",
+      aspects: {
+        mortal: 1
+      },
+      description: "This isn't who you hoped for, after all. They're no-one of particular importance, and eventually they'll pass from your memory. Perhaps there is no-one else available that you'd care to meet.",
+      lifetime: 10
+    },
+    {
+      id: "funds",
+      label: "Fonds",
+      aspects: {
+        ingredient: 1
+      },
+      description: "Suffisant pour subvenir à mes besoins durant un certain temps."
+    },
+    {
+      id: "compensation",
+      label: "Spintria de Fer",
+      aspects: {
+        edge: 2,
+        secrethistories: 1,
+        compensationvalue: 2,
+        ingredient: 1,
+        auctionable: 2
+      },
+      description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Les spintriae de fer sont la plus petite valeur, et montrent des scènes de meutres sur l'avers. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
+    },
+    {
+      id: "compensationb",
+      label: "Spintria de Bronze",
+      aspects: {
+        forge: 4,
+        secrethistories: 1,
+        compensationvalue: 4,
+        ingredient: 1,
+        auctionable: 3
+      },
+      description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Les spintriae de bronze montrent généralement le geste du façonnement sur l'avers. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
+    },
+    {
+      id: "compensationc",
+      label: "Spintria d'Argent",
+      aspects: {
+        grail: 6,
+        secrethistories: 1,
+        compensationvalue: 8,
+        ingredient: 1,
+        auctionable: 4
+      },
+      description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Elles sont plus facile à vendre contre des fonds plus traditionnels. Les spintriae d'argent sont plus précieuse, et montrent généralement des scènes de débauche sur l'avers. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
+    },
+    {
+      id: "compensationd",
+      label: "Spintria d'Or",
+      aspects: {
+        lantern: 8,
+        secrethistories: 1,
+        compensationvalue: 16,
+        ingredient: 1,
+        auctionable: 5
+      },
+      description: "Les initiés du monde caché utilisent les spintriae pour payer des services. Elles sont plus facile à vendre contre des fonds plus traditionnels. Les spintriae d'or montrent, sur l'avers, des scènes invisibles aux yeux des mortels. [Les Spintriae peuvent être vendus aux enchères contre des fonds plus traditionnels.]"
+    },
+    {
+      id: "mapbookdealer",
+      label: "Directions to Morland's",
+      aspects: {
+        text: 1
+      },
+      description: "Cryptic directions to the obscure address of a certain Morland, a dealer in the rarer sort of book."
+    },
+    {
+      id: "jumble",
+      label: "Fouillis",
+      aspects: {
+        auctionable: 1
+      },
+      description: "Vieux vêtements, accessoires quasi sans valeur. It might pick up a few pennies somewhere, but it's of little use to me."
+    }
+  ]
 };

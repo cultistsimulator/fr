@@ -1,67 +1,80 @@
-{"elements":
-    [
-
-		 {
-        id: "textbooklatin",
-            label: "Grammaire Latine de Gildersleeve",
-            aspects:
-            {text:1,auctionable:1},
-            description: "Juste de quoi vous rafraîchir ma connaissance du Latin."
-        },
-										 {
-        id: "textbookfucine",
-            label: "Le Journal d'Alessandro LaCroce",
-            aspects:
-            {text:1,auctionable:2},
-            description: "Le Prince Alessandro LaCroce a passé des années à étudier secrètement les tablettes prises dans les Marais de Fucin, en Italie centrale. Son travail vous permettra de lire les textes Fucins.",
-			unique:true
-        },
-				 {
-        id: "textbookgreek",
-            label: "Kühner et Gerth",
-            aspects:{text:1,auctionable:1},
-            description: "'Ausführliche Grammatik der griechischen Sprache' de Kühner et Gerth - une grammaire en grec ancien. Une arme essentielle pour une féroce lutte d'une langue exigeante."
-        },
-				 {
-        id: "textbookphrygian",
-            label: "Les Inscriptions de Velshorn",
-            aspects:
-            {text:1,auctionable:2},
-            description: "Un poème épique et notamment érotique décrivant les accouplements, puis l'écorchement qui s'en est ensuivi, d'un imprudent musicien avec la Mère Rouge - à la fois en Grec ancien et en Phrygien. L'intrépide Cal Velshorn a trouvé ces inscriptions sur un mur d'un temple à Halicarnasse, mais la même inscription a été retrouvée dans un nombre surprenant d'autres lieux. [Si vous maitrisez le Grec ancien, vous pouvez l'utiliser pour apprendre le Phrygien.]",
-			unique:true
-        },
-					 {
-        id: "textbookaramaic",
-            label: "L'AUTHENTIQUE ET UNIQUE RAPPORT DU MAGUS VON BRANDT SUR LA VRAIE LANGUE DE LA VÉRITABLE TERRE SAINTE OF THE HIGHMOST",
-            aspects:
-            {text:1,auctionable:1},
-            description: "Écrit avec excitation et dans une certaine hâte par un gentilhomme en proie à un enthousiasme Transcendantaliste, mais néanmoins un guide utile pour l'Araméen."
-        },
-				 {
-        id: "textbookmandaic",
-            label: "The August Stone",
-            aspects:
-            {text:1,auctionable:2},
-            description: "Un formidable bol, gros comme un gong, sculpté dans du basalte noir, portant une incantation contre les démons en Deep Mandaic. Le dessous porte la même incantation en Araméen. [Si vous parlez l'Araméen, vous pouvez l'utiliser pour apprendre le Deep Mandaic.]",
-			unique:true
-        },
-				 {
-        id: "textbooksanskrit",
-            label: "Livre de Lectures Sanskrit de Gartside",
-            aspects:
-            {text:1,auctionable:1},
-            description: "Un livre lucide qui esquisse un prudent trajet à travers la brousaille d'une langue vaste et complexe."
-        },
-				 {
-        id: "textbookvak",
-            label: "L'Uyrus",
-            aspects:
-            {text:1,auctionable:3},
-            description: "Une sculpture d'ivoire élaborée d'une invraisemblable complexité. Autour et à travers de sa superficie, des inscriptions en Sanskrit vrillent contre des lignes Vak analogues. [Si vous parlez le Sanskrit, vous pouvez l'utiliser pour apprendre le Vak, la première langue du monde.]",
-			unique:true
-        },
-		
-		 
-
-]
+{
+  "elements": [
+    {
+      id: "textbooklatin",
+      label: "Grammaire Latine de Gildersleeve",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "Juste de quoi vous rafraîchir ma connaissance du Latin."
+    },
+    {
+      id: "textbookfucine",
+      label: "Le Journal d'Alessandro LaCroce",
+      aspects: {
+        text: 1,
+        auctionable: 2
+      },
+      description: "Le Prince Alessandro LaCroce a passé des années à étudier secrètement les tablettes prises dans les Marais de Fucin, en Italie centrale. Son travail vous permettra de lire les textes Fucins.",
+      unique: true
+    },
+    {
+      id: "textbookgreek",
+      label: "Kühner et Gerth",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "'Ausführliche Grammatik der griechischen Sprache' de Kühner et Gerth - une grammaire en grec ancien. Une arme essentielle pour une féroce lutte d'une langue exigeante."
+    },
+    {
+      id: "textbookphrygian",
+      label: "Les Inscriptions de Velshorn",
+      aspects: {
+        text: 1,
+        auctionable: 2
+      },
+      description: "Un poème épique et notamment érotique décrivant les accouplements, puis l'écorchement qui s'en est ensuivi, d'un imprudent musicien avec la Mère Rouge - à la fois en Grec ancien et en Phrygien. L'intrépide Cal Velshorn a trouvé ces inscriptions sur un mur d'un temple à Halicarnasse, mais la même inscription a été retrouvée dans un nombre surprenant d'autres lieux. [Si vous maitrisez le Grec ancien, vous pouvez l'utiliser pour apprendre le Phrygien.]",
+      unique: true
+    },
+    {
+      id: "textbookaramaic",
+      label: "L'AUTHENTIQUE ET UNIQUE RAPPORT DU MAGUS VON BRANDT SUR LA VRAIE LANGUE DE LA VÉRITABLE TERRE SAINTE OF THE HIGHMOST",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "Écrit avec excitation et dans une certaine hâte par un gentilhomme en proie à un enthousiasme Transcendantaliste, mais néanmoins un guide utile pour l'Araméen."
+    },
+    {
+      id: "textbookmandaic",
+      label: "The August Stone",
+      aspects: {
+        text: 1,
+        auctionable: 2
+      },
+      description: "Un formidable bol, gros comme un gong, sculpté dans du basalte noir, portant une incantation contre les démons en Deep Mandaic. Le dessous porte la même incantation en Araméen. [Si vous parlez l'Araméen, vous pouvez l'utiliser pour apprendre le Deep Mandaic.]",
+      unique: true
+    },
+    {
+      id: "textbooksanskrit",
+      label: "Livre de Lectures Sanskrit de Gartside",
+      aspects: {
+        text: 1,
+        auctionable: 1
+      },
+      description: "Un livre lucide qui esquisse un prudent trajet à travers la brousaille d'une langue vaste et complexe."
+    },
+    {
+      id: "textbookvak",
+      label: "L'Uyrus",
+      aspects: {
+        text: 1,
+        auctionable: 3
+      },
+      description: "Une sculpture d'ivoire élaborée d'une invraisemblable complexité. Autour et à travers de sa superficie, des inscriptions en Sanskrit vrillent contre des lignes Vak analogues. [Si vous parlez le Sanskrit, vous pouvez l'utiliser pour apprendre le Vak, la première langue du monde.]",
+      unique: true
+    }
+  ]
 };

@@ -1,272 +1,544 @@
 {
-"recipes": [
-
--{id: "speakpublicly",
-label:"Parlez de questions ésotériques",
-actionId: "talk",
-requirements: {society:-1,lore: 1},
-effects: {mystique:1},
-startdescription: "Parler en public des arts invisibles attirera l'attention. Peut-être que c'est ce que je veux.",
-description: ".",
-warmup: 60,
-craftable: true,
-deckeffect: {talkevents:1},
-linked:[{id: "talkfindacquaintance", chance: 100},
-		{id: "talkfindpatron",chance:100}],
-},
-
-
-	{
-        id: "talkfindacquaintance",
-        label: "Une Connaissance ?",
-        actionId: "talk",
-        requirements: {dayacquaintances:1},
-		slots:[{id:"escalation",label:"Passion",description:"Je dois être fervent et convaincant.",required:{passion:1},greedy:true}],
-        startdescription: "I've found someone who may be a kindred spirit - but I'll need to win them over. [Winning over une connaissance nécessite votre Passion]",
-		alternativerecipes:[{id:"talkmeetacquaintance",chance:100}],
-        description: "Je ne pouvais pas réunir la Passion nécessaire pour l'amener dans mon cercle. Peut-être une autre fois.",
-		effects:{season:-1},
-        warmup: 60
+  "recipes": [
+    -
+    {
+      id: "speakpublicly",
+      label: "Parlez de questions ésotériques",
+      actionId: "talk",
+      requirements: {
+        society: -1,
+        lore: 1
+      },
+      effects: {
+        mystique: 1
+      },
+      startdescription: "Parler en public des arts invisibles attirera l'attention. Peut-être que c'est ce que je veux.",
+      description: ".",
+      warmup: 60,
+      craftable: true,
+      deckeffect: {
+        talkevents: 1
+      },
+      linked: [
+        {
+          id: "talkfindacquaintance",
+          chance: 100
+        },
+        {
+          id: "talkfindpatron",
+          chance: 100
+        }
+      ]
     },
-					{
-        id: "talkfindpatron",
-        label: "Un Patron ?",
-        actionId: "talk",
-        requirements: {daypatrons:1},
-		slots:[{id:"escalation",label:"Raison",description:"Je dois être crédible et intelligible.",required:{reason:1},greedy:true}],
-        startdescription: "J'ai trouvé quelqu'un pouvant disposer de ressources qui me serait utiles - mais je dois d'abord l'impressionner. [Impressionner un Patron exige votre Raison.]",
-		alternativerecipes:[{id:"talkmeetpatron",chance:100}],
-        description: "I could not muster the mental energy to show them what I am. Perhaps another time.",
-		effects:{season:-1},
-        warmup: 60
+    {
+      id: "talkfindacquaintance",
+      label: "Une Connaissance ?",
+      actionId: "talk",
+      requirements: {
+        dayacquaintances: 1
+      },
+      slots: [
+        {
+          id: "escalation",
+          label: "Passion",
+          description: "Je dois être fervent et convaincant.",
+          required: {
+            passion: 1
+          },
+          greedy: true
+        }
+      ],
+      startdescription: "I've found someone who may be a kindred spirit - but I'll need to win them over. [Winning over une connaissance nécessite votre Passion]",
+      alternativerecipes: [
+        {
+          id: "talkmeetacquaintance",
+          chance: 100
+        }
+      ],
+      description: "Je ne pouvais pas réunir la Passion nécessaire pour l'amener dans mon cercle. Peut-être une autre fois.",
+      effects: {
+        season: -1
+      },
+      warmup: 60
     },
-
-			{
-        id: "talkmeetacquaintance",
-        label: "Une Connaissance",
-        actionId: "talk",
-		requirements:{passion:1},
-        startdescription: "'Venez avec moi.'",
-        description: ".",
-		deckeffect: {"acquaintances":1},
-				effects:{season:-1},
-        warmup: 5
+    {
+      id: "talkfindpatron",
+      label: "Un Patron ?",
+      actionId: "talk",
+      requirements: {
+        daypatrons: 1
+      },
+      slots: [
+        {
+          id: "escalation",
+          label: "Raison",
+          description: "Je dois être crédible et intelligible.",
+          required: {
+            reason: 1
+          },
+          greedy: true
+        }
+      ],
+      startdescription: "J'ai trouvé quelqu'un pouvant disposer de ressources qui me serait utiles - mais je dois d'abord l'impressionner. [Impressionner un Patron exige votre Raison.]",
+      alternativerecipes: [
+        {
+          id: "talkmeetpatron",
+          chance: 100
+        }
+      ],
+      description: "I could not muster the mental energy to show them what I am. Perhaps another time.",
+      effects: {
+        season: -1
+      },
+      warmup: 60
     },
-		 {
-        id: "talkmeetpatron",
-        label: "Un Patron",
-        actionId: "talk",
-		requirements:{reason:1},
-        startdescription: "'Nous pouvons apprendre l'un de l'autre.'",
-        description: ".",
-		deckeffect: {"scholarpatrons":1},
-				effects:{season:-1},
-        warmup: 5
+    {
+      id: "talkmeetacquaintance",
+      label: "Une Connaissance",
+      actionId: "talk",
+      requirements: {
+        passion: 1
+      },
+      startdescription: "'Venez avec moi.'",
+      description: ".",
+      deckeffect: {
+        "acquaintances": 1
+      },
+      effects: {
+        season: -1
+      },
+      warmup: 5
     },
-	
-	
-	{id: "talktotroublemaker",
-label:"Organiser une réunion en terrain neutre.",
-actionId: "talk",
-requirements: {independent: 1,society:-1,ritual:-1},
-slots: [{id:"Subject",description:"Un sujet de conversation."}],
-alternativerecipes:[
-{id:"independentloreconversation",chance:100},
-{id:"independentdesireconversation",chance:100},
-],
-startdescription: "'Are we enemies? Perhaps we don't have to  be.'",
-description: "A guarded conversation in an early-opening coffee-shop in the rain-swept wind-shivering after dawn. I've learnt nothing.",
-effects: {mystique:1},
-warmup: 60,
-craftable: true
-},
-
-	{id: "independentloreconversation",
-label:"Organiser une réunion en terrain neutre.",
-actionId: "talk",
-requirements: {lore: 1},
-startdescription: "'It seems we <i>do</i> have something to discuss...'",
-description:"A hushed and elliptical conversation by lamp-light, with glints of truth like gold in river-mud. Who knows? Perhaps, one day, we might speak less guardedly.",
-deckeffect: {troublemakerconversations:1}
-
-},
-
-	{id: "independentdesireconversation",
-label:"Organiser une réunion en terrain neutre.",
-actionId: "talk",
-requirements: {desire: 1},
-startdescription: "'Do you propose we make common cause? Are you serious?'",
-description:"'Perhaps. Eventually. Prove yourself to me. Let's talk...' [If you have a cult, it is possible, although difficult, to win a Troublemaker to your side.]",
-deckeffect: {troublemakerconversations:1}
-},
-
-
-
-{id: "talktohunter",
-label:"Organiser une réunion avec un adversaire",
-actionId: "talk",
-requirements: {hunter: 1},
-slots: [{id:"Subject",description:"Un sujet de conversation... ou un minion pour le détruire."}],
-alternativerecipes:[
-{id:"hunterspeakpoison",chance:100},
-{id:"hunterspeakwinterg",chance:100},
-{id:"hunterspeakwinterd",chance:100},
-{id:"hunterspeakwinter",chance:100},
-{id:"hunterspeakdread",chance:100},
-{id:"hunterspeaklanterng",chance:100},
-{id:"hunterspeaklanternd",chance:100},
-{id:"hunterspeaklantern",chance:100},
-{id:"hunterspeakfascination",chance:100},
-
-
-
-
-
-{id:"hunterattackhighedge",chance:100},
-{id:"hunterattackmidedge",chance:100},
-{id:"hunterattacklowedge",chance:100},
-{id:"hunterattackhighwinter",chance:100},
-{id:"hunterattackmidwinter",chance:100},
-{id:"hunterattacklowwinter",chance:100},
-{id:"hunterattacknoedge",chance:100}
-],
-startdescription: "Perhaps we could parley. Or perhaps I could send something to ambush them.",
-description: "This was rash. Perhaps I shouldn't have exposed myself so.",
-effects: {notoriety:1},
-warmup: 60,
-craftable: true
-},
-
-
-{id: "talktospirit",
-label:"Speak to something I have summoned",
-actionId: "talk",
-requirements: {society:-1,follower: 1,summoned:1},
-slots: [{id:"Subject",description:"Un sujet de conversation ... ou une cible."}],
-comments: "We have clues upstream for recruitment/promotion, and we don't want this to override them, hence the society limitation.",
-alternativerecipes:[
-{id:"discussfucinespirit",chance:100},
-{id:"discussphrygianspirit",chance:100},
-{id:"discussmandaicspirit",chance:100},
-{id:"hunterattackhighedge",chance:100},
-{id:"hunterattackmidedge",chance:100},
-{id:"hunterattacklowedge",chance:100},
-{id:"hunterattacknoedge",chance:100},
-{id: "evidencedestroymidmoth",chance:100},
-{id: "evidencedestroylowmoth",chance:100},
-{id: "evidencedestroynomoth",chance:100},
-
-{id:"annoyanceseducehighgrail",chance:100},
-{id:"annoyanceattackhighedge",chance:100},
-{id:"annoyanceseducemidgrail",chance:100},
-{id:"annoyanceattackmidedge",chance:100},
-{id:"annoyancederangemidmoth",chance:100},
-{id:"annoyanceseducelowgrail",chance:100},
-{id:"annoyanceattacklowedge",chance:100},
-{id:"annoyancederangelowmoth",chance:100},
-{id:"annoyanceattacknoedge",chance:100},
-{id: "teresadiscusslocksmithsdream1",chance:100},
-{id: "teresadiscusslocksmithsdream2",chance:100},
-{id: "teresadiscusslocksmithsdream3",chance:100},
-],
-startdescription: "Not everything from the Mansus can speak, but everything can understand mortal speech, even it has passed la Porte Blanche.",
-description: "Nothing; my words cease like sand in a glass.",
-warmup: 60,
-craftable: true
-},
-
-{id: "discussfucinespirit",
-label:"La question de l'apprentissage du Fucin",
-actionId: "talk",
-requirements: {scholarlatin:1,summoned: 1,spirittutorfucine:1},
-startdescription: "'Le Fucin? Oui, je me débrouille en Fucin. Je peux vous l'enseigner, si vous disposez d'une base en Latin. But if I hear one crack about the 'tongue of witches', it's off.'[Utilisez l'<b>ÉTUDE</b> avec le Baldomerian pour apprendre le Fucin].",
-description: ".",
-craftable: true
-},
-{id: "discussphrygianspirit",
-label:"La question de l'apprentissage du Phrygien",
-actionId: "talk",
-requirements: {scholargreek:1,summoned: 1,spirittutorphrygian:1},
-startdescription: "'Le Phrygien! La langue de Grand-Mère ! Bien sûr. Si vous vous en sortez avec le Grec ancien, je vous garantis un apprentissage du Phrygien <i>très</i> agréable.' [Utilisez l'<b>ÉTUDE</b> avec Ezeem pour apprendre le Phrygien].'",
-description: ".",
-craftable: true
-},
-
-{id: "discussmandaicspirit",
-label:"La question de l'apprentissage du Deep Mandaic",
-actionId: "talk",
-requirements: {scholararamaic:1,summoned: 1,spirittutormandaic:1},
-startdescription: "'TOGETHER WE WILL COMMEMORATE THE TONGUE OF THE UNBURNT GOD.' [Utilisez l'<b>ÉTUDE</b> avec le Roi Creuset pour apprendre le Deep Mandaic].'",
-description: ".",
-craftable: true
-},
-
-	  {id:"teresadiscusslocksmithsdream1",
-	  label:"Discuss the Locksmith's Dream, Volume 1",
-	  requirements:{spirit_lanterne_secret:1,locksmithsdream1:1,autographed:-1},
-	  actionId:"talk",
-	  startdescription:"'Shall I autograph it? I think that would be rather fun, wouldn't it?'",
-	  description:"'I used to live by Camden Lock, when I started writing this stuff down. If that isn't a joke of the Hours, I don't know what is. Let me tell you of my sources -'",
-	  effects:{erudition:1},
-	  mutations:[{filterOnAspectId:text,mutateAspectId:autographed,mutationLevel:1}]	  
-	  },
-	  	  	  {id:"teresadiscusslocksmithsdream2",
-	  label:"Discuss the Locksmith's Dream, Volume 2",
-	  requirements:{spirit_lanterne_secret:1,locksmithsdream2:1,autographed:-1},
-	  actionId:"talk",
-	  startdescription:"'Shall I autograph it? Would that be a little precious? No-one will believe it's the real thing, anyway. I'm supposed to be dead.'",
-	  description:"'I still think the Doors have to do with artisans' work - with making. I think that's how we begun to find our way into the House. But of course our ascents were always limited, until we learnt to speak. I'll try to explain...'",
-	  effects:{glimmering:1},
-	  mutations:[{filterOnAspectId:text,mutateAspectId:autographed,mutationLevel:1}]	  
-	  },
-	  	  {id:"teresadiscusslocksmithsdream3",
-	  label:"Discuss the Locksmith's Dream, Volume 3",
-	  requirements:{spirit_lanterne_secret:1,locksmithsdream3:1,autographed:-1},
-	  actionId:"talk",
-	  startdescription:"'I'll write my name in it, shall I? Only the name that Christopher called me. Not the name I use in here.'",
-	  description:"Oh, my, I was in a state when I wrote this, wasn't I? Sorry about that. But I was right that death is down. That's one of the reasons I usually stay pretty high in the Mansus. I'll try to explain what I mean, a little -'",
-	  effects:{glimmering:1},
-	  mutations:[{filterOnAspectId:text,mutateAspectId:autographed,mutationLevel:1}]	  
-	  },
-
-{
-        id: "begincultfoundation",
-        label: "Fonder une Organisation Mystique ",
-		alternativerecipes:
-		[{id: "cultfoundation", chance:100, additional: true}],
-        actionId: "talk",
-        requirements: {acquaintance:1,society: -1,ritual:-1,location:-1},
-        effects: {notoriety:1},
-        startdescription: "Voici quelqu'un avec qui je pourrais travailler. Un compagnon, ou un acolyte. Mais d'abord, je dois leur donner une raison de me suivre. Une société ; une congrégation; un ordre; un culte.",
-        description: "j'ai entrepris ma véritable oeuvre. Les autorités s'y intéresseront. Je dois m'y préparer. [Vous avez commencé à établir votre culte. Encore un peu, et vous pourrais recruter des acolytes.]",
-        warmup: 10,
-        craftable: true,
-		maxexecutions: 1
+    {
+      id: "talkmeetpatron",
+      label: "Un Patron",
+      actionId: "talk",
+      requirements: {
+        reason: 1
+      },
+      startdescription: "'Nous pouvons apprendre l'un de l'autre.'",
+      description: ".",
+      deckeffect: {
+        "scholarpatrons": 1
+      },
+      effects: {
+        season: -1
+      },
+      warmup: 5
     },
-
-
-
-{id: "inspiremystique",
-actionId: "talk",
-label: "Attracting Attention",
-effects: {mystique: 1},
-startdescription: "There are hours and there are hours. This hour is mine.",
-description: "Parted lips; glittering eyes.",
-warmup: 10,
-craftable: false},
-
-
-	   {
-        id: "findacquaintanceopentalk",
-        label: "Une Connaissance",
-        actionId: "talk",
-        startdescription: "J'attends une réponse à une lettre.",
-        description: "La réponse à votre lettre est courtoise, mais prudente. Ils sont intrigués sur comment vous avez trouvé leur nom : assez intrigués pour vous rencontrer.",
-        warmup: 30,
-        craftable: false,
-		comments: "this runs as an additional, and is how Talk is opened. I'd like to remove maxexecutions, but it's in here now for safety.",
-		deckeffect: {"acquaintances":1},
-		maxexecutions:1
+    {
+      id: "talktotroublemaker",
+      label: "Organiser une réunion en terrain neutre.",
+      actionId: "talk",
+      requirements: {
+        independent: 1,
+        society: -1,
+        ritual: -1
+      },
+      slots: [
+        {
+          id: "Subject",
+          description: "Un sujet de conversation."
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "independentloreconversation",
+          chance: 100
+        },
+        {
+          id: "independentdesireconversation",
+          chance: 100
+        }
+      ],
+      startdescription: "'Are we enemies? Perhaps we don't have to  be.'",
+      description: "A guarded conversation in an early-opening coffee-shop in the rain-swept wind-shivering after dawn. I've learnt nothing.",
+      effects: {
+        mystique: 1
+      },
+      warmup: 60,
+      craftable: true
+    },
+    {
+      id: "independentloreconversation",
+      label: "Organiser une réunion en terrain neutre.",
+      actionId: "talk",
+      requirements: {
+        lore: 1
+      },
+      startdescription: "'It seems we <i>do</i> have something to discuss...'",
+      description: "A hushed and elliptical conversation by lamp-light, with glints of truth like gold in river-mud. Who knows? Perhaps, one day, we might speak less guardedly.",
+      deckeffect: {
+        troublemakerconversations: 1
+      }
+    },
+    {
+      id: "independentdesireconversation",
+      label: "Organiser une réunion en terrain neutre.",
+      actionId: "talk",
+      requirements: {
+        desire: 1
+      },
+      startdescription: "'Do you propose we make common cause? Are you serious?'",
+      description: "'Perhaps. Eventually. Prove yourself to me. Let's talk...' [If you have a cult, it is possible, although difficult, to win a Troublemaker to your side.]",
+      deckeffect: {
+        troublemakerconversations: 1
+      }
+    },
+    {
+      id: "talktohunter",
+      label: "Organiser une réunion avec un adversaire",
+      actionId: "talk",
+      requirements: {
+        hunter: 1
+      },
+      slots: [
+        {
+          id: "Subject",
+          description: "Un sujet de conversation... ou un minion pour le détruire."
+        }
+      ],
+      alternativerecipes: [
+        {
+          id: "hunterspeakpoison",
+          chance: 100
+        },
+        {
+          id: "hunterspeakwinterg",
+          chance: 100
+        },
+        {
+          id: "hunterspeakwinterd",
+          chance: 100
+        },
+        {
+          id: "hunterspeakwinter",
+          chance: 100
+        },
+        {
+          id: "hunterspeakdread",
+          chance: 100
+        },
+        {
+          id: "hunterspeaklanterng",
+          chance: 100
+        },
+        {
+          id: "hunterspeaklanternd",
+          chance: 100
+        },
+        {
+          id: "hunterspeaklantern",
+          chance: 100
+        },
+        {
+          id: "hunterspeakfascination",
+          chance: 100
+        },
+        {
+          id: "hunterattackhighedge",
+          chance: 100
+        },
+        {
+          id: "hunterattackmidedge",
+          chance: 100
+        },
+        {
+          id: "hunterattacklowedge",
+          chance: 100
+        },
+        {
+          id: "hunterattackhighwinter",
+          chance: 100
+        },
+        {
+          id: "hunterattackmidwinter",
+          chance: 100
+        },
+        {
+          id: "hunterattacklowwinter",
+          chance: 100
+        },
+        {
+          id: "hunterattacknoedge",
+          chance: 100
+        }
+      ],
+      startdescription: "Perhaps we could parley. Or perhaps I could send something to ambush them.",
+      description: "This was rash. Perhaps I shouldn't have exposed myself so.",
+      effects: {
+        notoriety: 1
+      },
+      warmup: 60,
+      craftable: true
+    },
+    {
+      id: "talktospirit",
+      label: "Speak to something I have summoned",
+      actionId: "talk",
+      requirements: {
+        society: -1,
+        follower: 1,
+        summoned: 1
+      },
+      slots: [
+        {
+          id: "Subject",
+          description: "Un sujet de conversation ... ou une cible."
+        }
+      ],
+      comments: "We have clues upstream for recruitment/promotion, and we don't want this to override them, hence the society limitation.",
+      alternativerecipes: [
+        {
+          id: "discussfucinespirit",
+          chance: 100
+        },
+        {
+          id: "discussphrygianspirit",
+          chance: 100
+        },
+        {
+          id: "discussmandaicspirit",
+          chance: 100
+        },
+        {
+          id: "hunterattackhighedge",
+          chance: 100
+        },
+        {
+          id: "hunterattackmidedge",
+          chance: 100
+        },
+        {
+          id: "hunterattacklowedge",
+          chance: 100
+        },
+        {
+          id: "hunterattacknoedge",
+          chance: 100
+        },
+        {
+          id: "evidencedestroymidmoth",
+          chance: 100
+        },
+        {
+          id: "evidencedestroylowmoth",
+          chance: 100
+        },
+        {
+          id: "evidencedestroynomoth",
+          chance: 100
+        },
+        {
+          id: "annoyanceseducehighgrail",
+          chance: 100
+        },
+        {
+          id: "annoyanceattackhighedge",
+          chance: 100
+        },
+        {
+          id: "annoyanceseducemidgrail",
+          chance: 100
+        },
+        {
+          id: "annoyanceattackmidedge",
+          chance: 100
+        },
+        {
+          id: "annoyancederangemidmoth",
+          chance: 100
+        },
+        {
+          id: "annoyanceseducelowgrail",
+          chance: 100
+        },
+        {
+          id: "annoyanceattacklowedge",
+          chance: 100
+        },
+        {
+          id: "annoyancederangelowmoth",
+          chance: 100
+        },
+        {
+          id: "annoyanceattacknoedge",
+          chance: 100
+        },
+        {
+          id: "teresadiscusslocksmithsdream1",
+          chance: 100
+        },
+        {
+          id: "teresadiscusslocksmithsdream2",
+          chance: 100
+        },
+        {
+          id: "teresadiscusslocksmithsdream3",
+          chance: 100
+        }
+      ],
+      startdescription: "Not everything from the Mansus can speak, but everything can understand mortal speech, even it has passed la Porte Blanche.",
+      description: "Nothing; my words cease like sand in a glass.",
+      warmup: 60,
+      craftable: true
+    },
+    {
+      id: "discussfucinespirit",
+      label: "La question de l'apprentissage du Fucin",
+      actionId: "talk",
+      requirements: {
+        scholarlatin: 1,
+        summoned: 1,
+        spirittutorfucine: 1
+      },
+      startdescription: "'Le Fucin? Oui, je me débrouille en Fucin. Je peux vous l'enseigner, si vous disposez d'une base en Latin. But if I hear one crack about the 'tongue of witches', it's off.'[Utilisez l'<b>ÉTUDE</b> avec le Baldomerian pour apprendre le Fucin].",
+      description: ".",
+      craftable: true
+    },
+    {
+      id: "discussphrygianspirit",
+      label: "La question de l'apprentissage du Phrygien",
+      actionId: "talk",
+      requirements: {
+        scholargreek: 1,
+        summoned: 1,
+        spirittutorphrygian: 1
+      },
+      startdescription: "'Le Phrygien! La langue de Grand-Mère ! Bien sûr. Si vous vous en sortez avec le Grec ancien, je vous garantis un apprentissage du Phrygien <i>très</i> agréable.' [Utilisez l'<b>ÉTUDE</b> avec Ezeem pour apprendre le Phrygien].'",
+      description: ".",
+      craftable: true
+    },
+    {
+      id: "discussmandaicspirit",
+      label: "La question de l'apprentissage du Deep Mandaic",
+      actionId: "talk",
+      requirements: {
+        scholararamaic: 1,
+        summoned: 1,
+        spirittutormandaic: 1
+      },
+      startdescription: "'TOGETHER WE WILL COMMEMORATE THE TONGUE OF THE UNBURNT GOD.' [Utilisez l'<b>ÉTUDE</b> avec le Roi Creuset pour apprendre le Deep Mandaic].'",
+      description: ".",
+      craftable: true
+    },
+    {
+      id: "teresadiscusslocksmithsdream1",
+      label: "Discuss the Locksmith's Dream, Volume 1",
+      requirements: {
+        spirit_lanterne_secret: 1,
+        locksmithsdream1: 1,
+        autographed: -1
+      },
+      actionId: "talk",
+      startdescription: "'Shall I autograph it? I think that would be rather fun, wouldn't it?'",
+      description: "'I used to live by Camden Lock, when I started writing this stuff down. If that isn't a joke of the Hours, I don't know what is. Let me tell you of my sources -'",
+      effects: {
+        erudition: 1
+      },
+      mutations: [
+        {
+          filterOnAspectId: text,
+          mutateAspectId: autographed,
+          mutationLevel: 1
+        }
+      ]
+    },
+    {
+      id: "teresadiscusslocksmithsdream2",
+      label: "Discuss the Locksmith's Dream, Volume 2",
+      requirements: {
+        spirit_lanterne_secret: 1,
+        locksmithsdream2: 1,
+        autographed: -1
+      },
+      actionId: "talk",
+      startdescription: "'Shall I autograph it? Would that be a little precious? No-one will believe it's the real thing, anyway. I'm supposed to be dead.'",
+      description: "'I still think the Doors have to do with artisans' work - with making. I think that's how we begun to find our way into the House. But of course our ascents were always limited, until we learnt to speak. I'll try to explain...'",
+      effects: {
+        glimmering: 1
+      },
+      mutations: [
+        {
+          filterOnAspectId: text,
+          mutateAspectId: autographed,
+          mutationLevel: 1
+        }
+      ]
+    },
+    {
+      id: "teresadiscusslocksmithsdream3",
+      label: "Discuss the Locksmith's Dream, Volume 3",
+      requirements: {
+        spirit_lanterne_secret: 1,
+        locksmithsdream3: 1,
+        autographed: -1
+      },
+      actionId: "talk",
+      startdescription: "'I'll write my name in it, shall I? Only the name that Christopher called me. Not the name I use in here.'",
+      description: "Oh, my, I was in a state when I wrote this, wasn't I? Sorry about that. But I was right that death is down. That's one of the reasons I usually stay pretty high in the Mansus. I'll try to explain what I mean, a little -'",
+      effects: {
+        glimmering: 1
+      },
+      mutations: [
+        {
+          filterOnAspectId: text,
+          mutateAspectId: autographed,
+          mutationLevel: 1
+        }
+      ]
+    },
+    {
+      id: "begincultfoundation",
+      label: "Fonder une Organisation Mystique ",
+      alternativerecipes: [
+        {
+          id: "cultfoundation",
+          chance: 100,
+          additional: true
+        }
+      ],
+      actionId: "talk",
+      requirements: {
+        acquaintance: 1,
+        society: -1,
+        ritual: -1,
+        location: -1
+      },
+      effects: {
+        notoriety: 1
+      },
+      startdescription: "Voici quelqu'un avec qui je pourrais travailler. Un compagnon, ou un acolyte. Mais d'abord, je dois leur donner une raison de me suivre. Une société ; une congrégation; un ordre; un culte.",
+      description: "j'ai entrepris ma véritable oeuvre. Les autorités s'y intéresseront. Je dois m'y préparer. [Vous avez commencé à établir votre culte. Encore un peu, et vous pourrais recruter des acolytes.]",
+      warmup: 10,
+      craftable: true,
+      maxexecutions: 1
+    },
+    {
+      id: "inspiremystique",
+      actionId: "talk",
+      label: "Attracting Attention",
+      effects: {
+        mystique: 1
+      },
+      startdescription: "There are hours and there are hours. This hour is mine.",
+      description: "Parted lips; glittering eyes.",
+      warmup: 10,
+      craftable: false
+    },
+    {
+      id: "findacquaintanceopentalk",
+      label: "Une Connaissance",
+      actionId: "talk",
+      startdescription: "J'attends une réponse à une lettre.",
+      description: "La réponse à votre lettre est courtoise, mais prudente. Ils sont intrigués sur comment vous avez trouvé leur nom : assez intrigués pour vous rencontrer.",
+      warmup: 30,
+      craftable: false,
+      comments: "this runs as an additional, and is how Talk is opened. I'd like to remove maxexecutions, but it's in here now for safety.",
+      deckeffect: {
+        "acquaintances": 1
+      },
+      maxexecutions: 1
     }
-]
+  ]
 }
