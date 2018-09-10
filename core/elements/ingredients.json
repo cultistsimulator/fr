@@ -1,0 +1,138 @@
+{"elements":
+    [
+					{id: "corpse",
+	label: "Un Cadavre Humain",
+	description: "The spirit is departed. Au bout d'un moment, l'odeur sera telle que vous ne pourrez plus vous en débarrasser. Cela pourrait attirer l'attention ; cela pourrait impressionner quelqu'un. [Même après la disparition du Cadavre, la Notoriété en sera affectée.]",
+	aspects: {winter:3,grail:3,ingredient:1,reputation:2},
+	lifetime:60,
+	decayTo:"notoriety"
+	},
+				{id: "ingredientedgeb",
+	label: "Pâte de Martensite",
+	description: "La chrysm sacrée de l'épée. Aussi attrayant qu'un vert-argenté.",
+	aspects: {edge:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientedged",
+	label: "Grains de Labhitic",
+	description: "Les Labhites sont les plus youngest serviteurs des Lionsmith. Réduis à l'état de poudre, ils conservent leur puissance mais pas leur beauté..",
+	aspects: {edge:8,auctionable:4,ingredient:1}
+	},
+	{id: "ingredientedgef",
+	label: "Croc de Skaptodon",
+	description: "It is rare for the Lionsmith to make skaptodons, now; but they are difficult to kill, and they live a very long time.",
+	aspects: {edge:12,auctionable:6,ingredient:1}
+	},
+	
+					{id: "ingredientforgeb",
+	label: "Sels de Bitterblack",
+	description: "Aucun chimiste ordinaire ne pourrait produire ces sombres cristaux étincelants  - du moins sans un contact avec la Forge.",
+	aspects: {forge:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientforged",
+	label: "Essence Xanthotic",
+	description: "Lors de certaines utilisations de la Forge, il est dit que la lumière du soleil domine le clair de lune, c'est alors que nous atteignons le Ménisque du Madrugad. Cette essence était du mercure autrefois, dorénavant il s'agit d'un or aussi spontueux qu'un après-midi d'été. Joli.",
+	aspects: {forge:8,auctionable:4,ingredient:1}
+	},
+	{id: "ingredientforgef",
+	label: "Essence Iotic",
+	description: "In the later operations of the Forge, the Madrugad yields to the true Forge of Days, and the essence begins to redden. Some day, perhaps, it will not, but for now we have this. ",
+	aspects: {forge:12,auctionable:6,ingredient:1}
+	},
+		
+						{id: "ingredientgrailb",
+	label: "Pigment Vital",
+	description: "It is not usual for a red this red to survive the death of the body.",
+	aspects: {grail:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientgraild",
+	label: "Nectar d'Amarante",
+	description: "Un des nombreux cadeaux du Fleuriste. In a brighter age, it might have bestowed immortality. In this blighted History, it is still an unparalleled sweetness.",
+	aspects: {grail:8,auctionable:4,ingredient:1}
+	},
+	{id: "ingredientgrailf",
+	label: "Writhing Caul",
+	description: "Lay your hand on these tattered folds and feel their warmth; leave your hand upon it, and it will explore the possibilities of embrace.",
+	aspects: {grail:12,auctionable:6,ingredient:1}
+	},
+	
+					{id: "ingredientheartb",
+	label: "Poudre de Perle-Rose",
+	description: "Les Perles sont sacrées pour la Witch-and-Sister, tout particulièrement celles de cette couleur. Elles sont utilisées dans les rites protecteurs, entre autres.",
+	aspects: {heart:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientheartd",
+	label: "Huile du Baiser de la Witch",
+	description: "The formula remains unchanged since the days Hecate was worshipped at the crossways.",
+	aspects: {heart:8,auctionable:4,ingredient:1}
+	},
+	{id: "ingredientheartf",
+	label: "True Blood of St Januarius",
+	description: "The Thunderskin protected the one they called Januarius, against perils from every past. To this day his blood keeps dancing.",
+	aspects: {heart:12,auctionable:6,ingredient:1}
+	},
+	
+						{id: "ingredientknockb",
+	label: "the Byzantine Tinct",
+	description: "The profound purple worn in only Histories, where Tyrian dye was not rich enough for emperors. It is difficult to bar entry to one wearing this colour.",
+	aspects: {knock:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientknockd",
+	label: "Sthenic Venom",
+	description: "From time to time, the Mother of Ants has also been called the Daughter of Venoms. This substance opens the body in uncountable places.",
+	aspects: {knock:8,auctionable:4,ingredient:1,poison:2}
+	},
+	{id: "ingredientknockf",
+	label: "Azoth",
+	description: "Store this only in containers of a pure element, and never permit it to grow warm. Perhaps it isn't the final solvent that the alchemists sought. But it will do, for our purposes.",
+	aspects: {knock:12,auctionable:6,ingredient:1}
+	},
+	
+							{id: "ingredientlanternb",
+	label: "Refulgin",
+	description: "A white so pure that it remains visible even in utter darkness.",
+	aspects: {lantern:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientlanternd",
+	label: "Glassfinger Toxin",
+	description: "'What is without, within.' A poison sacred to the votaries of the Meniscate.",
+	aspects: {lantern:8,auctionable:4,ingredient:1,poison:2}
+	},
+	{id: "ingredientlanternf",
+	label: "Ichor Vitreous",
+	description: "A pale and watchful fluid that can be gathered, sometimes, when the Door-in-the-Eye is opened.",
+	aspects: {lantern:12,auctionable:6,ingredient:1}
+	},
+	
+	{id: "ingredientmothb",
+	label: "Piebald Pigment",
+	description: "From the crushed wings of rare lepidopterans. 'Painting black, or painting white, this is the stuff that'll see you right.'",
+	aspects: {moth:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientmothd",
+	label: "Leathy",
+	description: "A dark and syrupy liquor favoured in unnamed forest villages. 'The tongue and the eye, and now we begin! Forget your name, forget your skin.'",
+	aspects: {moth:8,auctionable:4,ingredient:1}
+	},
+	{id: "ingredientmothf",
+	label: "Holiest Hemolymph",
+	description: "Faint traces of an enigmatic subtance spilt in the commission of an ancient crime, tightly sealed in a glass ampoule. 'Who will remember the barber's son?' ",
+	aspects: {moth:12,auctionable:6,ingredient:1}
+	},
+	
+						{id: "ingredientwinterb",
+	label: "Greydawn Oil",
+	description: "The precise colour of the hours when one cannot sleep.",
+	aspects: {winter:4,auctionable:2,ingredient:1,pigment:1}
+	},
+		{id: "ingredientwinterd",
+	label: "Wolf-Snow",
+	description: "Far too cold ever to melt in anything but the hottest noonday sun. It will, very gradually, consume human flesh.",
+	aspects: {winter:8,auctionable:4,ingredient:1}
+	},
+	{id: "ingredientwinterf",
+	label: "Watch-Worms",
+	description: "A tiny pot of stunted, dessicated larval remnants from the First Worm War, rank with the power that inhabits dead Hours.",
+	aspects: {winter:12,auctionable:6,ingredient:1,poison:3}
+	},
+]
+};

@@ -1,0 +1,59 @@
+    {"verbs":
+	[
+        {
+            "id": "work",
+            "label": "Travailler",
+            "description": "Gagnez votre vie, ou pratiquez les arts invisibles.",
+			"atStart": true,
+						  slots: [{id:"Work",description: "Quelque chose que je peux faire; quelque chose que je connais; ou quelque chose que je suis.",
+			  required:{ability:1,job:1,ritual:1,desire:1},
+			  forbidden:{reasonskill:1}
+			  }],
+			
+        },
+        {
+            "id": "dream",
+            "label": "Rêver",
+            "description": "Reposez-vous ; reconsidérez vos priorités ; ou aventurez-vous dans l'exploration des royaumes des songes.",
+			"atStart": false,
+			 slots: [{id:"Dream",description: "Une direction pour mes rêves ; ou un problème à résoudre.",
+			  required:{ability:1,desire:1,illhealth:1,way:1,funds:1}
+			  }],
+        },
+				{
+            "id": "study",
+            "label": "Étudier",
+            "description": "Obtenez des livres et d'autres trésors.",
+			"atStart": false,
+						 slots: [{id:"Study",description: "L'étude des arts invisibles pourrait occuper une dizaine de vies dédiées...",
+						 required:{text:1,lore:1,ability:1, advancement:1,tutor:1,language:1}}],
+        },
+		{
+            "id": "talk",
+            "label": "Parler",
+            "description": "Interrogez, intimidez, charmez, instruisez, recrutez.",
+				"atStart": false,
+			 slots: [{id:"Talk",description: "Un allié, un ennemi ou un peu des deux.",
+			  required:{mortal:1,summoned:1,patron:1,society:1,hq:1,lore:1}}]
+		
+        },
+
+	  {
+            "id": "explore",
+            "label": "Explorer",
+            "description": "Explorez la citée avec votre Santé ou un Acolyte; explorez des lieux; ou enquêtez sur les possibilités d'un lore. L'exploration est souvent imprévisible..",
+			"atStart":false,
+			  slots: [{id:"Explore",description: "Un lieu; une personne ; une localisation ; un secret.",
+			  required:{health:1,follower:1,secrethistories:1,location:1},
+			  forbidden:{hireling:1}}],
+        },
+			  {
+            "id": "time",
+            "label": "Temps",
+            "description": "L'ombre du cadran.",
+			"atStart":false
+        }
+		]
+		
+    }
+	

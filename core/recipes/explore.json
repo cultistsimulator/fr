@@ -1,0 +1,143 @@
+ {"recipes": [
+ 
+ 
+	{
+        id: "explorelocationbookdealer",
+        label: "Compléter votre Bibliothèque",
+        actionId: "explore",
+        requirements: {locationbookdealer:1,funds:1},
+		effects: {},
+		deckeffect: {"commontomes":1},
+        startdescription: "Il faut du temps pour trier l'or de la crasse, le blé de l'ivraie, le sang de l'eau. Si j'achète suffisamment de livres, je trouverai quelque chose d'intéressant.",
+        description: "J'ai trouvé quelque chose d'intéressant.",
+        warmup: 30,
+        craftable: true,
+		linked:[{id:"explorelocationbookdealer_exhausted",chance:100}]
+    },
+		{
+        id: "explorelocationbookdealer_exhausted",
+        label: "Morland ferme!",
+        actionId: "explore",
+        requirements: {genericrubbishbook:1},
+        description: "'Je passe à autre chose,' vous informe Miss Morland. 'Mon stock est largement épuisé, et le Bureau de la Répression me manifeste trop d'intérêt.  Alors, au revoir.  Ce dernier livre est un non-sens, mais j'ai glissé quelques papiers intéressants dans la couverture, en guise de remerciement pour un client habituel..'",
+		deckeffect:{oneoffrewards:1},
+        warmup: 1,
+aspects:{exhaustlocation:1]
+    },
+		{
+        id: "explorelocationauctionhouse",
+        label: "Assister à une Vente aux Enchères d'Oriflamme",
+        actionId: "explore",
+        requirements: {locationauctionhouse:1,auctionable:-1},
+		effects: {},
+		deckeffect: {"auctionedcommontomes":1},
+        startdescription: "We perch on alarming Rietveld chairs in a windowless auction room with vividly burnt orange walls, waiting for the auctioneer to announce what he's offering. The reek of new paint makes the brain spin. [Hit Start to see what's on offer; or add an item you'd like to sell.]",
+        description: ".",
+			
+        warmup: 5,
+        craftable: true,
+		linked:[{id:"auctionbuy",chance:100}]
+    },
+	
+		{
+        id: "explorelocationstreetsstrange",
+        label: "Explore an uncanny tangle of streets by the light of the moon.",
+        actionId: "explore",
+        requirements: {locationstreetsstrange:1},
+		
+		deckeffect: {"streetsstrangefinds":1},
+        startdescription: "Streets are strange in the hour called Meniscate.",
+        description: "Visions pass me with pavane grace - a window over a wood, a garden of ice, a shivering sun, a woman of glass. I will return home reluctantly.",
+        warmup: 30,
+        craftable: true
+    },
+			 {
+        id: "explorefollower",
+        label: "Fouiller la City",
+        actionId: "explore",
+        requirements: {follower:1,location:-1},
+		deckeffect: {exploreevents:1},
+		linked:	[
+			{id: "explorefindcriminal",chance:100},
+		{id: "explorefindplace",chance:100}],
+        startdescription: "Rues bondées de jour, labyrinthe brumeux de nuit. Je vais envoyer mes minions à la recherche d'opportunités.",
+        description: ".",
+        warmup: 10,
+		craftable:true
+    },
+			 {
+        id: "explorerumour",
+        label: "Retracer une Rumeur",
+        actionId: "explore",
+        requirements: {rumour:1},
+		deckeffect: {"acquaintances":1},
+		effects: {rumour:-1,notoriety:1},
+        startdescription: "Je soupçonne qu'à la fin de cette histoire, je pourrais trouver quelqu'un qui entendra ce que j'ai à dire.",
+        description: "Une adresse peu prometteuse: mais un résident prometteur.",
+        warmup: 60,
+		craftable:true
+    },
+	 {
+        id: "explorehealth",
+        label: "Fouiller la City",
+        actionId: "explore",
+        requirements: {health:1},
+		deckeffect: {exploreevents:1},
+		aspects:{fatiguing:1},
+		linked:	[
+			{id: "explorefindcriminal",chance:100},
+		{id: "explorefindplace",chance:100}],
+        startdescription: "Rues bondées de jour, labyrinthe brumeux de nuit. Je vais déambuler dans les rues, à la recherche de secrets, jusqu'à ce que je ne puisse plus marcher.",
+        description: ".",
+        warmup: 10,
+		craftable:true
+    },
+	
+			
+					{
+        id: "explorefindcriminal",
+        label: "Un Larbin ?",
+        actionId: "explore",
+        requirements: {daycriminals:1},
+		deckeffect: {"hirelings":1},
+		effects:{season:-1},
+        warmup: 0,
+		linked:[{id:"explorechoosepaycriminal",chance:100}]
+    },
+				{
+        id: "explorechoosepaycriminal",
+        label: "Un Larbin ?",
+        actionId: "explore",
+        startdescription: "J'ai trouvé quelqu'un que je pourrais payer pour effectuer de basses nécessités. [Ajouter des fonds pour les embaucher, durant un temps limité.]",
+slots:[{id:"Payment",required:{funds:1},consumes:true}],
+alternativerecipes:[{id:"explorepaycriminal",chance:100}],
+		effects:{hireling:-1},
+		 description: "Vaut mieux pas. Je dois faire attention à fréquentation.",
+        warmup: 60
+    },
+					{
+        id: "explorepaycriminal",
+        label: "Un Larbin",
+		requirements: {funds:1},
+        actionId: "explore",
+        startdescription: "Ceci achètera leur fidélité, pour le moment.",
+		effects:{funds:-1}
+    },
+
+	
+		 {
+ 
+        id: "explorefindplace",
+        label: "Un Lieu Négligé ?",
+        actionId: "explore",
+        requirements: {dayplaces:1},
+        startdescription: "J'ai peut-être trouvé un endroit insolite.",
+        description: ".",
+		deckeffect: {"citysecrets":1},
+		effects:{season:-1},
+        warmup: 5
+    },
+
+	
+]
+}

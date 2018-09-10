@@ -1,0 +1,64 @@
+{"elements":
+    [
+	{id: "waywood",
+	label: "Voie: Le Bois",
+	description: "J'ai découvert le chemin du Bois, ténèbres de ronces qui se développent autour des murs du Mansus (quoique le Mansus ne dispose pas de murs). Je peux rêver avec ceci pour retourner dans le Bois.",
+	aspects: {way:1},
+	unique:true
+	},
+	{id: "waywhite",
+	label: "Voie: La Porte Blanche",
+	description: "Dans mes rêves, j'ai traversé la Porte Blanche, celle qu'on appelle aussi la Porte d'Os et le Portail d'Ivoire. Ma voix demeure en dehors de the House chaque fois que j'y entre.",
+	aspects: {way:1},
+	unique:true
+	},
+	{id: "waystagbefore_1",
+	label: "Énigme de la Porte du Cerf",
+	description: "'Que peut-on perdre ?' Répondez à cette énigme pour passer la Porte du Cerf, and be accounted a Know.",
+	aspects: {riddle:1,way:1},
+	unique:true
+	},
+		{id: "waystagbefore_2",
+	label: "Énigme de la Porte du Cerf",
+	description: "'Où trouver la miséricorde ?' Répondez à cette énigme pour passer la Porte du Cerf, and be accounted a Know.",
+	aspects: {riddle:1,way:1},
+	unique:true
+	},
+		{id: "waystagbefore_3",
+	label: "Énigme de la Porte du Cerf",
+	description: "'What are the words that make sacrifice sweet?' Répondez à cette énigme pour passer la Porte du Cerf, and be accounted a Know.",
+	aspects: {riddle:1,way:1},
+	unique:true
+	},
+			{id: "waystagbefore_4",
+	label: "Énigme de la Porte du Cerf",
+	description: "'What must open, before this Way opens?' Répondez à cette énigme pour passer la Porte du Cerf, and be accounted a Know.",
+	aspects: {riddle:1,way:1},
+	unique:true
+	},
+				{id: "waystagbefore_5",
+	label: "Énigme de la Porte du Cerf",
+	description: "'Where is the queen who was not born?' Répondez à cette énigme pour passer la Porte du Cerf, and be accounted a Know.",
+	aspects: {riddle:1,way:1},
+	unique:true
+	},
+		{id: "waystag_after",
+	label: "Voie: Par la Porte du Cerf",
+	description: "Dans mes rêves, j'ai trouvé le chemin de la Porte du Cerf, parfois appelée le Portail Cornu ou la Porte de l'Adepte. J'ai répondu à son énigme, and am counted among the Know.",
+	aspects: {way:1},
+	unique:true
+	},
+		{id: "wayspider",
+	label: "Voie: La Porte de l'Araignée",
+	description: "Dans mes rêves, j'ai trouvé le chemin de la Porte de l'Araignée, parfois appelée le Portail Sanglant ou, de façon plus informelle, the Wrong Door.",
+	aspects: {way:1},
+	unique:true
+	},
+			{id: "waypeacock",
+	label: "Voie: La Porte du Paon",
+	description: "Dans mes rêves, j'ai trouvé le chemin de la Porte du Paon, parfois appelée le Portail des Yeux, ou le Désarroi de l'Orgueil.",
+	aspects: {way:1},
+	unique:true
+	},
+]
+};

@@ -1,0 +1,150 @@
+{"legacies":
+    [
+{id: "aspirant",
+label: "Aspirant",
+description: "Le 28 juin, encore une fois.",
+startdescription: "Seul dans cette froide citée, avec mon inutile éducation et mes rêves.\n
+Et maintenant? Pourrais-je devenir quelque chose de plus...?",
+effects: {introjob:1},
+image: "aspirant",
+fromEnding:"default",
+availableWithoutEndingMatch:true
+},
+{id: "brightyoungthing",
+label: "Bright Young Thing",
+description: "Doté dès la naissance de richesses et de talents. Une vie de rentier, de confort et de plaisir s'étend comme un tapis d'ambre.",
+startdescription: "J'ai raté l'aube. Je le fais généralement. Il y en aura tellement d'autres occasions.",
+effects: {legacybytjob:1,health:1},
+image: "byt",
+fromEnding:"deathofthebody",
+availableWithoutEndingMatch:true
+},
+{id: "physician",
+label: "Physicien",
+description: "Lorsque le patient est tombé en délire final, j'ai pris d'abondantes notes. Dans la chaleur bourdonnante de la nuit, je relis ces notes, et elles commencent enfin à prendre un certain sens.",
+startdescription: "Aujourd'hui, je retourne à mon poste à l'Institut. J'ai un statut et une réputation. Cela devrait signifier quelque chose ; mais je commence à rêver d'autre chose.",
+effects: {legacyphysicianjob:1,reason:1},
+image: "physician",
+fromEnding:"deathofthebody",
+availableWithoutEndingMatch:true
+},
+{id: "detective",
+label: "Détective",
+description: "Je suis inspecteur de police dans la capitale, chargé d'enquêter sur les affaires les plus viles et les plus misérables qu'un homme puisse faire à un autre.",
+startdescription: "J'ai mis fin à la carrière de voleurs, de meurtriers, de maîtres-chanteurs, d'incendiaires. Certains criminels font toujours pire; et certains matins, mes mains ne font plus que trembler.",
+effects: {legacydetectivejob:1,reason:1,health:1},
+image: "detective",
+fromEnding:"arrest",
+availableWithoutEndingMatch:true
+},
+{id: "detectivepostpromotion",
+label: "Détective",
+description: "Je suis inspecteur de police dans la capitale, chargé d'enquêter sur les affaires les plus viles et les plus misérables qu'un homme puisse faire à un autre.",
+startdescription: "J'ai mis fin à la carrière de voleurs, de meurtriers, de maîtres-chanteurs, d'incendiaires. Certains criminels font toujours pire; et certains matins, mes mains ne font plus que trembler.",
+effects: {legacydetectivejob:1,reason:1,health:1},
+image: "detective",
+fromEnding:"workvictoryb",
+availableWithoutEndingMatch:false
+},
+{id: "dancer",
+label: "Danseur",
+description: "--",
+startdescription: "--",
+effects: {health:1,passion:1},
+image: "moth",
+fromEnding:"_workvictory",
+availableWithoutEndingMatch:false
+},
+{id: "apostle",
+label: "Apôtre",
+description: "--",
+startdescription: "--",
+effects: {introjob:1},
+image: "moth",
+fromEnding:"_visionsending",
+availableWithoutEndingMatch:false
+},
+
+{id: "auctioneer",
+label: "Commissaire-Priseur",
+description: "--",
+startdescription: "--",
+effects: {funds:5},
+image: "moth",
+fromEnding:"_workvictory",
+availableWithoutEndingMatch:false
+},
+{id: "priest",
+label: "Prêtre",
+description: "--",
+startdescription: "--",
+effects: {passion:1},
+image: "moth",
+fromEnding:"_despairending",
+availableWithoutEndingMatch:false
+},
+
+{id: "medium",
+label: "Médium",
+description: "--",
+startdescription: "--",
+effects: {introjob:1},
+image: "moth",
+fromEnding:"_visionsending",
+availableWithoutEndingMatch:false
+},
+
+
+
+{id: "survivor",
+label: "Survivant",
+description: "Parfois, dans les miroirs, dans les foules, vous voyez le visage d'un homme dorénavant perdu.",
+startdescription: "Haunted starting note",
+effects: {introjob:1},
+image: "moth",
+fromEnding:"_wintersacrifice",
+availableWithoutEndingMatch:false
+},
+
+
+
+{id: "vessel",
+label: "Vessel",
+description: "--",
+startdescription: "--",
+effects: {introjob:1},
+image: "moth",
+fromEnding:_"minorlanternvictory",
+availableWithoutEndingMatch:false
+},
+{id: "tainted",
+label: "Vessel",
+description: "--",
+startdescription: "--",
+effects: {introjob:1},
+image: "moth",
+fromEnding:"_minorgrailvictory",
+availableWithoutEndingMatch:false
+},
+{id: "shaped",
+label: "Vessel",
+description: "--",
+startdescription: "--",
+effects: {introjob:1},
+image: "moth",
+fromEnding:"_minorforgevictory",
+availableWithoutEndingMatch:false
+},
+{id: "cousin",
+label: "Cousin",
+description: "One morning, when the Sun is high and the mirrors all are sealed, there will come a knock on your door. \"Un bienfaiteur\", le gentilhomme en gis vous dira. \"Un legs. Peut-être que vous ne saviez pas que vous étiez de la même famille.\"",
+startdescription: "Inheritor starting note",
+effects: {introjob:1},
+image: "knock",
+fromEnding:"_",
+availableWithoutEndingMatch:false
+},
+
+
+]
+};

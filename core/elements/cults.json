@@ -1,0 +1,115 @@
+{"elements":
+    [
+          {
+        id: "cultedge_1",
+            label: "Église de la Radieuse Lisière",
+            aspects:
+            {society:1,venerationedge:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk",  required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."}],
+            description: "An occult society dedicated to the Hours of struggle and conquest. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Assassins.]",
+			unique:true
+        },
+          {
+        id: "cultforge_1",
+            label: "L'Ordre Indéfectible",
+            aspects:
+            {society:1,venerationforge:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."
+			}],
+            description: "Une occulte société dévouée au feu qui modifie et remodèle. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Reshapers.]",
+			unique:true
+        },
+		          {
+        id: "cultgrail_1",
+            label: "Order of the Bloody Cup",
+            aspects:
+            {society:1,venerationgrail:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."
+			}],
+
+            description: "An occult society dedicated to the mysteries of birth, blood and appetite. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Cyprians.]",
+				unique:true
+        },
+		          {
+        id: "cultheart_1",
+            label: "Temple Incessant",
+            aspects:
+            {society:1,venerationheart:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."
+			}],
+
+            description: "An occult society dedicated to the drumbeat which can never end. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Tarantellists.]",
+				unique:true
+        },
+		          {
+        id: "cultknock_1",
+            label: "Société de la Sainte Plaie",
+            aspects:
+            {society:1,venerationknock:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."
+			}],
+            description: "An occult society dedicated to the Hours which open doors. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Keys.]",
+				unique:true
+        },
+		          {
+        id: "cultlantern_1",
+            label: "Miroir de Gloire",
+            aspects:
+            {society:1,venerationlantern:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."
+			}],
+            description: "An occult society dedicated to the understanding of the Light that leaks from a fiercer place.[Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Seers.]",
+				unique:true
+        },
+		          {
+        id: "cultmoth_1",
+            label: "Wildwood Club",
+            aspects:
+            {society:1,venerationmoth:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."
+			}],
+            description: "An occult society dedicated to chaos, and the unexpected Hours. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, en Skintwisters.]",
+				unique:true
+        },
+		          {
+        id: "cultsecrethistories_1",
+            label: "Société de St Hydra",
+            aspects:
+            {society:1,venerationedge:1,venerationforge:1,venerationgrail:1,venerationheart:1,venerationlantern:1,venerationknock:1,venerationmoth:1,venerationwinter:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			{id:"Ceremony", actionId:"talk",  required: {lore:1},description: "For the higher mysteries, deeper oaths are needed."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."}],
+            description: "An occult society dedicated to the study of the five Histories and their thousand demi-real branches.[St Hydra, unusually, allows you to use any aspect to promote Believers; but it has no Exalted specialists.]",
+				unique:true
+        },
+		          {
+        id: "cultwinter_1",
+            label: "Enfants du Silence",
+            aspects:
+            {society:1,venerationwinter:1},
+			slots: [{id:"Associate", actionId:"talk", required: {mortal: 1},forbidden: {hunter:1,hireling:1,prisoner:1},description: "A new recruit, or a hardened disciple."},
+			{id:"Ceremony", actionId:"talk", required: {lore:1},description: "Pour recruter un novice, je n'ai besoin que d'un petit secret. Les mystères supérieurs exigent les plus profonds serments."},
+			{id:"Trappings", actionId:"talk", required: {tool: 1,ingredient:1,influence:1,summoned:1},description: "For a proper sense of occasion. Consumes Ingredients and Influences; uses, but does not consume, Summonings and Tools."}],
+            description: "An occult society dedicated to the silence that comes and the cold that ends. [Vous pouvez utiliser les Cultes avec le verbe Parler pour recruter ou promouvoir des acolytes, et les envoyer en mission pour amasser des ressources. Un Croyant peut être promu en Disciple; Les plus doués Disciples peuvent être exaltés au plus haut niveau, to a condition of lethal silence.]",
+				unique:true
+        },
+		  
+]
+};

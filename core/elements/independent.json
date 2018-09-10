@@ -1,0 +1,232 @@
+{"elements":
+    [
+							 {
+        id: "generic_r",
+            label: "Un Fauteur de Troubles",
+            aspects:
+            {mortal:1,independent:1,suspicious:1, edge:5},
+            description: "Quelqu'un qui a perdu tout sens des proportions.",
+			animFrames: 1,
+			icon:"generic_b",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:generic_c_edge}
+        },
+								 {
+        id: "auclair_r",
+            label: "Auclair, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, winter:5},
+            description: "Auclair enjoys chess, now more than ever. The black, the white.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:auclair_d},
+			uniquenessgroup:"auclair"
+        },
+				 {
+        id: "cat_r",
+            label: "Cat Caro, une fauteuse de troubles",
+            aspects:
+            {mortal: 1,independent:1,suspicious:1,lantern:5},
+            description: "'Cat Caro', comme elle se décrit elle-même. Un temps, elle était une diseuse de bonne aventure. No-one knows seems to know exactly what she is now.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:cat_d},
+			uniquenessgroup:"cat"
+        },
+
+									 {
+        id: "clifton_r",
+            label: "'Pape' Clifton, un fauteur de troubles",
+            aspects:
+            {mortal: 1,independent:1,suspicious:1,lantern:5},
+            description: "Clifton apprécie être appelé 'votre Sainteté'. Quand on ne le fait pas, il peut en faire toute une scène.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:clifton_d},
+			uniquenessgroup:"clifton"
+        },
+	
+		 {
+        id: "clovette_r",
+            label: "Clovette, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, heart:5},
+            description: "Il est difficile de ne pas aimer Clovette, même quand on sait ce qu'elle a fait.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:clovette_d},
+			uniquenessgroup:"clovette"
+        },
+		
+		 {
+        id: "dorothy_r",
+            label: "Dorothy, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, heart:5},
+            description: "Dorothy will not cease. She will never cease. She has vowed as much.",
+			animFrames: 1,
+				xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:dorothy_d},
+			uniquenessgroup:"dorothy"
+        },
+								 {
+        id: "elridge_r",
+            label: "Elridge, un fauteur de troubles",
+            aspects:
+            {mortal: 1,independent:1,suspicious:1,edge:4},
+            description: "Les chaussures d'Elridge sont souvent tachées de sang.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:elridge_d}
+        },
+				 {
+        id: "enid_r",
+            label: "Enid, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, knock:5},
+            description: "Enid voit toujours ses ennemis arriver. Tout le temps.",
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:enid_d},
+			uniquenessgroup:"enid"
+        },
+	
+							 {
+        id: "laidlaw_r",
+            label: "Laidlaw, un fauteur de troubles",
+            aspects:
+            {mortal: 1,independent:1,suspicious:1,forge:5},
+            description: "Laidlaw's schemes are intricate as fern-shadow.",
+			animFrames: 1,
+			xtriggers: 
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:laidlaw_d},
+			uniquenessgroup:"laidlaw"
+						
+        },
+		{
+        id: "leo_r",
+            label: "Leo, un fauteur de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1,  heart:5},
+            description: "Leo a choisi sa cause, et il fera le nécessaire pour le préserver.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:leo_d},
+			uniquenessgroup:"leo"
+        },
+				 {
+        id: "neville_r",
+            label: "Neville, un fauteur de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, knock:5},
+            description: "Neville sait que ceci ne peut pas durer. Mais tandis qu'il fait, ma parole, il s'ouvrira n'importe quelles portes qui se présentent.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:neville_d},
+			uniquenessgroup:"neville"
+        },
+				
+							 {
+        id: "porter_r",
+            label: "Porter, a troublemaker",
+            aspects:
+            {mortal: 1,independent:1,suspicious:1,moth:5},
+            description: "Porter a commencé à collecter des noms.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:porter_d},
+			uniquenessgroup:"porter"
+        },
+						 {
+        id: "renira_r",
+            label: "Renira, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, grail:5},
+            description: "Renira aime convertir des admirateurs en fidèles.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:renira_d},
+			uniquenessgroup:"renira"
+        },
+							 {
+        id: "rose_r",
+            label: "Rose, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1,suspicious:1, edge:5},
+            description: "Rose a depuis longtemps cessé de craindre ses ennemis.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:rose_d},
+			uniquenessgroup:"rose"
+        },
+						 {
+        id: "saliba_r",
+            label: "Saliba, un fauteur de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, grail:5},
+            description: "Saliba ne tolère pas l'ennui.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:saliba_d},
+			uniquenessgroup:"saliba"
+        },
+						 {
+        id: "slee_r",
+            label: "Slee, un fauteur de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, lantern:5},
+            description: "Slee is always hungry for resources to pursue his theories.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:slee_d},
+			uniquenessgroup:"slee"
+        },
+						 {
+        id: "sylvia_r",
+            label: "Sylvia, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, moth:5},
+            description: "Le programme de Sylvia n'est pas clair. On soupçonne que ce n'est pas clair même pour Sylvia.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:sylvia_d},
+			uniquenessgroup:"sylvia"
+        },
+				 {
+        id: "tristan_r",
+            label: "Tristan, un fauteur de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, forge:5},
+            description: "Tristan se forge un petit royaume. Quand le feu sera nécessaire, il utilisera le feu..",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:tristan_d},
+			uniquenessgroup:"tristan"
+        },
+			
+						 {
+        id: "valciane_r",
+            label: "Valciane, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, forge:5},
+            description: "Valciane attends to her opposition with the remorseless brio of a youth smashing bottles.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:valciane_d},
+			uniquenessgroup:"valciane"
+        },
+			 {
+        id: "victor_r",
+            label: "Victor, un fauteur de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, edge:5},
+            description: "Victor est prêt pour ce qui peut arriver. Tous ses couteaux sont aussi enthousiastes que de nouveaux soldats.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:victor_d},
+			uniquenessgroup:"victor"
+        },
+		
+						 {
+        id: "violet_r",
+            label: "Violette, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, winter:5},
+            description: "Violette a trouvé de nouveaux passe-temps.",
+			animFrames: 1,
+						xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:violet_d},
+			uniquenessgroup:"violet"
+        },
+						 {
+        id: "ysabet_r",
+            label: "Ysabet, une fauteuse de troubles",
+            aspects:
+            {mortal:1,independent:1, suspicious:1, moth:5},
+            description: "Ysabet attend où elle ne peut pas être vue.",
+			animFrames: 1,
+			xtriggers: {killmortal:corpse,derangemortal:lunatic,recruiting:ysabet_d},
+			uniquenessgroup:"ysabet"
+        },
+		
+		]
+};

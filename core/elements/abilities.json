@@ -1,0 +1,307 @@
+{"elements":
+    [
+       
+		     {
+        id: "hunger",
+            label: "Faim",
+            aspects:
+            {illhealth: 1,
+			  grail: 2,
+			  ingredient:1},
+			  slots: [{id:"Nourishment",actionId:"dream",description: "Pour récupérer, je dois manger.",required:{funds:1}}],
+            description: "J'ai besoin de repos et de nourritures pour récupérer. Mais lorsque ma bouche s'épanche, quand ma vision tourbillonne, je vois le calice rouge; et il m'arrive de l'entendre me parler. [Rêver avec la Faim avant que la carte ne s'estompe vous permettra de récupérer la Santé.]",
+			xtriggers: {restorehealth: health},
+			lifetime:60,
+			decayTo:"decrepitude"
+			},
+        {
+            id: "health",
+            label: "Santé",
+            aspects:
+            {
+                heart: 2,
+				ingredient: 1,
+				ability:1
+            },
+            animFrames: 1,
+			xtriggers: {damagehealth: injury,fallsick:affliction,destroyhealth:decrepitude,fatiguing:fatigue,employment:fatigue,job:fatigue},
+			description: "Il s'agit de mon corps. Il y a bien d'autres corps mais celui-ci est le mien, et mon esprit en a besoin tel le champignon avec la terre. [Avec suffisamment de Vitalité, vous pouvez obtenir plus de Santé.]"
+        },
+				 {
+            id: "vitality",
+            label: "Vitalité",
+				  slots: [{id:"More Vitality",actionId:"study",description: "Avec suffisamment de Vitalité, je peux améliorer ma Santé.",required:{vitality:1}}],
+          aspects:
+            {advancement:1},
+            description: "Des exercices, ou quelque chose de rare, m'a revigoré. [La Vitalité peut être utilisé avec l'Étude pour gagner de la Santé. Ne dure que trois minutes pour le mettre à profit.]",
+		lifetime: 180
+        },
+		
+						 {
+            id: "restlessness",
+            label: "Agitation",
+            aspects:
+            {influence:1, forge:3,grail:3,lantern:3},
+            description: "Un désir m'agite intérieurement. Je sens que je veux... <i> quelque chose </i>. Mais quoi exactement ?",
+		lifetime: 60,
+		decayTo:"dread"
+        },
+				{
+        id: "bloodshed",
+            label: "Effusion de sang",
+			description:"Du sang à coulé.",
+			lifetime:1
+			},
+			
+			{
+        id: "injury",
+            label: "Une Blessure",
+            aspects:
+            {illhealth: 1,
+			  knock: 2,
+			  ingredient:1},
+			  			slots: [{id:"Medicines, or...",actionId:"dream",description: "Je pourrais consulter un toubib...",required:{funds:1},actionId:"dream"},
+			{id:"...Vitality",description: "...mais j'ai peut-être juste besoin d'un peu de repos.",required:{vitality:1},actionId:"dream"}],
+            description: "J'ai besoin de repos et de nourritures pour me rétablir. But the Mother of Ants looks kindly on wounds. [Rêver avec une Blessure avant que la carte ne s'estompe vous permettra de récupérer la Santé.]",
+			xtriggers: {restorehealth: health},
+			lifetime: 150,
+			decayTo: "decrepitude"
+			},
+									{
+        id: "disillusionment",
+            label: "Passion (Désabusé)",
+            description: "I have gone against my own principles, or my own preferences. [Cette carte ne peut pas être utilisée, mais elle se rétablira au bout de soixante secondes.]",
+			lifetime: 60,
+			decayTo:"passion",
+			icon:"passion"
+			},
+												{
+        id: "passionexhausted",
+            label: "Passion (Exténué)",
+            description: "My passions burn low. [Cette carte ne peut pas être utilisée, mais elle se rétablira au bout de soixante secondes.]",
+			lifetime: 60,
+			decayTo:"passion",
+			icon:"passion"
+			},
+						{
+        id: "fatigue",
+            label: "Santé (Fatigué)",
+            aspects:
+            {illhealth: 1},
+            description: "Cette carte ne peut pas être utilisée, mais elle se rétablira au bout de soixante secondes. Je peux récupérer plus rapidement en Rêvant.",
+			xtriggers: {restorehealth: health},
+			lifetime: 60,
+			decayTo:"health",
+			icon:"health"
+			},
+			{
+			id: "affliction",
+            label: "Une Maladie",
+            aspects:{illhealth: 1, winter:2,ingredient:1},
+			xtriggers: {restorehealth: health},
+						slots: [{id: "Medicine",label:"Médecins, ou...",actionId:"dream",description: "Je pourrais consulter un toubib...",required:{funds:1}},
+			{id:"Vitality",label:"...Vitalité",actionId:"dream",description: "...mais j'ai peut-être juste besoin d'un peu de repos.",required:{vitality:1}}],
+            description: "La maladie m'a laissé affaibli. J'ai besoin de repos et de nourritures pour me rétablir. [Rêvez de la Maladie afin de la transformer en Santé, avant que la carte ne se désintègre.]",
+			lifetime: 180,
+			decayTo: "decrepitude"
+			},
+        {
+            id: "reason",
+            label: "Raison",
+            aspects:
+            {
+                lantern: 2,
+				ingredient:1,
+				ability:1
+            },
+            animFrames: 1,
+			description: "'Aucun organisme vivant ne peut demeurer sain dans un état de réalité absolue.' - Shirley Jackson
+
+[Étudier avec de l'Érudition, vous permet d'obtenir plus de Raisons.]",
+				xtriggers: {damagereason: dread,fatiguing:concentration,employment:concentration,job:concentration,topassion:passion}
+				
+        },
+		        {
+            id: "concentration",
+            label: "Raison [Estompée]",
+			description: "Mon esprit est las.  [Cette carte ne peut pas être utilisée, mais elle se rétablira au bout de soixante secondes.]",
+			lifetime:60,
+			decayTo:"reason",		
+icon:"reason"
+        },
+				 {
+            id: "erudition",
+            label: "Érudition",
+			slots: [{id:"More Erudition",actionId:"study",description: "Avec suffisamment d'Érudition, je peux améliorer ma Raison.",required:{erudition:1}}],
+            aspects: {advancement:1},
+            description: "J'ai beaucoup appris, récemment. Je peux faire des progrès. [L'Érudition peut être utilisé avec l'Étude pour gagner de la Raison. Ne dure que trois minutes pour le mettre à profit.]",
+lifetime: 180
+        },
+			{id: "dread",
+            label: "Terreur",
+            aspects:
+            {edge: 2,
+			inducesdespair: 1,
+			influence:1,
+			illhealth:1},
+			slots:	[{id:"Reminders",actionId:"dream",required: {contentment:1},description:"J'ai besoin d'un peu de paix ou d'un instant de félicité. [Trop de Terreur peut vous détruire. Le Contentement peut y remédier.]"}],
+            description: "J'en ai trop vu. Une indescriptible peur me ronge, enfoncant ses dents dans mes espoirs ; une terreur existentielle.",
+			lifetime: 180
+			},
+		        {
+            id: "passion",
+            label: "Passion",
+            aspects:
+            {
+                moth: 2,
+				ingredient:1,
+				ability:1
+            },
+            animFrames: 1,
+			description: "'Mais les esprits faux ne sont jamais ni fins ni géomètres.' - Blaise Pascal
+			
+[Avec suffisamment d'Émerveillement, vous pouvez par l'Étude obtenir plus de Passion.]",
+			xtriggers: {damagepassion:fascination,plead:disillusionment,fatiguing:passionexhausted,employment:passionexhausted,job:passionexhausted,toreason:reason}
+        },
+		
+		
+		        {
+            id: "decrepitude",
+            label: "Décrépitude",
+			description: "Certaines plaies ne disparaissent jamais. [Les Blessures non traitées et la Faim deviennent de la Décrépitude, qui ne peut être inversé sous forme de Santé. La Décrépitude demeure jusqu'à votre mort.]",
+			aspects: {ability:1},
+			xtriggers: {tohealth:health}
+            },
+		
+					 {
+            id: "glimmering",
+            label: "Émerveillement",
+			slots: [{id:"More Glimmering",actionId:"study",description: "Avec suffisamment d'Émerveillement, je peux améliorer ma Passion.",required:{glimmering:1}}],
+            aspects:
+            {advancement:1},
+            description: "Mes émotions sont plus fortes que d'habitude. Il y a des choses que je ne comprendrai jamais, et ces choses seront toujours précieuses, mais pour l'heure, je suis en phase avec elles. [L'Émerveillement peut être utilisé avec l'Étude pour gagner de la Passion. Ne dure que trois minutes pour le mettre à profit.]",
+			lifetime: 180
+        },
+		{id: "fascination",
+            label: "Fascination",
+            aspects:
+            {moth:2,illhealth:1,influence:1},
+			              		slots:[{id:"Reminders",required: {dread:1},actionId:"dream",description:"Grey reality will steady my soul."}],
+            description: "Light LEAKS through the CRACKS. My mind is BRIGHTER than it EVER was. THE HIGHER I RISE THE MORE I SEE.",
+			lifetime: 180
+			},
+		{
+		id: "scholarlatin",
+		label: "Scholar: Latin",
+		aspects: {language:1},
+		slots: [{id:"Text",
+		label: "Texte Non Traduit",
+				required: {textlatin:1},
+				actionId:"study",
+			}],
+		description: "Une langue morte : morte comme les diamants. [Certains livres doivent être traduits avant de pouvoir être lus.]",
+		unique:true
+		},
+					{
+		id: "scholarfucine",
+		label: "Scholar: Fucine",
+		aspects: {language:1},
+				slots: [{id:"Text",
+				label: "Texte Non Traduit",
+				required: {textfucine:1},
+				actionId:"study",
+			}],
+		description: "A people lived east of the lost lake Fucino. Horace warned that theirs was the land of witches. This was their language, called by some 'the dry tongue' and by others 'the tongue of witches'.[Some books must be translated before they can be read.]",
+		unique:true
+		},
+				{
+		id: "scholargreek",
+		label: "Scholar: Greek",
+		aspects: {language:1},
+						slots: [{id:"Text",
+						label: "Texte Non Traduit",
+				required: {textgreek:1},
+				actionId:"study",
+			}],
+		description: "No doubt you're conversant with every variety of Greek, from the beginning to Byzantium. But it's a good thing you have those reference works. [Some books must be translated before they can be read.]",
+		unique:true		
+		},
+					{
+		id: "scholarphrygian",
+		label: "Scholar: Phrygian",
+		slots: [{id:"Text",
+		label: "Texte Non Traduit",
+				required: {textphrygian:1},
+				actionId:"study",
+			}],
+		aspects: {language:1},
+		description: "The Phrygians worshipped the Great Mother, who we call the Grail. Theirs was the land in which the Sisterhood of the Knot was born, and this is the tongue in which the Thunderskin pleaded, at his ascension. [Some books must be translated before they can be read.]",
+		unique:true
+		},
+						{
+		id: "scholararamaic",
+		label: "Scholar: Aramaic",
+						slots: [{id:"Text",
+						label: "Texte Non Traduit",
+				required: {textaramaic:1},
+				actionId:"study",
+			}],
+		aspects: {language:1},
+		description: "The language of Aram, and all her many children these three thousand years and more. [Some books must be translated before they can be read.]",
+		unique:true
+		},
+							{
+		id: "scholarmandaic",
+		label: "Scholar: Deep Mandaic",
+						slots: [{id:"Text",
+						label: "Texte Non Traduit",
+				required: {textmandaic:1},
+				actionId:"study",
+			}],
+		aspects: {language:1},
+		description: "The most secret script of the innermost rites of the deep sects of the deep desert. The birth-tongue, it is claimed, of the Mother of Ants herself. [Some books must be translated before they can be read.]",
+		unique:true
+		},
+									{
+		id: "scholarsanskrit",
+		label: "Scholar: Sanskrit",
+						slots: [{id:"Text",
+						label: "Texte Non Traduit",
+				required: {textsanskrit:1},
+				actionId:"study",
+			}],
+		aspects: {language:1},
+		description: "The holy tongue of the Subcontinent. The door to four thousand years of poetry, ceremony and mystery now opens before you, if you can struggle through the lotus convolutions of its vocabulary.[Some books must be translated before they can be read.]",
+		unique:true
+		},
+									{
+		id: "scholarvak",
+		label: "Scholar: Vak",
+						slots: [{id:"Text",
+						label: "Texte Non Traduit",
+				required: {textvak:1},
+				actionId:"study",
+			}],
+		aspects: {language:1},
+		description: "Before gods arose from blood, before ever ape stood upright, this was the language heard in the House of the Sun.[Some books must be translated before they can be read.]",
+		unique:true
+		},
+		
+	
+			
+		
+			 {
+            id: "fleeting",
+            label: "Souvenir Fugace",
+            description: "Un instant donné. Dans un moment, il aura disparu.",
+			aspects: {secrethistories: 2,moth:2,influence:1},
+			lifetime:30
+        },
+		{id: "contentment",
+		label: "Contentement",
+		aspects: {lantern:2,heart:2,influence:1},
+		description: "Je suis heureux, j'imagine. [Le Contentement permet de se défendre contre la Terreur. Mais le Contentement ne dure pas éternellement.]",
+		lifetime: 60
+		}
+]
+};

@@ -1,0 +1,22 @@
+ {"recipes": [
+  	{
+        id: "translatehint",
+        label: "Tenter une traduction d'un texte ?",
+        actionId: "study",
+        requirements: {language:1},
+		startdescription: "Si je dispose d'un texte dans cette langue, je peux commencer à le traduire.",
+        craftable: false,
+		hintonly:true
+    },
+ 	{
+        id: "translate",
+        label: "Commencer la traduction d'un texte",
+        actionId: "study",
+        requirements: {language:1,text:1},
+		startdescription: "Verrouillez la porte de l'étude. Le travail commence.",
+        description: "J'ai préparé le texte pour étude.",
+        warmup: 60,
+        craftable: true
+    }
+]
+}

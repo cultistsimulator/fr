@@ -1,0 +1,72 @@
+{"elements":
+    [
+		{id: "dayacquaintances",
+	label: "Une Journée pour de Nouvelles Connaissances",
+	description: "Je pourrais trouver un esprit apparenté.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+	
+			{id: "daypatrons",
+	label: "Une Journée pour de Nouveaux Patrons",
+	description: "Je pourrais trouver quelqu'un qui pourrait proposer de l'aide.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+				{id: "daycriminals",
+	label: "Une Journée pour des Liens Peu Recommandables",
+	description: "Je pourrais trouver quelqu'un disposé à se salir les mains.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+				{id: "dayplaces",
+	label: "Une Journée pour les Cartographes",
+	description: "Je pourrais tomber sur un endroit intéressant.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+	
+	{id: "seasonsickness",
+	label: "Une Saison de Maladie",
+	description: "Je ne me sens pas bien.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+	{id: "seasonserenities",
+	label: "Une Saison de Sérénités",
+	description: "Demain sera un meilleur jour.",
+	aspects: {season:1},
+	lifetime:1
+	},
+		{id: "seasonsuspicion",
+	label: "Une Saison de Suspicion",
+	description: "Suis-je surveillé ?",
+	aspects: {season:1},
+	lifetime:1
+	},
+			{id: "seasondespair",
+	label: "Une Saison de Désespoir",
+	description: "La nuit m'attend.",
+	aspects: {season:1},
+	lifetime:1
+	},
+{id: "seasonvisions",
+	label: "Une Saison de Visions",
+	description: "Such sights.",
+	aspects: {season:1},
+	lifetime:1
+	},
+	{id: "seasonambitions",
+	label: "Une Saison d'Ambitions",
+	description: "C'est la saison où les vents du Bois inversent leur direction: a time when appetites and mortals both rise.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+		{id: "seasonsilence",
+	label: "Une Saison de Silence",
+	description: "These are the days of anticipation.",
+	aspects: {season:1},
+	lifetime:1
+	},	
+	]
+};

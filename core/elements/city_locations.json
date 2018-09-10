@@ -1,0 +1,73 @@
+{"elements":
+    [
+		{
+        id: "locationbookdealer",
+            label: "Boutique de Morland",
+            aspects:{location: 1},
+			slots: [{id:"Cost",
+					required: {funds: 1},
+					consumes: true,
+					actionId: "explore"
+					}
+				],
+            description: "Les discrets locaux de Miss Morland, qui vend de rares et parfois dangereux livres.",
+			unique:true,
+			xtriggers:{exhaustlocation:locationbookdealer_exhausted}
+        },
+				{
+        id: "locationbookdealer_exhausted",
+            label: "Boutique de Morland [Fermée]",
+            aspects:{location: 1},
+            description: "C’était l’adresse de Morland, mon libraire, mais je vais devoir, dorénavant, chercher des connaissances ailleurs.",
+			unique:true,
+        },
+				{
+        id: "locationauctionhouse",
+            label: "Hôtel des ventes d'Oriflamme",
+            aspects:{location: 1},
+            description: "Oriflamme est spécialisé en curiosités, parfums, spécimens naturalisés, et en rares écrits. Il opère depuis de nouveaux locaux exiguës, actuellement, depuis la destruction de leur ancien local dans un incendie inexpliqué. [Vous pouvez acheter ou vendre des objets chez Oriflamme.]",
+				slots:[{id:"Sell",description: "Ajouter un objet pour le mettre en vente.", required: {auctionable:1},actionId:"explore"}],
+			unique:true
+        },
+										{
+        id: "locationcabaretclosed",
+            label: "Le Exuvie Club [Fermé]",
+            description: "Un cabaret à la réputation occulte. Il ouvre seulement certaines nuits de la semaine; il devrait bientôt rouvrir.",
+			unique:true,
+			lifetime:60,
+			decayTo: locationcabaret
+        },
+						{
+        id: "locationcabaret",
+            label: "Le Exuvie Club",
+            aspects:{location: 1,moth:1,grail:1},
+            description: "Un cabaret à la réputation occulte.",
+			slots:[{id:"Entry", actionId: "explore", required:{funds:1},consumes:true}],
+			xtriggers:{locationcabaret:locationcabaretclosed},
+			unique:true
+        },
+
+		
+			{
+        id: "generichq",
+            label: "QG Temporaires",
+            aspects:{hq: 1},
+			description: "Nos affaires sont privées. Nous pourrions utiliser un endroit plus secret.",
+			slots: [{id:"Cupboard",
+					description: "Place a Follower in here to convert them, permanently, into a Prisoner.",
+					actionId: "talk",
+					required: {follower: 1},
+					forbidden:{summoned:-1} 
+				}],
+        unique:true
+        },
+				{
+        id: "locationstreetsstrange",
+            label: "Étranges Rues au Clair de Lune",
+            aspects:{location: 1},
+            description: "Sometimes, the light of the moon is a key to other spaces. I've found a place where, for a night or two, the streets curve in unfamiliar ways. If I walk here, I might find insight, or I might be touched by madness.",
+			lifetime:120
+        },
+
+]
+};
