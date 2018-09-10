@@ -2,7 +2,7 @@
 
 ## What is this project?
 
-This projects is a free (as in free beer) translation in french of the game "Cultist Simulator".
+This projects is a free (as in free beer) translation in french of the game [Cultist Simulator](https://store.steampowered.com/app/718670/Cultist_Simulator/).
 
 ## Who can contribute, what is the licence?
 
@@ -12,7 +12,7 @@ The licence is [Creative Common BY-NC-SA](https://creativecommons.org/licenses/b
 
 ## Where does it come from?
 
-The project started on [Geekzone](https://forum.geekzone.fr/t/cultist-simulator-traduction-fr/) as @Marteau submitted a ZIP file containing 50% of the files already translated or partially translated. 
+The project started on [Geekzone](https://forum.geekzone.fr/t/cultist-simulator-traduction-fr/) as **@Marteau** submitted a ZIP file containing 50% of the files already translated or partially translated. 
 
 ## I want another language!
 
